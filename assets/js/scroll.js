@@ -192,7 +192,7 @@ window.addEventListener("load", () => {
   // Handle window resize
   // ------------------------------
   function updateLayout() {
-    setWrapperHeight();
+    // setWrapperHeight();
     ScrollTrigger.refresh();
   }
   

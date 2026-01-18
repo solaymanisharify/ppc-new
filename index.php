@@ -931,7 +931,7 @@
                 </div>
             </div>
             <div class="amazon-advertising-pricing-img">
-                <img src="/assets/images/Desktop/Amazon-advertising-new.png" alt="">
+                <img src="/assets/images/Desktop/Amazon-advertising-new.webp" alt="">
             </div>
         </section>
         <!-- Amazon Advertising Pricing end-->

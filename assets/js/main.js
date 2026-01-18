@@ -1,48 +1,64 @@
 // Enhanced Accordion JS - Remove border from previous item for positions 2,3,4
 document.addEventListener("DOMContentLoaded", function () {
   const headers = document.querySelectorAll(".accordion-header");
-  const items = document.querySelectorAll(".accordion-item"); // All items for indexing
+  const items = document.querySelectorAll(".accordion-item");
 
   headers.forEach((header, index) => {
-    // index starts at 0
-    header.addEventListener("pointerdown", function (e) {
-      // Prevent default if needed (e.g., for images), but optional here
+    const content = header.nextElementSibling;
+
+    // Initial state
+    gsap.set(content, { height: 0, opacity: 0, overflow: "hidden" });
+
+    header.addEventListener("click", function (e) {
       e.preventDefault();
 
-      const content = this.nextElementSibling;
-      const currentItem = this.parentElement; // Current .accordion-item
-      const isActive = content.classList.contains("active");
-      const position = index + 1; // 1-based position (1st, 2nd, etc.)
+      const currentItem = header.parentElement;
+      const isOpen = content.classList.contains("active");
+      const position = index + 1;
 
-      // Close all other accordions and reset borders
-      headers.forEach((h) => {
+      // Close all accordions
+      headers.forEach((h, i) => {
         const c = h.nextElementSibling;
-        const i = h.parentElement;
+        const item = h.parentElement;
+
         h.classList.remove("active");
         c.classList.remove("active");
-        i.classList.remove("active");
-        i.classList.remove("no-border"); // Restore border if it was removed
+        item.classList.remove("active");
+        item.classList.remove("no-border");
+
+        gsap.to(c, {
+          height: 0,
+          opacity: 0,
+          duration: 0.4,
+          ease: "power2.inOut"
+        });
       });
 
-      // If opening (not already active)
-      if (!isActive) {
-        // Open current
-        this.classList.add("active");
+      // Open clicked accordion
+      if (!isOpen) {
+        header.classList.add("active");
         content.classList.add("active");
         currentItem.classList.add("active");
 
-        // For ANY position >=2: Remove border from previous item (includes last item)
+        gsap.to(content, {
+          height: "auto",
+          opacity: 1,
+          duration: 0.5,
+          ease: "power2.out"
+        });
+
+        // Remove border from previous item
         if (position >= 2) {
-          const previousItem = items[index - 1]; // Previous .accordion-item
+          const previousItem = items[index - 1];
           if (previousItem) {
-            previousItem.classList.add("no-border"); // Hide its bottom border
+            previousItem.classList.add("no-border");
           }
         }
       }
-      // Note: When closing, borders restore automatically via the reset loop above
     });
   });
 });
+
 
 // Timeline Functionality
 function timeline(){

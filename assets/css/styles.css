@@ -987,7 +987,7 @@ main {
 .accordion-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease, background-color 0.3s ease;
+  /* transition: max-height 0.3s ease, padding 0.3s ease, background-color 0.3s ease; */
   background: linear-gradient(to bottom, #0d3379 0%, #0d3379 40%, #031e40 70%, #031e40 100%);
   color: white;
 }
