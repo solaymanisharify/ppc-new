@@ -54,45 +54,50 @@ function timeline(){
         label.addEventListener('click', () => {
             const parent = label.parentElement; // the container div of this timeline content
             const targetId = parent.id; // get the id of the content div
-            const imageSrc = label.dataset.image; // get the image source from data attribute
+            const timelineImageSrc = label.dataset.image; // get the image source from data attribute
             
             if (window.innerWidth > 580) {
 
-                const image = document.getElementById('timeline-main-image');
+                const timelineImage = document.getElementById('timeline-main-image');
 
                 // Get current image position and size
-                const rect = image.getBoundingClientRect();
+                const rect = timelineImage.getBoundingClientRect();
 
                 // Clone the old image
-                const oldImage = image.cloneNode(true);
+                const oldImage = timelineImage.cloneNode(true);
                 oldImage.style.position = 'absolute';
                 oldImage.style.top = rect.top + window.scrollY + 'px';
                 oldImage.style.left = rect.left + window.scrollX + 'px';
                 oldImage.style.width = rect.width + 'px';
                 oldImage.style.height = rect.height + 'px';
                 oldImage.style.margin = 0;
-                oldImage.style.zIndex = 10;
+                oldImage.style.zIndex = 1;
 
-                // Append to body (or parent)
+                // Append to body
                 document.body.appendChild(oldImage);
 
+                // Change the main image
+                timelineImage.src = timelineImageSrc;
+
+                // Set starting position for new image (offscreen to the right)
+                gsap.set(timelineImage, { opacity: 0 });
+
                 // Animate old image out to the left
-                let slideTimeline = gsap.timeline();
-                slideTimeline.to(oldImage, {
-                    x: -150,
+                gsap.to(oldImage, {
                     opacity: 0,
-                    ease: "none",
+                    duration: 0.7,
+                    ease: "power2.inOut",
+                    stagger: 1,
                     onComplete: () => oldImage.remove()
                 });
 
-                // Change the main image
-                image.src = imageSrc;
-
-                // Animate new image in from the right
-                slideTimeline.from(image, {
-                    x: 150,
-                    opacity: 0,
-                    ease: "none",
+                // Animate new image in from right
+                gsap.to(timelineImage, {
+                    opacity: 1,
+                    duration: 0.7,
+                    stagger: 1,
+                    delay: 0.1,
+                    ease: "power2.inOut"
                 });
 
 

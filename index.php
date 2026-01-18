@@ -163,7 +163,7 @@
                     </div>
     
                     <div class="panel__card panel__card--five bg-blue">
-                        <div class="listing-optimization-desc panel__card-image">
+                        <div class="listing-optimization-desc ">
                             <div class="listing-title-div">
                                 <img src="assets/images/Desktop/star.png" alt="">
                                 <h2>Reduce ACOS</h2>
@@ -176,13 +176,13 @@
                                 <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
                             </div>
                         </div>
-                        <div class="reduce-acos-img">
+                        <div class="reduce-acos-img panel__card-image">
                             <img src="assets/images/Desktop/Reduce-ACOS.png" alt="">
                         </div>
                     </div>
     
                     <div class="panel__card panel__card--six bg-blue">
-                        <div class="listing-optimization-desc panel__card-image">
+                        <div class="listing-optimization-desc">
                             <div class="listing-title-div">
                                 <img src="assets/images/Desktop/star.png" alt="">
                                 <h2>Weekly Reporting</h2>
@@ -195,7 +195,7 @@
                                 <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
                             </div>
                         </div>
-                        <div class="weekly-reporting-img">
+                        <div class="weekly-reporting-img panel__card-image">
                             <img src="assets/images/Desktop/weekly-reporting.png" alt="">
                         </div>
                     </div>
@@ -931,7 +931,7 @@
                 </div>
             </div>
             <div class="amazon-advertising-pricing-img">
-                <img src="/assets/images/Desktop/Amazon-advertising1.png" alt="">
+                <img src="/assets/images/Desktop/Amazon-advertising-new.png" alt="">
             </div>
         </section>
         <!-- Amazon Advertising Pricing end-->
@@ -941,8 +941,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
 
-    <script src="/assets/js/main.js"></script>
     <script src="/assets/js/scroll.js"></script>
+    <script src="/assets/js/main.js"></script>
     
 </body>
 </html>

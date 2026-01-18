@@ -1,7 +1,8 @@
-
 window.addEventListener("load", () => {
-    gsap.registerPlugin(ScrollTrigger);
-  // vertical cards scroll start
+  gsap.registerPlugin(ScrollTrigger);
+  // ------------------------------
+  // Vertical Cards Scroll
+  // ------------------------------
   const verticalCards = gsap.utils.toArray(".panel__card");
 
   verticalCards.forEach((verticalCard, index) => {
@@ -55,7 +56,9 @@ window.addEventListener("load", () => {
 
   // vertical cards scroll end
 
-  // horizontal cards scroll start
+  // ------------------------------
+  // Horizontal Cards Scroll
+  // ------------------------------
   const horizontalCardContainer = document.querySelector(".horizontal");
   const horizontalCards = gsap.utils.toArray(".case-study-container");
   const stickyWrapper = document.querySelector(".sticky");
@@ -65,9 +68,9 @@ window.addEventListener("load", () => {
     return -(horizontalCardContainer.scrollWidth - window.innerWidth + extraWidth);
   }
 
-  function setWrapperHeight() {
-    stickyWrapper.style.height = `${window.innerHeight + getScrollAmount()}px`;
-  }
+  // function setWrapperHeight() {
+  //   stickyWrapper.style.height = `${window.innerHeight + getScrollAmount()}px`;
+  // }
   // setWrapperHeight();
 
   const horizontalTimeline = gsap.timeline({
@@ -100,6 +103,7 @@ window.addEventListener("load", () => {
           start: "left 85%",
           end: "center 60%",
           scrub: true,
+          invalidateOnRefresh: true,
         },
       },
       "<"
@@ -108,7 +112,9 @@ window.addEventListener("load", () => {
 
   // horizontal cards scroll end
 
-  // sync image change with block start
+  // ------------------------------
+  // Sync Image Change with Block
+  // ------------------------------
 
   const blocks = gsap.utils.toArray(".amazon-ppc-content-text");
   const images = gsap.utils.toArray(".amazon-ppc-img img");
@@ -177,8 +183,23 @@ window.addEventListener("load", () => {
 
   // sync image change with block end
 
-  // marge timeline
-
+// ------------------------------
+  // Merge timelines
+  // ------------------------------
   mainTimeline.add(horizontalTimeline);
 
+  // ------------------------------
+  // Handle window resize
+  // ------------------------------
+  function updateLayout() {
+    setWrapperHeight();
+    ScrollTrigger.refresh();
+  }
+  
+  // On page load
+  window.addEventListener("load", updateLayout);
+  
+  // On window resize
+  window.addEventListener("resize", updateLayout);
 });
+
