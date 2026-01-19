@@ -8,7 +8,7 @@ window.addEventListener("load", () => {
   verticalCards.forEach((verticalCard, index) => {
     if (index !== 0) {
       gsap.set(verticalCard, {
-        yPercent: 200,
+        yPercent: 135,
       });
     }
   });
@@ -116,22 +116,23 @@ window.addEventListener("load", () => {
   // Sync Image Change with Block
   // ------------------------------
 
-  const blocks = gsap.utils.toArray(".amazon-ppc-content-text");
-  const images = gsap.utils.toArray(".amazon-ppc-img img");
-  const blocksContainer = document.querySelector(".amazon-content-img");
+  function syncImageChangeAnimation({ sectionName, blockSelector, imageSelector  }) {
+    const blocks = gsap.utils.toArray(blockSelector);
+    const images = gsap.utils.toArray(imageSelector);
+    const blocksContainer = document.querySelector(`${sectionName} .amazon-content-img`);
 
-  ScrollTrigger.create({
-    trigger: ".amazon-section",
-    start: "top top",
-    endTrigger: blocks[blocks.length - 1],
-    end: "bottom center",
-    pin: true,
-    scrub: true,
-    invalidateOnRefresh: true,
-    // markers: true,
-  });
+    ScrollTrigger.create({
+      trigger: sectionName,
+      start: "top top",
+      endTrigger: blocks[blocks.length - 1],
+      end: "bottom center",
+      pin: true,
+      scrub: true,
+      invalidateOnRefresh: true,
+      // markers: true,
+    });
 
-  blocks.forEach((block, index) => {
+    blocks.forEach((block, index) => {
     ScrollTrigger.create({
       trigger: block,
       start: "top center",
@@ -180,6 +181,20 @@ window.addEventListener("load", () => {
       });
     });
   }
+  }
+
+  syncImageChangeAnimation({
+    sectionName: ".amazon-ppc",
+    blockSelector: ".amazon-ppc-content-text",
+    imageSelector: ".amazon-ppc-img img",
+  });
+  syncImageChangeAnimation({
+    sectionName: ".amazon-keyword2",
+    blockSelector: ".amazon-keyword2-content-text",
+    imageSelector: ".amazon-keyword2-img img",
+  });
+
+
 
   // sync image change with block end
 

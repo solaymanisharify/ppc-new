@@ -7,7 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const content = header.nextElementSibling;
 
     // Initial state
-    gsap.set(content, { height: 0, opacity: 0, overflow: "hidden" });
+    if(!content.classList.contains("active")){
+      gsap.set(content, { height: 0, opacity: 0, overflow: "hidden" });
+    }
 
     header.addEventListener("click", function (e) {
       e.preventDefault();

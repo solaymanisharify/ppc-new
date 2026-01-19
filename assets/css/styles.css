@@ -316,7 +316,7 @@ main {
 .item-list-content p {
   font-size: clamp(5px, 1vw, 1rem);
   font-weight: 500;
-  font-family: sans-serif;
+  font-family: Poppins, sans-serif;
   color: white;
   opacity: 0.9;
 }
@@ -420,7 +420,7 @@ main {
 }
 
 .listing-optimization-desc-content p {
-  font-family: sans-serif;
+  font-family: Poppins, sans-serif;
   font-size: clamp(0.875rem, 2vw, 1.75rem);
   font-weight: 300;
   color: white;
@@ -537,6 +537,7 @@ main {
 }
 
 .case-study-header h2 {
+  font-family: 'Recoleta';
   font-size: clamp(0.625rem, 2vw, 1.4375rem);
   font-weight: 400;
 }
@@ -620,7 +621,7 @@ main {
 .growth-desc p {
   color: #fff;
   opacity: 0.9;
-  font-family: "SFProDisplay-test";
+  font-family: Poppins;
   font-size: clamp(0.8125rem, 1.5vw, 1rem);
   font-weight: 300;
 }
@@ -745,13 +746,13 @@ main {
   margin-top: 2px;
 }
 
-.review-card-top p,
-.review-card-content p {
+.review-card-top p, .review-card-content p {
   color: #ffffffde;
   font-weight: 500;
   line-height: 1.3;
   font-size: clamp(0.625rem, 1vw, 0.875rem);
   text-align: left;
+  font-family: 'inter';
 }
 
 .review-card-rating p {
@@ -835,8 +836,8 @@ main {
 }
 
 .amazon-ppc-card-stat div p {
-  font-size: 14px;
-  font-family: "inter";
+  font-size: 13px;
+  font-family: 'Poppins';
   margin: 0;
   color: #adb6c1;
 }
@@ -941,7 +942,7 @@ main {
 
 .accordion-header h1 {
   margin: 0;
-  font-family: "recoleta";
+  font-family: "Recoleta";
   font-size: clamp(1rem, 2.5vw, 2.25rem);
   color: #00fffc;
   font-weight: normal;
@@ -1005,7 +1006,7 @@ main {
 
 .accordion-content p {
   font-size: clamp(10px, 2.5vw, 24px);
-  font-family: "Poppins";
+  font-family: "inter";
   margin: 0;
   color: #fff;
   padding: 0 16px;
@@ -1036,8 +1037,8 @@ main {
 }
 
 .amazon-container-header h3 {
-  font-family: "Recoleta";
-  font-weight: 200;
+  font-family: 'Poppins';
+  font-weight: 400;
   font-size: 24px;
   color: #131921;
   opacity: 0.8;
@@ -1047,11 +1048,13 @@ main {
   display: none;
 }
 
-.amazon-ppc .accordion .accordion-item {
+.amazon-ppc .accordion .accordion-item,
+.amazon-keyword2 .accordion .accordion-item {
   border-bottom: none;
 }
 
-.amazon-ppc .accordion .accordion-item .accordion-header {
+.amazon-ppc .accordion .accordion-item .accordion-header,
+.amazon-keyword2 .accordion .accordion-item .accordion-header {
   background: transparent;
   border: none;
   box-shadow: none;
@@ -1059,37 +1062,44 @@ main {
   padding-left: 0px;
 }
 
-.amazon-ppc .accordion .accordion-item .accordion-header.active {
+.amazon-ppc .accordion .accordion-item .accordion-header.active,
+.amazon-keyword2 .accordion .accordion-item .accordion-header.active {
   border-bottom: none;
 }
 
-.amazon-ppc .accordion .accordion-item .accordion-header h1 {
+.amazon-ppc .accordion .accordion-item .accordion-header h1,
+.amazon-keyword2 .accordion .accordion-item .accordion-header h1 {
   color: #000000;
   font-size: clamp(1.5rem, 3vw, 20px);
   padding: 6px 10px 6px 0px;
   text-align: left;
 }
 
-.amazon-ppc .accordion .accordion-item .accordion-content {
+.amazon-ppc .accordion .accordion-item .accordion-content,
+.amazon-keyword2 .accordion .accordion-item .accordion-content {
   background: transparent;
 }
 
-.amazon-ppc .accordion .accordion-item .accordion-content.active {
+.amazon-ppc .accordion .accordion-item .accordion-content.active,
+.amazon-keyword2 .accordion .accordion-item .accordion-content.active {
   max-height: clamp(350px, 61vh, 610px);
   padding: clamp(8px, 2vw, 10px) 0;
 }
 
-.amazon-ppc .accordion .accordion-item .accordion-content div {
+.amazon-ppc .accordion .accordion-item .accordion-content div,
+.amazon-keyword2 .accordion .accordion-item .accordion-content div {
   padding-bottom: 0px;
 }
 
-.amazon-ppc .accordion .accordion-item .accordion-content div p {
+.amazon-ppc .accordion .accordion-item .accordion-content div p,
+.amazon-keyword2 .accordion .accordion-item .accordion-content div p {
   color: black;
   padding: 0px;
   font-size: clamp(0.7rem, 3vw, 1rem);
 }
 
-.amazon-ppc .accordion .accordion-item .accordion-content div img {
+.amazon-ppc .accordion .accordion-item .accordion-content div img,
+.amazon-keyword2 .accordion .accordion-item .accordion-content div img {
   width: 85%;
   margin: 0 auto;
   margin-top: 20px;
@@ -1130,7 +1140,8 @@ main {
   gap: 2rem;
 }
 
-.amazon-keyword header h1 {
+.amazon-keyword header h1,
+.amazon-keyword2 header h1 {
   font-size: clamp(36px, 5vw, 50px);
   font-weight: normal;
   font-family: "Recoleta", serif;
@@ -1139,8 +1150,9 @@ main {
   margin-bottom: 10px;
 }
 
-.amazon-keyword header p {
-  font-family: sans-serif;
+.amazon-keyword header p,
+.amazon-keyword2 header p {
+  font-family: 'inter';
   font-size: clamp(0.6875rem, 2vw, 1rem);
   line-height: 1.5;
   margin-top: 10px;
@@ -1199,6 +1211,7 @@ main {
 }
 
 .timeline-label {
+  font-family: 'Rocoleta';
   color: #777;
   margin-bottom: 12px;
   font-size: 14px;
@@ -1232,6 +1245,7 @@ main {
 }
 
 .timeline-text {
+  font-family: 'inter';
   margin: 12px 0 20px;
   color: #000;
   line-height: 1.5;
@@ -1302,14 +1316,14 @@ main {
 }
 
 .amazon-advertising header p {
-  font-family: sans-serif;
+  font-family: 'Poppins';
   font-size: clamp(10px, 2vw, 18px);
   font-weight: normal;
   line-height: 1.2;
   margin-top: 10px;
   padding: 0 0;
   text-align: center;
-  color: #3f444a;
+  color: #000000;
   opacity: 0.7;
 }
 
@@ -1342,7 +1356,7 @@ main {
 }
 
 .advertising-card-text p {
-  font-family: "Poppins";
+  font-family: "inter";
   font-size: clamp(10px, 2.5vw, 20px);
   font-weight: 500;
   line-height: 1.2;
@@ -1480,7 +1494,7 @@ main {
 .amazon-advertising-pricing-content p {
   color: white;
   font-size: clamp(12px, 2.5vw, 24px);
-  font-family: "Recoleta", serif;
+  font-family: "Poppins", serif;
   font-weight: normal;
 }
 
@@ -1530,12 +1544,14 @@ main {
     gap: 3rem;
   }
 
-  .amazon-ppc-wrapper {
+  .amazon-ppc-wrapper,
+  .amazon-keyword2-wrapper {
     position: relative;
     width: 50%;
   }
 
-  .amazon-ppc-content {
+  .amazon-ppc-content,
+  .amazon-keyword2-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -1547,17 +1563,20 @@ main {
     will-change: transform;
   }
 
-  .amazon-ppc-content-text {
+  .amazon-ppc-content-text,
+  .amazon-keyword2-content-text {
     width: 100%;
     margin-top: 20px;
     padding-bottom: 30px;
     padding-right: 10px;
   }
-  .amazon-ppc-content-text:first-child {
+  .amazon-ppc-content-text:first-child,
+  .amazon-keyword2-content-text:first-child {
     margin-top: 130px;
   }
 
-  .amazon-ppc-content h1 {
+  .amazon-ppc-content h1,
+  .amazon-keyword2-content h1 {
     font-family: "Recoleta", serif;
     font-size: 30px;
     font-weight: 400;
@@ -1565,13 +1584,15 @@ main {
     margin-bottom: 10px;
   }
 
-  .amazon-ppc-content p {
+  .amazon-ppc-content p,
+  .amazon-keyword2-content p {
     font-size: 14px;
     font-family: "inter";
     line-height: 1.9;
   }
 
-  .amazon-ppc-img {
+  .amazon-ppc-img,
+  .amazon-keyword2-img {
     display: flex;
     justify-content: center;
     position: relative;
@@ -1580,7 +1601,8 @@ main {
     align-items: center;
   }
 
-  .amazon-ppc-img img {
+  .amazon-ppc-img img,
+  .amazon-keyword2-img img {
     /* position: absolute;
     inset: 0; */
     opacity: 0;
@@ -1588,12 +1610,12 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 1;
     max-width: 100%;
     max-height: 100%;
 }
 
-  #ppcImage0 {
+  #ppcImage0,
+  #keyImage0 {
     opacity: 1;
   }
 
@@ -1608,13 +1630,15 @@ main {
     filter: blur(40px);
   }
 
-  .ppcImage {
+  .ppcImage,
+  .keyImage {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
 
-  .amazon-ppc .accordion-item {
+  .amazon-ppc .accordion,
+  .amazon-keyword2 .accordion {
     display: none;
   }
 

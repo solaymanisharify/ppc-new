@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script> -->
 </head>
+
 <body>
 
     <main>
@@ -26,7 +28,7 @@
                     <button class="launch-dominate-btn">From Launch to Dominate</button>
                     <h1 class="scalable-amazon">Scalable Amazon Advertising <br> <span>Management</span></h1>
                     <p>
-                        At ecomclips, our Amazon PPC strategies are built for every stage from
+                        At Ecomclips, our Amazon PPC strategies are built for every stage from
                         launch to market domination. No matter where you are in your journey, we
                         help scale your brand profitably with data-driven, custom campaigns.
                     </p>
@@ -98,13 +100,13 @@
                                     <span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span>
                                 </button>
                             </div>
-    
+
                         </div>
                         <div class="listing-optimization-img panel__card-image">
                             <img src="assets/images/Desktop/card1.png" alt="">
                         </div>
                     </div>
-    
+
                     <div class="panel__card panel__card--two bg-blue">
                         <div class="listing-optimization-desc">
                             <div class="listing-title-div">
@@ -113,7 +115,7 @@
                             </div>
                             <div class="listing-optimization-desc-content">
                                 <h3>We monitor and <br>Fine-tune bidding strategies</h3>
-                                <p>match types, and placements to optimize<br class="mobile-only-br"> every dollar spent on Amazon ads.</p>
+                                <p>Match types, and placements to optimize<br class="mobile-only-br"> every dollar spent on Amazon ads.</p>
                             </div>
                             <div>
                                 <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
@@ -123,7 +125,7 @@
                             <img src="assets/images/Desktop/Campaign-optimization.png" alt="">
                         </div>
                     </div>
-    
+
                     <div class="panel__card panel__card--three bg-blue">
                         <div class="listing-optimization-desc">
                             <div class="listing-title-div">
@@ -132,7 +134,7 @@
                             </div>
                             <div class="listing-optimization-desc-content">
                                 <h3>Scale your business with tailored campaign</h3>
-                                <p>strategies that target the right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth.</p>
+                                <p>Strategies that target the right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth.</p>
                             </div>
                             <div>
                                 <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
@@ -142,7 +144,7 @@
                             <img src="assets/images/Desktop/Increase-Sales.png" alt="">
                         </div>
                     </div>
-    
+
                     <div class="panel__card panel__card--four bg-blue">
                         <div class="listing-optimization-desc">
                             <div class="listing-title-div">
@@ -151,7 +153,7 @@
                             </div>
                             <div class="listing-optimization-desc-content">
                                 <h3>We uncover<br> Amazon search trends</h3>
-                                <p>to find profitable keywords, driving traffic and conversions through ranking,<br class="mobile-only-br"> More visibility, relevance, and return on ad spend.</p>
+                                <p>To find profitable keywords, driving traffic and conversions through ranking,<br class="mobile-only-br"> More visibility, relevance, and return on ad spend.</p>
                             </div>
                             <div>
                                 <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
@@ -161,7 +163,7 @@
                             <img src="assets/images/Desktop/Keyword-research.png" alt="">
                         </div>
                     </div>
-    
+
                     <div class="panel__card panel__card--five bg-blue">
                         <div class="listing-optimization-desc ">
                             <div class="listing-title-div">
@@ -170,7 +172,7 @@
                             </div>
                             <div class="listing-optimization-desc-content">
                                 <h3>Scale your business<br> with tailored campaign strategies that target</h3>
-                                <p>the right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth..</p>
+                                <p>The right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth..</p>
                             </div>
                             <div>
                                 <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
@@ -180,7 +182,7 @@
                             <img src="assets/images/Desktop/Reduce-ACOS.png" alt="">
                         </div>
                     </div>
-    
+
                     <div class="panel__card panel__card--six bg-blue">
                         <div class="listing-optimization-desc">
                             <div class="listing-title-div">
@@ -456,163 +458,163 @@
             </div>
         </section>
         <!-- Case Studies left Scroll end -->
-        
+
         <!-- Amazon PCC Section -->
         <section class="common-spacing common-spacing-extra">
             <!-- Amazon PCC Section Top -->
-             <div class="amazon-ppc-card-body">
-                 <div class="amazon-ppc-card-container container">
-                     <div class="amazon-ppc-card">
-                         <div class="amazon-ppc-card-header">
-                             <h1>Helping ambitious sellers <span>grow <br> smarter</span>, since 2010.</h1>
-                         </div>
-                         <div class="amazon-ppc-card-stat">
-                             <div>
-                                 <h2>81<span class="percentage">%</span></h2>
-                                 <p>Average Year Over Year Profit Growth For Our Partners</p>
-                             </div>
-                             <span class="amazon-ppc-card-stat-line"></span>
-                             <div>
-                                 <h2>12</h2>
-                                 <p>Industry Awards & Recognitions</p>
-                             </div>
-                             <span class="amazon-ppc-card-stat-line"></span>
-                             <div>
-                                 <h2>$1.1B+</h2>
-                                 <p>Revenue Managed Across Marketplaces</p>
-                             </div>
-                             <span class="amazon-ppc-card-stat-line"></span>
-                             <div>
-                                 <h2>98.7<span class="percentage">%</span></h2>
-                                 <p>Client Retention Rate</p>
-                             </div>
-                         </div>
-                         <div class="amazon-ppc-card-ratings">
-                             <div class="amazon-ppc-card-ratings-card">
-                                 <div class="amazon-ppc-card-ratings-img">
-                                     <img src="assets/images/Desktop/trustpilot-logo.png" alt="">
-                                 </div>
-                                 <div class="amazon-ppc-card-ratings-stars">
-                                     <div class="amazon-ppc-card-star-img">
-                                         <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                     </div>
-                                     <div class="amazon-ppc-card-star-img">
-                                         <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                     </div>
-                                     <div class="amazon-ppc-card-star-img">
-                                         <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                     </div>
-                                     <div class="amazon-ppc-card-star-img">
-                                         <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                     </div>
-                                     <div class="amazon-ppc-card-star-img">
-                                         <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                     </div>
-                                 </div>
-                                 <div>
-                                     <p>4.9 Stars | 141 Ratings</p>
-                                 </div>
-                             </div>
-         
-                             <div class="amazon-ppc-card-ratings-card">
-                                 <div class="amazon-ppc-card-ratings-img">
-                                     <img src="assets/images/Desktop/clutch-logo.png" alt="">
-                                 </div>
-                                 <div class="amazon-ppc-card-ratings-stars">
-                                     <div class="amazon-ppc-card-star-img">
-                                         <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                     </div>
-                                     <div class="amazon-ppc-card-star-img">
-                                         <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                     </div>
-                                     <div class="amazon-ppc-card-star-img">
-                                         <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                     </div>
-                                     <div class="amazon-ppc-card-star-img">
-                                         <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                     </div>
-                                     <div class="amazon-ppc-card-star-img">
-                                         <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                     </div>
-                                 </div>
-                                 <div>
-                                     <p>4.9 Stars | 24 Ratings</p>
-                                 </div>
-                             </div>
-                             <div class="amazon-ppc-card-ratings-card">
-                                 <div class="amazon-ppc-card-ratings-img">
-                                     <img src="assets/images/Desktop/google-logo.png" alt="">
-                                 </div>
-                                 <div class="amazon-ppc-card-ratings-stars">
-                                     <div class="amazon-ppc-card-star-img">
-                                         <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                     </div>
-                                     <div class="amazon-ppc-card-star-img">
-                                         <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                     </div>
-                                     <div class="amazon-ppc-card-star-img">
-                                         <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                     </div>
-                                     <div class="amazon-ppc-card-star-img">
-                                         <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                     </div>
-                                     <div class="amazon-ppc-card-star-img">
-                                         <img src="assets/images/Desktop/half-star.png" alt="">
-                                     </div>
-                                 </div>
-                                 <div>
-                                     <p>4.7 Stars | 116 Ratings</p>
-                                 </div>
-                             </div>
-                             <div class="amazon-ppc-card-ratings-card">
-                                 <div class="amazon-ppc-card-ratings-img">
-                                     <img src="assets/images/Desktop/Upwork-logo.png" alt="">
-                                 </div>
-                                 <div class="amazon-ppc-card-ratings-stars">
-                                     <div class="amazon-ppc-card-star-img">
-                                         <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                     </div>
-                                     <div class="amazon-ppc-card-star-img">
-                                         <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                     </div>
-                                     <div class="amazon-ppc-card-star-img">
-                                         <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                     </div>
-                                     <div class="amazon-ppc-card-star-img">
-                                         <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                     </div>
-                                     <div class="amazon-ppc-card-star-img">
-                                         <img src="assets/images/Desktop/star-without-bg.png" alt="">
-                                     </div>
-                                 </div>
-                                 <div class="amazon-ppc-card-ratings-description">
-                                     <div>
-                                         <p>100% Job Success</p>
-                                     </div>
-                                     <div>
-                                         <p>|</p>
-                                     </div>
-                                     <div>
-                                         <p>Top Rated</p>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="amazon-ppc-card-bg"></div>
-             </div>
+            <div class="amazon-ppc-card-body">
+                <div class="amazon-ppc-card-container container">
+                    <div class="amazon-ppc-card">
+                        <div class="amazon-ppc-card-header">
+                            <h1>Helping ambitious sellers <span>grow <br> smarter</span>, since 2010.</h1>
+                        </div>
+                        <div class="amazon-ppc-card-stat">
+                            <div>
+                                <h2>81<span class="percentage">%</span></h2>
+                                <p>Average Year Over Year Profit Growth For Our Partners</p>
+                            </div>
+                            <span class="amazon-ppc-card-stat-line"></span>
+                            <div>
+                                <h2>12</h2>
+                                <p>Industry Awards & Recognitions</p>
+                            </div>
+                            <span class="amazon-ppc-card-stat-line"></span>
+                            <div>
+                                <h2>$1.1B+</h2>
+                                <p>Revenue Managed Across Marketplaces</p>
+                            </div>
+                            <span class="amazon-ppc-card-stat-line"></span>
+                            <div>
+                                <h2>98.7<span class="percentage">%</span></h2>
+                                <p>Client Retention Rate</p>
+                            </div>
+                        </div>
+                        <div class="amazon-ppc-card-ratings">
+                            <div class="amazon-ppc-card-ratings-card">
+                                <div class="amazon-ppc-card-ratings-img">
+                                    <img src="assets/images/Desktop/trustpilot-logo.png" alt="">
+                                </div>
+                                <div class="amazon-ppc-card-ratings-stars">
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>4.9 Stars | 141 Ratings</p>
+                                </div>
+                            </div>
+
+                            <div class="amazon-ppc-card-ratings-card">
+                                <div class="amazon-ppc-card-ratings-img">
+                                    <img src="assets/images/Desktop/clutch-logo.png" alt="">
+                                </div>
+                                <div class="amazon-ppc-card-ratings-stars">
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>4.9 Stars | 24 Ratings</p>
+                                </div>
+                            </div>
+                            <div class="amazon-ppc-card-ratings-card">
+                                <div class="amazon-ppc-card-ratings-img">
+                                    <img src="assets/images/Desktop/google-logo.png" alt="">
+                                </div>
+                                <div class="amazon-ppc-card-ratings-stars">
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/half-star.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p>4.7 Stars | 116 Ratings</p>
+                                </div>
+                            </div>
+                            <div class="amazon-ppc-card-ratings-card">
+                                <div class="amazon-ppc-card-ratings-img">
+                                    <img src="assets/images/Desktop/Upwork-logo.png" alt="">
+                                </div>
+                                <div class="amazon-ppc-card-ratings-stars">
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                    <div class="amazon-ppc-card-star-img">
+                                        <img src="assets/images/Desktop/star-without-bg.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="amazon-ppc-card-ratings-description">
+                                    <div>
+                                        <p>100% Job Success</p>
+                                    </div>
+                                    <div>
+                                        <p>|</p>
+                                    </div>
+                                    <div>
+                                        <p>Top Rated</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="amazon-ppc-card-bg"></div>
+            </div>
             <!-- Amazon PCC Section Top End -->
-    
+
             <!-- Amazon PCC Section Middle -->
             <div class="amazon-section">
                 <div class="container common-spacing common-spacing-extra">
                     <div class="amazon-container" id="amazon-ppc">
-                        <div class="amazon-container-header">
-                            <h1>Amazon PPC for Every Phase</h1>
-                            <h3>Custom Strategies to our Growth</h3>
-                        </div>
                         <div class="amazon-ppc">
+                            <div class="amazon-container-header">
+                                <h1>Amazon PPC for Every Phase</h1>
+                                <h3>Custom Strategies to our Growth</h3>
+                            </div>
                             <div class="amazon-content-img">
                                 <div class="amazon-ppc-wrapper">
                                     <div class="fade-top"></div>
@@ -635,8 +637,8 @@
                                 <div class="amazon-ppc-img">
                                     <div class="radial"></div>
                                     <img id="ppcImage0" src="assets/images/Desktop/Launch.webp" alt="">
-                                    <img id="ppcImage1" src="assets/images/Desktop/Optimize.webp" alt="">
-                                    <img id="ppcImage2" src="assets/images/Desktop/dominate.webp" alt="">
+                                    <img src="assets/images/Desktop/Optimize.webp" alt="">
+                                    <img src="assets/images/Desktop/dominate.webp" alt="">
                                 </div>
                             </div>
                             <div class="accordion">
@@ -648,7 +650,7 @@
                                     <div class="accordion-content active">
                                         <div>
                                             <p>Every brand is unique - that’s why we tailor your PPC launch plan to your specific goals, audience, and product positioning. - Listing Optimization - Initial Keyword Research - Auto & Manual Campaign Setup - Maximize Impression - Harvesting & Data Collection</p>
-                                            <img id="ppcImage" src="assets/images/Desktop/Launch.webp" alt="">
+                                            <img  src="assets/images/Desktop/Launch.webp" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -659,7 +661,7 @@
                                     <div class="accordion-content">
                                         <div>
                                             <p>Every Amazon business performs differently — and so should your ad strategy. You need tailored adjustments of - Review & Refine Keywords - Adjust Bids & Budgets - Campaign Segmentation - Brand Awareness - Monitor & Report Performance</p>
-                                            <img id="ppcImage" src="assets/images/Desktop/Optimize.webp" alt="">
+                                            <img  src="assets/images/Desktop/Optimize.webp" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -670,13 +672,86 @@
                                     <div class="accordion-content">
                                         <div>
                                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, dolorum porro! Libero sint, assumenda fuga, voluptatem tempore laborum recusandae distinctio quia voluptate aliquid placeat soluta! Nihil exercitationem id cum</p>
-                                            <img id="ppcImage" src="assets/images/Desktop/dominate.webp" alt="">
+                                            <img  src="assets/images/Desktop/dominate.webp" alt="">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="amazon-keyword common-spacing-extra">
+                        <div class="amazon-keyword2 common-spacing-extra">
+                            <header>
+                                <h1>Amazon Keyword Strategy</h1>
+                                <p>Our keyword strategy combines Broad, Phrase, and Exact match types to maximize visibility and drive conversions. This approach helps us discover valuableterms, improve ad targeting, and convert more high-intent traffic with better ROI. A complete keyword mix designed to grow your Amazon sales efficiently.</p>
+                            </header>
+                            <div class="amazon-content-img">
+                                <div class="amazon-keyword2-img">
+                                    <!-- <div class="radial"></div> -->
+                                    <img id="keyImage0" src="assets/images/Desktop/Broad.webp" alt="">
+                                    <img src="assets/images/Desktop/Phrase.png" alt="">
+                                    <img src="assets/images/Desktop/Exact.webp" alt="">
+                                </div>
+                                <div class="amazon-keyword2-wrapper">
+                                    <div class="fade-top"></div>
+                                    <div class="amazon-keyword2-content">
+                                        <div class="amazon-keyword2-content-text" data-image="Broad.webp">
+                                            <h1>Broad</h1>
+                                            <p>Use Broad match to cast a wide net and uncover high-potential search terms across your niche. Capture wide traffic and discover new keyword opportunities with Broad match targeting.
+                                                View Details.</p>
+                                        </div>
+                                        <div class="amazon-keyword2-content-text" data-image="Phrase.png">
+                                            <h1>Phrase</h1>
+                                            <p>Phrase match helps to connect with shoppers using relevant keyword sequences
+                                                    for better performance. Great for intent-driven traffic and increasing ad
+                                                    relevance.</p>
+                                        </div>
+                                        <div class="amazon-keyword2-content-text" data-image="Exact.webp">
+                                            <h1>Exact</h1>
+                                            <p>Get the highest precision in your ads with Exact match keyword targeting. Maximize efficiency with Exact match as it get fewer clicks, more qualified buyers.</p>
+                                        </div>
+                                    </div>
+                                    <div class="fade-bottom"></div>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <div class="accordion-header active">
+                                        <h1>Broad</h1>
+                                    </div>
+                                    <div class="accordion-content active">
+                                        <div>
+                                            <p>Use Broad match to cast a wide net and uncover high-potential search terms across your niche. Capture wide traffic and discover new keyword opportunities with Broad match targeting.
+                                                View Details.</p>
+                                            <img  src="assets/images/Desktop/Broad.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <h1>Phrase</h1>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div>
+                                            <p>Phrase match helps to connect with shoppers using relevant keyword sequences
+                                                    for better performance. Great for intent-driven traffic and increasing ad
+                                                    relevance.</p>
+                                            <img  src="assets/images/Desktop/Phrase.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <div class="accordion-header">
+                                        <h1>Exact</h1>
+                                    </div>
+                                    <div class="accordion-content">
+                                        <div>
+                                            <p>Get the highest precision in your ads with Exact match keyword targeting. Maximize efficiency with Exact match as it get fewer clicks, more qualified buyers.</p>
+                                            <img  src="assets/images/Desktop/Exact.webp" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="amazon-keyword common-spacing-extra">
                             <header>
                                 <h1>Amazon Keyword Strategy</h1>
                                 <p>Our keyword strategy combines Broad, Phrase, and Exact match types to maximize visibility and drive conversions. This approach helps us discover valuableterms, improve ad targeting, and convert more high-intent traffic with better ROI. A complete keyword mix designed to grow your Amazon sales efficiently.</p>
@@ -728,12 +803,12 @@
                                 </div>
                             </div>
         
-                        </div>
+                        </div> -->
                         <div class="amazon-advertising common-spacing-extra">
                             <header>
                                 <h3>All-in-One Amazon Advertising</h3>
                                 <h1>Amazon Ad Format To Grow <br>Your Brand</h1>
-                                <p>At eComclips, we tailor your Amazon advertising strategy using a full suite of ad formats and campaign types designed to scale your brand profitably. Whether you're launching a new product, defending your brand, or capturing market share from competitors our data-driven approach ensures every dollar spent delivers results.</p>
+                                <p>At Ecomclips, we tailor your Amazon advertising strategy using a full suite of ad formats and campaign types designed to scale your brand profitably. Whether you're launching a new product, defending your brand, or capturing market share from competitors our data-driven approach ensures every dollar spent delivers results.</p>
                             </header>
                             <div class="advertising-cards">
                                 <div class="advertising-card">
@@ -943,6 +1018,7 @@
 
     <script src="/assets/js/scroll.js"></script>
     <script src="/assets/js/main.js"></script>
-    
+
 </body>
+
 </html>
