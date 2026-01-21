@@ -25,8 +25,10 @@
         <section class="hero-container">
             <div class="hero-body container">
                 <div class="hero-1">
-                    <button class="launch-dominate-btn">From Launch to Dominate</button>
-                    <h1 class="scalable-amazon">Scalable Amazon Advertising <br> <span>Management</span></h1>
+                    <div>
+                        <button class="launch-dominate-btn">From Launch to Dominate</button>
+                        <h1 class="scalable-amazon">Scalable Amazon Advertising <br> <span>Management</span></h1>
+                    </div>
                     <p>
                         At Ecomclips, our Amazon PPC strategies are built for every stage from
                         launch to market domination. No matter where you are in your journey, we
@@ -65,7 +67,7 @@
                 <div class="item-list-content">
                     <div class="revenue-icon">
                         <img src="/assets/images/Desktop/brand-icon.png" alt="">
-                        <h1>335M+</h1>
+                        <h1>1000M+</h1>
                     </div>
                     <p>BRANDS WE MANAGED</p>
                 </div>
@@ -650,7 +652,7 @@
                                     <div class="accordion-content active">
                                         <div>
                                             <p>Every brand is unique - that’s why we tailor your PPC launch plan to your specific goals, audience, and product positioning. - Listing Optimization - Initial Keyword Research - Auto & Manual Campaign Setup - Maximize Impression - Harvesting & Data Collection</p>
-                                            <img  src="assets/images/Desktop/Launch.webp" alt="">
+                                            <img src="assets/images/Desktop/Launch.webp" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -661,7 +663,7 @@
                                     <div class="accordion-content">
                                         <div>
                                             <p>Every Amazon business performs differently — and so should your ad strategy. You need tailored adjustments of - Review & Refine Keywords - Adjust Bids & Budgets - Campaign Segmentation - Brand Awareness - Monitor & Report Performance</p>
-                                            <img  src="assets/images/Desktop/Optimize.webp" alt="">
+                                            <img src="assets/images/Desktop/Optimize.webp" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -672,7 +674,7 @@
                                     <div class="accordion-content">
                                         <div>
                                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, dolorum porro! Libero sint, assumenda fuga, voluptatem tempore laborum recusandae distinctio quia voluptate aliquid placeat soluta! Nihil exercitationem id cum</p>
-                                            <img  src="assets/images/Desktop/dominate.webp" alt="">
+                                            <img src="assets/images/Desktop/dominate.webp" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -701,8 +703,8 @@
                                         <div class="amazon-keyword2-content-text" data-image="Phrase.png">
                                             <h1>Phrase</h1>
                                             <p>Phrase match helps to connect with shoppers using relevant keyword sequences
-                                                    for better performance. Great for intent-driven traffic and increasing ad
-                                                    relevance.</p>
+                                                for better performance. Great for intent-driven traffic and increasing ad
+                                                relevance.</p>
                                         </div>
                                         <div class="amazon-keyword2-content-text" data-image="Exact.webp">
                                             <h1>Exact</h1>
@@ -721,7 +723,7 @@
                                         <div>
                                             <p>Use Broad match to cast a wide net and uncover high-potential search terms across your niche. Capture wide traffic and discover new keyword opportunities with Broad match targeting.
                                                 View Details.</p>
-                                            <img  src="assets/images/Desktop/Broad.webp" alt="">
+                                            <img src="assets/images/Desktop/Broad.webp" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -732,9 +734,9 @@
                                     <div class="accordion-content">
                                         <div>
                                             <p>Phrase match helps to connect with shoppers using relevant keyword sequences
-                                                    for better performance. Great for intent-driven traffic and increasing ad
-                                                    relevance.</p>
-                                            <img  src="assets/images/Desktop/Phrase.png" alt="">
+                                                for better performance. Great for intent-driven traffic and increasing ad
+                                                relevance.</p>
+                                            <img src="assets/images/Desktop/Phrase.png" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -745,7 +747,7 @@
                                     <div class="accordion-content">
                                         <div>
                                             <p>Get the highest precision in your ads with Exact match keyword targeting. Maximize efficiency with Exact match as it get fewer clicks, more qualified buyers.</p>
-                                            <img  src="assets/images/Desktop/Exact.webp" alt="">
+                                            <img src="assets/images/Desktop/Exact.webp" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -1015,7 +1017,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script> 
 
+    <script src="/assets/js/smooth.js"></script>
     <script src="/assets/js/scroll.js"></script>
     <script src="/assets/js/main.js"></script>
 
