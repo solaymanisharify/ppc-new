@@ -329,7 +329,7 @@
                                         </div>
                                     </div>
                                     <div class="growth-desc">
-                                        <p>An enhanced Amazon listing boosts discoverability and sales 4x, optimized with powerful copy, keyword integration, and backend enhancements.</p>
+                                        <p>Full-funnel Amazon optimization - including listing CRO, keyword architecture, and backend SEO — resulted in 254% sales growth and 68% ACOS reduction.</p>
                                     </div>
                                     <div class="our-impact-btn">
                                         <button>Out Impact <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
@@ -409,7 +409,7 @@
                                         </div>
                                     </div>
                                     <div class="growth-desc">
-                                        <p>An enhanced Amazon listing boosts discoverability and sales 4x, optimized with powerful copy, keyword integration, and backend enhancements.</p>
+                                        <p>What started as basic optimization turned into a full-scale growth engine - delivering 150% revenue growth, 337% sales increase, and 73% lower ACOS in 18 months.</p>
                                     </div>
                                     <div class="our-impact-btn">
                                         <button>Out Impact <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
@@ -627,11 +627,13 @@
                                         </div>
                                         <div class="amazon-ppc-content-text" data-image="Optimize.webp">
                                             <h1>Optimize</h1>
-                                            <p>Every Amazon business performs differently — and so should your ad strategy. You need tailored adjustments of - Review & Refine Keywords - Adjust Bids & Budgets - Campaign Segmentation - Brand Awareness - Monitor & Report Performance</p>
+                                            <p>We don’t “set and forget.” We engineer performance - optimizing keywords, bids, budgets, and campaign architecture daily to turn ad spend into a predictable growth engine.
+                                                <br/><br/>
+                                            </p>
                                         </div>
                                         <div class="amazon-ppc-content-text" data-image="dominate.webp">
                                             <h1>Dominate</h1>
-                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, dolorum porro! Libero sint, assumenda fuga, voluptatem tempore laborum recusandae distinctio quia voluptate aliquid placeat soluta! Nihil exercitationem id cum</p>
+                                            <p>Winning on Amazon isn’t about spending more—it’s about spending smarter. We help brands take control of their category on Amazon through precision-built PPC strategies. From keyword ownership to placement dominance, our approach is designed to maximize visibility, sales velocity, and long-term profitability.</p>
                                         </div>
                                     </div>
                                     <div class="fade-bottom"></div>
