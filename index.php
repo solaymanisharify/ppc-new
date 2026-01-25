@@ -83,7 +83,7 @@
         <!-- Reveneue section end -->
 
         <!-- Card Stack Section horizontal scroll -->
-        <section class="container common-spacing">
+        <section class="container common-spacing-top">
             <div class="optimization-container">
                 <h1>Reignite Your Bussiness With Our</h1>
                 <div class="panel__stack">
@@ -628,13 +628,15 @@
                                         <div class="amazon-ppc-content-text" data-image="Optimize.webp">
                                             <h1>Optimize</h1>
                                             <p>We don’t “set and forget.” We engineer performance - optimizing keywords, bids, budgets, and campaign architecture daily to turn ad spend into a predictable growth engine.
-                                                <br/><br/>
+                                                <br/>
                                             </p>
                                         </div>
                                         <div class="amazon-ppc-content-text" data-image="dominate.webp">
                                             <h1>Dominate</h1>
                                             <p>Winning on Amazon isn’t about spending more—it’s about spending smarter. We help brands take control of their category on Amazon through precision-built PPC strategies. From keyword ownership to placement dominance, our approach is designed to maximize visibility, sales velocity, and long-term profitability.</p>
                                         </div>
+
+                                        <div class="amazon-ppc-content-text"></div>
                                     </div>
                                     <div class="fade-bottom"></div>
                                 </div>
@@ -645,7 +647,7 @@
                                     <img src="assets/images/Desktop/dominate.webp" alt="">
                                 </div>
                             </div>
-                            <div class="accordion">
+                            <div class="accordion amazon-ppc-items">
                                 <div class="radial2"></div>
                                 <div class="accordion-item">
                                     <div class="accordion-header active">
@@ -670,7 +672,7 @@
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <div class="accordion-header">
+                                    <div class="amazon-ppc-item accordion-header">
                                         <h1>Dominate</h1>
                                     </div>
                                     <div class="accordion-content">
@@ -712,11 +714,12 @@
                                             <h1>Exact</h1>
                                             <p>Get the highest precision in your ads with Exact match keyword targeting. Maximize efficiency with Exact match as it get fewer clicks, more qualified buyers.</p>
                                         </div>
+                                        <div class="amazon-keyword2-content-text"></div>
                                     </div>
                                     <div class="fade-bottom"></div>
                                 </div>
                             </div>
-                            <div class="accordion">
+                            <div class="accordion amazon-keyword2-items">
                                 <div class="accordion-item">
                                     <div class="accordion-header active">
                                         <h1>Broad</h1>
@@ -887,7 +890,7 @@
             <div class="ppc-question-header">
                 <h1>Frequently Asked Questions</h1>
             </div>
-            <div class="accordion">
+            <div class="accordion faq-items">
                 <div class="accordion-item">
                     <div class="accordion-header">
                         <h1>How long does it take for PPC to work?</h1>

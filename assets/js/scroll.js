@@ -50,7 +50,7 @@ window.addEventListener("load", () => {
         borderRadius: "10px",
         duration: 0.5,
       },
-      ">-0.7" // starts halfway through the slide
+      ">-0.7", // starts halfway through the slide
     );
   });
 
@@ -106,7 +106,7 @@ window.addEventListener("load", () => {
           invalidateOnRefresh: true,
         },
       },
-      "<"
+      "<",
     );
   });
 
@@ -116,11 +116,12 @@ window.addEventListener("load", () => {
   // Sync Image Change with Block
   // ------------------------------
 
-  function syncImageChangeAnimation({ sectionName, blockSelector, imageSelector  }) {
+  function syncImageChangeAnimation({ sectionName, blockSelector, imageSelector, spacial= false }) {
     const blocks = gsap.utils.toArray(blockSelector);
     const images = gsap.utils.toArray(imageSelector);
     const blocksContainer = document.querySelector(`${sectionName} .amazon-content-img`);
 
+    // Pin blocks
     ScrollTrigger.create({
       trigger: sectionName,
       start: "top top",
@@ -132,55 +133,60 @@ window.addEventListener("load", () => {
       // markers: true,
     });
 
+    // change image with block
     blocks.forEach((block, index) => {
-    ScrollTrigger.create({
-      trigger: block,
-      start: "top center",
-      end: "bottom center",
-      scrub: true,
-      // markers: true,
-
-      onEnter: () => activate(index),
-      onEnterBack: () => activate(index),
-      invalidateOnRefresh: true,
-    });
-  });
-
-  blocks.forEach((block, index) => {
-    gsap.to(block, {
-      y: () => `-${blocks.length * 100}%`,
-      ease: "none",
-      scrollTrigger: {
-        trigger: blocksContainer,
-        start: "top 20%",
-        endTrigger: blocks[blocks.length - 1],
-        end: "bottom 65%",
-        scrub: 3,
+      if (index === blocks.length - 1) return;
+      ScrollTrigger.create({
+        trigger: block,
+        start: "top center",
+        end: "bottom center",
+        scrub: true,
         // markers: true,
+
+        onEnter: () => activate(index),
+        onEnterBack: () => activate(index),
         invalidateOnRefresh: true,
-      },
-    });
-  });
-
-  function activate(index) {
-    // Highlight blocks
-    blocks.forEach((b, i) => {
-      gsap.to(b, {
-        opacity: i === index ? 1 : 0.3,
-        duration: 0.3,
       });
     });
 
-    // Crossfade images
-    images.forEach((img, i) => {
-      gsap.to(img, {
-        opacity: i === index ? 1 : 0,
-        duration: 0.5,
-        ease: "power1.inOut",
-        overwrite: "auto",
+    let mayHight = spacial ? 90 : 105;
+
+    // with scroll
+    blocks.forEach((block, index) => {
+      gsap.to(block, {
+        y: () => `-${blocks.length * mayHight}% + ${index * 100}%`,
+        ease: "none",
+        scrollTrigger: {
+          trigger: blocksContainer,
+          start: "top 20%",
+          endTrigger: blocks[blocks.length - 1],
+          end: "bottom 65%",
+          scrub: 3,
+          // markers: true,
+          invalidateOnRefresh: true,
+        },
       });
     });
-  }
+
+    function activate(index) {
+      // Highlight blocks
+      blocks.forEach((b, i) => {
+        gsap.to(b, {
+          opacity: i === index ? 1 : 0.3,
+          duration: 0.3,
+        });
+      });
+
+      // Crossfade images
+      images.forEach((img, i) => {
+        gsap.to(img, {
+          opacity: i === index ? 1 : 0,
+          duration: 0.5,
+          ease: "power1.inOut",
+          overwrite: "auto",
+        });
+      });
+    }
   }
 
   syncImageChangeAnimation({
@@ -192,13 +198,12 @@ window.addEventListener("load", () => {
     sectionName: ".amazon-keyword2",
     blockSelector: ".amazon-keyword2-content-text",
     imageSelector: ".amazon-keyword2-img img",
+    spacial: true
   });
-
-
 
   // sync image change with block end
 
-// ------------------------------
+  // ------------------------------
   // Merge timelines
   // ------------------------------
   mainTimeline.add(horizontalTimeline);
@@ -210,11 +215,10 @@ window.addEventListener("load", () => {
     // setWrapperHeight();
     ScrollTrigger.refresh();
   }
-  
+
   // On page load
   window.addEventListener("load", updateLayout);
-  
+
   // On window resize
   window.addEventListener("resize", updateLayout);
 });
-
