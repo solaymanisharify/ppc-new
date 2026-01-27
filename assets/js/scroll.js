@@ -68,17 +68,12 @@ window.addEventListener("load", () => {
     return -(horizontalCardContainer.scrollWidth - window.innerWidth + extraWidth);
   }
 
-  // function setWrapperHeight() {
-  //   stickyWrapper.style.height = `${window.innerHeight + getScrollAmount()}px`;
-  // }
-  // setWrapperHeight();
-
   const horizontalTimeline = gsap.timeline({
     scrollTrigger: {
       trigger: ".sticky",
       start: "top 4%",
-      end: () => `+=${horizontalCardContainer.scrollWidth}`,
-      scrub: 1,
+      end: () => `+=${horizontalCardContainer.scrollWidth / 2}`, // here added /2 to make it scroll faster
+      scrub: 0.1,
       pin: true,
       invalidateOnRefresh: true,
       anticipatePin: 1,
@@ -95,8 +90,6 @@ window.addEventListener("load", () => {
     gsap.from(
       horizontalCard,
       {
-        // opacity: 0.6,
-        // scale: 0.95,
         scrollTrigger: {
           trigger: horizontalCard,
           containerAnimation: horizontalTimeline,
@@ -212,7 +205,6 @@ window.addEventListener("load", () => {
   // Handle window resize
   // ------------------------------
   function updateLayout() {
-    // setWrapperHeight();
     ScrollTrigger.refresh();
   }
 

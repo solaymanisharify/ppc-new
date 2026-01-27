@@ -12,10 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script> -->
 </head>
 
 <body>
@@ -691,7 +687,6 @@
                             </header>
                             <div class="amazon-content-img">
                                 <div class="amazon-keyword2-img">
-                                    <!-- <div class="radial"></div> -->
                                     <img id="keyImage0" src="assets/images/Desktop/Broad.webp" alt="">
                                     <img src="assets/images/Desktop/Phrase.png" alt="">
                                     <img src="assets/images/Desktop/Exact.webp" alt="">
@@ -758,6 +753,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Timeline Part if needed then uncomment below div -->
                         <!-- <div class="amazon-keyword common-spacing-extra">
                             <header>
                                 <h1>Amazon Keyword Strategy</h1>
@@ -811,6 +807,8 @@
                             </div>
         
                         </div> -->
+
+                        <!-- Alternative of timeline part below div -->
                         <div class="amazon-advertising common-spacing-extra">
                             <header>
                                 <h3>All-in-One Amazon Advertising</h3>
@@ -1027,7 +1025,6 @@
     <script src="/assets/js/smooth.js"></script>
     <script src="/assets/js/scroll.js"></script>
     <script src="/assets/js/main.js"></script>
-
 </body>
 
 </html>
