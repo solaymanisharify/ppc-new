@@ -66,6 +66,10 @@ img {
   padding-top: var(--common-spacing);
 }
 
+.common-spacing-bottom {
+  padding-bottom: calc(var(--common-spacing)/2.5);
+}
+
 .common-spacing-extra {
   padding-top: calc(var(--common-spacing) + 4rem);
 }
@@ -274,6 +278,10 @@ main {
 .animation-btn:hover .btn-text {
   color: #fff;
 }
+.animation-btn:hover i {
+  color: #fff;
+  z-index: 2;
+}
 
 .animation-btn:hover::before {
   transform: translateY(-50%) scale(20);
@@ -371,6 +379,44 @@ main {
   background-repeat: no-repeat;
 }
 
+.panel__card--one{
+  background: url("../images/Desktop/new/panel_card_bg1.webp");
+  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.panel__card--two{
+  background: url("../images/Desktop/new/panel_card_bg2.webp");
+  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.panel__card--three{
+  background: url("../images/Desktop/new/panel_card_bg3.webp");
+  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.panel__card--four{
+  background: url("../images/Desktop/new/panel_card_bg4.webp");
+  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.panel__card--five{
+  background: url("../images/Desktop/new/panel_card_bg5.webp");
+  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.panel__card--six{
+  background: url("../images/Desktop/new/panel_card_bg6.webp");
+  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
 .panel__stack .panel__card {
   position: absolute;
   top: 0;
@@ -378,21 +424,21 @@ main {
   width: 100%;
   height: 95%;
   border-radius: 30px;
-  padding: 10% 8% 8%;
+  padding: 15% 5% 6%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: 7%;
   will-change: transform;
 }
 
 .listing-optimization-desc {
   width: 100%;
   display: flex;
-  height: 50%;
+  height: max-content;
   flex-direction: column;
   gap: 2rem;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .listing-title-div {
@@ -407,9 +453,9 @@ main {
 
 .listing-optimization-desc h2 {
   font-family: "Recoleta", serif;
-  font-size: clamp(16px, 3.5vw, 44px);
+  font-size: clamp(22px, 3.4vw, 44px);
   font-weight: 300;
-  color: white;
+  color: #000000;
   opacity: 0.9;
 }
 
@@ -421,9 +467,9 @@ main {
 
 .listing-optimization-desc h3 {
   font-family: "Recoleta", serif;
-  font-size: clamp(16px, 3.5vw, 44px);
+  font-size: clamp(22px, 3.4vw, 44px);
   font-weight: 700;
-  color: white;
+  color: #000000;
   text-transform: capitalize;
 }
 
@@ -431,34 +477,118 @@ main {
   font-family: Poppins, sans-serif;
   font-size: clamp(0.875rem, 2vw, 1.75rem);
   font-weight: 300;
-  color: white;
+  color: #000000;
+}
+
+.lets-talk-btn-desktop{
+  display: none;
+}
+
+.lets-talk-btn-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .lets-talk-btn {
-  background: #ffdc00;
+  /* background: #ffdc00; */
   color: #000;
-  font-size: 14px;
+  width: 100%;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
   font-family: "inter";
+  font-weight: 800;
   border: none;
-  padding: 6px 10px 6px 15px;
-  border: 2px solid #ffdc00;
+  padding: 5% 7.3%;
+  /* border: 2px solid #ffdc00; */
   border-radius: 32px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 10px;
+  border-radius: 20px;
+}
+
+.panel__card--one .lets-talk-btn{
+  background: #A1D744;
+  color: #467E1A !important;
+}
+.panel__card--two .lets-talk-btn{
+  background: #FF8458;
+  color: #862328 !important;
+}
+.panel__card--three .lets-talk-btn{
+  background: #FACC15;
+  color: #865123 !important;
+}
+.panel__card--four .lets-talk-btn{
+  background: #76EBFB;
+  color: #236586 !important;
+}
+.panel__card--five .lets-talk-btn{
+  background: #57E6D8;
+  color: #1A7E53 !important;
+}
+.panel__card--six .lets-talk-btn{
+  background: #9AABFF;
+  color: #233386 !important;
 }
 
 .panel__card-image {
   width: 100%;
   height: 50%;
+  padding: 3%;
+  border-radius: 2rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
+.panel__card--one .panel__card-image{
+  /* background: linear-gradient(128.13deg, #8FC235 0%, #C8EB8A 50.48%, #8FC235 100%); */
+  background: url("../images/Desktop/new/panel_card_img_bg1.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.panel__card--two .panel__card-image{
+  /* background: linear-gradient(127.98deg, #EB6040 1.28%, #F0A286 50.64%, #E26636 100%); */
+  background: url("../images/Desktop/new/panel_card_img_bg2.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.panel__card--three .panel__card-image{
+  /* background: linear-gradient(128.35deg, #ECB910 0%, #F9E766 48.38%, #ECB910 97.69%); */
+  background: url("../images/Desktop/new/panel_card_img_bg3.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.panel__card--four .panel__card-image{
+  /* background: linear-gradient(127.73deg, #25BFD5 0.62%, #98D4DD 50.31%, rgba(37, 191, 213, 0.858824) 100%); */
+  background: url("../images/Desktop/new/panel_card_img_bg4.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.panel__card--five .panel__card-image{
+  /* background: linear-gradient(128.13deg, #19C7AB 0%, #7DEEDD 50%, #19C7AB 100%); */
+  background: url("../images/Desktop/new/panel_card_img_bg5.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.panel__card--six .panel__card-image{
+  /* background: linear-gradient(127.94deg, #6982DE 3.52%, #A5B9E6 50.05%, #6982DE 98.57%); */
+  background: url("../images/Desktop/new/panel_card_img_bg6.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .panel__card-image img {
+  height: 100%;
   object-fit: contain;
 }
 
@@ -1403,7 +1533,7 @@ main {
   content: "";
   position: absolute;
   top: 0;
-  height: calc(4rem + 50%);
+  height: calc(4rem + 28%);
   width: 100%;
   z-index: -1;
   background: #ffffff;
@@ -1440,11 +1570,13 @@ main {
 }
 
 .amazon-ppc-strategy-img {
+  width: 100%;
+  height: 100%;
 }
 
 .amazon-ppc-strategy-img .img-wrapper {
-  width: 95%;
-  margin: 0 auto;
+  width: 100%;
+  /* margin: 0 auto; */
 }
 
 .ppc-question-header h1 {
@@ -1537,7 +1669,20 @@ main {
   border-radius: 40px;
 }
 
-@media (min-width: 450px) {
+@media (min-width: 480px) {
+
+  .panel__stack .panel__card {
+    padding: 10% 5% 6%;
+  }
+
+  .lets-talk-btn{
+    width: 50%;
+    padding: 3.1% 4.3%;
+  }
+
+  .amazon-ppc-strategy-container::before {
+    height: calc(4rem + 32%);
+  }
   
 }
 
@@ -1621,6 +1766,173 @@ main {
 }
 
 @media (min-width: 680px) {
+
+  .amazon-ppc-strategy-container::before {
+    height: calc(4rem + 36%);
+  }
+
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+
+  .hero-body {
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .hero-1 {
+    max-width: 40%;
+    gap: 24px;
+  }
+
+  .hero-2 {
+    max-width: 60%;
+  }
+
+  .btn-arrow {
+    width: 38px;
+    height: 38px;
+  }
+
+  .img-cover {
+    display: block;
+  }
+
+  .img-cover-mobile {
+    display: none;
+  }
+
+  .revenue-icon img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .panel__stack {
+    height: 88%;
+  }
+
+  .panel__stack .panel__card {
+    flex-direction: row;
+    padding: 6% 4% 4%;
+    justify-content: space-between;
+  }
+
+  .listing-optimization-desc {
+    width: 45%;
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  .panel__card-image {
+    width: 50%;
+    height: 100%;
+    overflow: unset;
+  }
+
+  .lets-talk-btn-desktop{
+    display: block;
+  }
+
+  .lets-talk-btn-mobile{
+    display: none;
+  }
+  /* .panel__card-image img {
+    width: 100%;
+  } */
+
+  .case-study-titles {
+    padding: 0px 0 1% 0;
+  }
+
+  .case-study-container {
+    padding: 40px;
+  }
+
+  .case-study-header {
+    margin-bottom: 1%;
+  }
+
+  .case-study-header div img {
+    height: 50px;
+  }
+
+  .case-study-growth-image-container {
+    flex-direction: row;
+  }
+
+  .case-study-growth-left-side {
+    width: 40%;
+  }
+
+  .case-study-container-img-body {
+    width: 55%;
+  }
+
+  .case-study-container-img {
+    position: absolute;
+    bottom: -15%;
+    left: 3.5%;
+    width: 95%;
+  }
+
+  .case-study-container-img .case-study-img {
+    display: block;
+    height: auto;
+  }
+
+  .fake-review {
+    width: 95%;
+  }
+
+  .fake-review-img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .review-card-rating {
+    gap: 18px;
+    flex-direction: row;
+    margin-top: 2px;
+  }
+
+  .our-impact-btn {
+    margin-top: 1%;
+  }
+
+  .amazon-ppc-card {
+    height: 630px;
+  }
+
+  .amazon-ppc-card-header {
+    padding: 30px 0 0 0;
+  }
+
+  .amazon-ppc-card-stat {
+    flex-direction: row;
+    padding: 40px 35px;
+    gap: 0;
+  }
+
+  .amazon-ppc-card-stat div {
+    width: 200px;
+  }
+
+  .amazon-ppc-card-stat-line {
+    height: 120px;
+    width: 2px;
+  }
+
+  .amazon-ppc-card-ratings {
+    flex-direction: row;
+    gap: 10px;
+    padding: 0px 90px;
+  }
+
+  .amazon-ppc-card-ratings-img {
+    width: 80px;
+    height: auto;
+  }
 
   .amazon-content-img {
     display: flex;
@@ -1728,171 +2040,22 @@ main {
   .amazon-keyword2 .accordion {
     display: none;
   }
-}
 
-/* Tablets */
-@media (min-width: 768px) {
-
-  .hero-body {
-    flex-direction: row;
-    gap: 4rem;
-  }
-
-  .hero-1 {
-    max-width: 40%;
-    gap: 24px;
-  }
-
-  .hero-2 {
-    max-width: 60%;
-  }
-
-  .btn-arrow {
-    width: 38px;
-    height: 38px;
-  }
-
-  .img-cover {
-    display: block;
-  }
-
-  .img-cover-mobile {
-    display: none;
-  }
-
-  .revenue-icon img {
-    height: 30px;
-    width: 30px;
-  }
-
-  .panel__stack {
-    height: 88%;
-  }
-
-  .panel__stack .panel__card {
-    flex-direction: row;
-    padding: 6% 4% 4%;
-    justify-content: space-between;
-  }
-
-  .listing-optimization-desc {
-    width: 45%;
-    height: 100%;
-    justify-content: space-between;
-  }
-
-  .panel__card-image {
-    width: 45%;
-    height: auto;
-    overflow: unset;
-  }
-
-  .panel__card-image img {
-    width: 100%;
-  }
-
-  .case-study-titles {
-    padding: 0px 0 1% 0;
-  }
-
-  .case-study-container {
-    padding: 40px;
-  }
-
-  .case-study-header {
-    margin-bottom: 1%;
-  }
-
-  .case-study-header div img {
-    height: 50px;
-  }
-
-  .case-study-growth-image-container {
-    flex-direction: row;
-  }
-
-  .case-study-growth-left-side {
-    width: 40%;
-  }
-
-  .case-study-container-img-body {
-    width: 55%;
-  }
-
-  .case-study-container-img {
-    position: absolute;
-    bottom: -15%;
-    left: 3.5%;
-    width: 95%;
-  }
-
-  .case-study-container-img .case-study-img {
-    display: block;
-    height: auto;
-  }
-
-  .fake-review {
-    width: 95%;
-  }
-
-  .fake-review-img {
-    height: 60px;
-    width: 60px;
-  }
-
-  .review-card-rating {
-    gap: 18px;
-    flex-direction: row;
-    margin-top: 2px;
-  }
-
-  .our-impact-btn {
-    margin-top: 1%;
-  }
-
-  .amazon-ppc-card {
-    height: 630px;
-  }
-
-  .amazon-ppc-card-header {
-    padding: 30px 0 0 0;
-  }
-
-  .amazon-ppc-card-stat {
-    flex-direction: row;
-    padding: 40px 35px;
-    gap: 0;
-  }
-
-  .amazon-ppc-card-stat div {
-    width: 200px;
-  }
-
-  .amazon-ppc-card-stat-line {
-    height: 120px;
-    width: 2px;
-  }
-
-  .amazon-ppc-card-ratings {
-    flex-direction: row;
-    gap: 10px;
-    padding: 0px 90px;
-  }
-
-  .amazon-ppc-card-ratings-img {
-    width: 80px;
-    height: auto;
-  }
-
-  .amazon-content-img {
+  .amazon-ppc-strategy-container::before {
+    height: calc(4rem + 38%);
   }
 }
 
 /* Small laptops */
 @media (min-width: 1024px) {
+  
   .revenue-icon img {
     width: 40px;
     height: 40px;
+  }
+
+  .amazon-ppc-strategy-container::before {
+    height: calc(4rem + 40%);
   }
 }
 
@@ -1906,6 +2069,9 @@ main {
 
 /* Large / wide screens */
 @media (min-width: 1536px) {
+  .common-spacing-bottom {
+    padding-bottom: var(--common-spacing/1.8);
+  }
   .revenue-icon img {
     width: 60px;
     height: 60px;

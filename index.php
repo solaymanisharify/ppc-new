@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -63,7 +64,7 @@
                 <div class="item-list-content">
                     <div class="revenue-icon">
                         <img src="/assets/images/Desktop/brand-icon.png" alt="">
-                        <h1>1000M+</h1>
+                        <h1>1000+</h1>
                     </div>
                     <p>BRANDS WE MANAGED</p>
                 </div>
@@ -79,124 +80,190 @@
         <!-- Reveneue section end -->
 
         <!-- Card Stack Section horizontal scroll -->
-        <section class="container common-spacing-top">
+        <section class="container common-spacing-top common-spacing-bottom">
             <div class="optimization-container">
-                <h1>Reignite Your Bussiness With Our</h1>
+                <h1>Reignite Your Business With Our</h1>
                 <div class="panel__stack">
                     <div class="panel__card panel__card--one bg-blue ">
                         <div class="listing-optimization-desc">
                             <div class="listing-title-div">
-                                <img src="assets/images/Desktop/star.png" alt="">
+                                <img src="assets/images/Desktop/new/star.svg" alt="">
                                 <h2>Listing Optimization</h2>
                             </div>
                             <div class="listing-optimization-desc-content">
                                 <h3>An Enhanced Amazon <br> Listing Boosts Discoverability And Sales 4x</h3>
                                 <p>Optimized with powerful copy, keyword<br class="mobile-only-br"> integration, and backend enhancements.</p>
                             </div>
-                            <div>
+                            <div class="lets-talk-btn-desktop">
                                 <button class="lets-talk-btn animation-btn">
-                                    <span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span>
+                                    <span class="btn-text">Let's Talk</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <!-- <span class="btn-arrow">→</span> -->
                                 </button>
                             </div>
 
                         </div>
                         <div class="listing-optimization-img panel__card-image">
-                            <img src="assets/images/Desktop/card1.png" alt="">
+                            <img src="assets/images/Desktop/new/card1.webp" alt="">
+                        </div>
+
+                        <div class="lets-talk-btn-mobile">
+                            <button class="lets-talk-btn animation-btn">
+                                <span class="btn-text">Let's Talk</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <!-- <span class="btn-arrow">→</span> -->
+                            </button>
                         </div>
                     </div>
 
                     <div class="panel__card panel__card--two bg-blue">
                         <div class="listing-optimization-desc">
                             <div class="listing-title-div">
-                                <img src="assets/images/Desktop/star.png" alt="">
+                                <img src="assets/images/Desktop/new/star.svg" alt="">
                                 <h2>Campaign Optimization</h2>
                             </div>
                             <div class="listing-optimization-desc-content">
                                 <h3>We monitor and <br>Fine-tune bidding strategies</h3>
                                 <p>Match types, and placements to optimize<br class="mobile-only-br"> every dollar spent on Amazon ads.</p>
                             </div>
-                            <div>
-                                <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
+                            <div class="lets-talk-btn-desktop">
+                                <button class="lets-talk-btn animation-btn">
+                                    <span class="btn-text">Let's Talk</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <!-- <span class="btn-arrow">→</span> -->
+                                </button>
                             </div>
                         </div>
                         <div class="campaign-optimization-img panel__card-image">
-                            <img src="assets/images/Desktop/Campaign-optimization.png" alt="">
+                            <img src="assets/images/Desktop/new/Campaign-optimization.webp" alt="">
+                        </div>
+                        <div class="lets-talk-btn-mobile">
+                            <button class="lets-talk-btn animation-btn">
+                                <span class="btn-text">Let's Talk</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <!-- <span class="btn-arrow">→</span> -->
+                            </button>
                         </div>
                     </div>
 
                     <div class="panel__card panel__card--three bg-blue">
                         <div class="listing-optimization-desc">
                             <div class="listing-title-div">
-                                <img src="assets/images/Desktop/star.png" alt="">
+                                <img src="assets/images/Desktop/new/star.svg" alt="">
                                 <h2>Increase Sales</h2>
                             </div>
                             <div class="listing-optimization-desc-content">
                                 <h3>Scale your business with tailored campaign</h3>
                                 <p>Strategies that target the right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth.</p>
                             </div>
-                            <div>
-                                <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
+                            <div class="lets-talk-btn-desktop">
+                                <button class="lets-talk-btn animation-btn">
+                                    <span class="btn-text">Let's Talk</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <!-- <span class="btn-arrow">→</span> -->
+                                </button>
                             </div>
                         </div>
                         <div class="increase-sales-img panel__card-image">
-                            <img src="assets/images/Desktop/Increase-Sales.png" alt="">
+                            <img src="assets/images/Desktop/new/Increase-Sales.webp" alt="">
+                        </div>
+                        <div class="lets-talk-btn-mobile">
+                            <button class="lets-talk-btn animation-btn">
+                                <span class="btn-text">Let's Talk</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <!-- <span class="btn-arrow">→</span> -->
+                            </button>
                         </div>
                     </div>
 
                     <div class="panel__card panel__card--four bg-blue">
                         <div class="listing-optimization-desc">
                             <div class="listing-title-div">
-                                <img src="assets/images/Desktop/star.png" alt="">
+                                <img src="assets/images/Desktop/new/star.svg" alt="">
                                 <h2>Keyword Research</h2>
                             </div>
                             <div class="listing-optimization-desc-content">
                                 <h3>We uncover<br> Amazon search trends</h3>
                                 <p>To find profitable keywords, driving traffic and conversions through ranking,<br class="mobile-only-br"> More visibility, relevance, and return on ad spend.</p>
                             </div>
-                            <div>
-                                <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
+                            <div class="lets-talk-btn-desktop">
+                                <button class="lets-talk-btn animation-btn">
+                                    <span class="btn-text">Let's Talk</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <!-- <span class="btn-arrow">→</span> -->
+                                </button>
                             </div>
                         </div>
                         <div class="keyword-research-img panel__card-image">
-                            <img src="assets/images/Desktop/Keyword-research.png" alt="">
+                            <img src="assets/images/Desktop/new/Keyword-research.webp" alt="">
+                        </div>
+                        <div class="lets-talk-btn-mobile">
+                            <button class="lets-talk-btn animation-btn">
+                                <span class="btn-text">Let's Talk</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <!-- <span class="btn-arrow">→</span> -->
+                            </button>
                         </div>
                     </div>
 
                     <div class="panel__card panel__card--five bg-blue">
                         <div class="listing-optimization-desc ">
                             <div class="listing-title-div">
-                                <img src="assets/images/Desktop/star.png" alt="">
+                                <img src="assets/images/Desktop/new/star.svg" alt="">
                                 <h2>Reduce ACOS</h2>
                             </div>
                             <div class="listing-optimization-desc-content">
                                 <h3>Scale your business<br> with tailored campaign strategies that target</h3>
                                 <p>The right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth..</p>
                             </div>
-                            <div>
-                                <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
+                            <div class="lets-talk-btn-desktop">
+                                <button class="lets-talk-btn animation-btn">
+                                    <span class="btn-text">Let's Talk</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <!-- <span class="btn-arrow">→</span> -->
+                                </button>
                             </div>
                         </div>
                         <div class="reduce-acos-img panel__card-image">
-                            <img src="assets/images/Desktop/Reduce-ACOS.png" alt="">
+                            <img src="assets/images/Desktop/new/Reduce-ACOS.webp" alt="">
+                        </div>
+
+                        <div class="lets-talk-btn-mobile">
+                            <button class="lets-talk-btn animation-btn">
+                                <span class="btn-text">Let's Talk</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <!-- <span class="btn-arrow">→</span> -->
+                            </button>
                         </div>
                     </div>
 
                     <div class="panel__card panel__card--six bg-blue">
                         <div class="listing-optimization-desc">
                             <div class="listing-title-div">
-                                <img src="assets/images/Desktop/star.png" alt="">
+                                <img src="assets/images/Desktop/new/star.svg" alt="">
                                 <h2>Weekly Reporting</h2>
                             </div>
                             <div class="listing-optimization-desc-content">
                                 <h3>We provide detailed<br> weekly PPC reports with actionable insights and clear metrics.</h3>
                                 <p>Know exactly how your ads are<br class="mobile-only-br"> performing</p>
                             </div>
-                            <div>
-                                <button class="lets-talk-btn animation-btn"><span class="btn-text">Let's Talk</span> <span class="btn-arrow">→</span></button>
+                            <div class="lets-talk-btn-desktop">
+                                <button class="lets-talk-btn animation-btn">
+                                    <span class="btn-text">Let's Talk</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <!-- <span class="btn-arrow">→</span> -->
+                                </button>
                             </div>
                         </div>
                         <div class="weekly-reporting-img panel__card-image">
-                            <img src="assets/images/Desktop/weekly-reporting.png" alt="">
+                            <img src="assets/images/Desktop/new/weekly-reporting.webp" alt="">
+                        </div>
+                        <div class="lets-talk-btn-mobile">
+                            <button class="lets-talk-btn animation-btn">
+                                <span class="btn-text">Let's Talk</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                                <!-- <span class="btn-arrow">→</span> -->
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -458,7 +525,7 @@
         <!-- Case Studies left Scroll end -->
 
         <!-- Amazon PCC Section -->
-        <section class="common-spacing common-spacing-extra">
+        <section class="common-spacing-extra">
             <!-- Amazon PCC Section Top -->
             <div class="amazon-ppc-card-body">
                 <div class="amazon-ppc-card-container container">
@@ -478,7 +545,7 @@
                             </div>
                             <span class="amazon-ppc-card-stat-line"></span>
                             <div>
-                                <h2>$1.1B+</h2>
+                                <h2>$2.7B+</h2>
                                 <p>Revenue Managed Across Marketplaces</p>
                             </div>
                             <span class="amazon-ppc-card-stat-line"></span>
@@ -687,9 +754,9 @@
                             </header>
                             <div class="amazon-content-img">
                                 <div class="amazon-keyword2-img">
-                                    <img id="keyImage0" src="assets/images/Desktop/Broad.webp" alt="">
-                                    <img src="assets/images/Desktop/Phrase.png" alt="">
-                                    <img src="assets/images/Desktop/Exact.webp" alt="">
+                                    <img id="keyImage0" src="assets/images/Desktop/new/Broad.webp" alt="">
+                                    <img src="assets/images/Desktop/new/Phrase.webp" alt="">
+                                    <img src="assets/images/Desktop/new/Exact.webp" alt="">
                                 </div>
                                 <div class="amazon-keyword2-wrapper">
                                     <div class="fade-top"></div>
@@ -707,7 +774,7 @@
                                         </div>
                                         <div class="amazon-keyword2-content-text" data-image="Exact.webp">
                                             <h1>Exact</h1>
-                                            <p>Get the highest precision in your ads with Exact match keyword targeting. Maximize efficiency with Exact match as it get fewer clicks, more qualified buyers.</p>
+                                            <p>Exact Match keyword targeting gives you maximum control and precision. By attracting highly relevant shoppers with fewer wasted clicks, it boosts conversions, improves efficiency, and supports faster organic ranking growth.</p>
                                         </div>
                                         <div class="amazon-keyword2-content-text"></div>
                                     </div>
@@ -723,7 +790,7 @@
                                         <div>
                                             <p>Use Broad match to cast a wide net and uncover high-potential search terms across your niche. Capture wide traffic and discover new keyword opportunities with Broad match targeting.
                                                 View Details.</p>
-                                            <img src="assets/images/Desktop/Broad.webp" alt="">
+                                            <img src="assets/images/Desktop/new/Broad.webp" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -736,7 +803,7 @@
                                             <p>Phrase match helps to connect with shoppers using relevant keyword sequences
                                                 for better performance. Great for intent-driven traffic and increasing ad
                                                 relevance.</p>
-                                            <img src="assets/images/Desktop/Phrase.png" alt="">
+                                            <img src="assets/images/Desktop/new/Phrase.webp" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -747,7 +814,7 @@
                                     <div class="accordion-content">
                                         <div>
                                             <p>Get the highest precision in your ads with Exact match keyword targeting. Maximize efficiency with Exact match as it get fewer clicks, more qualified buyers.</p>
-                                            <img src="assets/images/Desktop/Exact.webp" alt="">
+                                            <img src="assets/images/Desktop/new/Exact.webp" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -818,41 +885,42 @@
                             <div class="advertising-cards">
                                 <div class="advertising-card">
                                     <div class="advertising-card-text advertising-card-text-left">
-                                        <h2>Sponsored Brands</h2>
+                                        <h2>Amazon Brand Ads</h2>
                                         <p>For Sponsored Brands, we design captivating creatives to boost your Amazon store's visibility and brand awarness. Our campaigns are tailored to attract new-to-brand customers, expanding your audience while strengthening recognition and engagement in competitive marketplaces.</p>
                                     </div>
                                     <div class="advertising-card-image">
-                                        <img src="assets/images/Desktop/Sponsored-Brands.webp" alt="">
+                                        <img src="assets/images/Desktop/new/AmazonBrandAds.webp" alt="">
                                     </div>
                                 </div>
                                 <div class="advertising-card">
                                     <div class="advertising-card-text advertising-card-text-left">
-                                        <h2>Sponsored Product</h2>
+                                        <h2>Sponsored Products Ads</h2>
                                         <p>Sponsored Products generate over 70% of Amazon ad sales. So we do strategic keyword research to identify high-per-forming keywords, leveraging various match types (broad, pharase, exact) to refine targeting. We also utilize placement and other bidding strategies to reach more customer. Automatic Campaigns: Ideal for keyword discovery and broad visibility. We use them to uncover hidden-performing terms ad ASINS.
                                             Manual Campaigns: With our precise targeting and keyword bidding we ensure your ads rank higher and convert better.
                                         </p>
                                     </div>
                                     <div class="advertising-card-image">
-                                        <img src="assets/images/Desktop/Sponsored-Product.webp" alt="">
+                                        <img src="assets/images/Desktop/new/SponsoredProductsAds.webp" alt="">
                                     </div>
                                 </div>
                                 <div class="advertising-card advertising-card-right">
                                     <div class="advertising-card-image">
-                                        <img src="assets/images/Desktop/Sponsored-Video.webp" alt="">
+                                        <img src="assets/images/Desktop/new/SponsoredVideo.webp" alt="">
                                     </div>
                                     <div class="advertising-card-text advertising-card-text-right">
-                                        <h2>Sponsored Video</h2>
+                                        <h2>Amazon Video Ads</h2>
                                         <p>Helping brands stand out in search results and increase click-through rates. We create and manage high impact video campaigns that showcase your product's value, high-light key features, and drive direct conversions.</p>
                                     </div>
                                 </div>
                                 <div class="advertising-card advertising-card-right">
                                     <div class="advertising-card-image">
-                                        <img src="assets/images/Desktop/Sponsored-TV.webp" alt="">
+                                        <img src="assets/images/Desktop/new/AmazonDisplayAds.webp" alt="">
 
                                     </div>
                                     <div class="advertising-card-text advertising-card-text-right">
-                                        <h2>Sponsored TV</h2>
-                                        <p>Reach millions of viewers in Fire TV and Prime Video with Sponsored TV. We help you reach Amazon shoppers while they're watching contenton Fire TV and Prime Video, boosting brand visibility and recognition.</p>
+                                        <h2>Amazon Display Ads</h2>
+                                        <!-- <p>Reach millions of viewers in Fire TV and Prime Video with Sponsored TV. We help you reach Amazon shoppers while they're watching contenton Fire TV and Prime Video, boosting brand visibility and recognition.</p> -->
+                                         <p>Amazon Sponsored Display ads help brands re-engage shoppers on and off Amazon, increase brand visibility, and drive conversions beyond keyword targeting. We use Sponsored Display as part of a full-funnel Amazon PPC strategy to improve conversion rates, protect listings, and reduce overall ACoS.</p>
                                     </div>
                                 </div>
                             </div>
@@ -863,20 +931,20 @@
             <!-- Amazon PCC Section Middle end -->
 
             <!-- Amazon PCC Section Bottom -->
-            <div class="amazon-ppc-strategy-container common-spacing-extra">
+            <div class="amazon-ppc-strategy-container common-spacing">
                 <div class="container">
-                    <div class="amazon-ppc-strategy">
+                    <div class="amazon-ppc-strategy-img">
+                        <div class="img-wrapper">
+                            <img src="assets/images/Desktop/new/Right-Strategy.webp" alt="">
+                        </div>
+                    </div>
+                    <!-- <div class="amazon-ppc-strategy">
                         <div class="amazon-ppc-card-header">
                             <h1>The right strategy. The right data.
                                 <br><span>The right growth.</span>
                             </h1>
                         </div>
-                        <div class="amazon-ppc-strategy-img">
-                            <div class="img-wrapper">
-                                <img src="assets/images/Desktop/Right-Strategy1.png" alt="">
-                            </div>
-                        </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <!-- Amazon PCC Section Bottom end -->

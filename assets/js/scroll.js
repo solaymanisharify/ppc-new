@@ -71,7 +71,7 @@ window.addEventListener("load", () => {
   const horizontalTimeline = gsap.timeline({
     scrollTrigger: {
       trigger: ".sticky",
-      start: "top 4%",
+      start: "top 3%",
       end: () => `+=${horizontalCardContainer.scrollWidth / 2}`, // here added /2 to make it scroll faster
       scrub: 0.1,
       pin: true,
