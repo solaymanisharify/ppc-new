@@ -675,146 +675,150 @@
             <div class="amazon-section">
                 <div class="container common-spacing common-spacing-extra">
                     <div class="amazon-container" id="amazon-ppc">
-                        <div class="amazon-ppc">
-                            <div class="amazon-container-header">
-                                <h1>Amazon PPC for Every Phase</h1>
-                                <h3>Custom Strategies to our Growth</h3>
-                            </div>
-                            <div class="amazon-content-img">
-                                <div class="amazon-ppc-wrapper">
-                                    <div class="fade-top"></div>
-                                    <div class="amazon-ppc-content">
-                                        <div class="amazon-ppc-content-text" data-image="Launch.webp">
+                        <div class="amazon-ppc-section">
+                            <div class="amazon-ppc">
+                                <div class="amazon-container-header">
+                                    <h1>Amazon PPC for Every Phase</h1>
+                                    <h3>Custom Strategies to our Growth</h3>
+                                </div>
+                                <div class="amazon-content-img">
+                                    <div class="amazon-ppc-wrapper">
+                                        <div class="fade-top"></div>
+                                        <div class="amazon-ppc-content">
+                                            <div class="amazon-ppc-content-text" data-image="Launch.webp">
+                                                <h1>Launch</h1>
+                                                <p>Every brand is unique - that’s why we tailor your PPC launch plan to your specific goals, audience, and product positioning. - Listing Optimization - Initial Keyword Research - Auto & Manual Campaign Setup - Maximize Impression - Harvesting & Data Collection</p>
+                                            </div>
+                                            <div class="amazon-ppc-content-text" data-image="Optimize.webp">
+                                                <h1>Optimize</h1>
+                                                <p>We don’t “set and forget.” We engineer performance - optimizing keywords, bids, budgets, and campaign architecture daily to turn ad spend into a predictable growth engine.
+                                                    <br/>
+                                                </p>
+                                            </div>
+                                            <div class="amazon-ppc-content-text" data-image="dominate.webp">
+                                                <h1>Dominate</h1>
+                                                <p>Winning on Amazon isn’t about spending more—it’s about spending smarter. We help brands take control of their category on Amazon through precision-built PPC strategies. From keyword ownership to placement dominance, our approach is designed to maximize visibility, sales velocity, and long-term profitability.</p>
+                                            </div>
+    
+                                            <div class="amazon-ppc-content-text"></div>
+                                        </div>
+                                        <div class="fade-bottom"></div>
+                                    </div>
+                                    <div class="amazon-ppc-img">
+                                        <div class="radial"></div>
+                                        <img id="ppcImage0" src="assets/images/Desktop/Launch.webp" alt="">
+                                        <img src="assets/images/Desktop/Optimize.webp" alt="">
+                                        <img src="assets/images/Desktop/dominate.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="accordion amazon-ppc-items">
+                                    <div class="radial2"></div>
+                                    <div class="accordion-item">
+                                        <div class="accordion-header active">
                                             <h1>Launch</h1>
-                                            <p>Every brand is unique - that’s why we tailor your PPC launch plan to your specific goals, audience, and product positioning. - Listing Optimization - Initial Keyword Research - Auto & Manual Campaign Setup - Maximize Impression - Harvesting & Data Collection</p>
                                         </div>
-                                        <div class="amazon-ppc-content-text" data-image="Optimize.webp">
+                                        <div class="accordion-content active">
+                                            <div>
+                                                <p>Every brand is unique - that’s why we tailor your PPC launch plan to your specific goals, audience, and product positioning. - Listing Optimization - Initial Keyword Research - Auto & Manual Campaign Setup - Maximize Impression - Harvesting & Data Collection</p>
+                                                <img src="assets/images/Desktop/Launch.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">
                                             <h1>Optimize</h1>
-                                            <p>We don’t “set and forget.” We engineer performance - optimizing keywords, bids, budgets, and campaign architecture daily to turn ad spend into a predictable growth engine.
-                                                <br/>
-                                            </p>
                                         </div>
-                                        <div class="amazon-ppc-content-text" data-image="dominate.webp">
+                                        <div class="accordion-content">
+                                            <div>
+                                                <p>Every Amazon business performs differently — and so should your ad strategy. You need tailored adjustments of - Review & Refine Keywords - Adjust Bids & Budgets - Campaign Segmentation - Brand Awareness - Monitor & Report Performance</p>
+                                                <img src="assets/images/Desktop/Optimize.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <div class="amazon-ppc-item accordion-header">
                                             <h1>Dominate</h1>
-                                            <p>Winning on Amazon isn’t about spending more—it’s about spending smarter. We help brands take control of their category on Amazon through precision-built PPC strategies. From keyword ownership to placement dominance, our approach is designed to maximize visibility, sales velocity, and long-term profitability.</p>
                                         </div>
-
-                                        <div class="amazon-ppc-content-text"></div>
-                                    </div>
-                                    <div class="fade-bottom"></div>
-                                </div>
-                                <div class="amazon-ppc-img">
-                                    <div class="radial"></div>
-                                    <img id="ppcImage0" src="assets/images/Desktop/Launch.webp" alt="">
-                                    <img src="assets/images/Desktop/Optimize.webp" alt="">
-                                    <img src="assets/images/Desktop/dominate.webp" alt="">
-                                </div>
-                            </div>
-                            <div class="accordion amazon-ppc-items">
-                                <div class="radial2"></div>
-                                <div class="accordion-item">
-                                    <div class="accordion-header active">
-                                        <h1>Launch</h1>
-                                    </div>
-                                    <div class="accordion-content active">
-                                        <div>
-                                            <p>Every brand is unique - that’s why we tailor your PPC launch plan to your specific goals, audience, and product positioning. - Listing Optimization - Initial Keyword Research - Auto & Manual Campaign Setup - Maximize Impression - Harvesting & Data Collection</p>
-                                            <img src="assets/images/Desktop/Launch.webp" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <div class="accordion-header">
-                                        <h1>Optimize</h1>
-                                    </div>
-                                    <div class="accordion-content">
-                                        <div>
-                                            <p>Every Amazon business performs differently — and so should your ad strategy. You need tailored adjustments of - Review & Refine Keywords - Adjust Bids & Budgets - Campaign Segmentation - Brand Awareness - Monitor & Report Performance</p>
-                                            <img src="assets/images/Desktop/Optimize.webp" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <div class="amazon-ppc-item accordion-header">
-                                        <h1>Dominate</h1>
-                                    </div>
-                                    <div class="accordion-content">
-                                        <div>
-                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, dolorum porro! Libero sint, assumenda fuga, voluptatem tempore laborum recusandae distinctio quia voluptate aliquid placeat soluta! Nihil exercitationem id cum</p>
-                                            <img src="assets/images/Desktop/dominate.webp" alt="">
+                                        <div class="accordion-content">
+                                            <div>
+                                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, dolorum porro! Libero sint, assumenda fuga, voluptatem tempore laborum recusandae distinctio quia voluptate aliquid placeat soluta! Nihil exercitationem id cum</p>
+                                                <img src="assets/images/Desktop/dominate.webp" alt="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="amazon-keyword2 common-spacing-extra">
-                            <header>
-                                <h1>Amazon Keyword Strategy</h1>
-                                <p>Our keyword strategy combines Broad, Phrase, and Exact match types to maximize visibility and drive conversions. This approach helps us discover valuableterms, improve ad targeting, and convert more high-intent traffic with better ROI. A complete keyword mix designed to grow your Amazon sales efficiently.</p>
-                            </header>
-                            <div class="amazon-content-img">
-                                <div class="amazon-keyword2-img">
-                                    <img id="keyImage0" src="assets/images/Desktop/new/Broad.webp" alt="">
-                                    <img src="assets/images/Desktop/new/Phrase.webp" alt="">
-                                    <img src="assets/images/Desktop/new/Exact.webp" alt="">
+                        <div class="amazon-keyword2-section">
+                            <div class="amazon-keyword2">
+                                <header>
+                                    <h1>Amazon Keyword Strategy</h1>
+                                    <p>Our keyword strategy combines Broad, Phrase, and Exact match types to maximize visibility and drive conversions. This approach helps us discover valuableterms, improve ad targeting, and convert more high-intent traffic with better ROI. A complete keyword mix designed to grow your Amazon sales efficiently.</p>
+                                </header>
+                                <div class="amazon-content-img">
+                                    <div class="amazon-keyword2-img">
+                                        <img id="keyImage0" src="assets/images/Desktop/new/Broad.webp" alt="">
+                                        <img src="assets/images/Desktop/new/Phrase.webp" alt="">
+                                        <img src="assets/images/Desktop/new/Exact.webp" alt="">
+                                    </div>
+                                    <div class="amazon-keyword2-wrapper">
+                                        <div class="fade-top"></div>
+                                        <div class="amazon-keyword2-content">
+                                            <div class="amazon-keyword2-content-text" data-image="Broad.webp">
+                                                <h1>Broad</h1>
+                                                <p>Use Broad match to cast a wide net and uncover high-potential search terms across your niche. Capture wide traffic and discover new keyword opportunities with Broad match targeting.
+                                                    View Details.</p>
+                                            </div>
+                                            <div class="amazon-keyword2-content-text" data-image="Phrase.png">
+                                                <h1>Phrase</h1>
+                                                <p>Phrase match helps to connect with shoppers using relevant keyword sequences
+                                                    for better performance. Great for intent-driven traffic and increasing ad
+                                                    relevance.</p>
+                                            </div>
+                                            <div class="amazon-keyword2-content-text" data-image="Exact.webp">
+                                                <h1>Exact</h1>
+                                                <p>Exact Match keyword targeting gives you maximum control and precision. By attracting highly relevant shoppers with fewer wasted clicks, it boosts conversions, improves efficiency, and supports faster organic ranking growth.</p>
+                                            </div>
+                                            <div class="amazon-keyword2-content-text"></div>
+                                        </div>
+                                        <div class="fade-bottom"></div>
+                                    </div>
                                 </div>
-                                <div class="amazon-keyword2-wrapper">
-                                    <div class="fade-top"></div>
-                                    <div class="amazon-keyword2-content">
-                                        <div class="amazon-keyword2-content-text" data-image="Broad.webp">
+                                <div class="accordion amazon-keyword2-items">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header active">
                                             <h1>Broad</h1>
-                                            <p>Use Broad match to cast a wide net and uncover high-potential search terms across your niche. Capture wide traffic and discover new keyword opportunities with Broad match targeting.
-                                                View Details.</p>
                                         </div>
-                                        <div class="amazon-keyword2-content-text" data-image="Phrase.png">
+                                        <div class="accordion-content active">
+                                            <div>
+                                                <p>Use Broad match to cast a wide net and uncover high-potential search terms across your niche. Capture wide traffic and discover new keyword opportunities with Broad match targeting.
+                                                    View Details.</p>
+                                                <img src="assets/images/Desktop/new/Broad.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">
                                             <h1>Phrase</h1>
-                                            <p>Phrase match helps to connect with shoppers using relevant keyword sequences
-                                                for better performance. Great for intent-driven traffic and increasing ad
-                                                relevance.</p>
                                         </div>
-                                        <div class="amazon-keyword2-content-text" data-image="Exact.webp">
+                                        <div class="accordion-content">
+                                            <div>
+                                                <p>Phrase match helps to connect with shoppers using relevant keyword sequences
+                                                    for better performance. Great for intent-driven traffic and increasing ad
+                                                    relevance.</p>
+                                                <img src="assets/images/Desktop/new/Phrase.webp" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <div class="accordion-header">
                                             <h1>Exact</h1>
-                                            <p>Exact Match keyword targeting gives you maximum control and precision. By attracting highly relevant shoppers with fewer wasted clicks, it boosts conversions, improves efficiency, and supports faster organic ranking growth.</p>
                                         </div>
-                                        <div class="amazon-keyword2-content-text"></div>
-                                    </div>
-                                    <div class="fade-bottom"></div>
-                                </div>
-                            </div>
-                            <div class="accordion amazon-keyword2-items">
-                                <div class="accordion-item">
-                                    <div class="accordion-header active">
-                                        <h1>Broad</h1>
-                                    </div>
-                                    <div class="accordion-content active">
-                                        <div>
-                                            <p>Use Broad match to cast a wide net and uncover high-potential search terms across your niche. Capture wide traffic and discover new keyword opportunities with Broad match targeting.
-                                                View Details.</p>
-                                            <img src="assets/images/Desktop/new/Broad.webp" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <div class="accordion-header">
-                                        <h1>Phrase</h1>
-                                    </div>
-                                    <div class="accordion-content">
-                                        <div>
-                                            <p>Phrase match helps to connect with shoppers using relevant keyword sequences
-                                                for better performance. Great for intent-driven traffic and increasing ad
-                                                relevance.</p>
-                                            <img src="assets/images/Desktop/new/Phrase.webp" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <div class="accordion-header">
-                                        <h1>Exact</h1>
-                                    </div>
-                                    <div class="accordion-content">
-                                        <div>
-                                            <p>Get the highest precision in your ads with Exact match keyword targeting. Maximize efficiency with Exact match as it get fewer clicks, more qualified buyers.</p>
-                                            <img src="assets/images/Desktop/new/Exact.webp" alt="">
+                                        <div class="accordion-content">
+                                            <div>
+                                                <p>Get the highest precision in your ads with Exact match keyword targeting. Maximize efficiency with Exact match as it get fewer clicks, more qualified buyers.</p>
+                                                <img src="assets/images/Desktop/new/Exact.webp" alt="">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -876,7 +880,7 @@
                         </div> -->
 
                         <!-- Alternative of timeline part below div -->
-                        <div class="amazon-advertising common-spacing-extra">
+                        <div class="amazon-advertising">
                             <header>
                                 <h3>All-in-One Amazon Advertising</h3>
                                 <h1>Amazon Ad Format To Grow <br>Your Brand</h1>

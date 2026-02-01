@@ -117,7 +117,7 @@ window.addEventListener("load", () => {
     // Pin blocks
     ScrollTrigger.create({
       trigger: sectionName,
-      start: "top top",
+      start: "top 14%",
       endTrigger: blocks[blocks.length - 1],
       end: "bottom center",
       pin: true,
@@ -183,12 +183,12 @@ window.addEventListener("load", () => {
   }
 
   syncImageChangeAnimation({
-    sectionName: ".amazon-ppc",
+    sectionName: ".amazon-ppc-section",
     blockSelector: ".amazon-ppc-content-text",
     imageSelector: ".amazon-ppc-img img",
   });
   syncImageChangeAnimation({
-    sectionName: ".amazon-keyword2",
+    sectionName: ".amazon-keyword2-section",
     blockSelector: ".amazon-keyword2-content-text",
     imageSelector: ".amazon-keyword2-img img",
     spacial: true
