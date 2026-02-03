@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecomclips Landing Page</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="assets/css/modal.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -23,7 +24,7 @@
             <div class="hero-body container">
                 <div class="hero-1">
                     <div>
-                        <button class="launch-dominate-btn">From Launch to Dominate</button>
+                        <h2 class="launch-dominate-btn">From Launch to Dominate</h2>
                         <h1 class="scalable-amazon">Scalable Amazon Advertising <br> <span>Management</span></h1>
                     </div>
                     <p>
@@ -31,7 +32,7 @@
                         launch to market domination. No matter where you are in your journey, we
                         help scale your brand profitably with data-driven, custom campaigns.
                     </p>
-                    <button class="get-started-btn animation-btn">
+                    <button class="get-started-btn animation-btn toggle-modal">
                         <span class="btn-text">Let's Go Further</span>
                         <span class="btn-arrow">→</span>
                     </button>
@@ -50,28 +51,28 @@
                 <div class="item-list-content">
                     <div class="revenue-icon">
                         <img src="/assets/images/Desktop/revenue-icon.png" alt="">
-                        <h1>2.7B+</h1>
+                        <h2>2.7B+</h2>
                     </div>
                     <p>REVENUE GENERATED</p>
                 </div>
                 <div class="item-list-content">
                     <div class="revenue-icon">
                         <img src="/assets/images/Desktop/ad-icon.png" alt="">
-                        <h1>335M+</h1>
+                        <h2>335M+</h2>
                     </div>
                     <p>ADS SPEND MANAGED</p>
                 </div>
                 <div class="item-list-content">
                     <div class="revenue-icon">
                         <img src="/assets/images/Desktop/brand-icon.png" alt="">
-                        <h1>1000+</h1>
+                        <h2>1000+</h2>
                     </div>
                     <p>BRANDS WE MANAGED</p>
                 </div>
                 <div class="item-list-content">
                     <div class="revenue-icon">
                         <img src="/assets/images/Desktop/experience-icon.png" alt="">
-                        <h1>15+</h1>
+                        <h2>15+</h2>
                     </div>
                     <p>YEARS OF EXPERIENCE</p>
                 </div>
@@ -82,7 +83,7 @@
         <!-- Card Stack Section horizontal scroll -->
         <section class="container common-spacing-top common-spacing-bottom">
             <div class="optimization-container">
-                <h1>Reignite Your Business With Our</h1>
+                <h2 class="optimization-container-title">Reignite Your Business With Our</h2>
                 <div class="panel__stack">
                     <div class="panel__card panel__card--one bg-blue ">
                         <div class="listing-optimization-desc">
@@ -95,7 +96,7 @@
                                 <p>Optimized with powerful copy, keyword<br class="mobile-only-br"> integration, and backend enhancements.</p>
                             </div>
                             <div class="lets-talk-btn-desktop">
-                                <button class="lets-talk-btn animation-btn">
+                                <button class="lets-talk-btn animation-btn toggle-modal">
                                     <span class="btn-text">Let's Talk</span>
                                     <i class="fa-solid fa-arrow-right"></i>
                                     <!-- <span class="btn-arrow">→</span> -->
@@ -104,11 +105,13 @@
 
                         </div>
                         <div class="listing-optimization-img panel__card-image">
-                            <img src="assets/images/Desktop/new/card1.webp" alt="">
+                            <div class="panel__card-image_container">
+                                <img src="assets/images/Desktop/new/card1.webp" alt="">
+                            </div>
                         </div>
 
                         <div class="lets-talk-btn-mobile">
-                            <button class="lets-talk-btn animation-btn">
+                            <button class="lets-talk-btn animation-btn toggle-modal">
                                 <span class="btn-text">Let's Talk</span>
                                 <i class="fa-solid fa-arrow-right"></i>
                                 <!-- <span class="btn-arrow">→</span> -->
@@ -127,7 +130,7 @@
                                 <p>Match types, and placements to optimize<br class="mobile-only-br"> every dollar spent on Amazon ads.</p>
                             </div>
                             <div class="lets-talk-btn-desktop">
-                                <button class="lets-talk-btn animation-btn">
+                                <button class="lets-talk-btn animation-btn toggle-modal">
                                     <span class="btn-text">Let's Talk</span>
                                     <i class="fa-solid fa-arrow-right"></i>
                                     <!-- <span class="btn-arrow">→</span> -->
@@ -135,10 +138,12 @@
                             </div>
                         </div>
                         <div class="campaign-optimization-img panel__card-image">
-                            <img src="assets/images/Desktop/new/Campaign-optimization.webp" alt="">
+                            <div class="panel__card-image_container">
+                                <img src="assets/images/Desktop/new/Campaign-optimization.webp" alt="">
+                            </div>
                         </div>
                         <div class="lets-talk-btn-mobile">
-                            <button class="lets-talk-btn animation-btn">
+                            <button class="lets-talk-btn animation-btn toggle-modal">
                                 <span class="btn-text">Let's Talk</span>
                                 <i class="fa-solid fa-arrow-right"></i>
                                 <!-- <span class="btn-arrow">→</span> -->
@@ -157,7 +162,7 @@
                                 <p>Strategies that target the right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth.</p>
                             </div>
                             <div class="lets-talk-btn-desktop">
-                                <button class="lets-talk-btn animation-btn">
+                                <button class="lets-talk-btn animation-btn toggle-modal">
                                     <span class="btn-text">Let's Talk</span>
                                     <i class="fa-solid fa-arrow-right"></i>
                                     <!-- <span class="btn-arrow">→</span> -->
@@ -165,10 +170,12 @@
                             </div>
                         </div>
                         <div class="increase-sales-img panel__card-image">
-                            <img src="assets/images/Desktop/new/Increase-Sales.webp" alt="">
+                            <div class="panel__card-image_container">
+                                <img src="assets/images/Desktop/new/Increase-Sales.webp" alt="">
+                            </div>
                         </div>
                         <div class="lets-talk-btn-mobile">
-                            <button class="lets-talk-btn animation-btn">
+                            <button class="lets-talk-btn animation-btn toggle-modal">
                                 <span class="btn-text">Let's Talk</span>
                                 <i class="fa-solid fa-arrow-right"></i>
                                 <!-- <span class="btn-arrow">→</span> -->
@@ -187,7 +194,7 @@
                                 <p>To find profitable keywords, driving traffic and conversions through ranking,<br class="mobile-only-br"> More visibility, relevance, and return on ad spend.</p>
                             </div>
                             <div class="lets-talk-btn-desktop">
-                                <button class="lets-talk-btn animation-btn">
+                                <button class="lets-talk-btn animation-btn toggle-modal">
                                     <span class="btn-text">Let's Talk</span>
                                     <i class="fa-solid fa-arrow-right"></i>
                                     <!-- <span class="btn-arrow">→</span> -->
@@ -195,10 +202,12 @@
                             </div>
                         </div>
                         <div class="keyword-research-img panel__card-image">
-                            <img src="assets/images/Desktop/new/Keyword-research.webp" alt="">
+                            <div class="panel__card-image_container">
+                                <img src="assets/images/Desktop/new/Keyword-research.webp" alt="">
+                            </div>
                         </div>
                         <div class="lets-talk-btn-mobile">
-                            <button class="lets-talk-btn animation-btn">
+                            <button class="lets-talk-btn animation-btn toggle-modal">
                                 <span class="btn-text">Let's Talk</span>
                                 <i class="fa-solid fa-arrow-right"></i>
                                 <!-- <span class="btn-arrow">→</span> -->
@@ -217,7 +226,7 @@
                                 <p>The right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth..</p>
                             </div>
                             <div class="lets-talk-btn-desktop">
-                                <button class="lets-talk-btn animation-btn">
+                                <button class="lets-talk-btn animation-btn toggle-modal">
                                     <span class="btn-text">Let's Talk</span>
                                     <i class="fa-solid fa-arrow-right"></i>
                                     <!-- <span class="btn-arrow">→</span> -->
@@ -225,11 +234,13 @@
                             </div>
                         </div>
                         <div class="reduce-acos-img panel__card-image">
-                            <img src="assets/images/Desktop/new/Reduce-ACOS.webp" alt="">
+                            <div class="panel__card-image_container">
+                                <img src="assets/images/Desktop/new/Reduce-ACOS.webp" alt="">
+                            </div>
                         </div>
 
                         <div class="lets-talk-btn-mobile">
-                            <button class="lets-talk-btn animation-btn">
+                            <button class="lets-talk-btn animation-btn toggle-modal">
                                 <span class="btn-text">Let's Talk</span>
                                 <i class="fa-solid fa-arrow-right"></i>
                                 <!-- <span class="btn-arrow">→</span> -->
@@ -248,7 +259,7 @@
                                 <p>Know exactly how your ads are<br class="mobile-only-br"> performing</p>
                             </div>
                             <div class="lets-talk-btn-desktop">
-                                <button class="lets-talk-btn animation-btn">
+                                <button class="lets-talk-btn animation-btn toggle-modal">
                                     <span class="btn-text">Let's Talk</span>
                                     <i class="fa-solid fa-arrow-right"></i>
                                     <!-- <span class="btn-arrow">→</span> -->
@@ -256,10 +267,12 @@
                             </div>
                         </div>
                         <div class="weekly-reporting-img panel__card-image">
-                            <img src="assets/images/Desktop/new/weekly-reporting.webp" alt="">
+                            <div class="panel__card-image_container">
+                                <img src="assets/images/Desktop/new/weekly-reporting.webp" alt="">
+                            </div>
                         </div>
                         <div class="lets-talk-btn-mobile">
-                            <button class="lets-talk-btn animation-btn">
+                            <button class="lets-talk-btn animation-btn toggle-modal">
                                 <span class="btn-text">Let's Talk</span>
                                 <i class="fa-solid fa-arrow-right"></i>
                                 <!-- <span class="btn-arrow">→</span> -->
@@ -275,7 +288,7 @@
         <section class="sticky-parent container common-spacing">
             <div class="sticky">
                 <div class="case-study-titles case-study-title">
-                    <h1>Case Study</h1>
+                    <h2>Case Study</h2>
                     <p>The Revenue Growth Story of Ecomclips</p>
                 </div>
                 <div class="horizontal">
@@ -290,24 +303,24 @@
                             <div class="case-study-growth-image-container">
                                 <div class="case-study-growth-left-side">
                                     <div class="case-study-desc">
-                                        <h1>&ldquo;Ecomclips Doubled Our Revenue!&rdquo;</h1>
+                                        <h2>&ldquo;Ecomclips Doubled Our Revenue!&rdquo;</h2>
                                         <div class="case-study-line"></div>
                                     </div>
                                     <div class="growth-percentage">
                                         <div>
-                                            <h2>237<span>%</span></h2>
+                                            <h3>237<span>%</span></h3>
                                             <p>Increase in sales</p>
                                         </div>
                                         <div>
-                                            <h2>63<span>%</span></h2>
+                                            <h3>63<span>%</span></h3>
                                             <p>ACOS Reduction</p>
                                         </div>
                                         <div>
-                                            <h2>19<span>%</span></h2>
+                                            <h3>19<span>%</span></h3>
                                             <p>Increase in CVR</p>
                                         </div>
                                         <div>
-                                            <h2>26<span>%</span></h2>
+                                            <h3>26<span>%</span></h3>
                                             <p>YOY Growth</p>
                                         </div>
                                     </div>
@@ -315,7 +328,7 @@
                                         <p>An enhanced Amazon listing boosts discoverability and sales 4x, optimized with powerful copy, keyword integration, and backend enhancements.</p>
                                     </div>
                                     <div class="our-impact-btn">
-                                        <button>Out Impact <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                                        <button class="toggle-modal">Out Impact <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
                                     </div>
                                 </div>
                                 <div class="case-study-container-img-body">
@@ -327,7 +340,7 @@
                                                     <img src="assets/images/Desktop/fake-critics.png" alt="Hero Image" class="">
                                                 </div>
                                                 <div>
-                                                    <h1>James Hawken</h1>
+                                                    <h2>James Hawken</h2>
                                                     <div class="review-card-rating">
                                                         <p>Golden Fox, USA</p>
                                                         <div class="review-card-rating-stars">
@@ -370,24 +383,24 @@
                             <div class="case-study-growth-image-container">
                                 <div class="case-study-growth-left-side">
                                     <div class="case-study-desc">
-                                        <h1>&ldquo;Ecomclips Has Been a God Sent To Us&rdquo;</h1>
+                                        <h2>&ldquo;Ecomclips Has Been a God Sent To Us&rdquo;</h2>
                                         <div class="case-study-line"></div>
                                     </div>
                                     <div class="growth-percentage">
                                         <div>
-                                            <h2>254<span>%</span></h2>
+                                            <h3>254<span>%</span></h3>
                                             <p>Increase in sales</p>
                                         </div>
                                         <div>
-                                            <h2>68<span>%</span></h2>
+                                            <h3>68<span>%</span></h3>
                                             <p>ACOS Reduction</p>
                                         </div>
                                         <div>
-                                            <h2>13<span>%</span></h2>
+                                            <h3>13<span>%</span></h3>
                                             <p>Increase in CVR</p>
                                         </div>
                                         <div>
-                                            <h2>36<span>%</span></h2>
+                                            <h3>36<span>%</span></h3>
                                             <p>YOY Growth</p>
                                         </div>
                                     </div>
@@ -395,7 +408,7 @@
                                         <p>Full-funnel Amazon optimization - including listing CRO, keyword architecture, and backend SEO — resulted in 254% sales growth and 68% ACOS reduction.</p>
                                     </div>
                                     <div class="our-impact-btn">
-                                        <button>Out Impact <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                                        <button class="toggle-modal">Out Impact <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
                                     </div>
                                 </div>
                                 <div class="case-study-container-img-body">
@@ -407,7 +420,7 @@
                                                     <img src="assets/images/Desktop/woodland-critic.png" alt="Hero Image" class="">
                                                 </div>
                                                 <div>
-                                                    <h1>Max Davidson</h1>
+                                                    <h2>Max Davidson</h2>
                                                     <div class="review-card-rating">
                                                         <p>Woodland, USA</p>
                                                         <div class="review-card-rating-stars">
@@ -450,24 +463,24 @@
                             <div class="case-study-growth-image-container">
                                 <div class="case-study-growth-left-side">
                                     <div class="case-study-desc">
-                                        <h1>&ldquo;150<span class="percentage">%</span> revenue increase over the 18 months&rdquo;</h1>
+                                        <h2>&ldquo;150<span class="percentage">%</span> revenue increase over the 18 months&rdquo;</h2>
                                         <div class="case-study-line"></div>
                                     </div>
                                     <div class="growth-percentage">
                                         <div>
-                                            <h2>337<span>%</span></h2>
+                                            <h3>337<span>%</span></h3>
                                             <p>Increase in sales</p>
                                         </div>
                                         <div>
-                                            <h2>73<span>%</span></h2>
+                                            <h3>73<span>%</span></h3>
                                             <p>ACOS Reduction</p>
                                         </div>
                                         <div>
-                                            <h2>16<span>%</span></h2>
+                                            <h3>16<span>%</span></h3>
                                             <p>Increase in CVR</p>
                                         </div>
                                         <div>
-                                            <h2>25<span>%</span></h2>
+                                            <h3>25<span>%</span></h3>
                                             <p>YOY Growth</p>
                                         </div>
                                     </div>
@@ -475,7 +488,7 @@
                                         <p>What started as basic optimization turned into a full-scale growth engine - delivering 150% revenue growth, 337% sales increase, and 73% lower ACOS in 18 months.</p>
                                     </div>
                                     <div class="our-impact-btn">
-                                        <button>Out Impact <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
+                                        <button class="toggle-modal">Out Impact <span><img src="assets/images/Desktop/Arrow-right2.png" alt=""></span></button>
                                     </div>
                                 </div>
                                 <div class="case-study-container-img-body">
@@ -487,7 +500,7 @@
                                                     <img src="assets/images/Desktop/umbra-critic.png" alt="Hero Image" class="">
                                                 </div>
                                                 <div>
-                                                    <h1>Marlyn Costello</h1>
+                                                    <h2>Marlyn Costello</h2>
                                                     <div class="review-card-rating">
                                                         <p>Umbra, USA</p>
                                                         <div class="review-card-rating-stars">
@@ -531,26 +544,26 @@
                 <div class="amazon-ppc-card-container container">
                     <div class="amazon-ppc-card">
                         <div class="amazon-ppc-card-header">
-                            <h1>Helping ambitious sellers <span>grow <br> smarter</span>, since 2010.</h1>
+                            <h2>Helping ambitious sellers <span>grow <br> smarter</span>, since 2010.</h2>
                         </div>
                         <div class="amazon-ppc-card-stat">
                             <div>
-                                <h2>81<span class="percentage">%</span></h2>
+                                <h3>81<span class="percentage">%</span></h3>
                                 <p>Average Year Over Year Profit Growth For Our Partners</p>
                             </div>
                             <span class="amazon-ppc-card-stat-line"></span>
                             <div>
-                                <h2>12</h2>
+                                <h3>12</h3>
                                 <p>Industry Awards & Recognitions</p>
                             </div>
                             <span class="amazon-ppc-card-stat-line"></span>
                             <div>
-                                <h2>$2.7B+</h2>
+                                <h3>$2.7B+</h3>
                                 <p>Revenue Managed Across Marketplaces</p>
                             </div>
                             <span class="amazon-ppc-card-stat-line"></span>
                             <div>
-                                <h2>98.7<span class="percentage">%</span></h2>
+                                <h3>98.7<span class="percentage">%</span></h3>
                                 <p>Client Retention Rate</p>
                             </div>
                         </div>
@@ -678,7 +691,7 @@
                         <div class="amazon-ppc-section">
                             <div class="amazon-ppc">
                                 <div class="amazon-container-header">
-                                    <h1>Amazon PPC for Every Phase</h1>
+                                    <h2>Amazon PPC for Every Phase</h2>
                                     <h3>Custom Strategies to our Growth</h3>
                                 </div>
                                 <div class="amazon-content-img">
@@ -686,20 +699,20 @@
                                         <div class="fade-top"></div>
                                         <div class="amazon-ppc-content">
                                             <div class="amazon-ppc-content-text" data-image="Launch.webp">
-                                                <h1>Launch</h1>
+                                                <h2>Launch</h2>
                                                 <p>Every brand is unique - that’s why we tailor your PPC launch plan to your specific goals, audience, and product positioning. - Listing Optimization - Initial Keyword Research - Auto & Manual Campaign Setup - Maximize Impression - Harvesting & Data Collection</p>
                                             </div>
                                             <div class="amazon-ppc-content-text" data-image="Optimize.webp">
-                                                <h1>Optimize</h1>
+                                                <h2>Optimize</h2>
                                                 <p>We don’t “set and forget.” We engineer performance - optimizing keywords, bids, budgets, and campaign architecture daily to turn ad spend into a predictable growth engine.
-                                                    <br/>
+                                                    <br />
                                                 </p>
                                             </div>
                                             <div class="amazon-ppc-content-text" data-image="dominate.webp">
-                                                <h1>Dominate</h1>
+                                                <h2>Dominate</h2>
                                                 <p>Winning on Amazon isn’t about spending more—it’s about spending smarter. We help brands take control of their category on Amazon through precision-built PPC strategies. From keyword ownership to placement dominance, our approach is designed to maximize visibility, sales velocity, and long-term profitability.</p>
                                             </div>
-    
+
                                             <div class="amazon-ppc-content-text"></div>
                                         </div>
                                         <div class="fade-bottom"></div>
@@ -715,7 +728,7 @@
                                     <div class="radial2"></div>
                                     <div class="accordion-item">
                                         <div class="accordion-header active">
-                                            <h1>Launch</h1>
+                                            <h2>Launch</h2>
                                         </div>
                                         <div class="accordion-content active">
                                             <div>
@@ -726,7 +739,7 @@
                                     </div>
                                     <div class="accordion-item">
                                         <div class="accordion-header">
-                                            <h1>Optimize</h1>
+                                            <h2>Optimize</h2>
                                         </div>
                                         <div class="accordion-content">
                                             <div>
@@ -737,7 +750,7 @@
                                     </div>
                                     <div class="accordion-item">
                                         <div class="amazon-ppc-item accordion-header">
-                                            <h1>Dominate</h1>
+                                            <h2>Dominate</h2>
                                         </div>
                                         <div class="accordion-content">
                                             <div>
@@ -749,10 +762,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="amazon-keyword2-section">
+                        <div class="amazon-keyword2-section common-spacing-min-extra">
                             <div class="amazon-keyword2">
                                 <header>
-                                    <h1>Amazon Keyword Strategy</h1>
+                                    <h2>Amazon Keyword Strategy</h2>
                                     <p>Our keyword strategy combines Broad, Phrase, and Exact match types to maximize visibility and drive conversions. This approach helps us discover valuableterms, improve ad targeting, and convert more high-intent traffic with better ROI. A complete keyword mix designed to grow your Amazon sales efficiently.</p>
                                 </header>
                                 <div class="amazon-content-img">
@@ -765,18 +778,18 @@
                                         <div class="fade-top"></div>
                                         <div class="amazon-keyword2-content">
                                             <div class="amazon-keyword2-content-text" data-image="Broad.webp">
-                                                <h1>Broad</h1>
+                                                <h2>Broad</h2>
                                                 <p>Use Broad match to cast a wide net and uncover high-potential search terms across your niche. Capture wide traffic and discover new keyword opportunities with Broad match targeting.
                                                     View Details.</p>
                                             </div>
                                             <div class="amazon-keyword2-content-text" data-image="Phrase.png">
-                                                <h1>Phrase</h1>
+                                                <h2>Phrase</h2>
                                                 <p>Phrase match helps to connect with shoppers using relevant keyword sequences
                                                     for better performance. Great for intent-driven traffic and increasing ad
                                                     relevance.</p>
                                             </div>
                                             <div class="amazon-keyword2-content-text" data-image="Exact.webp">
-                                                <h1>Exact</h1>
+                                                <h2>Exact</h2>
                                                 <p>Exact Match keyword targeting gives you maximum control and precision. By attracting highly relevant shoppers with fewer wasted clicks, it boosts conversions, improves efficiency, and supports faster organic ranking growth.</p>
                                             </div>
                                             <div class="amazon-keyword2-content-text"></div>
@@ -787,7 +800,7 @@
                                 <div class="accordion amazon-keyword2-items">
                                     <div class="accordion-item">
                                         <div class="accordion-header active">
-                                            <h1>Broad</h1>
+                                            <h2>Broad</h2>
                                         </div>
                                         <div class="accordion-content active">
                                             <div>
@@ -799,7 +812,7 @@
                                     </div>
                                     <div class="accordion-item">
                                         <div class="accordion-header">
-                                            <h1>Phrase</h1>
+                                            <h2>Phrase</h2>
                                         </div>
                                         <div class="accordion-content">
                                             <div>
@@ -812,7 +825,7 @@
                                     </div>
                                     <div class="accordion-item">
                                         <div class="accordion-header">
-                                            <h1>Exact</h1>
+                                            <h2>Exact</h2>
                                         </div>
                                         <div class="accordion-content">
                                             <div>
@@ -827,7 +840,7 @@
                         <!-- Timeline Part if needed then uncomment below div -->
                         <!-- <div class="amazon-keyword common-spacing-extra">
                             <header>
-                                <h1>Amazon Keyword Strategy</h1>
+                                <h2>Amazon Keyword Strategy</h2>
                                 <p>Our keyword strategy combines Broad, Phrase, and Exact match types to maximize visibility and drive conversions. This approach helps us discover valuableterms, improve ad targeting, and convert more high-intent traffic with better ROI. A complete keyword mix designed to grow your Amazon sales efficiently.</p>
                             </header>
                             <div class="timeline">
@@ -880,10 +893,10 @@
                         </div> -->
 
                         <!-- Alternative of timeline part below div -->
-                        <div class="amazon-advertising">
+                        <div class="amazon-advertising common-spacing-min-extra">
                             <header>
                                 <h3>All-in-One Amazon Advertising</h3>
-                                <h1>Amazon Ad Format To Grow <br>Your Brand</h1>
+                                <h2>Amazon Ad Format To Grow <br>Your Brand</h2>
                                 <p>At Ecomclips, we tailor your Amazon advertising strategy using a full suite of ad formats and campaign types designed to scale your brand profitably. Whether you're launching a new product, defending your brand, or capturing market share from competitors our data-driven approach ensures every dollar spent delivers results.</p>
                             </header>
                             <div class="advertising-cards">
@@ -924,7 +937,7 @@
                                     <div class="advertising-card-text advertising-card-text-right">
                                         <h2>Amazon Display Ads</h2>
                                         <!-- <p>Reach millions of viewers in Fire TV and Prime Video with Sponsored TV. We help you reach Amazon shoppers while they're watching contenton Fire TV and Prime Video, boosting brand visibility and recognition.</p> -->
-                                         <p>Amazon Sponsored Display ads help brands re-engage shoppers on and off Amazon, increase brand visibility, and drive conversions beyond keyword targeting. We use Sponsored Display as part of a full-funnel Amazon PPC strategy to improve conversion rates, protect listings, and reduce overall ACoS.</p>
+                                        <p>Amazon Sponsored Display ads help brands re-engage shoppers on and off Amazon, increase brand visibility, and drive conversions beyond keyword targeting. We use Sponsored Display as part of a full-funnel Amazon PPC strategy to improve conversion rates, protect listings, and reduce overall ACoS.</p>
                                     </div>
                                 </div>
                             </div>
@@ -944,9 +957,9 @@
                     </div>
                     <!-- <div class="amazon-ppc-strategy">
                         <div class="amazon-ppc-card-header">
-                            <h1>The right strategy. The right data.
+                            <h2>The right strategy. The right data.
                                 <br><span>The right growth.</span>
-                            </h1>
+                            </h2>
                         </div>
                     </div> -->
                 </div>
@@ -958,12 +971,12 @@
         <!-- Question section -->
         <section class="amazon-ppc-question container common-spacing">
             <div class="ppc-question-header">
-                <h1>Frequently Asked Questions</h1>
+                <h2>Frequently Asked Questions</h2>
             </div>
             <div class="accordion faq-items">
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <h1>How long does it take for PPC to work?</h1>
+                        <h2>How long does it take for PPC to work?</h2>
                         <img class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
                         <img class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
                     </div>
@@ -973,7 +986,7 @@
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <h1>What sales uplift can we expect if we increase ACOS/TACoS goals?</h1>
+                        <h2>What sales uplift can we expect if we increase ACOS/TACoS goals?</h2>
                         <img class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
                         <img class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
                     </div>
@@ -983,7 +996,7 @@
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <h1>Can ad spend be reduced while increasing PPC sales?</h1>
+                        <h2>Can ad spend be reduced while increasing PPC sales?</h2>
                         <img class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
                         <img class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
                     </div>
@@ -993,7 +1006,7 @@
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <h1>Which Amazon ad type is the most effective for driving sales?</h1>
+                        <h2>Which Amazon ad type is the most effective for driving sales?</h2>
                         <img class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
                         <img class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
                     </div>
@@ -1003,7 +1016,7 @@
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <h1>How much budget is needed for a successful PPC strategy?</h1>
+                        <h2>How much budget is needed for a successful PPC strategy?</h2>
                         <img class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
                         <img class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
                     </div>
@@ -1014,7 +1027,7 @@
 
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <h1>What results can I expect from your PPC management?</h1>
+                        <h2>What results can I expect from your PPC management?</h2>
                         <img class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
                         <img class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
                     </div>
@@ -1024,7 +1037,7 @@
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <h1>I’m new to Amazon PPC. Can you still help?</h1>
+                        <h2>I’m new to Amazon PPC. Can you still help?</h2>
                         <img class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
                         <img class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
                     </div>
@@ -1034,7 +1047,7 @@
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <h1>How often do you optimize campaigns?</h1>
+                        <h2>How often do you optimize campaigns?</h2>
                         <img class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
                         <img class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
                     </div>
@@ -1044,7 +1057,7 @@
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <h1>Do you manage PPC for both Seller Central and Vendor Central?</h1>
+                        <h2>Do you manage PPC for both Seller Central and Vendor Central?</h2>
                         <img class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
                         <img class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
                     </div>
@@ -1054,7 +1067,7 @@
                 </div>
                 <div class="accordion-item">
                     <div class="accordion-header">
-                        <h1>Will I have a dedicated account manager?</h1>
+                        <h2>Will I have a dedicated account manager?</h2>
                         <img class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
                         <img class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
                     </div>
@@ -1071,15 +1084,15 @@
         <section class="amazon-advertising-pricing container">
             <div class="amazon-advertising-pricing-text">
                 <div class="amazon-advertising-pricing-header">
-                    <h1>Amazon Advertising</h1>
+                    <h2>Amazon Advertising</h2>
                     <p>Serious Result Small Pricing!</p>
                 </div>
                 <div class="amazon-advertising-pricing-content">
-                    <h2>Start from just</h2>
-                    <h1>$100/month</h1>
+                    <h3>Start from just</h3>
+                    <h2>$100/month</h2>
                     <p>We dont just manage ads- we grow business.</p>
                     <p>When your brand wins, so do we.</p>
-                    <button>GET A QUOTE</button>
+                    <button class="toggle-modal">GET A QUOTE</button>
                 </div>
             </div>
             <div class="amazon-advertising-pricing-img">
@@ -1089,14 +1102,146 @@
         <!-- Amazon Advertising Pricing end-->
     </main>
 
+    <!-- modal for form -->
+    <!-- <div class="modal fade show" id="checkpriority">
+        <div class="modal-dialog modal-for-width modal-dialog-centered">
+            <form class="ecc_email_form" method="post" id="contactForm">
+                <div class="modal-content modal-for-content">
+                    <div class="modal-header">
+                        <button type="button" class="close-btn close-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+                        <p>Our expert will talk to you regarding your project</p>
+                        <h3 class="modal-title" id="exampleModalLabel">Fill-up the from &amp; get a free call</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="fill-up-pera">
+                            <label for="recipient-name" class="col-form-label col-form-label-right">Name:<p class="mandatory-feild">*</p></label>
+                            <input type="text" class="form-control form-control-pera" id="recipient-name" placeholder="John Doe" name="name">
+                        </div>
+                        <div class="fill-up-pera">
+                            <label for="recipient-name" class="col-form-label col-form-label-right">Email:<p class="mandatory-feild">*</p></label>
+                            <input type="text" class="form-control form-control-pera" id="recipient-name" placeholder="johndoe@gmail.com" name="email">
+                        </div>
+
+                        <div class="mb-3 fill-up-pera">
+                            <label for="recipient-name" class="col-form-label col-form-label-right">Phone:</label>
+
+                            <div class="phone-wrapper">
+                                <div class="flag-container">
+                                    <span id="flag"></span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                <input type="tel" id="phoneNumber" placeholder="Phone number" name="number">
+                                <input type="hidden" id="phoneNumberCode" name="phone_code">
+
+                                <div id="countryDropdown" class="dropdown"></div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="fill-up-pera">
+                            <label for="recipient-name" class="col-form-label col-form-label-right">Website:</label>
+                            <input type="text" class="form-control form-control-pera" id="recipient-name" placeholder="https://www.ecomclips.com" name="website">
+                        </div>
+
+
+                        <div class="from-bottom">
+                            <label for="services" class="col-form-label">Services:</label>
+                            <div class="service-display">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input form-check-input-block" type="checkbox" id="inlineCheckbox1" name="services[]" value="Data Management">
+                                    <label class="form-check-label" for="inlineCheckbox1">Data Management</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input form-check-input-block" type="checkbox" id="inlineCheckbox2" name="services[]" value="Multichannel Softwares">
+                                    <label class="form-check-label" for="inlineCheckbox2">Multichannel Softwares</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input form-check-input-block" type="checkbox" id="inlineCheckbox3" name="services[]" value="Sponsored Ad Management">
+                                    <label class="form-check-label" for="inlineCheckbox3">Sponsored Ad Management</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input form-check-input-block" type="checkbox" id="inlineCheckbox4" name="services[]" value="Digital Marketing">
+                                    <label class="form-check-label" for="inlineCheckbox4">Digital Marketing</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input form-check-input-block" type="checkbox" id="inlineCheckbox5" name="services[]" value="Website Development">
+                                    <label class="form-check-label" for="inlineCheckbox5">Website Development</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input form-check-input-block" type="checkbox" id="inlineCheckbox6" name="services[]" value="Creative Graphics">
+                                    <label class="form-check-label" for="inlineCheckbox6">Creative Graphics</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="from-bottom">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control form-control-pera-home" rows="5" placeholder="Enter your Message Here..." id="message-text" name="message"></textarea>
+                        </div>
+                        <div class="ecc-captcha">
+                            <div class="g-recaptcha" data-sitekey="6Lc6E0EoAAAAAKdphud-ZLEDNBjDf7A2Gqnaq7Si" id="recaptcha-widget-2"></div>
+                            <div id="recaptcha-error" class="error-message"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="designer-button">
+                            <div class="designer-middle-button close-modal-btn">
+                                <p class="designer-middle-btnText">I will, do it later</p>
+                                <div class="designer-middle-btnTwo">
+                                    <p class="designer-middle-btnText2">Cancel</p>
+                                </div>
+                            </div>
+                            <div class="designer-middle-button">
+                                <p class="designer-middle-btnText">Send Message</p>
+                                <div class="designer-middle-btnTwo">
+                                    <button type="submit" class="designer-middle-btnText2 ecc-email-submit-btn">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div> -->
+    <!-- modal for form end -->
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script> 
+    <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/country-list-with-dial-code-and-flag@latest/dist/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/country-list-with-dial-code-and-flag/dist/country-flag-svg.js"></script>
 
     <script src="/assets/js/smooth.js"></script>
     <script src="/assets/js/scroll.js"></script>
     <script src="/assets/js/main.js"></script>
+    <!-- <script src="/assets/js/modal.js"></script> -->
+
+    <!-- Google reCAPTCHA -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script>
+
+        function get_action(form) 
+        {
+            var v = grecaptcha.getResponse();
+            if(v.length == 0)
+            {
+                document.getElementById('captcha').innerHTML="You can't leave Captcha Code empty";
+                return false;
+            }
+            else
+            {
+                document.getElementById('captcha').innerHTML="Captcha completed";
+                return true; 
+            }
+        }
+
+    </script>
+
 </body>
 
 </html>
