@@ -95,14 +95,19 @@ body {
     }
 }
  
- 
- 
 .box-1 {
+    --bg-color: #c183e7;
+    --color-1: #df66dd;
+    --color-2: #d5719e;
+    --color-3: #edb299;
+}
+ 
+/* .box-1 {
     --bg-color: var(--get-bg-color);
     --color-1: #B500B2; 
     --color-2: #FF52A0;
     --color-3: #FFA47F;
-}
+} */
 
 img {
   max-width: 100%;
@@ -783,7 +788,7 @@ main {
   background: linear-gradient(104.41deg, #9b8a76 2.59%, #d3cbc4 28.24%, #d3cbc4 60.05%, #9b8a76 86.67%);
 }
 
-.case-study-container::before {
+/* .case-study-container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -791,19 +796,18 @@ main {
   width: 55%;
   height: 55%;
   pointer-events: none;
-  border-radius: 10px 0 0 0; /* Only round the top-left corner */
+  border-radius: 10px 0 0 0;
 
   border-top: 3px solid #526685;
   border-left: 3px solid #526685;
 
-  /* Create the fade effect with mask */
   mask: linear-gradient(to right, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 80%, transparent 100%);
   mask-composite: intersect;
   mask: linear-gradient(to right, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 80%, transparent 100%);
   mask-composite: intersect;
   -webkit-mask: linear-gradient(to right, #fff 0%, #fff 80%, transparent 100%), linear-gradient(to bottom, #fff 0%, #fff 80%, transparent 100%);
   -webkit-mask-composite: source-in;
-}
+} */
 
 .case-study-container-text {
   width: 100%;

@@ -2332,14 +2332,17 @@
 
     <script src="https://cdn.jsdelivr.net/npm/country-list-with-dial-code-and-flag@latest/dist/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/country-list-with-dial-code-and-flag/dist/country-flag-svg.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/extra/home.js"></script>
+    <script src="./assets/js/extra/custom-2.js"></script>
+    <script src="./assets/js/extra/custom-blog.js"></script>
 
     <script src="/assets/js/smooth.js"></script>
     <script src="/assets/js/scroll.js"></script>
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/modal.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./assets/js/extra/home.js"></script>
 
     <!-- Google reCAPTCHA -->
     <!-- <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -2355,8 +2358,7 @@
             }
         }
     </script> -->
-    <script src="./assets/js/extra/custom-2.js"></script>
-    <script src="./assets/js/extra/custom-blog.js"></script>
+    
 
 </body>
 
