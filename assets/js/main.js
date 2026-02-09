@@ -1,11 +1,11 @@
 // Enhanced Accordion JS - Remove border from previous item for positions 2,3,4
 document.addEventListener("DOMContentLoaded", function () {
-  const headers = document.querySelectorAll(".accordion-header");
+  const headers = document.querySelectorAll(".custom-accordion-header");
 
   headers.forEach((header) => {
     const content = header.nextElementSibling;
     const item = header.parentElement;
-    const group = item.closest(".accordion");
+    const group = item.closest(".custom-accordion");
 
     // Initial state
     if (!content.classList.contains("active")) {
@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
       const isOpen = content.classList.contains("active");
 
       // 🔒 Close ONLY items in the same group
-      const groupHeaders = group.querySelectorAll(".accordion-header");
-      const groupItems = group.querySelectorAll(".accordion-item");
+      const groupHeaders = group.querySelectorAll(".custom-accordion-header");
+      const groupItems = group.querySelectorAll(".custom-accordion-item");
 
       // Close all group accordions
       groupHeaders.forEach((h) => {
@@ -175,3 +175,14 @@ window.addEventListener("load", adjustImageHeight);
 window.addEventListener("resize", adjustImageHeight);
 
 timeline();
+
+document.body.style.overflow = "hidden";
+document.body.style.height = "100dvh";
+
+  // Restore scrolling when the page fully loads
+window.addEventListener("load", function() {
+    document.body.style.overflow = "hidden";
+    document.body.style.height = "auto";
+    document.querySelector(".loading").classList.add("hidden");
+});
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <form action="form1.php" method="post">
+      <div class="g-recaptcha"></div>
+      <button type="submit">Submit Form 1</button>
+    </form>
+
+    <form action="form2.php" method="post">
+      <div class="g-recaptcha"></div>
+      <button type="submit">Submit Form 2</button>
+    </form>
+
+    <form action="form3.php" method="post">
+      <div class="g-recaptcha"></div>
+      <button type="submit">Submit Form 3</button>
+    </form>
+
+    <form action="form4.php" method="post">
+      <div class="g-recaptcha"></div>
+      <button type="submit">Submit Form 4</button>
+    </form>
+
+    <form action="form5.php" method="post">
+      <div class="g-recaptcha"></div>
+      <button type="submit">Submit Form 5</button>
+    </form>
+    <script>
+      // Initialize reCAPTCHA for each form
+      const forms = document.querySelectorAll("form");
+      forms.forEach((form) => {
+        grecaptcha.render(form.querySelector(".g-recaptcha"), {
+          sitekey: "6Lc6E0EoAAAAAKdphud-ZLEDNBjDf7A2Gqnaq7Si",
+          callback: function (response) {
+            // This callback will be triggered when reCAPTCHA is solved
+            // You can store the response for later use
+            form.dataset.recaptchaResponse = response;
+          },
+        });
+      });
+
+      // Add a submit event listener to each form
+      forms.forEach((form) => {
+        form.addEventListener("submit", function (e) {
+          // Prevent the form from submitting initially
+          e.preventDefault();
+
+          // Get the reCAPTCHA response from the dataset
+          const recaptchaResponse = form.dataset.recaptchaResponse;
+
+          // Now, you can use the recaptchaResponse as needed
+          // For example, you can send it along with the form data to your server
+          // or perform other actions.
+        });
+      });
+    </script>
+  </body>
+</html>

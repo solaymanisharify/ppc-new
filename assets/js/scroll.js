@@ -43,11 +43,11 @@ window.addEventListener("load", () => {
       verticalCard,
       {
         scale: 1.05,
-        borderRadius: "0px",
+        // borderRadius: "0px",
       },
       {
         scale: 1,
-        borderRadius: "10px",
+        // borderRadius: "10px",
         duration: 0.5,
       },
       ">-0.7", // starts halfway through the slide
@@ -61,7 +61,7 @@ window.addEventListener("load", () => {
   // ------------------------------
   const horizontalCardContainer = document.querySelector(".horizontal");
   const horizontalCards = gsap.utils.toArray(".case-study-container");
-  const stickyWrapper = document.querySelector(".sticky");
+  const stickyWrapper = document.querySelector(".sticky-body");
 
   function getScrollAmount() {
     let extraWidth = window.innerWidth - horizontalCardContainer.offsetWidth;
@@ -70,7 +70,7 @@ window.addEventListener("load", () => {
 
   const horizontalTimeline = gsap.timeline({
     scrollTrigger: {
-      trigger: ".sticky",
+      trigger: ".sticky-body",
       start: "top 3%",
       end: () => `+=${horizontalCardContainer.scrollWidth / 2}`, // here added /2 to make it scroll faster
       scrub: 0.1,
@@ -109,78 +109,160 @@ window.addEventListener("load", () => {
   // Sync Image Change with Block
   // ------------------------------
 
-  function syncImageChangeAnimation({ sectionName, blockSelector, imageSelector, spacial= false }) {
-    const blocks = gsap.utils.toArray(blockSelector);
-    const images = gsap.utils.toArray(imageSelector);
-    const blocksContainer = document.querySelector(`${sectionName} .amazon-content-img`);
+  // function syncImageChangeAnimation({ sectionName, blockSelector, imageSelector, spacial= false }) {
+  //   const blocks = gsap.utils.toArray(blockSelector);
+  //   const images = gsap.utils.toArray(imageSelector);
+  //   const blocksContainer = document.querySelector(`${sectionName} .amazon-content-img`);
 
-    // Pin blocks
-    ScrollTrigger.create({
-      trigger: sectionName,
-      start: "top 14%",
-      endTrigger: blocks[blocks.length - 1],
-      end: "bottom center",
-      pin: true,
-      scrub: true,
-      invalidateOnRefresh: true,
-      // markers: true,
-    });
+  //   // Pin blocks
+  //   ScrollTrigger.create({
+  //     trigger: sectionName,
+  //     start: "top 14%",
+  //     endTrigger: blocks[blocks.length - 1],
+  //     end: "bottom center",
+  //     pin: true,
+  //     scrub: true,
+  //     invalidateOnRefresh: true,
+  //     // markers: true,
+  //   });
 
-    // change image with block
-    blocks.forEach((block, index) => {
-      if (index === blocks.length - 1) return;
+  //   // change image with block
+  //   blocks.forEach((block, index) => {
+  //     if (index === blocks.length - 1) return;
+  //     ScrollTrigger.create({
+  //       trigger: block,
+  //       start: "top center",
+  //       end: "bottom center",
+  //       scrub: true,
+  //       // markers: true,
+
+  //       onEnter: () => activate(index),
+  //       onEnterBack: () => activate(index),
+  //       invalidateOnRefresh: true,
+  //     });
+  //   });
+
+  //   let mayHight = spacial ? 90 : 105;
+
+  //   // with scroll
+  //   blocks.forEach((block, index) => {
+  //     gsap.to(block, {
+  //       y: () => `-${blocks.length * mayHight}% + ${index * 100}%`,
+  //       ease: "none",
+  //       scrollTrigger: {
+  //         trigger: blocksContainer,
+  //         start: "top 20%",
+  //         endTrigger: blocks[blocks.length - 1],
+  //         end: "bottom 65%",
+  //         scrub: 3,
+  //         // markers: true,
+  //         invalidateOnRefresh: true,
+  //       },
+  //     });
+  //   });
+
+  //   function activate(index) {
+  //     // Highlight blocks
+  //     blocks.forEach((b, i) => {
+  //       gsap.to(b, {
+  //         opacity: i === index ? 1 : 0.3,
+  //         duration: 0.3,
+  //       });
+  //     });
+
+  //     // Crossfade images
+  //     images.forEach((img, i) => {
+  //       gsap.to(img, {
+  //         opacity: i === index ? 1 : 0,
+  //         duration: 0.5,
+  //         ease: "power1.inOut",
+  //         overwrite: "auto",
+  //       });
+  //     });
+  //   }
+  // }
+
+function syncImageChangeAnimation({ sectionName, blockSelector, imageSelector, spacial = false }) {
+  const blocks = gsap.utils.toArray(blockSelector);
+  const images = gsap.utils.toArray(imageSelector);
+  const blocksContainer = document.querySelector(`${sectionName} .amazon-content-img`);
+
+  // Use matchMedia for responsive GSAP animations
+  ScrollTrigger.matchMedia({
+    // Mobile & tablet
+    "(min-width: 850px)": function() {
+
+      // Pin the section
       ScrollTrigger.create({
-        trigger: block,
-        start: "top center",
+        trigger: sectionName,
+        start: "top 14%",
+        endTrigger: blocks[blocks.length - 1],
         end: "bottom center",
+        pin: true,
         scrub: true,
-        // markers: true,
-
-        onEnter: () => activate(index),
-        onEnterBack: () => activate(index),
         invalidateOnRefresh: true,
+        // markers: true,
       });
-    });
 
-    let mayHight = spacial ? 90 : 105;
-
-    // with scroll
-    blocks.forEach((block, index) => {
-      gsap.to(block, {
-        y: () => `-${blocks.length * mayHight}% + ${index * 100}%`,
-        ease: "none",
-        scrollTrigger: {
-          trigger: blocksContainer,
-          start: "top 20%",
-          endTrigger: blocks[blocks.length - 1],
-          end: "bottom 65%",
-          scrub: 3,
+      // ScrollTrigger for each block to change images
+      blocks.forEach((block, index) => {
+        if (index === blocks.length - 1) return;
+        ScrollTrigger.create({
+          trigger: block,
+          start: "top center",
+          end: "bottom center",
+          scrub: true,
           // markers: true,
+          onEnter: () => activate(index),
+          onEnterBack: () => activate(index),
           invalidateOnRefresh: true,
-        },
-      });
-    });
-
-    function activate(index) {
-      // Highlight blocks
-      blocks.forEach((b, i) => {
-        gsap.to(b, {
-          opacity: i === index ? 1 : 0.3,
-          duration: 0.3,
         });
       });
 
-      // Crossfade images
-      images.forEach((img, i) => {
-        gsap.to(img, {
-          opacity: i === index ? 1 : 0,
-          duration: 0.5,
-          ease: "power1.inOut",
-          overwrite: "auto",
+      // Vertical movement calculation
+      let mayHeight = spacial ? 90 : 105;
+
+      blocks.forEach((block, index) => {
+        gsap.to(block, {
+          y: () => `-${blocks.length * mayHeight}% + ${index * 100}%`,
+          ease: "none",
+          scrollTrigger: {
+            trigger: blocksContainer,
+            start: "top 20%",
+            endTrigger: blocks[blocks.length - 1],
+            end: "bottom 65%",
+            scrub: 3,
+            // markers: true,
+            invalidateOnRefresh: true,
+          },
         });
       });
-    }
-  }
+
+      // Function to activate block & image
+      function activate(index) {
+        // Highlight blocks
+        blocks.forEach((b, i) => {
+          gsap.to(b, {
+            opacity: i === index ? 1 : 0.3,
+            duration: 0.3,
+          });
+        });
+
+        // Crossfade images
+        images.forEach((img, i) => {
+          gsap.to(img, {
+            opacity: i === index ? 1 : 0,
+            duration: 0.5,
+            ease: "power1.inOut",
+            overwrite: "auto",
+          });
+        });
+      }
+    },
+  });
+}
+
+
 
   syncImageChangeAnimation({
     sectionName: ".amazon-ppc-section",
