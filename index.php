@@ -1500,7 +1500,7 @@
                         <div class="col-sm-4">
                             <div class="videoCoverImage">
                                 <div onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">
-                                    <img loading="lazy" class="thumb mobile-thumb-img-260" src="./video/caitlin.png">
+                                    <img loading="lazy" class="thumb mobile-thumb-img-260" src="./assets/images/video/caitlin.png">
                                 </div>
                                 <div id="thevideo" class="display-none" style="height:260px">
                                     <iframe width="100%" src="https://www.youtube.com/embed/FXM3xY6LGJU" frameborder="0" allowfullscreen="" include="" controls></iframe>
@@ -1518,7 +1518,7 @@
                         <div class="col-sm-4">
                             <div class="videoCoverImage">
                                 <div onclick="thevid=document.getElementById('thevideotwo'); thevid.style.display='block'; this.style.display='none'">
-                                    <img loading="lazy" class="thumb mobile-thumb-img-260" src="./video/danitza.png">
+                                    <img loading="lazy" class="thumb mobile-thumb-img-260" src="./assets/images/video/danitza.png">
                                 </div>
                                 <div id="thevideotwo" class="display-none" style="height:260px">
                                     <iframe width="100%" src="https://www.youtube.com/embed/dYNfaCBosxg" frameborder="0" allowfullscreen="" include="" controls></iframe>
@@ -1538,7 +1538,7 @@
                         <div class="col-sm-4">
                             <div class="videoCoverImage">
                                 <div onclick="thevid=document.getElementById('thevideothree'); thevid.style.display='block'; this.style.display='none'">
-                                    <img loading="lazy" class="thumb mobile-thumb-img-260" src="./video/james.png">
+                                    <img loading="lazy" class="thumb mobile-thumb-img-260" src="./assets/images/video/james.png">
                                 </div>
                                 <div id="thevideothree" class="display-none" style="height:260px">
                                     <iframe width="100%" src="https://www.youtube.com/embed/HvSaMjbgcxw" frameborder="0" allowfullscreen="" include="" controls></iframe>
@@ -1574,7 +1574,7 @@
                         <div class="col-sm-12">
                             <div class="videoCoverImage">
                                 <div onclick="thevid=document.getElementById('thevideomob'); thevid.style.display='block'; this.style.display='none'">
-                                    <img loading="lazy" class="thumb mobile-thumb-img-500">
+                                    <img loading="lazy" class="thumb mobile-thumb-img-500" src="./assets/images/video/caitlin.png">
                                 </div>
                                 <div id="thevideomob" class="display-none">
                                     <iframe width="100%" height="500" src="https://www.youtube.com/embed/FXM3xY6LGJU" frameborder="0" allowfullscreen="" include="" controls></iframe>
@@ -1593,7 +1593,7 @@
                         <div class="col-sm-12">
                             <div class="videoCoverImage">
                                 <div onclick="thevid=document.getElementById('thevideomobtwo'); thevid.style.display='block'; this.style.display='none'">
-                                    <img loading="lazy" class="thumb mobile-thumb-img-500" src="./video/danitza.png">
+                                    <img loading="lazy" class="thumb mobile-thumb-img-500" src="./assets/images/video/danitza.png">
                                 </div>
                                 <div id="thevideomobtwo" class="display-none">
                                     <iframe width="100%" height="500" src="https://www.youtube.com/embed/dYNfaCBosxg" frameborder="0" allowfullscreen="" include="" controls></iframe>
@@ -1614,7 +1614,7 @@
                         <div class="col-sm-12">
                             <div class="videoCoverImage">
                                 <div onclick="thevid=document.getElementById('thevideomobthree'); thevid.style.display='block'; this.style.display='none'">
-                                    <img loading="lazy" class="thumb mobile-thumb-img-500" src="./video/james.png">
+                                    <img loading="lazy" class="thumb mobile-thumb-img-500" src="./assets/images/video/james.png">
                                 </div>
                                 <div id="thevideomobthree" class="display-none">
                                     <iframe width="100%" height="500" src="https://www.youtube.com/embed/HvSaMjbgcxw" frameborder="0" allowfullscreen="" include="" controls></iframe>
@@ -1647,7 +1647,7 @@
                         <div class="col-sm-4">
                             <div class="videoCoverImage">
                                 <div onclick="thevid=document.getElementById('thevideomo'); thevid.style.display='block'; this.style.display='none'">
-                                    <img loading="lazy" class="thumb mobile-thumb-img-0" src="./video/caitlin.png">
+                                    <img loading="lazy" class="thumb mobile-thumb-img-0" src="./assets/images/video/caitlin.png">
                                 </div>
                                 <div id="thevideomo" class="display-none">
                                     <iframe width="100%" height="200" src="https://www.youtube.com/embed/FXM3xY6LGJU" frameborder="0" allowfullscreen="" include="" controls></iframe>
@@ -1665,7 +1665,7 @@
                         <div class="col-sm-4">
                             <div class="videoCoverImage">
                                 <div onclick="thevid=document.getElementById('thevideotwomw'); thevid.style.display='block'; this.style.display='none'">
-                                    <img loading="lazy" class="thumb mobile-thumb-img-0" src="./video/danitza.png">
+                                    <img loading="lazy" class="thumb mobile-thumb-img-0" src="./assets/images/video/danitza.png">
                                 </div>
                                 <div id="thevideotwomw" class="display-none">
                                     <iframe width="100%" height="200" src="https://www.youtube.com/embed/dYNfaCBosxg" frameborder="0" allowfullscreen="" include="" controls></iframe>
@@ -1685,7 +1685,7 @@
                         <div class="col-sm-4">
                             <div class="videoCoverImage">
                                 <div onclick="thevid=document.getElementById('thevideothreemt'); thevid.style.display='block'; this.style.display='none'">
-                                    <img loading="lazy" class="thumb mobile-thumb-img-0" src="./video/james.png">
+                                    <img loading="lazy" class="thumb mobile-thumb-img-0" src="./assets/images/video/james.png">
                                 </div>
                                 <div id="thevideothreemt" class="display-none">
                                     <iframe width="100%" height="200" src="https://www.youtube.com/embed/HvSaMjbgcxw" frameborder="0" allowfullscreen="" include="" controls></iframe>
