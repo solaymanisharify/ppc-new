@@ -4,32 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecomclips Landing Page</title>
-    <link rel="stylesheet" href="./assets/css/cdn/bootstrap.min.css" />
-    <!-- <link rel="stylesheet" href="./assets/css/extra/owl.carousel.css" /> -->
-    <link rel="stylesheet" href="./assets/css/extra/owl.carousel.min.css" />
-    <!-- <link rel="stylesheet" href="./assets/css/extra/owl.theme.default.css" /> -->
-    <link rel="stylesheet" href="./assets/css/extra/owl.theme.default.min.css" />
-    <!-- <link rel="stylesheet" href="./assets/css/extra/style.css" /> -->
-    <link rel="stylesheet" href="./assets/css/extra/style.min.css" />
-    <!-- <link rel="stylesheet" href="./assets/css/extra/homeStyle.css" /> -->
-    <link rel="stylesheet" href="./assets/css/extra/homeStyle.min.css" />
-    <!-- <link rel="stylesheet" href="./assets/css/extra/fix_style.css" /> -->
-    <link rel="stylesheet" href="./assets/css/extra/fix_style.min.css" />
-    <!-- <link rel="stylesheet" href="./assets/css/extra/footer.css" /> -->
-    <link rel="stylesheet" href="./assets/css/extra/footer.min.css" />
 
-    <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
-    <link rel="stylesheet" href="./assets/css/styles.min.css">
-    <!-- <link rel="stylesheet" href="assets/css/modal.css"> -->
-    <link rel="stylesheet" href="assets/css/modal.min.css">
-    
+    <title>Ecomclips Landing Page</title>
+    <!-- ===== Preload ONLY critical animation libs ===== -->
+    <link rel="preload" href="./assets/js/cdn/gsap.min.js" as="script">
+    <link rel="preload" href="./assets/js/cdn/scroll-trigger.min.js" as="script">
+    <link rel="preload" href="./assets/js/cdn/lenis.min.js" as="script">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+
+    <link rel="preload" href="./assets/css/cdn/bootstrap.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'" />
+
+    <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
+    <link rel="preload" href="./assets/css/styles.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'" />
+
+    <!-- <link rel="stylesheet" href="./assets/css/extra/style.css" /> -->
+    <link rel="preload" href="./assets/css/extra/style.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'" />
+    <!-- <link rel="stylesheet" href="./assets/css/extra/homeStyle.css" /> -->
+    <link rel="preload" href="./assets/css/extra/homeStyle.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'" />
+    <!-- <link rel="stylesheet" href="./assets/css/extra/fix_style.css" /> -->
+    <link rel="preload" href="./assets/css/extra/fix_style.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'" />
+    <!-- <link rel="stylesheet" href="./assets/css/extra/footer.css" /> -->
+    <link rel="preload" href="./assets/css/extra/footer.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'" />
+
+    <!-- <link rel="stylesheet" href="assets/css/modal.css"> -->
+    <link rel="preload" href="assets/css/modal.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'" />
+
+    <!-- <link rel="stylesheet" href="./assets/css/extra/owl.carousel.css" /> -->
+    <link rel="preload" href="./assets/css/extra/owl.carousel.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'" />
+    <!-- <link rel="stylesheet" href="./assets/css/extra/owl.theme.default.css" /> -->
+    <link rel="preload" href="./assets/css/extra/owl.theme.default.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'" />
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <noscript>
+        <link rel="stylesheet" href="./assets/css/cdn/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/styles.min.css">
+    </noscript>
 </head>
 
 <body>
@@ -528,7 +554,7 @@
                                             <div class="fake-review-inner">
                                                 <div class="review-card-top">
                                                     <div class="fake-review-img">
-                                                        <img loading="lazy" src="assets/images/Desktop/umbra-critic.png" alt="Hero Image" class="">
+                                                        <img loading="lazy" src="assets/images/Desktop/umbra-critic.webp" alt="Hero Image" class="">
                                                     </div>
                                                     <div>
                                                         <h2>Marlyn Costello</h2>
@@ -1820,7 +1846,7 @@
             <!-- End mobile design -->
 
             <!-- end brand -->
-            
+
             <!-- trust us -->
             <section class="trust-mobile-hide">
                 <div class="review-container">
@@ -2256,7 +2282,7 @@
         </div>
     </div>
     <!-- modal for form end -->
-    
+
     <script src="./assets/js/cdn/gsap.min.js" defer></script>
     <script src="./assets/js/cdn/scroll-trigger.min.js" defer></script>
     <script src="./assets/js/cdn/lenis.min.js" defer></script>
@@ -2296,7 +2322,7 @@
             }
         }
     </script> -->
-    
+
 
 </body>
 
