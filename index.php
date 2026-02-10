@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecomclips Landing Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/cdn/bootstrap.min.css" />
     <!-- <link rel="stylesheet" href="./assets/css/extra/owl.carousel.css" /> -->
     <link rel="stylesheet" href="./assets/css/extra/owl.carousel.min.css" />
     <!-- <link rel="stylesheet" href="./assets/css/extra/owl.theme.default.css" /> -->
@@ -21,14 +21,14 @@
 
     <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
     <link rel="stylesheet" href="./assets/css/styles.min.css">
-    <link rel="stylesheet" href="assets/css/modal.css">
-
+    <!-- <link rel="stylesheet" href="assets/css/modal.css"> -->
+    <link rel="stylesheet" href="assets/css/modal.min.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -305,7 +305,7 @@
                             <div class="case-study-header">
                                 <h2>From Growth to Succcess</h2>
                                 <div class="golden-fox">
-                                    <img loading="lazy" src="assets/images/Mobile-version/goldenfox-logo.png" alt="Hero Image" class="">
+                                    <img loading="lazy" src="assets/images/Mobile-version/goldenfox-logo.webp" alt="Hero Image" class="">
                                 </div>
                             </div>
                             <div class="case-study-growth-image-container">
@@ -347,12 +347,12 @@
                                 </div>
                                 <div class="case-study-container-img-body">
                                     <div class="case-study-container-img">
-                                        <img loading="lazy" src="assets/images/Desktop/Review-copy.png" alt="Hero Image" class="case-study-img">
+                                        <img loading="lazy" src="assets/images/Desktop/Review-copy.webp" alt="Hero Image" class="case-study-img">
                                         <div class="fake-review">
                                             <div class="fake-review-inner">
                                                 <div class="review-card-top">
                                                     <div class="fake-review-img">
-                                                        <img loading="lazy" src="assets/images/Desktop/fake-critics.png" alt="Hero Image" class="">
+                                                        <img loading="lazy" src="assets/images/Desktop/fake-critics.webp" alt="Hero Image" class="">
                                                     </div>
                                                     <div>
                                                         <h2>James Hawken</h2>
@@ -435,12 +435,12 @@
                                 </div>
                                 <div class="case-study-container-img-body">
                                     <div class="case-study-container-img">
-                                        <img loading="lazy" id="" src="assets/images/Desktop/woodland-cover.png" alt="Hero Image" class="case-study-img">
+                                        <img loading="lazy" id="" src="assets/images/Desktop/woodland-cover.webp" alt="Hero Image" class="case-study-img">
                                         <div class="fake-review">
                                             <div class="fake-review-inner">
                                                 <div class="review-card-top">
                                                     <div class="fake-review-img">
-                                                        <img loading="lazy" src="assets/images/Desktop/woodland-critic.png" alt="Hero Image" class="">
+                                                        <img loading="lazy" src="assets/images/Desktop/woodland-critic.webp" alt="Hero Image" class="">
                                                     </div>
                                                     <div>
                                                         <h2>Max Davidson</h2>
@@ -1338,7 +1338,7 @@
                         <div class="why-right">
 
                             <div class="hero-right">
-                                <img loading="lazy" src="./assets/images/five-img/why-right.png" alt="">
+                                <img loading="lazy" src="./assets/images/five-img/why-right.webp" alt="">
                                 <a href="# ">
                                     <div class="glass-effect-five glass-position-one">
                                         <img loading="lazy" src="./assets/images/five-img/sale.png" alt="">
@@ -1499,11 +1499,10 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="videoCoverImage">
-                                <div onclick="thevid=document.getElementById('thevideo'); thevid.style.display='block'; this.style.display='none'">
-                                    <img loading="lazy" class="thumb mobile-thumb-img-260" src="./assets/images/video/caitlin.png">
-                                </div>
-                                <div id="thevideo" class="display-none" style="height:260px">
-                                    <iframe width="100%" src="https://www.youtube.com/embed/FXM3xY6LGJU" frameborder="0" allowfullscreen="" include="" controls></iframe>
+                                <div>
+                                    <a href="https://youtu.be/FXM3xY6LGJU" target="_blank" rel="noopener noreferrer">
+                                        <img loading="lazy" class="thumb mobile-thumb-img-260" src="./assets/images/video/caitlin.webp">
+                                    </a>
                                 </div>
                                 <div class="video-text-t">
                                     <p>“... The guys in Ecomclips are absolutely fantastic. They have supported us on PPC, supported us on Optimization, Customer Service - you name it..! …”
@@ -1517,11 +1516,10 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="videoCoverImage">
-                                <div onclick="thevid=document.getElementById('thevideotwo'); thevid.style.display='block'; this.style.display='none'">
-                                    <img loading="lazy" class="thumb mobile-thumb-img-260" src="./assets/images/video/danitza.png">
-                                </div>
-                                <div id="thevideotwo" class="display-none" style="height:260px">
-                                    <iframe width="100%" src="https://www.youtube.com/embed/dYNfaCBosxg" frameborder="0" allowfullscreen="" include="" controls></iframe>
+                                <div>
+                                    <a href="https://youtu.be/dYNfaCBosxg" target="_blank" rel="noopener noreferrer">
+                                        <img loading="lazy" class="thumb mobile-thumb-img-260" src="./assets/images/video/danitza.webp">
+                                    </a>
                                 </div>
 
                                 <div class="video-text-t">
@@ -1537,11 +1535,10 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="videoCoverImage">
-                                <div onclick="thevid=document.getElementById('thevideothree'); thevid.style.display='block'; this.style.display='none'">
-                                    <img loading="lazy" class="thumb mobile-thumb-img-260" src="./assets/images/video/james.png">
-                                </div>
-                                <div id="thevideothree" class="display-none" style="height:260px">
-                                    <iframe width="100%" src="https://www.youtube.com/embed/HvSaMjbgcxw" frameborder="0" allowfullscreen="" include="" controls></iframe>
+                                <div>
+                                    <a href="https://youtu.be/HvSaMjbgcxw" target="_blank" rel="noopener noreferrer">
+                                        <img loading="lazy" class="thumb mobile-thumb-img-260" src="./assets/images/video/james.webp">
+                                    </a>
                                 </div>
 
                                 <div class="video-text-t">
@@ -1573,11 +1570,10 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="videoCoverImage">
-                                <div onclick="thevid=document.getElementById('thevideomob'); thevid.style.display='block'; this.style.display='none'">
-                                    <img loading="lazy" class="thumb mobile-thumb-img-500" src="./assets/images/video/caitlin.png">
-                                </div>
-                                <div id="thevideomob" class="display-none">
-                                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/FXM3xY6LGJU" frameborder="0" allowfullscreen="" include="" controls></iframe>
+                                <div>
+                                    <a href="https://youtu.be/FXM3xY6LGJU" target="_blank" rel="noopener noreferrer">
+                                        <img loading="lazy" class="thumb mobile-thumb-img-500" src="./assets/images/video/caitlin.webp">
+                                    </a>
                                 </div>
                                 <div class="video-text-t">
                                     <p>“... The guys in Ecomclips are absolutely fantastic. They have supported us on PPC, supported us on Optimization, Customer Service - you name it..! …”
@@ -1592,11 +1588,10 @@
                         <br>
                         <div class="col-sm-12">
                             <div class="videoCoverImage">
-                                <div onclick="thevid=document.getElementById('thevideomobtwo'); thevid.style.display='block'; this.style.display='none'">
-                                    <img loading="lazy" class="thumb mobile-thumb-img-500" src="./assets/images/video/danitza.png">
-                                </div>
-                                <div id="thevideomobtwo" class="display-none">
-                                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/dYNfaCBosxg" frameborder="0" allowfullscreen="" include="" controls></iframe>
+                                <div>
+                                    <a href="https://youtu.be/dYNfaCBosxg" target="_blank" rel="noopener noreferrer">
+                                        <img loading="lazy" class="thumb mobile-thumb-img-500" src="./assets/images/video/danitza.webp">
+                                    </a>
                                 </div>
 
                                 <div class="video-text-t">
@@ -1613,11 +1608,10 @@
                         <br>
                         <div class="col-sm-12">
                             <div class="videoCoverImage">
-                                <div onclick="thevid=document.getElementById('thevideomobthree'); thevid.style.display='block'; this.style.display='none'">
-                                    <img loading="lazy" class="thumb mobile-thumb-img-500" src="./assets/images/video/james.png">
-                                </div>
-                                <div id="thevideomobthree" class="display-none">
-                                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/HvSaMjbgcxw" frameborder="0" allowfullscreen="" include="" controls></iframe>
+                                <div>
+                                    <a href="https://youtu.be/HvSaMjbgcxw" target="_blank" rel="noopener noreferrer">
+                                        <img loading="lazy" class="thumb mobile-thumb-img-500" src="./assets/images/video/james.webp">
+                                    </a>
                                 </div>
 
                                 <div class="video-text-t">
@@ -1646,11 +1640,10 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="videoCoverImage">
-                                <div onclick="thevid=document.getElementById('thevideomo'); thevid.style.display='block'; this.style.display='none'">
-                                    <img loading="lazy" class="thumb mobile-thumb-img-0" src="./assets/images/video/caitlin.png">
-                                </div>
-                                <div id="thevideomo" class="display-none">
-                                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/FXM3xY6LGJU" frameborder="0" allowfullscreen="" include="" controls></iframe>
+                                <div>
+                                    <a href="https://youtu.be/FXM3xY6LGJU" target="_blank" rel="noopener noreferrer">
+                                        <img loading="lazy" class="thumb mobile-thumb-img-0" src="./assets/images/video/caitlin.webp">
+                                    </a>
                                 </div>
                                 <div class="video-text-t">
                                     <p>“... The guys in Ecomclips are absolutely fantastic. They have supported us on PPC, supported us on Optimization, Customer Service - you name it..! …”
@@ -1664,11 +1657,10 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="videoCoverImage">
-                                <div onclick="thevid=document.getElementById('thevideotwomw'); thevid.style.display='block'; this.style.display='none'">
-                                    <img loading="lazy" class="thumb mobile-thumb-img-0" src="./assets/images/video/danitza.png">
-                                </div>
-                                <div id="thevideotwomw" class="display-none">
-                                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/dYNfaCBosxg" frameborder="0" allowfullscreen="" include="" controls></iframe>
+                                <div>
+                                    <a href="https://youtu.be/dYNfaCBosxg" target="_blank" rel="noopener noreferrer">
+                                        <img loading="lazy" class="thumb mobile-thumb-img-0" src="./assets/images/video/danitza.webp">
+                                    </a>
                                 </div>
 
                                 <div class="video-text-t">
@@ -1684,11 +1676,10 @@
                         </div>
                         <div class="col-sm-4">
                             <div class="videoCoverImage">
-                                <div onclick="thevid=document.getElementById('thevideothreemt'); thevid.style.display='block'; this.style.display='none'">
-                                    <img loading="lazy" class="thumb mobile-thumb-img-0" src="./assets/images/video/james.png">
-                                </div>
-                                <div id="thevideothreemt" class="display-none">
-                                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/HvSaMjbgcxw" frameborder="0" allowfullscreen="" include="" controls></iframe>
+                                <div>
+                                    <a href="https://youtu.be/HvSaMjbgcxw" target="_blank" rel="noopener noreferrer">
+                                        <img loading="lazy" class="thumb mobile-thumb-img-0" src="./assets/images/video/james.webp">
+                                    </a>
                                 </div>
 
                                 <div class="video-text-t">
@@ -1706,8 +1697,9 @@
                 </div>
             </section>
 
-            <!-- Start end mobile tab design -->
+            <!-- Brand -->
 
+            <!-- Start end mobile tab design -->
             <section class="home-mobile-hide home-tablet-hide">
                 <div class="brand-container">
                     <div class="brand-row">
@@ -1750,65 +1742,11 @@
                         <div class="brand-header">
                             <p>Ecomclips is synonymous with trust, quality, and reliability. Our brand embodies our values and commitment to our clients. Over the years, we've helped countless businesses of all sizes to achieve consistent growth. Our brand is a testament to our unwavering commitment to your success. Join the ranks of countless thriving businesses, transformed by our guiding hand towards consistent growth.</p>
                         </div>
-
-                        <!-- Design tablet -->
-
-                        <!-- <div class="brand-body tablet-show">
-                    <div class="brand-body-1">
-                        <div>
-                            <img loading="lazy" class="responsive-img" src="./assets/images/icon/techtech.png" alt="" class="brand-image1">
-                        </div>
-                        <div>
-                            <img loading="lazy" class="responsive-img" src="./assets/images/icon/golden-fox.png" alt="">
-                        </div>
-                        <div>
-                            <img loading="lazy" class="responsive-img" src="./assets/images/icon/sartex.png" alt="">
-                        </div>
-
-                    </div>
-                    <div class="brand-body-2">
-                        <div>
-                            <img loading="lazy" class="responsive-img" src="./assets/images/icon/dynamo.png" alt="">
-                        </div>
-                        <div>
-                            <img loading="lazy" class="responsive-img" src="./assets/images/icon/rocksolar.png" alt="" class="brand-image1">
-                        </div>
-                        <div>
-                            <img loading="lazy" class="responsive-img" src="./assets/images/icon/dreiback.png" alt="" class="brand-image1">
-                        </div>
-
-                    </div>
-                    <div class="brand-body-3">
-                        <div>
-                            <img loading="lazy" class="responsive-img" src="./assets/images/icon/garden-mile.png" alt="" class="brand-image1">
-                        </div>
-                        <div>
-                            <img loading="lazy" class="responsive-img" src="./assets/images/icon/iMPRESSSOPNS.png" alt="">
-                        </div>
-                        <div>
-                            <img loading="lazy" class="responsive-img" src="./assets/images/icon/zena.png" alt="">
-                        </div>
-
-                    </div>
-                    <div class="brand-body-4">
-                        <div>
-                            <img loading="lazy" class="responsive-img" src="./assets/images/icon/shopanage.png" alt="" class="brand-image1">
-                        </div>
-                        <div>
-                            <img loading="lazy" class="responsive-img" src="./assets/images/icon/urban-X.png" alt="" class="brand-image1">
-
-                        </div>
-                    </div>
-                </div> -->
-                        <!-- Design tablet -->
-
                     </div>
                 </div>
             </section>
 
-
             <!-- Start mobile design -->
-
             <section class="hide-on-desktop">
                 <div class="mobile-brand-container">
                     <div class="mobile-award-row">
@@ -1879,9 +1817,11 @@
                     </div>
                 </div>
             </section>
-
             <!-- End mobile design -->
 
+            <!-- end brand -->
+            
+            <!-- trust us -->
             <section class="trust-mobile-hide">
                 <div class="review-container">
 
@@ -2207,12 +2147,9 @@
                     </div>
                 </div>
             </section>
+            <!-- end trust us -->
         </div>
     </main>
-
-    <section class="loading">
-        <div class="loader"></div>
-    </section>
 
 
     <!-- modal for form -->
@@ -2319,29 +2256,30 @@
         </div>
     </div>
     <!-- modal for form end -->
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/country-list-with-dial-code-and-flag@latest/dist/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/country-list-with-dial-code-and-flag/dist/country-flag-svg.js"></script>
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./assets/js/extra/home.js"></script>
-    <script src="./assets/js/extra/custom-2.js"></script>
-    <script src="./assets/js/extra/custom-blog.js"></script>
+    <script src="./assets/js/cdn/gsap.min.js" defer></script>
+    <script src="./assets/js/cdn/scroll-trigger.min.js" defer></script>
+    <script src="./assets/js/cdn/lenis.min.js" defer></script>
+    <script src="./assets/js/cdn/jquery.min.js" defer></script>
+    <script src="./assets/js/cdn/popper.min.js" defer></script>
+    <script src="./assets/js/cdn/bootstrap.min.js" defer></script>
+    <script src="./assets/js/cdn/flag.min.js" defer></script>
+    <script src="./assets/js/cdn/flag-svg.min.js" defer></script>
+    <script src="./assets/js/cdn/owl-carousel.min.js" defer></script>
 
-    <script src="/assets/js/smooth.js"></script>
-    <script src="/assets/js/scroll.js"></script>
-    <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/modal.js"></script>
+    <!-- <script src="./assets/js/extra/home.js" defer></script> -->
+    <script src="./assets/js/extra/home.min.js" defer></script>
+    <!-- <script src="./assets/js/extra/custom-2.js" defer></script> -->
+    <script src="./assets/js/extra/custom-2.min.js" defer></script>
+    <!-- <script src="./assets/js/extra/custom-blog.js" defer></script> -->
+    <script src="./assets/js/extra/custom-blog.min.js" defer></script>
+
+    <!-- <script src="/assets/js/scroll.js" defer></script> -->
+    <script src="/assets/js/scroll.min.js" defer></script>
+    <!-- <script src="/assets/js/main.js" defer></script> -->
+    <script src="/assets/js/main.min.js" defer></script>
+    <!-- <script src="/assets/js/modal.js" defer></script> -->
+    <script src="/assets/js/modal.min.js" defer></script>
 
 
     <!-- Google reCAPTCHA -->

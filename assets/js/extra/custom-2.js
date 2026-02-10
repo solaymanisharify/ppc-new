@@ -1,380 +1,495 @@
-// Amazon start
-fetch(
-    "https://ecomclips.com/blog/wp-json/wp/v2/posts?categories=12&per_page=3&_embed"
-)
-    .then((res) => {
-        return res.json();
-    })
-    .then((data) => {
-        data.forEach((posts) => {
-            var markup5 = `<div class="blog-card">`;
-            // Format the date to display only the date (no time)
-            const postDate = new Date(posts.date);
-            const formattedDate = postDate.toLocaleDateString(undefined, {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-            });
-            if (posts._embedded["wp:featuredmedia"]) {
-                markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
-                            <img class="blog-img" src="${posts._embedded["wp:featuredmedia"]["0"].source_url}" alt="">
-                        </a>`;
-            } else {
-                markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
-                            <img class="blog-img" src="http://localhost:8000/ecc-v2-php/blog/wp-content/uploads/2023/08/no_image.png" alt="">
-                        </a>`;
-            }
+// // Amazon start
+// fetch(
+//     "https://ecomclips.com/blog/wp-json/wp/v2/posts?categories=12&per_page=3&_embed"
+// )
+//     .then((res) => {
+//         return res.json();
+//     })
+//     .then((data) => {
+//         data.forEach((posts) => {
+//             var markup5 = `<div class="blog-card">`;
+//             // Format the date to display only the date (no time)
+//             const postDate = new Date(posts.date);
+//             const formattedDate = postDate.toLocaleDateString(undefined, {
+//                 year: 'numeric',
+//                 month: 'long',
+//                 day: 'numeric'
+//             });
+//             if (posts._embedded["wp:featuredmedia"]) {
+//                 markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
+//                             <img class="blog-img" src="${posts._embedded["wp:featuredmedia"]["0"].source_url}" alt="">
+//                         </a>`;
+//             } else {
+//                 markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
+//                             <img class="blog-img" src="http://localhost:8000/ecc-v2-php/blog/wp-content/uploads/2023/08/no_image.png" alt="">
+//                         </a>`;
+//             }
 
-            markup5 = markup5 + `<div class="flex-list">
-                        <div class="card-meta">
-                            <div class="blog-meta">
-                                <div class="author-meta">
-                                    <div class="title-date">
-                                        <p class="blog-title">${posts._embedded.author[0].name}</p>
-                                        <p class="blog-date">${formattedDate}</p>
-                                    </div>
-                                    <div class="author-details">
-                                        <p class="post-author">Amazon</p>
+//             markup5 = markup5 + `<div class="flex-list">
+//                         <div class="card-meta">
+//                             <div class="blog-meta">
+//                                 <div class="author-meta">
+//                                     <div class="title-date">
+//                                         <p class="blog-title">${posts._embedded.author[0].name}</p>
+//                                         <p class="blog-date">${formattedDate}</p>
+//                                     </div>
+//                                     <div class="author-details">
+//                                         <p class="post-author">Amazon</p>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                         </div>
+//                         <div class="blog-info">
+//                             <h5 class="blog-headline">${posts.title.rendered}</h5>
+//                             <p>${posts.excerpt.rendered}</p>
+//                             <a class="read-more-btn" href="${posts.link}">Read More <span class="read-more-arrow"><img src="./assets/images/blog/arrow.png"></span></a>
+//                         </div>
+//                     </div>
+
+//                 </div>
+
+//  `;
+
+//             document
+//                 .querySelector("#blog-cont")
+//                 .insertAdjacentHTML("beforeend", markup5);
+
+//             document
+//                 .querySelector("#blog-cont7")
+//                 .insertAdjacentHTML("beforeend", markup5);
+//         });
+
+
+
+//     })
+//     .catch((error) => console.log(error));
+
+// // FOR Amazon end
+// // FOR Shopify START
+
+// fetch(
+//     "https://ecomclips.com/blog/wp-json/wp/v2/posts?categories=73&per_page=3&_embed"
+// )
+//     .then((res) => {
+//         return res.json();
+//     })
+//     .then((data) => {
+//         data.forEach((posts) => {
+//             var markup5 = `<div class="blog-card">`;
+//             // Format the date to display only the date (no time)
+//             const postDate = new Date(posts.date);
+//             const formattedDate = postDate.toLocaleDateString(undefined, {
+//                 year: 'numeric',
+//                 month: 'long',
+//                 day: 'numeric'
+//             });
+//             if (posts._embedded["wp:featuredmedia"]) {
+//                 markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
+//                             <img class="blog-img" src="${posts._embedded["wp:featuredmedia"]["0"].source_url}" alt="">
+//                         </a>`;
+//             } else {
+//                 markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
+//                             <img class="blog-img" src="https://ecomclips.com/blog/wp-content/uploads/2023/08/no-image.png" alt="">
+//                         </a>`;
+//             }
+
+//             markup5 = markup5 + `<div class="flex-list">
+//                         <div class="card-meta">
+//                             <div class="blog-meta">
+//                                 <div class="author-meta">
+//                                     <div class="title-date">
+//                                         <p class="blog-title">${posts._embedded.author[0].name}</p>
+//                                         <p class="blog-date">${formattedDate}</p>
+//                                     </div>
+//                                     <div class="author-details">
+//                                         <p class="post-author">Shopify</p>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                         </div>
+//                         <div class="blog-info">
+//                             <h5 class="blog-headline">${posts.title.rendered}</h5>
+//                             <p>${posts.excerpt.rendered}</p>
+//                             <a class="read-more-btn" href="${posts.link}">Read More <span class="read-more-arrow"><img src="./assets/images/blog/arrow.png"></span></a>
+//                         </div>
+//                     </div>
+//                 </div>`;
+
+//             document
+//                 .querySelector("#blog-cont2")
+//                 .insertAdjacentHTML("beforeend", markup5);
+
+//             document
+//                 .querySelector("#blog-cont8")
+//                 .insertAdjacentHTML("beforeend", markup5);
+//         });
+//     })
+//     .catch((error) => console.log(error));
+
+// // FOR Shopify END
+// // FOR Channel Advisor START
+
+// fetch(
+//     "https://ecomclips.com/blog/wp-json/wp/v2/posts?categories=114&per_page=3&_embed"
+// )
+//     .then((res) => {
+//         return res.json();
+//     })
+//     .then((data) => {
+//         data.forEach((posts) => {
+//             var markup5 = `<div class="blog-card">`;
+//             // Format the date to display only the date (no time)
+//             const postDate = new Date(posts.date);
+//             const formattedDate = postDate.toLocaleDateString(undefined, {
+//                 year: 'numeric',
+//                 month: 'long',
+//                 day: 'numeric'
+//             });
+//             if (posts._embedded["wp:featuredmedia"]) {
+//                 markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
+//                             <img class="blog-img" src="${posts._embedded["wp:featuredmedia"]["0"].source_url}" alt="">
+//                         </a>`;
+//             } else {
+//                 markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
+//                             <img class="blog-img" src="https://ecomclips.com/blog/wp-content/uploads/2023/08/no-image.png" alt="">
+//                         </a>`;
+//             }
+
+//             markup5 = markup5 + `<div class="flex-list">
+//                         <div class="card-meta">
+//                             <div class="blog-meta">
+//                                 <div class="author-meta">
+//                                     <div class="title-date">
+//                                         <p class="blog-title">${posts._embedded.author[0].name}</p>
+//                                         <p class="blog-date">${formattedDate}</p>
+//                                     </div>
+//                                     <div class="author-details">
+//                                         <p class="post-author">Channel Advisor</p>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                         </div>
+//                         <div class="blog-info">
+//                             <h5 class="blog-headline">${posts.title.rendered}</h5>
+//                             <p>${posts.excerpt.rendered}</p>
+//                             <a class="read-more-btn" href="${posts.link}">Read More <span class="read-more-arrow"><img src="./assets/images/blog/arrow.png"></span></a>
+//                         </div>
+//                     </div>
+//                 </div>
+//                 `;
+
+//             document
+//                 .querySelector("#blog-cont3")
+//                 .insertAdjacentHTML("beforeend", markup5);
+
+//             document
+//                 .querySelector("#blog-cont9")
+//                 .insertAdjacentHTML("beforeend", markup5);
+//         });
+//     })
+//     .catch((error) => console.log(error));
+
+// // FOR Channel Advisor END
+// // FOR eBay START
+
+// fetch(
+//     "https://ecomclips.com/blog/wp-json/wp/v2/posts?categories=25&per_page=3&_embed"
+// )
+//     .then((res) => {
+//         return res.json();
+//     })
+//     .then((data) => {
+//         data.forEach((posts) => {
+//             var markup5 = `<div class="blog-card">`;
+//             // Format the date to display only the date (no time)
+//             const postDate = new Date(posts.date);
+//             const formattedDate = postDate.toLocaleDateString(undefined, {
+//                 year: 'numeric',
+//                 month: 'long',
+//                 day: 'numeric'
+//             });
+//             if (posts._embedded["wp:featuredmedia"]) {
+//                 markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
+//                             <img class="blog-img" src="${posts._embedded["wp:featuredmedia"]["0"].source_url}" alt="">
+//                         </a>`;
+//             } else {
+//                 markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
+//                             <img class="blog-img" src="https://ecomclips.com/blog/wp-content/uploads/2023/08/no-image.png" alt="">
+//                         </a>`;
+//             }
+
+//             markup5 = markup5 + `<div class="flex-list">
+//                         <div class="card-meta">
+//                             <div class="blog-meta">
+//                                 <div class="author-meta">
+//                                     <div class="title-date">
+//                                         <p class="blog-title">${posts._embedded.author[0].name}</p>
+//                                         <p class="blog-date">${formattedDate}</p>
+//                                     </div>
+//                                     <div class="author-details">
+//                                         <p class="post-author">eBay</p>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                         </div>
+//                         <div class="blog-info">
+//                             <h5 class="blog-headline">${posts.title.rendered}</h5>
+//                             <p>${posts.excerpt.rendered}</p>
+//                             <a class="read-more-btn" href="${posts.link}">Read More <span class="read-more-arrow"><img src="./assets/images/blog/arrow.png"></span></a>
+//                         </div>
+//                     </div>
+//                 </div>`;
+
+//             document
+//                 .querySelector("#blog-cont4")
+//                 .insertAdjacentHTML("beforeend", markup5);
+
+//             document
+//                 .querySelector("#blog-cont10")
+//                 .insertAdjacentHTML("beforeend", markup5);
+//         });
+//     })
+//     .catch((error) => console.log(error));
+
+// // FOR eBay END
+// // FOR Ecomdash START
+
+
+// fetch(
+//     "https://ecomclips.com/blog/wp-json/wp/v2/posts?categories=85&per_page=3&_embed"
+// )
+//     .then((res) => {
+//         return res.json();
+//     })
+//     .then((data) => {
+//         data.forEach((posts) => {
+//             var markup5 = `<div class="blog-card">`;
+//             // Format the date to display only the date (no time)
+//             const postDate = new Date(posts.date);
+//             const formattedDate = postDate.toLocaleDateString(undefined, {
+//                 year: 'numeric',
+//                 month: 'long',
+//                 day: 'numeric'
+//             });
+//             if (posts._embedded["wp:featuredmedia"]) {
+//                 markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
+//                             <img class="blog-img" src="${posts._embedded["wp:featuredmedia"]["0"].source_url}" alt="">
+//                         </a>`;
+//             } else {
+//                 markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
+//                             <img class="blog-img" src="https://ecomclips.com/blog/wp-content/uploads/2023/08/no-image.png" alt="">
+//                         </a>`;
+//             }
+
+//             markup5 = markup5 + `<div class="flex-list">
+//                         <div class="card-meta">
+//                             <div class="blog-meta">
+//                                 <div class="author-meta">
+//                                     <div class="title-date">
+//                                         <p class="blog-title">${posts._embedded.author[0].name}</p>
+//                                         <p class="blog-date">${formattedDate}</p>
+//                                     </div>
+//                                     <div class="author-details">
+//                                         <p class="post-author">Ecomdash</p>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                         </div>
+//                         <div class="blog-info">
+//                             <h5 class="blog-headline">${posts.title.rendered}</h5>
+//                             <p>${posts.excerpt.rendered}</p>
+//                             <a class="read-more-btn" href="${posts.link}">Read More <span class="read-more-arrow"><img src="./assets/images/blog/arrow.png"></span></a>
+//                         </div>
+//                     </div>
+//                 </div>`;
+
+//             document
+//                 .querySelector("#blog-cont5")
+//                 .insertAdjacentHTML("beforeend", markup5);
+
+//             document
+//                 .querySelector("#blog-cont11")
+//                 .insertAdjacentHTML("beforeend", markup5);
+//         });
+//     })
+//     .catch((error) => console.log(error));
+
+// // FOR Ecomdash END
+// // FOR LinnWorks START
+
+// fetch(
+//     "https://ecomclips.com/blog/wp-json/wp/v2/posts?categories=6&per_page=3&_embed"
+// )
+//     .then((res) => {
+//         return res.json();
+//     })
+//     .then((data) => {
+//         data.forEach((posts) => {
+//             var markup5 = `<div class="blog-card">`;
+//             // Format the date to display only the date (no time)
+//             const postDate = new Date(posts.date);
+//             const formattedDate = postDate.toLocaleDateString(undefined, {
+//                 year: 'numeric',
+//                 month: 'long',
+//                 day: 'numeric'
+//             });
+//             if (posts._embedded["wp:featuredmedia"]) {
+//                 markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
+//                             <img class="blog-img" src="${posts._embedded["wp:featuredmedia"]["0"].source_url}" alt="">
+//                         </a>`;
+//             } else {
+//                 markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
+//                             <img class="blog-img" src="https://ecomclips.com/blog/wp-content/uploads/2023/08/no-image.png" alt="">
+//                         </a>`;
+//             }
+
+//             markup5 = markup5 + `<div class="flex-list">
+//                         <div class="card-meta">
+//                             <div class="blog-meta">
+//                                 <div class="author-meta">
+//                                     <div class="title-date">
+//                                         <p class="blog-title">${posts._embedded.author[0].name}</p>
+//                                         <p class="blog-date">${formattedDate}</p>
+//                                     </div>
+//                                     <div class="author-details">
+//                                         <p class="post-author">LinnWorks</p>
+//                                     </div>
+//                                 </div>
+//                             </div>
+//                         </div>
+//                         <div class="blog-info">
+//                             <h5 class="blog-headline">${posts.title.rendered}</h5>
+//                             <p>${posts.excerpt.rendered}</p>
+//                             <a class="read-more-btn" href="${posts.link}">Read More <span class="read-more-arrow"><img src="./assets/images/blog/arrow.png"></span></a>
+//                         </div>
+//                     </div>
+//                 </div>`;
+
+//             document
+//                 .querySelector("#blog-cont6")
+//                 .insertAdjacentHTML("beforeend", markup5);
+
+//             document
+//                 .querySelector("#blog-cont12")
+//                 .insertAdjacentHTML("beforeend", markup5);
+//         });
+//     })
+//     .catch((error) => console.log(error));
+
+function loadBlogPosts({ categoryId, label, containers }) {
+    fetch(
+        `https://ecomclips.com/blog/wp-json/wp/v2/posts?categories=${categoryId}&per_page=3&_embed`
+    )
+        .then(res => res.json())
+        .then(data => {
+            data.forEach(posts => {
+                const postDate = new Date(posts.date);
+                const formattedDate = postDate.toLocaleDateString(undefined, {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                });
+
+                const imageUrl =
+                    posts._embedded?.["wp:featuredmedia"]?.[0]?.source_url ||
+                    "https://ecomclips.com/blog/wp-content/uploads/2023/08/no-image.png";
+
+                const markup = `
+                    <div class="blog-card">
+                        <a class="thumbnail" href="${posts.link}">
+                            <img class="blog-img" src="${imageUrl}" alt="">
+                        </a>
+
+                        <div class="flex-list">
+                            <div class="card-meta">
+                                <div class="blog-meta">
+                                    <div class="author-meta">
+                                        <div class="title-date">
+                                            <p class="blog-title">${posts._embedded.author[0].name}</p>
+                                            <p class="blog-date">${formattedDate}</p>
+                                        </div>
+                                        <div class="author-details">
+                                            <p class="post-author">${label}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="blog-info">
-                            <h5 class="blog-headline">${posts.title.rendered}</h5>
-                            <p>${posts.excerpt.rendered}</p>
-                            <a class="read-more-btn" href="${posts.link}">Read More <span class="read-more-arrow"><img src="./assets/images/blog/arrow.png"></span></a>
-                        </div>
-                    </div>
 
-                </div>
-
- `;
-
-            document
-                .querySelector("#blog-cont")
-                .insertAdjacentHTML("beforeend", markup5);
-
-            document
-                .querySelector("#blog-cont7")
-                .insertAdjacentHTML("beforeend", markup5);
-        });
-
-
-
-    })
-    .catch((error) => console.log(error));
-
-// FOR Amazon end
-// FOR Shopify START
-
-fetch(
-    "https://ecomclips.com/blog/wp-json/wp/v2/posts?categories=73&per_page=3&_embed"
-)
-    .then((res) => {
-        return res.json();
-    })
-    .then((data) => {
-        data.forEach((posts) => {
-            var markup5 = `<div class="blog-card">`;
-            // Format the date to display only the date (no time)
-            const postDate = new Date(posts.date);
-            const formattedDate = postDate.toLocaleDateString(undefined, {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-            });
-            if (posts._embedded["wp:featuredmedia"]) {
-                markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
-                            <img class="blog-img" src="${posts._embedded["wp:featuredmedia"]["0"].source_url}" alt="">
-                        </a>`;
-            } else {
-                markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
-                            <img class="blog-img" src="https://ecomclips.com/blog/wp-content/uploads/2023/08/no-image.png" alt="">
-                        </a>`;
-            }
-
-            markup5 = markup5 + `<div class="flex-list">
-                        <div class="card-meta">
-                            <div class="blog-meta">
-                                <div class="author-meta">
-                                    <div class="title-date">
-                                        <p class="blog-title">${posts._embedded.author[0].name}</p>
-                                        <p class="blog-date">${formattedDate}</p>
-                                    </div>
-                                    <div class="author-details">
-                                        <p class="post-author">Shopify</p>
-                                    </div>
-                                </div>
+                            <div class="blog-info">
+                                <h5 class="blog-headline">${posts.title.rendered}</h5>
+                                <p>${posts.excerpt.rendered}</p>
+                                <a class="read-more-btn" href="${posts.link}">
+                                    Read More
+                                    <span class="read-more-arrow">
+                                        <img src="./assets/images/blog/arrow.png">
+                                    </span>
+                                </a>
                             </div>
                         </div>
-                        <div class="blog-info">
-                            <h5 class="blog-headline">${posts.title.rendered}</h5>
-                            <p>${posts.excerpt.rendered}</p>
-                            <a class="read-more-btn" href="${posts.link}">Read More <span class="read-more-arrow"><img src="./assets/images/blog/arrow.png"></span></a>
-                        </div>
                     </div>
-                </div>`;
-
-            document
-                .querySelector("#blog-cont2")
-                .insertAdjacentHTML("beforeend", markup5);
-
-            document
-                .querySelector("#blog-cont8")
-                .insertAdjacentHTML("beforeend", markup5);
-        });
-    })
-    .catch((error) => console.log(error));
-
-// FOR Shopify END
-// FOR Channel Advisor START
-
-fetch(
-    "https://ecomclips.com/blog/wp-json/wp/v2/posts?categories=114&per_page=3&_embed"
-)
-    .then((res) => {
-        return res.json();
-    })
-    .then((data) => {
-        data.forEach((posts) => {
-            var markup5 = `<div class="blog-card">`;
-            // Format the date to display only the date (no time)
-            const postDate = new Date(posts.date);
-            const formattedDate = postDate.toLocaleDateString(undefined, {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-            });
-            if (posts._embedded["wp:featuredmedia"]) {
-                markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
-                            <img class="blog-img" src="${posts._embedded["wp:featuredmedia"]["0"].source_url}" alt="">
-                        </a>`;
-            } else {
-                markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
-                            <img class="blog-img" src="https://ecomclips.com/blog/wp-content/uploads/2023/08/no-image.png" alt="">
-                        </a>`;
-            }
-
-            markup5 = markup5 + `<div class="flex-list">
-                        <div class="card-meta">
-                            <div class="blog-meta">
-                                <div class="author-meta">
-                                    <div class="title-date">
-                                        <p class="blog-title">${posts._embedded.author[0].name}</p>
-                                        <p class="blog-date">${formattedDate}</p>
-                                    </div>
-                                    <div class="author-details">
-                                        <p class="post-author">Channel Advisor</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blog-info">
-                            <h5 class="blog-headline">${posts.title.rendered}</h5>
-                            <p>${posts.excerpt.rendered}</p>
-                            <a class="read-more-btn" href="${posts.link}">Read More <span class="read-more-arrow"><img src="./assets/images/blog/arrow.png"></span></a>
-                        </div>
-                    </div>
-                </div>
                 `;
 
-            document
-                .querySelector("#blog-cont3")
-                .insertAdjacentHTML("beforeend", markup5);
-
-            document
-                .querySelector("#blog-cont9")
-                .insertAdjacentHTML("beforeend", markup5);
-        });
-    })
-    .catch((error) => console.log(error));
-
-// FOR Channel Advisor END
-// FOR eBay START
-
-fetch(
-    "https://ecomclips.com/blog/wp-json/wp/v2/posts?categories=25&per_page=3&_embed"
-)
-    .then((res) => {
-        return res.json();
-    })
-    .then((data) => {
-        data.forEach((posts) => {
-            var markup5 = `<div class="blog-card">`;
-            // Format the date to display only the date (no time)
-            const postDate = new Date(posts.date);
-            const formattedDate = postDate.toLocaleDateString(undefined, {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
+                containers.forEach(selector => {
+                    const container = document.querySelector(selector);
+                    if (container) {
+                        container.insertAdjacentHTML("beforeend", markup);
+                    }
+                });
             });
-            if (posts._embedded["wp:featuredmedia"]) {
-                markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
-                            <img class="blog-img" src="${posts._embedded["wp:featuredmedia"]["0"].source_url}" alt="">
-                        </a>`;
-            } else {
-                markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
-                            <img class="blog-img" src="https://ecomclips.com/blog/wp-content/uploads/2023/08/no-image.png" alt="">
-                        </a>`;
-            }
+        })
+        .catch(error => console.error("Blog fetch error:", error));
+}
 
-            markup5 = markup5 + `<div class="flex-list">
-                        <div class="card-meta">
-                            <div class="blog-meta">
-                                <div class="author-meta">
-                                    <div class="title-date">
-                                        <p class="blog-title">${posts._embedded.author[0].name}</p>
-                                        <p class="blog-date">${formattedDate}</p>
-                                    </div>
-                                    <div class="author-details">
-                                        <p class="post-author">eBay</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blog-info">
-                            <h5 class="blog-headline">${posts.title.rendered}</h5>
-                            <p>${posts.excerpt.rendered}</p>
-                            <a class="read-more-btn" href="${posts.link}">Read More <span class="read-more-arrow"><img src="./assets/images/blog/arrow.png"></span></a>
-                        </div>
-                    </div>
-                </div>`;
+let blogsLoaded = false;
 
-            document
-                .querySelector("#blog-cont4")
-                .insertAdjacentHTML("beforeend", markup5);
+window.addEventListener("scroll", () => {
+    console.log(window.scrollY)
+    if (window.scrollY > 10000 && !blogsLoaded) {
+        blogsLoaded = true;
 
-            document
-                .querySelector("#blog-cont10")
-                .insertAdjacentHTML("beforeend", markup5);
+        // Amazon
+        loadBlogPosts({
+            categoryId: 12,
+            label: "Amazon",
+            containers: ["#blog-cont", "#blog-cont7"]
         });
-    })
-    .catch((error) => console.log(error));
 
-// FOR eBay END
-// FOR Ecomdash START
-
-
-fetch(
-    "https://ecomclips.com/blog/wp-json/wp/v2/posts?categories=85&per_page=3&_embed"
-)
-    .then((res) => {
-        return res.json();
-    })
-    .then((data) => {
-        data.forEach((posts) => {
-            var markup5 = `<div class="blog-card">`;
-            // Format the date to display only the date (no time)
-            const postDate = new Date(posts.date);
-            const formattedDate = postDate.toLocaleDateString(undefined, {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-            });
-            if (posts._embedded["wp:featuredmedia"]) {
-                markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
-                            <img class="blog-img" src="${posts._embedded["wp:featuredmedia"]["0"].source_url}" alt="">
-                        </a>`;
-            } else {
-                markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
-                            <img class="blog-img" src="https://ecomclips.com/blog/wp-content/uploads/2023/08/no-image.png" alt="">
-                        </a>`;
-            }
-
-            markup5 = markup5 + `<div class="flex-list">
-                        <div class="card-meta">
-                            <div class="blog-meta">
-                                <div class="author-meta">
-                                    <div class="title-date">
-                                        <p class="blog-title">${posts._embedded.author[0].name}</p>
-                                        <p class="blog-date">${formattedDate}</p>
-                                    </div>
-                                    <div class="author-details">
-                                        <p class="post-author">Ecomdash</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blog-info">
-                            <h5 class="blog-headline">${posts.title.rendered}</h5>
-                            <p>${posts.excerpt.rendered}</p>
-                            <a class="read-more-btn" href="${posts.link}">Read More <span class="read-more-arrow"><img src="./assets/images/blog/arrow.png"></span></a>
-                        </div>
-                    </div>
-                </div>`;
-
-            document
-                .querySelector("#blog-cont5")
-                .insertAdjacentHTML("beforeend", markup5);
-
-            document
-                .querySelector("#blog-cont11")
-                .insertAdjacentHTML("beforeend", markup5);
+        // Shopify
+        loadBlogPosts({
+            categoryId: 73,
+            label: "Shopify",
+            containers: ["#blog-cont2", "#blog-cont8"]
         });
-    })
-    .catch((error) => console.log(error));
 
-// FOR Ecomdash END
-// FOR LinnWorks START
-
-fetch(
-    "https://ecomclips.com/blog/wp-json/wp/v2/posts?categories=6&per_page=3&_embed"
-)
-    .then((res) => {
-        return res.json();
-    })
-    .then((data) => {
-        data.forEach((posts) => {
-            var markup5 = `<div class="blog-card">`;
-            // Format the date to display only the date (no time)
-            const postDate = new Date(posts.date);
-            const formattedDate = postDate.toLocaleDateString(undefined, {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-            });
-            if (posts._embedded["wp:featuredmedia"]) {
-                markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
-                            <img class="blog-img" src="${posts._embedded["wp:featuredmedia"]["0"].source_url}" alt="">
-                        </a>`;
-            } else {
-                markup5 = markup5 + `<a class="thumbnail" href="${posts.link}">
-                            <img class="blog-img" src="https://ecomclips.com/blog/wp-content/uploads/2023/08/no-image.png" alt="">
-                        </a>`;
-            }
-
-            markup5 = markup5 + `<div class="flex-list">
-                        <div class="card-meta">
-                            <div class="blog-meta">
-                                <div class="author-meta">
-                                    <div class="title-date">
-                                        <p class="blog-title">${posts._embedded.author[0].name}</p>
-                                        <p class="blog-date">${formattedDate}</p>
-                                    </div>
-                                    <div class="author-details">
-                                        <p class="post-author">LinnWorks</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="blog-info">
-                            <h5 class="blog-headline">${posts.title.rendered}</h5>
-                            <p>${posts.excerpt.rendered}</p>
-                            <a class="read-more-btn" href="${posts.link}">Read More <span class="read-more-arrow"><img src="./assets/images/blog/arrow.png"></span></a>
-                        </div>
-                    </div>
-                </div>`;
-
-            document
-                .querySelector("#blog-cont6")
-                .insertAdjacentHTML("beforeend", markup5);
-
-            document
-                .querySelector("#blog-cont12")
-                .insertAdjacentHTML("beforeend", markup5);
+        // Channel Advisor
+        loadBlogPosts({
+            categoryId: 114,
+            label: "Channel Advisor",
+            containers: ["#blog-cont3", "#blog-cont9"]
         });
-    })
-    .catch((error) => console.log(error));
+
+        // eBay
+        loadBlogPosts({
+            categoryId: 25,
+            label: "eBay",
+            containers: ["#blog-cont4", "#blog-cont10"]
+        });
+
+        // Ecomdash
+        loadBlogPosts({
+            categoryId: 85,
+            label: "Ecomdash",
+            containers: ["#blog-cont5", "#blog-cont11"]
+        });
+
+        // LinnWorks
+        loadBlogPosts({
+            categoryId: 6,
+            label: "LinnWorks",
+            containers: ["#blog-cont6", "#blog-cont12"]
+        });
+    }
+});
 
 
 jQuery("#carouselAward").owlCarousel({

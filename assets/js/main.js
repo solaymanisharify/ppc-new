@@ -183,6 +183,5 @@ document.body.style.height = "100dvh";
 window.addEventListener("load", function() {
     document.body.style.overflow = "hidden";
     document.body.style.height = "auto";
-    document.querySelector(".loading").classList.add("hidden");
 });
 
