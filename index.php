@@ -7,9 +7,9 @@
 
     <title>Ecomclips Landing Page</title>
     <!-- ===== Preload ONLY critical animation libs ===== -->
-    <link rel="preload" href="./assets/js/cdn/gsap.min.js" as="script">
-    <link rel="preload" href="./assets/js/cdn/scroll-trigger.min.js" as="script">
-    <link rel="preload" href="./assets/js/cdn/lenis.min.js" as="script">
+    <!-- <link rel="preload" href="./assets/js/cdn/gsap.min.js" as="script"> -->
+    <!-- <link rel="preload" href="./assets/js/cdn/scroll-trigger.min.js" as="script"> -->
+    <!-- <link rel="preload" href="./assets/js/cdn/lenis.min.js" as="script"> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,35 +18,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <link rel="preload" href="./assets/css/cdn/bootstrap.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'" />
+    <!-- <link rel="preload" href="./assets/css/cdn/bootstrap.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'" /> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
     <link rel="stylesheet" href="./assets/css/styles.min.css" as="style" />
 
     <!-- <link rel="stylesheet" href="./assets/css/extra/style.css" /> -->
-    <link rel="stylesheet" href="./assets/css/extra/style.min.css" as="style"/>
+    <link rel="stylesheet" href="./assets/css/extra/style.min.css" as="style" />
     <!-- <link rel="stylesheet" href="./assets/css/extra/homeStyle.css" /> -->
-    <link rel="stylesheet" href="./assets/css/extra/homeStyle.min.css" as="style"/>
+    <link rel="stylesheet" href="./assets/css/extra/homeStyle.min.css" as="style" />
     <!-- <link rel="stylesheet" href="./assets/css/extra/fix_style.css" /> -->
-    <link rel="stylesheet" href="./assets/css/extra/fix_style.min.css" as="style"/>
+    <link rel="stylesheet" href="./assets/css/extra/fix_style.min.css" as="style" />
 
     <!-- <link rel="stylesheet" href="./assets/css/extra/owl.carousel.css" /> -->
-    <link rel="stylesheet" href="./assets/css/extra/owl.carousel.min.css" as="style"/>
+    <link rel="stylesheet" href="./assets/css/extra/owl.carousel.min.css" as="style" />
     <!-- <link rel="stylesheet" href="./assets/css/extra/owl.theme.default.css" /> -->
-    <link rel="stylesheet" href="./assets/css/extra/owl.theme.default.min.css" as="style"/>
+    <link rel="stylesheet" href="./assets/css/extra/owl.theme.default.min.css" as="style" />
 
     <!-- <link rel="stylesheet" href="./assets/css/extra/footer.css" /> -->
-    <link rel="stylesheet" href="./assets/css/extra/footer.min.css" as="style"/>
+    <link rel="stylesheet" href="./assets/css/extra/footer.min.css" as="style" />
 
     <!-- <link rel="stylesheet" href="assets/css/modal.css"> -->
-    <link rel="stylesheet" href="assets/css/modal.min.css" as="style"/>
-
+    <link rel="stylesheet" href="assets/css/modal.min.css" as="style" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <noscript>
-        <link rel="stylesheet" href="./assets/css/cdn/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="./assets/css/cdn/bootstrap.min.css"> -->
         <!-- <link rel="stylesheet" href="./assets/css/styles.min.css"> -->
     </noscript>
 </head>
@@ -74,8 +75,8 @@
                         </button>
                     </div>
                     <div class="hero-2">
-                        <img loading="lazy" src="assets/images/Mobile-version/product-presentation.png" alt="Hero Image" class="img-cover-mobile">
-                        <img loading="lazy" src="assets/images/Desktop/Cover.webp" alt="Hero Image" class="img-cover">
+                        <img width="640" height="360" fetchpriority="high" src="assets/images/Mobile-version/product-presentation.png" alt="Hero Image" class="img-cover-mobile">
+                        <img width="640" height="360" fetchpriority="high" src="assets/images/Desktop/Cover.webp" alt="Hero Image" class="img-cover">
                     </div>
                 </div>
             </section>
@@ -86,28 +87,28 @@
                 <div class="item-list">
                     <div class="item-list-content">
                         <div class="revenue-icon">
-                            <img loading="lazy" src="/assets/images/Desktop/revenue-icon.png" alt="">
+                            <img width="640" height="360" loading="lazy" src="/assets/images/Desktop/revenue-icon.png" alt="">
                             <h2>2.7B+</h2>
                         </div>
                         <p>REVENUE GENERATED</p>
                     </div>
                     <div class="item-list-content">
                         <div class="revenue-icon">
-                            <img loading="lazy" src="/assets/images/Desktop/ad-icon.png" alt="">
+                            <img width="640" height="360" loading="lazy" src="/assets/images/Desktop/ad-icon.png" alt="">
                             <h2>335M+</h2>
                         </div>
                         <p>ADS SPEND MANAGED</p>
                     </div>
                     <div class="item-list-content">
                         <div class="revenue-icon">
-                            <img loading="lazy" src="/assets/images/Desktop/brand-icon.png" alt="">
+                            <img width="640" height="360" loading="lazy" src="/assets/images/Desktop/brand-icon.png" alt="">
                             <h2>1000+</h2>
                         </div>
                         <p>BRANDS WE MANAGED</p>
                     </div>
                     <div class="item-list-content">
                         <div class="revenue-icon">
-                            <img loading="lazy" src="/assets/images/Desktop/experience-icon.png" alt="">
+                            <img width="640" height="360" loading="lazy" src="/assets/images/Desktop/experience-icon.png" alt="">
                             <h2>15+</h2>
                         </div>
                         <p>YEARS OF EXPERIENCE</p>
@@ -126,7 +127,7 @@
                         <div class="panel__card panel__card--one  ">
                             <div class="listing-optimization-desc">
                                 <div class="listing-title-div">
-                                    <img loading="lazy" src="assets/images/Desktop/new/star.svg" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/star.svg" alt="">
                                     <h2>Listing Optimization</h2>
                                 </div>
                                 <div class="listing-optimization-desc-content">
@@ -143,7 +144,7 @@
                             </div>
                             <div class="listing-optimization-img panel__card-image">
                                 <div class="panel__card-image_container">
-                                    <img loading="lazy" src="assets/images/Desktop/new/card1.webp" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/card1.webp" alt="">
                                 </div>
                             </div>
 
@@ -158,7 +159,7 @@
                         <div class="panel__card panel__card--two ">
                             <div class="listing-optimization-desc">
                                 <div class="listing-title-div">
-                                    <img loading="lazy" src="assets/images/Desktop/new/star.svg" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/star.svg" alt="">
                                     <h2>Campaign Optimization</h2>
                                 </div>
                                 <div class="listing-optimization-desc-content">
@@ -174,7 +175,7 @@
                             </div>
                             <div class="campaign-optimization-img panel__card-image">
                                 <div class="panel__card-image_container">
-                                    <img loading="lazy" src="assets/images/Desktop/new/Campaign-optimization.webp" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Campaign-optimization.webp" alt="">
                                 </div>
                             </div>
                             <div class="lets-talk-btn-mobile">
@@ -188,7 +189,7 @@
                         <div class="panel__card panel__card--three ">
                             <div class="listing-optimization-desc">
                                 <div class="listing-title-div">
-                                    <img loading="lazy" src="assets/images/Desktop/new/star.svg" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/star.svg" alt="">
                                     <h2>Increase Sales</h2>
                                 </div>
                                 <div class="listing-optimization-desc-content">
@@ -204,7 +205,7 @@
                             </div>
                             <div class="increase-sales-img panel__card-image">
                                 <div class="panel__card-image_container">
-                                    <img loading="lazy" src="assets/images/Desktop/new/Increase-Sales.webp" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Increase-Sales.webp" alt="">
                                 </div>
                             </div>
                             <div class="lets-talk-btn-mobile">
@@ -218,7 +219,7 @@
                         <div class="panel__card panel__card--four ">
                             <div class="listing-optimization-desc">
                                 <div class="listing-title-div">
-                                    <img loading="lazy" src="assets/images/Desktop/new/star.svg" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/star.svg" alt="">
                                     <h2>Keyword Research</h2>
                                 </div>
                                 <div class="listing-optimization-desc-content">
@@ -234,7 +235,7 @@
                             </div>
                             <div class="keyword-research-img panel__card-image">
                                 <div class="panel__card-image_container">
-                                    <img loading="lazy" src="assets/images/Desktop/new/Keyword-research.webp" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Keyword-research.webp" alt="">
                                 </div>
                             </div>
                             <div class="lets-talk-btn-mobile">
@@ -248,7 +249,7 @@
                         <div class="panel__card panel__card--five ">
                             <div class="listing-optimization-desc ">
                                 <div class="listing-title-div">
-                                    <img loading="lazy" src="assets/images/Desktop/new/star.svg" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/star.svg" alt="">
                                     <h2>Reduce ACOS</h2>
                                 </div>
                                 <div class="listing-optimization-desc-content">
@@ -264,7 +265,7 @@
                             </div>
                             <div class="reduce-acos-img panel__card-image">
                                 <div class="panel__card-image_container">
-                                    <img loading="lazy" src="assets/images/Desktop/new/Reduce-ACOS.webp" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Reduce-ACOS.webp" alt="">
                                 </div>
                             </div>
 
@@ -279,7 +280,7 @@
                         <div class="panel__card panel__card--six ">
                             <div class="listing-optimization-desc">
                                 <div class="listing-title-div">
-                                    <img loading="lazy" src="assets/images/Desktop/new/star.svg" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/star.svg" alt="">
                                     <h2>Weekly Reporting</h2>
                                 </div>
                                 <div class="listing-optimization-desc-content">
@@ -295,7 +296,7 @@
                             </div>
                             <div class="weekly-reporting-img panel__card-image">
                                 <div class="panel__card-image_container">
-                                    <img loading="lazy" src="assets/images/Desktop/new/weekly-reporting.webp" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/weekly-reporting.webp" alt="">
                                 </div>
                             </div>
                             <div class="lets-talk-btn-mobile">
@@ -324,7 +325,7 @@
                             <div class="case-study-header">
                                 <h2>From Growth to Succcess</h2>
                                 <div class="golden-fox">
-                                    <img loading="lazy" src="assets/images/Mobile-version/goldenfox-logo.webp" alt="Hero Image" class="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Mobile-version/goldenfox-logo.webp" alt="Hero Image" class="">
                                 </div>
                             </div>
                             <div class="case-study-growth-image-container">
@@ -358,7 +359,7 @@
                                         <button class="toggle-modal">
                                             Out Impact
                                             <span>
-                                                <!-- <img loading="lazy" src="assets/images/Desktop/Arrow-right2.png" alt=""> -->
+                                                <!-- <img width="640" height="360"loading="lazy" src="assets/images/Desktop/Arrow-right2.png" alt=""> -->
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </span>
                                         </button>
@@ -366,12 +367,12 @@
                                 </div>
                                 <div class="case-study-container-img-body">
                                     <div class="case-study-container-img">
-                                        <img loading="lazy" src="assets/images/Desktop/Review-copy.webp" alt="Hero Image" class="case-study-img">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Review-copy.webp" alt="Hero Image" class="case-study-img">
                                         <div class="fake-review">
                                             <div class="fake-review-inner">
                                                 <div class="review-card-top">
                                                     <div class="fake-review-img">
-                                                        <img loading="lazy" src="assets/images/Desktop/fake-critics.webp" alt="Hero Image" class="">
+                                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/fake-critics.webp" alt="Hero Image" class="">
                                                     </div>
                                                     <div>
                                                         <h2>James Hawken</h2>
@@ -379,19 +380,19 @@
                                                             <p>Golden Fox, USA</p>
                                                             <div class="review-card-rating-stars">
                                                                 <div class="review-card-rating-img">
-                                                                    <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                                                 </div>
                                                                 <div class="review-card-rating-img">
-                                                                    <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                                                 </div>
                                                                 <div class="review-card-rating-img">
-                                                                    <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                                                 </div>
                                                                 <div class="review-card-rating-img">
-                                                                    <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                                                 </div>
                                                                 <div class="review-card-rating-img">
-                                                                    <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -412,7 +413,7 @@
                             <div class="case-study-header">
                                 <h2>From Growth to Succcess</h2>
                                 <div class="golden-fox">
-                                    <img loading="lazy" id="woodland-logo" src="assets/images/Desktop/woodland-logo.png" alt="Hero Image" class="">
+                                    <img width="640" height="360" loading="lazy" id="woodland-logo" src="assets/images/Desktop/woodland-logo.png" alt="Hero Image" class="">
                                 </div>
                             </div>
                             <div class="case-study-growth-image-container">
@@ -446,7 +447,7 @@
                                         <button class="toggle-modal">
                                             Out Impact
                                             <span>
-                                                <!-- <img loading="lazy" src="assets/images/Desktop/Arrow-right2.png" alt=""> -->
+                                                <!-- <img width="640" height="360"loading="lazy" src="assets/images/Desktop/Arrow-right2.png" alt=""> -->
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </span>
                                         </button>
@@ -454,12 +455,12 @@
                                 </div>
                                 <div class="case-study-container-img-body">
                                     <div class="case-study-container-img">
-                                        <img loading="lazy" id="" src="assets/images/Desktop/woodland-cover.webp" alt="Hero Image" class="case-study-img">
+                                        <img width="640" height="360" loading="lazy" id="" src="assets/images/Desktop/woodland-cover.webp" alt="Hero Image" class="case-study-img">
                                         <div class="fake-review">
                                             <div class="fake-review-inner">
                                                 <div class="review-card-top">
                                                     <div class="fake-review-img">
-                                                        <img loading="lazy" src="assets/images/Desktop/woodland-critic.webp" alt="Hero Image" class="">
+                                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/woodland-critic.webp" alt="Hero Image" class="">
                                                     </div>
                                                     <div>
                                                         <h2>Max Davidson</h2>
@@ -467,19 +468,19 @@
                                                             <p>Woodland, USA</p>
                                                             <div class="review-card-rating-stars">
                                                                 <div class="review-card-rating-img">
-                                                                    <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                                                 </div>
                                                                 <div class="review-card-rating-img">
-                                                                    <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                                                 </div>
                                                                 <div class="review-card-rating-img">
-                                                                    <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                                                 </div>
                                                                 <div class="review-card-rating-img">
-                                                                    <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                                                 </div>
                                                                 <div class="review-card-rating-img">
-                                                                    <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -500,7 +501,7 @@
                             <div class="case-study-header">
                                 <h2>From Growth to Succcess</h2>
                                 <div class="golden-fox">
-                                    <img loading="lazy" id="umbra-logo" src="assets/images/Desktop/umbra-logo.png" alt="Hero Image" class="">
+                                    <img width="640" height="360" loading="lazy" id="umbra-logo" src="assets/images/Desktop/umbra-logo.png" alt="Hero Image" class="">
                                 </div>
                             </div>
                             <div class="case-study-growth-image-container">
@@ -534,7 +535,7 @@
                                         <button class="toggle-modal">
                                             Out Impact
                                             <span>
-                                                <!-- <img loading="lazy" src="assets/images/Desktop/Arrow-right2.png" alt=""> -->
+                                                <!-- <img width="640" height="360"loading="lazy" src="assets/images/Desktop/Arrow-right2.png" alt=""> -->
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </span>
                                         </button>
@@ -542,12 +543,12 @@
                                 </div>
                                 <div class="case-study-container-img-body">
                                     <div class="case-study-container-img">
-                                        <img loading="lazy" src="assets/images/Desktop/umbra.png" alt="Hero Image" class="case-study-img">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/umbra.webp" alt="Hero Image" class="case-study-img">
                                         <div class="fake-review">
                                             <div class="fake-review-inner">
                                                 <div class="review-card-top">
                                                     <div class="fake-review-img">
-                                                        <img loading="lazy" src="assets/images/Desktop/umbra-critic.webp" alt="Hero Image" class="">
+                                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/umbra-critic.webp" alt="Hero Image" class="">
                                                     </div>
                                                     <div>
                                                         <h2>Marlyn Costello</h2>
@@ -555,19 +556,19 @@
                                                             <p>Umbra, USA</p>
                                                             <div class="review-card-rating-stars">
                                                                 <div class="review-card-rating-img">
-                                                                    <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                                                 </div>
                                                                 <div class="review-card-rating-img">
-                                                                    <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                                                 </div>
                                                                 <div class="review-card-rating-img">
-                                                                    <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                                                 </div>
                                                                 <div class="review-card-rating-img">
-                                                                    <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                                                 </div>
                                                                 <div class="review-card-rating-img">
-                                                                    <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -621,23 +622,23 @@
                         <div class="amazon-ppc-card-ratings">
                             <div class="amazon-ppc-card-ratings-card">
                                 <div class="amazon-ppc-card-ratings-img">
-                                    <img loading="lazy" src="assets/images/Desktop/trustpilot-logo.png" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/trustpilot-logo.png" alt="">
                                 </div>
                                 <div class="amazon-ppc-card-ratings-stars">
                                     <div class="amazon-ppc-card-star-img">
-                                        <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                     </div>
                                     <div class="amazon-ppc-card-star-img">
-                                        <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                     </div>
                                     <div class="amazon-ppc-card-star-img">
-                                        <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                     </div>
                                     <div class="amazon-ppc-card-star-img">
-                                        <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                     </div>
                                     <div class="amazon-ppc-card-star-img">
-                                        <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                     </div>
                                 </div>
                                 <div>
@@ -647,23 +648,23 @@
 
                             <div class="amazon-ppc-card-ratings-card">
                                 <div class="amazon-ppc-card-ratings-img">
-                                    <img loading="lazy" src="assets/images/Desktop/clutch-logo.png" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/clutch-logo.png" alt="">
                                 </div>
                                 <div class="amazon-ppc-card-ratings-stars">
                                     <div class="amazon-ppc-card-star-img">
-                                        <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                     </div>
                                     <div class="amazon-ppc-card-star-img">
-                                        <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                     </div>
                                     <div class="amazon-ppc-card-star-img">
-                                        <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                     </div>
                                     <div class="amazon-ppc-card-star-img">
-                                        <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                     </div>
                                     <div class="amazon-ppc-card-star-img">
-                                        <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                     </div>
                                 </div>
                                 <div>
@@ -672,23 +673,23 @@
                             </div>
                             <div class="amazon-ppc-card-ratings-card">
                                 <div class="amazon-ppc-card-ratings-img">
-                                    <img loading="lazy" src="assets/images/Desktop/google-logo.png" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/google-logo.png" alt="">
                                 </div>
                                 <div class="amazon-ppc-card-ratings-stars">
                                     <div class="amazon-ppc-card-star-img">
-                                        <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                     </div>
                                     <div class="amazon-ppc-card-star-img">
-                                        <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                     </div>
                                     <div class="amazon-ppc-card-star-img">
-                                        <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                     </div>
                                     <div class="amazon-ppc-card-star-img">
-                                        <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                     </div>
                                     <div class="amazon-ppc-card-star-img">
-                                        <img loading="lazy" src="assets/images/Desktop/half-star.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/half-star.png" alt="">
                                     </div>
                                 </div>
                                 <div>
@@ -697,23 +698,23 @@
                             </div>
                             <div class="amazon-ppc-card-ratings-card">
                                 <div class="amazon-ppc-card-ratings-img">
-                                    <img loading="lazy" src="assets/images/Desktop/Upwork-logo.png" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Upwork-logo.png" alt="">
                                 </div>
                                 <div class="amazon-ppc-card-ratings-stars">
                                     <div class="amazon-ppc-card-star-img">
-                                        <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                     </div>
                                     <div class="amazon-ppc-card-star-img">
-                                        <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                     </div>
                                     <div class="amazon-ppc-card-star-img">
-                                        <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                     </div>
                                     <div class="amazon-ppc-card-star-img">
-                                        <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                     </div>
                                     <div class="amazon-ppc-card-star-img">
-                                        <img loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
                                     </div>
                                 </div>
                                 <div class="amazon-ppc-card-ratings-description">
@@ -770,9 +771,9 @@
                                     </div>
                                     <div class="amazon-ppc-img">
                                         <div class="radial"></div>
-                                        <img loading="lazy" id="ppcImage0" src="assets/images/Desktop/Launch.webp" alt="">
-                                        <img loading="lazy" src="assets/images/Desktop/Optimize.webp" alt="">
-                                        <img loading="lazy" src="assets/images/Desktop/dominate.webp" alt="">
+                                        <img width="640" height="360" loading="lazy" id="ppcImage0" src="assets/images/Desktop/Launch.webp" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Optimize.webp" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/dominate.webp" alt="">
                                     </div>
                                 </div>
                                 <div class="custom-accordion amazon-ppc-items">
@@ -784,7 +785,7 @@
                                         <div class="custom-accordion-content active">
                                             <div>
                                                 <p>Every brand is unique - that’s why we tailor your PPC launch plan to your specific goals, audience, and product positioning. - Listing Optimization - Initial Keyword Research - Auto & Manual Campaign Setup - Maximize Impression - Harvesting & Data Collection</p>
-                                                <img loading="lazy" src="assets/images/Desktop/Launch.webp" alt="">
+                                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Launch.webp" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -795,7 +796,7 @@
                                         <div class="custom-accordion-content">
                                             <div>
                                                 <p>Every Amazon business performs differently — and so should your ad strategy. You need tailored adjustments of - Review & Refine Keywords - Adjust Bids & Budgets - Campaign Segmentation - Brand Awareness - Monitor & Report Performance</p>
-                                                <img loading="lazy" src="assets/images/Desktop/Optimize.webp" alt="">
+                                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Optimize.webp" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -806,7 +807,7 @@
                                         <div class="custom-accordion-content">
                                             <div>
                                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, dolorum porro! Libero sint, assumenda fuga, voluptatem tempore laborum recusandae distinctio quia voluptate aliquid placeat soluta! Nihil exercitationem id cum</p>
-                                                <img loading="lazy" src="assets/images/Desktop/dominate.webp" alt="">
+                                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/dominate.webp" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -821,9 +822,9 @@
                                 </header>
                                 <div class="amazon-content-img">
                                     <div class="amazon-keyword2-img">
-                                        <img loading="lazy" id="keyImage0" src="assets/images/Desktop/new/Broad.webp" alt="">
-                                        <img loading="lazy" src="assets/images/Desktop/new/Phrase.webp" alt="">
-                                        <img loading="lazy" src="assets/images/Desktop/new/Exact.webp" alt="">
+                                        <img width="640" height="360" loading="lazy" id="keyImage0" src="assets/images/Desktop/new/Broad.webp" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Phrase.webp" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Exact.webp" alt="">
                                     </div>
                                     <div class="amazon-keyword2-wrapper">
                                         <div class="fade-top"></div>
@@ -857,7 +858,7 @@
                                             <div>
                                                 <p>Use Broad match to cast a wide net and uncover high-potential search terms across your niche. Capture wide traffic and discover new keyword opportunities with Broad match targeting.
                                                     View Details.</p>
-                                                <img loading="lazy" src="assets/images/Desktop/new/Broad.webp" alt="">
+                                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Broad.webp" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -870,7 +871,7 @@
                                                 <p>Phrase match helps to connect with shoppers using relevant keyword sequences
                                                     for better performance. Great for intent-driven traffic and increasing ad
                                                     relevance.</p>
-                                                <img loading="lazy" src="assets/images/Desktop/new/Phrase.webp" alt="">
+                                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Phrase.webp" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -881,7 +882,7 @@
                                         <div class="custom-accordion-content">
                                             <div>
                                                 <p>Get the highest precision in your ads with Exact match keyword targeting. Maximize efficiency with Exact match as it get fewer clicks, more qualified buyers.</p>
-                                                <img loading="lazy" src="assets/images/Desktop/new/Exact.webp" alt="">
+                                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Exact.webp" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -896,7 +897,7 @@
                             </header>
                             <div class="timeline">
                                 <div class="timeline-main-image-wrapper">
-                                    <img loading="lazy" src="assets/images/Desktop/Phrase.png" class="timeline-image-desktop" id="timeline-main-image" />
+                                    <img width="640" height="360"loading="lazy" src="assets/images/Desktop/Phrase.png" class="timeline-image-desktop" id="timeline-main-image" />
                                 </div>
                                 <div class="timeline-item">
                                     <div class="timeline-line"></div>
@@ -910,7 +911,7 @@
                                                 </p>
                                                 <div class="fade-bottom-removeable"></div>
                                             </div>
-                                            <img loading="lazy" src="assets/images/Desktop/Broad.webp" id="mobile-broad-img" class="timeline-image-mobile" data-target="content-broad" />
+                                            <img width="640" height="360"loading="lazy" src="assets/images/Desktop/Broad.webp" id="mobile-broad-img" class="timeline-image-mobile" data-target="content-broad" />
                                         </div>
                                         
                                         <div class="timeline-content-item">
@@ -923,7 +924,7 @@
                                                 </p>
                                                 <div class="fade-bottom-removeable remove-fade-bottom"></div>
                                             </div>
-                                            <img loading="lazy" src="assets/images/Desktop/Phrase.png" id="mobile-phrase-img" class="timeline-image-mobile active" data-target="content-phrase" />
+                                            <img width="640" height="360"loading="lazy" src="assets/images/Desktop/Phrase.png" id="mobile-phrase-img" class="timeline-image-mobile active" data-target="content-phrase" />
                                         </div>
 
                                         <div class="timeline-content-item">
@@ -934,7 +935,7 @@
                                                 </p>
                                                 <div class="fade-bottom-removeable"></div>
                                             </div>
-                                            <img loading="lazy" id="mobile-exact-img" src="assets/images/Desktop/Exact.webp" class="timeline-image-mobile" data-target="content-exact" />
+                                            <img width="640" height="360"loading="lazy" id="mobile-exact-img" src="assets/images/Desktop/Exact.webp" class="timeline-image-mobile" data-target="content-exact" />
                                         </div>
 
                                     </div>
@@ -957,7 +958,7 @@
                                         <p>For Sponsored Brands, we design captivating creatives to boost your Amazon store's visibility and brand awarness. Our campaigns are tailored to attract new-to-brand customers, expanding your audience while strengthening recognition and engagement in competitive marketplaces.</p>
                                     </div>
                                     <div class="advertising-card-image">
-                                        <img loading="lazy" src="assets/images/Desktop/new/AmazonBrandAds.webp" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/AmazonBrandAds.webp" alt="">
                                     </div>
                                 </div>
                                 <div class="advertising-card">
@@ -968,12 +969,12 @@
                                         </p>
                                     </div>
                                     <div class="advertising-card-image">
-                                        <img loading="lazy" src="assets/images/Desktop/new/SponsoredProductsAds.webp" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/SponsoredProductsAds.webp" alt="">
                                     </div>
                                 </div>
                                 <div class="advertising-card advertising-card-right">
                                     <div class="advertising-card-image">
-                                        <img loading="lazy" src="assets/images/Desktop/new/SponsoredVideo.webp" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/SponsoredVideo.webp" alt="">
                                     </div>
                                     <div class="advertising-card-text advertising-card-text-right">
                                         <h2>Amazon Video Ads</h2>
@@ -982,7 +983,7 @@
                                 </div>
                                 <div class="advertising-card advertising-card-right">
                                     <div class="advertising-card-image">
-                                        <img loading="lazy" src="assets/images/Desktop/new/AmazonDisplayAds.webp" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/AmazonDisplayAds.webp" alt="">
 
                                     </div>
                                     <div class="advertising-card-text advertising-card-text-right">
@@ -1003,7 +1004,7 @@
                 <div class="container">
                     <div class="amazon-ppc-strategy-img">
                         <div class="img-wrapper">
-                            <img loading="lazy" src="assets/images/Desktop/new/Right-Strategy.webp" alt="">
+                            <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Right-Strategy.webp" alt="">
                         </div>
                     </div>
                     <!-- <div class="amazon-ppc-strategy">
@@ -1028,8 +1029,8 @@
                 <div class="custom-accordion-item">
                     <div class="custom-accordion-header">
                         <h2>How long does it take for PPC to work?</h2>
-                        <img loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                        <img loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                        <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                        <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
                     </div>
                     <div class="custom-accordion-content">
                         <p>Amazon PPC performance generally starts showing early indicators within the first 7 to 14 days, as campaigns gather data and Amazon learns where your ads fit best. However, true optimization usually happens over 4 to 8 weeks, once enough search-term, impression, and conversion data accumulates. The results improve over time as we refine bids, remove waste, and scale profitable terms. PPC is not instant - it’s a learning and optimization cycle-but with the right structure, you begin seeing steady, predictable improvements.</p>
@@ -1038,8 +1039,8 @@
                 <div class="custom-accordion-item">
                     <div class="custom-accordion-header">
                         <h2>What sales uplift can we expect if we increase ACOS/TACoS goals?</h2>
-                        <img loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                        <img loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                        <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                        <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
                     </div>
                     <div class="custom-accordion-content">
                         <p>A “good” ACoS depends entirely on your profit margin and goals. If the goal is profitability, ACoS should be below your breakeven percentage. If the goal is ranking and growth, a higher ACoS may be acceptable temporarily. TACoS (Total Advertising Cost of Sale) gives a deeper picture of real business impact; a healthy TACoS typically falls between 5% and 15% depending on your category. Instead of chasing a random ACoS number, we calculate your exact breakeven point and build a strategy that aligns with your long-term profitability and ranking goals.</p>
@@ -1048,8 +1049,8 @@
                 <div class="custom-accordion-item">
                     <div class="custom-accordion-header">
                         <h2>Can ad spend be reduced while increasing PPC sales?</h2>
-                        <img loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                        <img loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                        <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                        <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
                     </div>
                     <div class="custom-accordion-content">
                         <p>It is possible, but it depends on the current state of your campaigns. If your account is overspending on irrelevant or expensive keywords, optimization can reduce spend while maintaining or slightly increasing sales. However, in most cases, reducing spend decreases impressions, which may reduce total sales. The best long-term approach is sequencing: first improve efficiency, then scale. Once the wasted spend is minimized and your campaigns are profitable, we gradually increase investment into the keywords and placements that generate the strongest return.</p>
@@ -1058,8 +1059,8 @@
                 <div class="custom-accordion-item">
                     <div class="custom-accordion-header">
                         <h2>Which Amazon ad type is the most effective for driving sales?</h2>
-                        <img loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                        <img loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                        <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                        <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
                     </div>
                     <div class="custom-accordion-content">
                         <p>Sponsored Products are the most effective and commonly used ad type because they appear directly in search results and on product detail pages, where purchase intent is highest. They capture the majority of PPC sales for nearly every category. Sponsored Brands and Sponsored Display also play important roles, particularly for brand visibility, retargeting, and defensive advertising. The most effective PPC strategy uses all three ad types in a structured funnel, but Sponsored Products remain the core engine of consistent sales.</p>
@@ -1068,8 +1069,8 @@
                 <div class="custom-accordion-item">
                     <div class="custom-accordion-header">
                         <h2>How much budget is needed for a successful PPC strategy?</h2>
-                        <img loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                        <img loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                        <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                        <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
                     </div>
                     <div class="custom-accordion-content">
                         <p>Your required budget depends on your niche, competition level, product price, and the number of SKUs being advertised. Highly competitive categories - such as supplements, pet products, or beauty - often require higher CPCs and therefore larger budgets. Lower-competition niches may spend significantly less. Instead of suggesting a fixed amount, we analyze your market, average CPCs, and your goals to recommend a realistic starting budget. The key is bringing a budget strong enough to gather meaningful data and allow campaigns to stabilize.</p>
@@ -1079,8 +1080,8 @@
                 <div class="custom-accordion-item">
                     <div class="custom-accordion-header">
                         <h2>What results can I expect from your PPC management?</h2>
-                        <img loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                        <img loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                        <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                        <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
                     </div>
                     <div class="custom-accordion-content">
                         <p>Our PPC management focuses on building long-term, sustainable performance. You can expect clearer keyword structure, smarter bidding, reduced wasted ad spend, improved ranking on important search terms, and more consistent sales growth. Results depend on your product quality, reviews, price competitiveness, and listing optimization, but our approach ensures campaigns move toward greater profitability and scale over time. We combine manual strategy with advanced tools to optimize your account continuously-not just once a month.</p>
@@ -1089,8 +1090,8 @@
                 <div class="custom-accordion-item">
                     <div class="custom-accordion-header">
                         <h2>I’m new to Amazon PPC. Can you still help?</h2>
-                        <img loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                        <img loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                        <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                        <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
                     </div>
                     <div class="custom-accordion-content">
                         <p>Absolutely. Many of our clients start with little or no PPC experience. We handle everything from keyword research and campaign setup to daily optimization, reporting, and long-term strategy. We also audit your listings to ensure they are ready for ads, because strong PPC performance relies heavily on strong conversion rates. Whether you’re launching your first product or managing a growing brand, our team guides you through the entire advertising journey with complete transparency and ongoing support.</p>
@@ -1099,8 +1100,8 @@
                 <div class="custom-accordion-item">
                     <div class="custom-accordion-header">
                         <h2>How often do you optimize campaigns?</h2>
-                        <img loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                        <img loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                        <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                        <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
                     </div>
                     <div class="custom-accordion-content">
                         <p>We monitor campaigns daily to track spend, performance trends, and any sudden changes, and then perform structured weekly optimizations such as bid adjustments, keyword updates, negative pruning, and budget redistribution. Every month, we conduct a strategic review of overall performance, seasonality, and long-term goals to ensure campaigns stay efficient, competitive, and aligned with your growth targets.</p>
@@ -1109,8 +1110,8 @@
                 <div class="custom-accordion-item">
                     <div class="custom-accordion-header">
                         <h2>Do you manage PPC for both Seller Central and Vendor Central?</h2>
-                        <img loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                        <img loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                        <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                        <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
                     </div>
                     <div class="custom-accordion-content">
                         <p>Yes, we manage PPC for both Seller Central (3P sellers) and Vendor Central (1P brands), adapting strategies to the unique tools, reporting systems, and customer behaviors of each platform. Whether you operate as SC, VC, or a hybrid model, we optimize Sponsored Products, Brands, Display, and DSP to deliver consistent performance and profitable growth across all Amazon ecosystems.</p>
@@ -1119,8 +1120,8 @@
                 <div class="custom-accordion-item">
                     <div class="custom-accordion-header">
                         <h2>Will I have a dedicated account manager?</h2>
-                        <img loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                        <img loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                        <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                        <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
                     </div>
                     <div class="custom-accordion-content">
                         <p>Yes, you will have a dedicated account manager who acts as your single point of contact, overseeing daily performance, executing strategy, coordinating with the PPC team, and providing clear weekly updates and insights. This ensures fast communication, smooth operations, and a fully managed PPC experience tailored to your goals.</p>
@@ -1148,7 +1149,7 @@
                     </div>
                 </div>
                 <div class="amazon-advertising-pricing-img">
-                    <img loading="lazy" src="/assets/images/Desktop/Amazon-advertising-new.webp" alt="">
+                    <img width="640" height="360" loading="lazy" src="/assets/images/Desktop/Amazon-advertising-new.webp" alt="">
                 </div>
             </div>
         </section>
@@ -1167,11 +1168,6 @@
                     </div>
 
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                        <!-- <div class="tab-pane fade show" role="tabpanel" aria-labelledby="pills-home-tab">
-                <div class="owl-carousel owl-theme"> -->
-                        <!-- <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Most popular</button>
-            </li> -->
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Amazon</button>
                         </li>
@@ -1194,15 +1190,9 @@
                         <li class="nav-item" role="presentation">
                             <a href="https://ecomclips.com/blog/"><button class="nav-link" id="pills-contact-tab-four" data-bs-toggle="pill" data-bs-target="#pills-contact-four" type="button" role="tab" aria-controls="pills-contact-four" aria-selected="false">See More</button></a>
                         </li>
-                        <!-- </div>
-            </div> -->
                     </ul>
 
                     <div class="tab-content" id="pills-tabContent">
-
-                        <!-- <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-
-            </div> -->
 
                         <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                             <div id="blog-cont">
@@ -1258,9 +1248,6 @@
 
                     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                         <div id="carouselTheyTrustBlog" class="owl-slider owl-carousel they-trust-blog brand-owl">
-                            <!-- <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab-mb" data-bs-toggle="pill" data-bs-target="#pills-home-mb" type="button" role="tab" aria-controls="pills-home-mb" aria-selected="true">Most popular</button>
-                </li> -->
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="pills-profile-tab-mb" data-bs-toggle="pill" data-bs-target="#pills-profile-mb" type="button" role="tab" aria-controls="pills-profile-mb" aria-selected="false">Amazon</button>
                             </li>
@@ -1288,10 +1275,6 @@
                     </ul>
 
                     <div class="tab-content" id="pills-tabContent">
-
-                        <!-- <div class="tab-pane fade show active" id="pills-home-mb" role="tabpanel" aria-labelledby="pills-home-tab-mb">
-
-            </div> -->
 
                         <div class="tab-pane fade show active" id="pills-profile-mb" role="tabpanel" aria-labelledby="pills-profile-tab">
                             <div id="blog-cont7">
@@ -1357,26 +1340,26 @@
                         <div class="why-right">
 
                             <div class="hero-right">
-                                <img loading="lazy" src="./assets/images/five-img/why-right.webp" alt="">
+                                <img width="640" height="360" loading="lazy" src="./assets/images/five-img/why-right.webp" alt="">
                                 <a href="# ">
                                     <div class="glass-effect-five glass-position-one">
-                                        <img loading="lazy" src="./assets/images/five-img/sale.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="./assets/images/five-img/sale.png" alt="">
                                     </div>
                                 </a>
                                 <a href="# ">
                                     <div class="glass-effect-five glass-position-two">
-                                        <img loading="lazy" src="./assets/images/five-img/daily.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="./assets/images/five-img/daily.png" alt="">
                                     </div>
                                 </a>
 
                                 <a href="# ">
                                     <div class="glass-effect-five glass-position-four">
-                                        <img loading="lazy" src="./assets/images/five-img/customer.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="./assets/images/five-img/customer.png" alt="">
                                     </div>
                                 </a>
                                 <a href="# ">
                                     <div class="glass-effect-five glass-position-five">
-                                        <img loading="lazy" src="./assets/images/five-img/datat.png" alt="">
+                                        <img width="640" height="360" loading="lazy" src="./assets/images/five-img/datat.png" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -1390,7 +1373,7 @@
                 <div class="work-container">
                     <div class="work-row">
                         <div class="work-left">
-                            <img loading="lazy" src="./assets/images/gif-image/team_work.gif" alt="">
+                            <img width="640" height="360" loading="lazy" src="./assets/images/gif-image/team_work.gif" alt="">
                         </div>
 
                         <div class="work-right">
@@ -1412,7 +1395,7 @@
                 <div class="work-container">
                     <div class="work-row">
                         <div class="work-left">
-                            <img loading="lazy" src="./assets/images/gif-image/product_iteration.gif" alt="">
+                            <img width="640" height="360" loading="lazy" src="./assets/images/gif-image/product_iteration.gif" alt="">
                         </div>
 
                         <div class="work-right">
@@ -1434,7 +1417,7 @@
                 <div class="work-container">
                     <div class="work-row">
                         <div class="work-left">
-                            <img loading="lazy" src="./assets/images/gif-image/content_team.webp" alt="">
+                            <img width="640" height="360" loading="lazy" src="./assets/images/gif-image/content_team_old_compressed.gif" alt="">
                         </div>
 
                         <div class="work-right">
@@ -1456,36 +1439,36 @@
                 <div class="technology-container">
                     <div class="technology-row">
                         <div class="technology-left">
-                            <img loading="lazy" src="./assets/images/img-1/technology-left.png" alt="" class="bg-left" id="bg-left">
-                            <div class="technology-logo-midle">
-                                <img loading="lazy" src="./assets/images/img-1/technology-logo.png" alt="">
+                            <img width="640" height="360" loading="lazy" src="./assets/images/img-1/technology-left.png" alt="" class="bg-left" id="bg-left" style="width: 100%;">
+                            <div class="technology-logo-midle technology-logo-container">
+                                <img width="640" height="360" loading="lazy" src="./assets/images/img-1/technology-logo.png" alt="">
                             </div>
-                            <div class="technology-logo-1" id="technology-logo-1">
-                                <img loading="lazy" src="./assets/images/img-1/hubstaff.png" alt="">
+                            <div class="technology-logo-1 technology-logo-container" id="technology-logo-1">
+                                <img width="640" height="360" loading="lazy" src="./assets/images/img-1/hubstaff.png" alt="">
                             </div>
-                            <div class="technology-logo-2" id="technology-logo-2">
-                                <img loading="lazy" src="./assets/images/img-1/monday.png" alt="">
+                            <div class="technology-logo-2 technology-logo-container" id="technology-logo-2">
+                                <img width="640" height="360" loading="lazy" src="./assets/images/img-1/monday.png" alt="">
                             </div>
-                            <div class="technology-logo-3" id="technology-logo-3">
-                                <img loading="lazy" src="./assets/images/img-1/google-meet.png" alt="">
+                            <div class="technology-logo-3 technology-logo-container" id="technology-logo-3">
+                                <img width="640" height="360" loading="lazy" src="./assets/images/img-1/google-meet.png" alt="">
                             </div>
-                            <div class="technology-logo-4" id="technology-logo-4">
-                                <img loading="lazy" src="./assets/images/img-1/skype.png" alt="">
+                            <div class="technology-logo-4 technology-logo-container" id="technology-logo-4">
+                                <img width="640" height="360" loading="lazy" src="./assets/images/img-1/skype.png" alt="">
                             </div>
-                            <div class="technology-logo-5" id="technology-logo-5">
-                                <img loading="lazy" src="./assets/images/img-1/asana.png" alt="">
+                            <div class="technology-logo-5 technology-logo-container" id="technology-logo-5">
+                                <img width="640" height="360" loading="lazy" src="./assets/images/img-1/asana.png" alt="">
                             </div>
-                            <div class="technology-logo-6" id="technology-logo-6">
-                                <img loading="lazy" src="./assets/images/img-1/zoom.webp" alt="">
+                            <div class="technology-logo-6 technology-logo-container" id="technology-logo-6">
+                                <img width="640" height="360" loading="lazy" src="./assets/images/img-1/zoom.webp" alt="">
                             </div>
-                            <div class="technology-logo-7" id="technology-logo-7">
-                                <img loading="lazy" src="./assets/images/img-1/whats-app.png" alt="">
+                            <div class="technology-logo-7 technology-logo-container" id="technology-logo-7">
+                                <img width="640" height="360" loading="lazy" src="./assets/images/img-1/whats-app.png" alt="">
                             </div>
-                            <div class="technology-logo-8" id="technology-logo-8">
-                                <img loading="lazy" src="./assets/images/img-1/microsoft.png" alt="">
+                            <div class="technology-logo-8 technology-logo-container" id="technology-logo-8">
+                                <img width="640" height="360" loading="lazy" src="./assets/images/img-1/microsoft.png" alt="">
                             </div>
-                            <div class="technology-logo-9" id="technology-logo-9">
-                                <img loading="lazy" src="./assets/images/img-1/slack.png" alt="">
+                            <div class="technology-logo-9 technology-logo-container" id="technology-logo-9">
+                                <img width="640" height="360" loading="lazy" src="./assets/images/img-1/slack.png" alt="">
                             </div>
                         </div>
                         <div class="technology-right">
@@ -1520,7 +1503,7 @@
                             <div class="videoCoverImage">
                                 <div>
                                     <a href="https://youtu.be/FXM3xY6LGJU" target="_blank" rel="noopener noreferrer">
-                                        <img loading="lazy" class="thumb mobile-thumb-img-260" src="./assets/images/video/caitlin.webp">
+                                        <img width="640" height="360" loading="lazy" class="thumb mobile-thumb-img-260" src="./assets/images/video/caitlin.webp">
                                     </a>
                                 </div>
                                 <div class="video-text-t">
@@ -1537,7 +1520,7 @@
                             <div class="videoCoverImage">
                                 <div>
                                     <a href="https://youtu.be/dYNfaCBosxg" target="_blank" rel="noopener noreferrer">
-                                        <img loading="lazy" class="thumb mobile-thumb-img-260" src="./assets/images/video/danitza.webp">
+                                        <img width="640" height="360" loading="lazy" class="thumb mobile-thumb-img-260" src="./assets/images/video/danitza.webp">
                                     </a>
                                 </div>
 
@@ -1556,7 +1539,7 @@
                             <div class="videoCoverImage">
                                 <div>
                                     <a href="https://youtu.be/HvSaMjbgcxw" target="_blank" rel="noopener noreferrer">
-                                        <img loading="lazy" class="thumb mobile-thumb-img-260" src="./assets/images/video/james.webp">
+                                        <img width="640" height="360" loading="lazy" class="thumb mobile-thumb-img-260" src="./assets/images/video/james.webp">
                                     </a>
                                 </div>
 
@@ -1591,7 +1574,7 @@
                             <div class="videoCoverImage">
                                 <div>
                                     <a href="https://youtu.be/FXM3xY6LGJU" target="_blank" rel="noopener noreferrer">
-                                        <img loading="lazy" class="thumb mobile-thumb-img-500" src="./assets/images/video/caitlin.webp">
+                                        <img width="640" height="360" loading="lazy" class="thumb mobile-thumb-img-500" src="./assets/images/video/caitlin.webp">
                                     </a>
                                 </div>
                                 <div class="video-text-t">
@@ -1609,7 +1592,7 @@
                             <div class="videoCoverImage">
                                 <div>
                                     <a href="https://youtu.be/dYNfaCBosxg" target="_blank" rel="noopener noreferrer">
-                                        <img loading="lazy" class="thumb mobile-thumb-img-500" src="./assets/images/video/danitza.webp">
+                                        <img width="640" height="360" loading="lazy" class="thumb mobile-thumb-img-500" src="./assets/images/video/danitza.webp">
                                     </a>
                                 </div>
 
@@ -1629,7 +1612,7 @@
                             <div class="videoCoverImage">
                                 <div>
                                     <a href="https://youtu.be/HvSaMjbgcxw" target="_blank" rel="noopener noreferrer">
-                                        <img loading="lazy" class="thumb mobile-thumb-img-500" src="./assets/images/video/james.webp">
+                                        <img width="640" height="360" loading="lazy" class="thumb mobile-thumb-img-500" src="./assets/images/video/james.webp">
                                     </a>
                                 </div>
 
@@ -1661,7 +1644,7 @@
                             <div class="videoCoverImage">
                                 <div>
                                     <a href="https://youtu.be/FXM3xY6LGJU" target="_blank" rel="noopener noreferrer">
-                                        <img loading="lazy" class="thumb mobile-thumb-img-0" src="./assets/images/video/caitlin.webp">
+                                        <img width="640" height="360" loading="lazy" class="thumb mobile-thumb-img-0" src="./assets/images/video/caitlin.webp">
                                     </a>
                                 </div>
                                 <div class="video-text-t">
@@ -1678,7 +1661,7 @@
                             <div class="videoCoverImage">
                                 <div>
                                     <a href="https://youtu.be/dYNfaCBosxg" target="_blank" rel="noopener noreferrer">
-                                        <img loading="lazy" class="thumb mobile-thumb-img-0" src="./assets/images/video/danitza.webp">
+                                        <img width="640" height="360" loading="lazy" class="thumb mobile-thumb-img-0" src="./assets/images/video/danitza.webp">
                                     </a>
                                 </div>
 
@@ -1697,7 +1680,7 @@
                             <div class="videoCoverImage">
                                 <div>
                                     <a href="https://youtu.be/HvSaMjbgcxw" target="_blank" rel="noopener noreferrer">
-                                        <img loading="lazy" class="thumb mobile-thumb-img-0" src="./assets/images/video/james.webp">
+                                        <img width="640" height="360" loading="lazy" class="thumb mobile-thumb-img-0" src="./assets/images/video/james.webp">
                                     </a>
                                 </div>
 
@@ -1718,7 +1701,6 @@
 
             <!-- Brand -->
 
-            <!-- Start end mobile tab design -->
             <section class="home-mobile-hide home-tablet-hide">
                 <div class="brand-container">
                     <div class="brand-row">
@@ -1729,30 +1711,30 @@
                             <div class="default-content-container flex items-center">
                                 <div class="default-content-container-inner marquee-wrapper relative inline-block">
                                     <div class="marquee animation-duration">
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/techtech.png" title="" class="marqueelogo"></a>
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/golden-fox.png" title="" class="marqueelogo"></a>
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/sartex.png" title="" class="marqueelogo"></a>
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/urban-X.png" title="" class="marqueelogo"></a>
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/dynamo.png" title="" class="marqueelogo"></a>
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/rocksolar.png" title="" class="marqueelogo"></a>
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/dreiback.png" title="" class="marqueelogo"></a>
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/garden-mile.png" title="" class="marqueelogo"></a>
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/iMPRESSSOPNS.png" title="" class="marqueelogo"></a>
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/zena.png" title="" class="marqueelogo"></a>
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/shopanage.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/techtech.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/golden-fox.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/sartex.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/urban-X.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/dynamo.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/rocksolar.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/dreiback.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/garden-mile.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/iMPRESSSOPNS.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/zena.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/shopanage.png" title="" class="marqueelogo"></a>
                                     </div>
                                     <div class="marquee animation-duration">
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/techtech.png" title="" class="marqueelogo"></a>
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/golden-fox.png" title="" class="marqueelogo"></a>
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/sartex.png" title="" class="marqueelogo"></a>
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/urban-X.png" title="" class="marqueelogo"></a>
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/dynamo.png" title="" class="marqueelogo"></a>
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/rocksolar.png" title="" class="marqueelogo"></a>
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/dreiback.png" title="" class="marqueelogo"></a>
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/garden-mile.png" title="" class="marqueelogo"></a>
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/iMPRESSSOPNS.png" title="" class="marqueelogo"></a>
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/zena.png" title="" class="marqueelogo"></a>
-                                        <a target="_blank"><img loading="lazy" src="./assets/images/icon/shopanage.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/techtech.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/golden-fox.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/sartex.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/urban-X.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/dynamo.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/rocksolar.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/dreiback.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/garden-mile.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/iMPRESSSOPNS.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/zena.png" title="" class="marqueelogo"></a>
+                                        <a target="_blank"><img width="640" height="360" loading="lazy" src="./assets/images/icon/shopanage.png" title="" class="marqueelogo"></a>
                                     </div>
                                 </div>
                             </div>
@@ -1765,7 +1747,6 @@
                 </div>
             </section>
 
-            <!-- Start mobile design -->
             <section class="hide-on-desktop">
                 <div class="mobile-brand-container">
                     <div class="mobile-award-row">
@@ -1781,52 +1762,52 @@
                                     <div id="carouselAward" class="owl-carousel brand-home brand-owl">
                                         <div class="item">
                                             <div class="brand-item-home">
-                                                <img loading="lazy" src="./assets/images/icon/golden-fox.png" alt="">
+                                                <img width="640" height="360" loading="lazy" src="./assets/images/icon/golden-fox.png" alt="">
                                             </div>
                                         </div>
                                         <div class="item">
                                             <div class="brand-item-home">
-                                                <img loading="lazy" src="./assets/images/icon/sartex.png" alt="">
+                                                <img width="640" height="360" loading="lazy" src="./assets/images/icon/sartex.png" alt="">
                                             </div>
                                         </div>
                                         <div class="item">
                                             <div class="brand-item-home">
-                                                <img loading="lazy" src="./assets/images/icon/urban-X.png" alt="">
+                                                <img width="640" height="360" loading="lazy" src="./assets/images/icon/urban-X.png" alt="">
                                             </div>
                                         </div>
                                         <div class="item">
                                             <div class="brand-item-home">
-                                                <img loading="lazy" src="./assets/images/icon/dynamo.png" alt="">
+                                                <img width="640" height="360" loading="lazy" src="./assets/images/icon/dynamo.png" alt="">
                                             </div>
                                         </div>
                                         <div class="item">
                                             <div class="brand-item-home">
-                                                <img loading="lazy" src="./assets/images/icon/rocksolar.png" alt="">
+                                                <img width="640" height="360" loading="lazy" src="./assets/images/icon/rocksolar.png" alt="">
                                             </div>
                                         </div>
                                         <div class="item">
                                             <div class="brand-item-home">
-                                                <img loading="lazy" src="./assets/images/icon/dreiback.png" alt="">
+                                                <img width="640" height="360" loading="lazy" src="./assets/images/icon/dreiback.png" alt="">
                                             </div>
                                         </div>
                                         <div class="item">
                                             <div class="brand-item-home">
-                                                <img loading="lazy" src="./assets/images/icon/garden-mile.png" alt="">
+                                                <img width="640" height="360" loading="lazy" src="./assets/images/icon/garden-mile.png" alt="">
                                             </div>
                                         </div>
                                         <div class="item">
                                             <div class="brand-item-home">
-                                                <img loading="lazy" src="./assets/images/icon/iMPRESSSOPNS.png" alt="">
+                                                <img width="640" height="360" loading="lazy" src="./assets/images/icon/iMPRESSSOPNS.png" alt="">
                                             </div>
                                         </div>
                                         <div class="item">
                                             <div class="brand-item-home">
-                                                <img loading="lazy" src="./assets/images/icon/zena.png" alt="">
+                                                <img width="640" height="360" loading="lazy" src="./assets/images/icon/zena.png" alt="">
                                             </div>
                                         </div>
                                         <div class="item">
                                             <div class="brand-item-home">
-                                                <img loading="lazy" src="./assets/images/icon/shopanage.png" alt="">
+                                                <img width="640" height="360" loading="lazy" src="./assets/images/icon/shopanage.png" alt="">
                                             </div>
                                         </div>
                                     </div>
@@ -1836,7 +1817,6 @@
                     </div>
                 </div>
             </section>
-            <!-- End mobile design -->
 
             <!-- end brand -->
 
@@ -1863,7 +1843,7 @@
                                         <div class='carousel__item'>
                                             <div class='carousel__item-body'>
                                                 <div>
-                                                    <img loading="lazy" src="./assets/images/img/review-profile011.png" class="profile-image-left" alt="">
+                                                    <img width="640" height="360" loading="lazy" src="./assets/images/img/review-profile011.png" class="profile-image-left" alt="">
                                                 </div>
                                                 <div class="reviewer-text">
                                                     <h4>Ronald Davis</h4>
@@ -1875,7 +1855,7 @@
                                         <div class='carousel__item'>
                                             <div class='carousel__item-body'>
                                                 <div>
-                                                    <img loading="lazy" src="./assets/images/img/review-profile03.png" class="profile-image-left" alt="">
+                                                    <img width="640" height="360" loading="lazy" src="./assets/images/img/review-profile03.png" class="profile-image-left" alt="">
                                                 </div>
                                                 <div class="reviewer-text">
                                                     <h4>Anjum Kaushik</h4>
@@ -1888,7 +1868,7 @@
                                         <div class='carousel__item'>
                                             <div class='carousel__item-body'>
                                                 <div>
-                                                    <img loading="lazy" src="./assets/images/img/review-profile05.png" class="profile-image-left" alt="">
+                                                    <img width="640" height="360" loading="lazy" src="./assets/images/img/review-profile05.png" class="profile-image-left" alt="">
                                                 </div>
                                                 <div class="reviewer-text">
                                                     <h4>Tancredi Ingrassia</h4>
@@ -1901,7 +1881,7 @@
                                         <div class='carousel__item'>
                                             <div class='carousel__item-body'>
                                                 <div>
-                                                    <img loading="lazy" src="./assets/images/img/review-profile06.png" class="profile-image-left" alt="Marlyn Costello ">
+                                                    <img width="640" height="360" loading="lazy" src="./assets/images/img/review-profile06.png" class="profile-image-left" alt="Marlyn Costello ">
                                                 </div>
                                                 <div class="reviewer-text">
                                                     <h4>Marlyn Costello </h4>
@@ -1913,7 +1893,7 @@
                                         <div class='carousel__item'>
                                             <div class='carousel__item-body'>
                                                 <div>
-                                                    <img loading="lazy" src="./assets/images/img/review-profile04.png" class="profile-image-left" alt="">
+                                                    <img width="640" height="360" loading="lazy" src="./assets/images/img/review-profile04.png" class="profile-image-left" alt="">
                                                 </div>
                                                 <div class="reviewer-text">
                                                     <h4>Meryum Mobashar</h4>
@@ -1946,11 +1926,11 @@
                                                         <p> Indiana Metal Craft Inc</p>
                                                         <h5>USA</h5>
                                                     </div>
-                                                    <img loading="lazy" src="./assets/images/img/review-profile011.png" alt="" class="profile-image-right">
+                                                    <img width="640" height="360" loading="lazy" src="./assets/images/img/review-profile011.png" alt="" class="profile-image-right">
                                                 </div>
                                                 <div>
                                                     <div class="review-body">
-                                                        <img loading="lazy" src="./assets/images/icon/clon.png" alt="" class="clon-image">
+                                                        <img width="640" height="360" loading="lazy" src="./assets/images/icon/clon.png" alt="" class="clon-image">
                                                         <p>A great 18 months with Ecomclips. We had the pleasure of working with Ecomclips for approximately 18 months. The Ecomclips team provided great guidance and continuously worked on their on their own for improved SKU optimization. We utilized their services for product listing, optimization, and advertising. We realized 150% revenue increase over the 18 months were worked with them. Our relationship ended when our company was sold.
                                                         </p>
 
@@ -1970,11 +1950,11 @@
                                                         <p>Home City Inc</p>
                                                         <h5>USA</h5>
                                                     </div>
-                                                    <img loading="lazy" src="./assets/images/img/review-profile03.png" alt="" class="profile-image-right">
+                                                    <img width="640" height="360" loading="lazy" src="./assets/images/img/review-profile03.png" alt="" class="profile-image-right">
                                                 </div>
                                                 <div>
                                                     <div class="review-body">
-                                                        <img loading="lazy" src="./assets/images/icon/clon.png" alt="" class="clon-image" class="profile-image-right">
+                                                        <img width="640" height="360" loading="lazy" src="./assets/images/icon/clon.png" alt="" class="clon-image" class="profile-image-right">
                                                         <p>Amazing Team. We had the pleasure to work with ecomclips for more than a year now. The team we work with is very knowledgeable, proactive, and responsive. From day one their entire team has been outstanding. They have proven to be indispensable partners for us. We view them as an extension of our own team and a true business partner. Their team truly exceeds our expectations time and again.
                                                         </p>
 
@@ -1996,11 +1976,11 @@
                                                         <p>Nicefy Inc</p>
                                                         <h5>USA</h5>
                                                     </div>
-                                                    <img loading="lazy" src="./assets/images/img/review-profile05.png" alt="" class="profile-image-right">
+                                                    <img width="640" height="360" loading="lazy" src="./assets/images/img/review-profile05.png" alt="" class="profile-image-right">
                                                 </div>
                                                 <div>
                                                     <div class="review-body">
-                                                        <img loading="lazy" src="./assets/images/icon/clon.png" alt="" class="clon-image">
+                                                        <img width="640" height="360" loading="lazy" src="./assets/images/icon/clon.png" alt="" class="clon-image">
                                                         <p> I highly recommend Ecomclips for Its Professionalism. I am impressed by the professionalism of EcomClips. The team covers a large number of areas of expertise from listing to keywords optimization, graphics designers and website creation. We are connected on Skype, we work together on taking important decisions that help to scale the business. The people I work with are really nice and extremely workable. Ecomclips knows how to wait for your feedback as well as execute fast when time is limited.
                                                         </p>
 
@@ -2021,11 +2001,11 @@
                                                         <p>Impressions Vanity Company</p>
                                                         <h5>USA</h5>
                                                     </div>
-                                                    <img loading="lazy" src="./assets/images/img/review-profile06.png" alt="" class="profile-image-right">
+                                                    <img width="640" height="360" loading="lazy" src="./assets/images/img/review-profile06.png" alt="" class="profile-image-right">
                                                 </div>
                                                 <div>
                                                     <div class="review-body">
-                                                        <img loading="lazy" src="./assets/images/icon/clon.png" alt="" class="clon-image">
+                                                        <img width="640" height="360" loading="lazy" src="./assets/images/icon/clon.png" alt="" class="clon-image">
                                                         <p>Trustworthy Teammates. I have been working with eComclips for about 2 years. eCommerce experts help me in many ways. When I need something, I ask them and they prepare a very good research report. They meet our needs very well in terms of listing products, creating A+ content, PPC management, and graphic design. We want to continue working with them. I believe that we will achieve many successes together. Thanks for all your support.
                                                         </p>
 
@@ -2045,11 +2025,11 @@
                                                         <p>MSHZ International Inc.</p>
                                                         <h5>CA</h5>
                                                     </div>
-                                                    <img loading="lazy" src="./assets/images/img/review-profile04.png" alt="" class="profile-image-right">
+                                                    <img width="640" height="360" loading="lazy" src="./assets/images/img/review-profile04.png" alt="" class="profile-image-right">
                                                 </div>
                                                 <div>
                                                     <div class="review-body">
-                                                        <img loading="lazy" src="./assets/images/icon/clon.png" alt="" class="clon-image">
+                                                        <img width="640" height="360" loading="lazy" src="./assets/images/icon/clon.png" alt="" class="clon-image">
                                                         <p>Just Great! They are a great team of people to work with. Never say no. Super Responsive. Just Love them. They are are key part of our business, team and processes.
                                                         </p>
 
@@ -2065,7 +2045,7 @@
                         </div>
                         <div class="review-layer">
                             <div>
-                                <img loading="lazy" src="./assets/images/icon/trustpilot.png" alt="">
+                                <img width="640" height="360" loading="lazy" src="./assets/images/icon/trustpilot.png" alt="">
                                 <p>Ecomclips have 26,50 Reviews and <br> archieved 4.8 star rating for excellency.</p>
                             </div>
                         </div>
@@ -2089,14 +2069,14 @@
                         <div class="they-trust-slider">
                             <div class="item">
                                 <div class="owl-icon-image-trust">
-                                    <img loading="lazy" src="./assets/images/img/review-profile011.png" alt="" class="profile-image-right">
+                                    <img width="640" height="360" loading="lazy" src="./assets/images/img/review-profile011.png" alt="" class="profile-image-right">
                                 </div>
                                 <div class="they-trust-body">
                                     <h3>Ronald Davis</h3>
                                     <h4> Indiana Metal Craft Inc</h4>
                                     <h4>USA</h4>
                                     <br>
-                                    <img loading="lazy" src="./assets/images/icon/clon.png" alt="" class="clon-image">
+                                    <img width="640" height="360" loading="lazy" src="./assets/images/icon/clon.png" alt="" class="clon-image">
                                     <p>A great 18 months with Ecomclips. We had the pleasure of working with Ecomclips for approximately 18 months. The Ecomclips team provided great guidance and continuously worked on their on their own for improved SKU optimization. We utilized their services for product listing, optimization, and advertising. We realized 150% revenue increase over the 18 months were worked with them. Our relationship ended when our company was sold.
                                     </p>
                                     <br>
@@ -2104,14 +2084,14 @@
                             </div>
                             <div class="item">
                                 <div class="owl-icon-image-trust">
-                                    <img loading="lazy" src="./assets/images/img/review-profile03.png" alt="" class="profile-image-right">
+                                    <img width="640" height="360" loading="lazy" src="./assets/images/img/review-profile03.png" alt="" class="profile-image-right">
                                 </div>
                                 <div class="they-trust-body">
                                     <h3>Anjum Kaushik</h3>
                                     <h4>Home City Inc</h4>
                                     <h4>USA</h4>
                                     <br>
-                                    <img loading="lazy" src="./assets/images/icon/clon.png" alt="" class="clon-image">
+                                    <img width="640" height="360" loading="lazy" src="./assets/images/icon/clon.png" alt="" class="clon-image">
                                     <p>Amazing Team. We had the pleasure to work with ecomclips for more than a year now. The team we work with is very knowledgeable, proactive, and responsive. From day one their entire team has been outstanding. They have proven to be indispensable partners for us. We view them as an extension of our own team and a true business partner. Their team truly exceeds our expectations time and again.
                                     </p>
                                     <br>
@@ -2119,14 +2099,14 @@
                             </div>
                             <div class="item">
                                 <div class="owl-icon-image-trust">
-                                    <img loading="lazy" src="./assets/images/img/review-profile05.png" alt="" class="profile-image-right">
+                                    <img width="640" height="360" loading="lazy" src="./assets/images/img/review-profile05.png" alt="" class="profile-image-right">
                                 </div>
                                 <div class="they-trust-body">
                                     <h3>Tancredi Ingrassia</h3>
                                     <h4>Nicefy Inc</h4>
                                     <h4>USA</h4>
                                     <br>
-                                    <img loading="lazy" src="./assets/images/icon/clon.png" alt="" class="clon-image">
+                                    <img width="640" height="360" loading="lazy" src="./assets/images/icon/clon.png" alt="" class="clon-image">
                                     <p> I highly recommend Ecomclips for Its Professionalism. I am impressed by the professionalism of EcomClips. The team covers a large number of areas of expertise from listing to keywords optimization, graphics designers and website creation. We are connected on Skype, we work together on taking important decisions that help to scale the business. The people I work with are really nice and extremely workable. Ecomclips knows how to wait for your feedback as well as execute fast when time is limited.
                                     </p>
                                     <br>
@@ -2134,14 +2114,14 @@
                             </div>
                             <div class="item">
                                 <div class="owl-icon-image-trust">
-                                    <img loading="lazy" src="./assets/images/img/review-profile06.png" alt="" class="profile-image-right">
+                                    <img width="640" height="360" loading="lazy" src="./assets/images/img/review-profile06.png" alt="" class="profile-image-right">
                                 </div>
                                 <div class="they-trust-body">
                                     <h3>Marlyn Costello</h3>
                                     <h4>Impressions Vanity Company</h4>
                                     <h4>USA</h4>
                                     <br>
-                                    <img loading="lazy" src="./assets/images/icon/clon.png" alt="" class="clon-image">
+                                    <img width="640" height="360" loading="lazy" src="./assets/images/icon/clon.png" alt="" class="clon-image">
                                     <p>Trustworthy Teammates. I have been working with eComclips for about 2 years. eCommerce experts help me in many ways. When I need something, I ask them and they prepare a very good research report. They meet our needs very well in terms of listing products, creating A+ content, PPC management, and graphic design. We want to continue working with them. I believe that we will achieve many successes together. Thanks for all your support.
                                     </p>
                                     <br>
@@ -2149,14 +2129,14 @@
                             </div>
                             <div class="item">
                                 <div class="owl-icon-image-trust">
-                                    <img loading="lazy" src="./assets/images/img/review-profile04.png" alt="" class="profile-image-right">
+                                    <img width="640" height="360" loading="lazy" src="./assets/images/img/review-profile04.png" alt="" class="profile-image-right">
                                 </div>
                                 <div class="they-trust-body">
                                     <h3>Meryum Mobashar</h3>
                                     <h4>MSHZ International Inc.</h4>
                                     <h4>CA</h4>
                                     <br>
-                                    <img loading="lazy" src="./assets/images/icon/clon.png" alt="" class="clon-image">
+                                    <img width="640" height="360" loading="lazy" src="./assets/images/icon/clon.png" alt="" class="clon-image">
                                     <p>Just Great! They are a great team of people to work with. Never say no. Super Responsive. Just Love them. They are are key part of our business, team and processes.
                                     </p>
                                     <br>
@@ -2184,11 +2164,11 @@
                     <div class="modal-body">
                         <div class="fill-up-pera">
                             <label for="recipient-name" class="col-form-label col-form-label-right">Name:<p class="mandatory-feild">*</p></label>
-                            <input type="text" class="form-control form-control-pera" id="recipient-name" placeholder="John Doe" name="name">
+                            <input type="text" class="form-control form-control-pera" id="recipient-name" placeholder="John Doe" name="name" autocomplete="off">
                         </div>
                         <div class="fill-up-pera">
                             <label for="recipient-name" class="col-form-label col-form-label-right">Email:<p class="mandatory-feild">*</p></label>
-                            <input type="text" class="form-control form-control-pera" id="recipient-name" placeholder="johndoe@gmail.com" name="email">
+                            <input type="text" class="form-control form-control-pera" id="recipient-email" placeholder="johndoe@gmail.com" name="email" autocomplete="off">
                         </div>
 
                         <div class="mb-3 fill-up-pera">
@@ -2210,12 +2190,12 @@
 
                         <div class="fill-up-pera">
                             <label for="recipient-name" class="col-form-label col-form-label-right">Website:</label>
-                            <input type="text" class="form-control form-control-pera" id="recipient-name" placeholder="https://www.ecomclips.com" name="website">
+                            <input type="text" class="form-control form-control-pera" id="recipient-website" placeholder="https://www.ecomclips.com" name="website">
                         </div>
 
 
                         <div class="from-bottom">
-                            <label for="services" class="col-form-label">Services:</label>
+                            <span class="col-form-label">Services:</span>
                             <div class="service-display">
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input form-check-input-block" type="checkbox" id="inlineCheckbox1" name="services[]" value="Data Management">
@@ -2276,14 +2256,24 @@
     </div>
     <!-- modal for form end -->
 
-    <script src="./assets/js/cdn/gsap.min.js" defer></script>
-    <script src="./assets/js/cdn/scroll-trigger.min.js" defer></script>
-    <script src="./assets/js/cdn/lenis.min.js" defer></script>
-    <script src="./assets/js/cdn/jquery.min.js" defer></script>
-    <script src="./assets/js/cdn/popper.min.js" defer></script>
-    <script src="./assets/js/cdn/bootstrap.min.js" defer></script>
-    <script src="./assets/js/cdn/flag.min.js" defer></script>
-    <script src="./assets/js/cdn/flag-svg.min.js" defer></script>
+    <!-- <script src="./assets/js/cdn/gsap.min.js" defer></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <!-- <script src="./assets/js/cdn/scroll-trigger.min.js" defer></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+    <!-- <script src="./assets/js/cdn/lenis.min.js" defer></script> -->
+    <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js" defer></script> 
+    <!-- <script src="./assets/js/cdn/jquery.min.js" defer></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="./assets/js/cdn/popper.min.js" defer></script>
+    <script src="./assets/js/cdn/bootstrap.min.js" defer></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous" defer></script>
+
+    <!-- <script src="./assets/js/cdn/flag.min.js" defer></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/country-list-with-dial-code-and-flag@latest/dist/main.js" defer></script>
+    <!-- <script src="./assets/js/cdn/flag-svg.min.js" defer></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/country-list-with-dial-code-and-flag/dist/country-flag-svg.js" defer></script>
     <script src="./assets/js/cdn/owl-carousel.min.js" defer></script>
 
     <!-- <script src="./assets/js/extra/home.js" defer></script> -->

@@ -85,6 +85,7 @@ body {
 
 img {
   max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
   object-fit: cover;
@@ -624,46 +625,46 @@ main {
 }
 
 .panel__card--one .panel__card-image .panel__card-image_container {
-  /* background: linear-gradient(128.13deg, #8FC235 0%, #C8EB8A 50.48%, #8FC235 100%); */
-  background: url("../images/Desktop/new/panel_card_img_bg1.webp");
+  background: linear-gradient(128.13deg, #8FC235 0%, #C8EB8A 50.48%, #8FC235 100%);
+  /* background: url("../images/Desktop/new/panel_card_img_bg1.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 }
 .panel__card--two .panel__card-image .panel__card-image_container {
-  /* background: linear-gradient(127.98deg, #EB6040 1.28%, #F0A286 50.64%, #E26636 100%); */
-  background: url("../images/Desktop/new/panel_card_img_bg2.webp");
+  background: linear-gradient(127.98deg, #EB6040 1.28%, #F0A286 50.64%, #E26636 100%);
+  /* background: url("../images/Desktop/new/panel_card_img_bg2.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 }
 .panel__card--three .panel__card-image .panel__card-image_container {
-  /* background: linear-gradient(128.35deg, #ECB910 0%, #F9E766 48.38%, #ECB910 97.69%); */
-  background: url("../images/Desktop/new/panel_card_img_bg3.webp");
+  background: linear-gradient(128.35deg, #ECB910 0%, #F9E766 48.38%, #ECB910 97.69%);
+  /* background: url("../images/Desktop/new/panel_card_img_bg3.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 }
 .panel__card--four .panel__card-image .panel__card-image_container {
-  /* background: linear-gradient(127.73deg, #25BFD5 0.62%, #98D4DD 50.31%, rgba(37, 191, 213, 0.858824) 100%); */
-  background: url("../images/Desktop/new/panel_card_img_bg4.webp");
+  background: linear-gradient(127.73deg, #25BFD5 0.62%, #98D4DD 50.31%, rgba(37, 191, 213, 0.858824) 100%);
+  /* background: url("../images/Desktop/new/panel_card_img_bg4.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 }
 .panel__card--five .panel__card-image .panel__card-image_container {
-  /* background: linear-gradient(128.13deg, #19C7AB 0%, #7DEEDD 50%, #19C7AB 100%); */
-  background: url("../images/Desktop/new/panel_card_img_bg5.webp");
+  background: linear-gradient(128.13deg, #19C7AB 0%, #7DEEDD 50%, #19C7AB 100%);
+  /* background: url("../images/Desktop/new/panel_card_img_bg5.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 }
 .panel__card--six .panel__card-image .panel__card-image_container {
-  /* background: linear-gradient(127.94deg, #6982DE 3.52%, #A5B9E6 50.05%, #6982DE 98.57%); */
-  background: url("../images/Desktop/new/panel_card_img_bg6.webp");
+  background: linear-gradient(127.94deg, #6982DE 3.52%, #A5B9E6 50.05%, #6982DE 98.57%);
+  /* background: url("../images/Desktop/new/panel_card_img_bg6.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
 }
 
 .panel__card-image .panel__card-image_container img {
@@ -788,6 +789,7 @@ main {
 }
 
 .case-study-header div img {
+  width: 100%;
   height: 25px;
 }
 
@@ -1777,6 +1779,10 @@ main {
   /* margin: 0 auto; */
 }
 
+.amazon-ppc-strategy-img .img-wrapper img {
+  width: 100%;
+}
+
 .ppc-question-header h2 {
   font-size: clamp(26px, 5vw, 64px);
   color: #fff;
@@ -1876,6 +1882,7 @@ main {
 }
 
 .amazon-advertising-pricing-img img {
+  width: 100%;
   object-fit: fill;
   border-radius: 40px;
 }
