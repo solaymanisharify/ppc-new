@@ -1142,7 +1142,7 @@
 
   .they-trust-blog .owl-nav button.owl-next {
     /* background: #70707036; */
-    background: #0b83fe;
+    background: #0b83fe !important;
     position: absolute;
     color: white;
     border: none;
@@ -1160,7 +1160,7 @@
 
   .they-trust-blog .owl-nav button.owl-prev {
     /* background: #70707036; */
-    background: #0b83fe;
+    background: #0b83fe !important;
     position: absolute;
     color: white;
     border: none;
@@ -1833,7 +1833,7 @@
 
   .they-trust-blog .owl-nav button.owl-next {
     /* background: #70707036; */
-    background: #0b83fe;
+    background: #0b83fe !important;
     position: absolute;
     color: white;
     border: none;
@@ -1851,7 +1851,7 @@
 
   .they-trust-blog .owl-nav button.owl-prev {
     /* background: #70707036; */
-    background: #0b83fe;
+    background: #0b83fe !important;
     position: absolute;
     color: white;
     border: none;

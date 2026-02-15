@@ -22,39 +22,32 @@
         onload="this.onload=null;this.rel='stylesheet'" />
 
     <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
-    <link rel="preload" href="./assets/css/styles.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href="./assets/css/styles.min.css" as="style" />
 
     <!-- <link rel="stylesheet" href="./assets/css/extra/style.css" /> -->
-    <link rel="preload" href="./assets/css/extra/style.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href="./assets/css/extra/style.min.css" as="style"/>
     <!-- <link rel="stylesheet" href="./assets/css/extra/homeStyle.css" /> -->
-    <link rel="preload" href="./assets/css/extra/homeStyle.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href="./assets/css/extra/homeStyle.min.css" as="style"/>
     <!-- <link rel="stylesheet" href="./assets/css/extra/fix_style.css" /> -->
-    <link rel="preload" href="./assets/css/extra/fix_style.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'" />
-    <!-- <link rel="stylesheet" href="./assets/css/extra/footer.css" /> -->
-    <link rel="preload" href="./assets/css/extra/footer.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'" />
-
-    <!-- <link rel="stylesheet" href="assets/css/modal.css"> -->
-    <link rel="preload" href="assets/css/modal.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href="./assets/css/extra/fix_style.min.css" as="style"/>
 
     <!-- <link rel="stylesheet" href="./assets/css/extra/owl.carousel.css" /> -->
-    <link rel="preload" href="./assets/css/extra/owl.carousel.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href="./assets/css/extra/owl.carousel.min.css" as="style"/>
     <!-- <link rel="stylesheet" href="./assets/css/extra/owl.theme.default.css" /> -->
-    <link rel="preload" href="./assets/css/extra/owl.theme.default.min.css" as="style"
-        onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href="./assets/css/extra/owl.theme.default.min.css" as="style"/>
+
+    <!-- <link rel="stylesheet" href="./assets/css/extra/footer.css" /> -->
+    <link rel="stylesheet" href="./assets/css/extra/footer.min.css" as="style"/>
+
+    <!-- <link rel="stylesheet" href="assets/css/modal.css"> -->
+    <link rel="stylesheet" href="assets/css/modal.min.css" as="style"/>
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <noscript>
         <link rel="stylesheet" href="./assets/css/cdn/bootstrap.min.css">
-        <link rel="stylesheet" href="./assets/css/styles.min.css">
+        <!-- <link rel="stylesheet" href="./assets/css/styles.min.css"> -->
     </noscript>
 </head>
 

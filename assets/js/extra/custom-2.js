@@ -443,7 +443,7 @@ function loadBlogPosts({ categoryId, label, containers }) {
 let blogsLoaded = false;
 
 window.addEventListener("scroll", () => {
-    console.log(window.scrollY)
+    // console.log(window.scrollY)
     if (window.scrollY > 10000 && !blogsLoaded) {
         blogsLoaded = true;
 
