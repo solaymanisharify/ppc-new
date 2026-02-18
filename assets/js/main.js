@@ -1,3 +1,43 @@
+// Cursor Follower on hero section 
+
+const back = document.getElementById('back');
+const cursorFollower = window.getComputedStyle(back, '::before');
+let isDragging = false;
+
+let originalPosition = { x: '5%', y: '5%' };
+
+gsap.set(back, {
+  '--x': originalPosition.x,
+  '--y': originalPosition.y
+});
+
+back.addEventListener('mousemove', (e) => {
+  if (!isDragging) {
+    const rect = back.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const width = parseInt(cursorFollower.width, 10); 
+    const height = parseInt(cursorFollower.height, 10); 
+    finalX = x - width * 0.25; 
+    finalY = y - height * 0.25;
+
+    gsap.to(back, {
+      '--x': `${finalX}px`,
+      '--y': `${finalY}px`,
+      duration: 1.8,
+      ease: 'power1.out'
+    });
+  }
+});
+
+back.addEventListener('mouseleave', () => {
+  gsap.set(back, {
+    '--x': originalPosition.x,
+    '--y': originalPosition.y
+  });
+});
+
 // Enhanced Accordion JS - Remove border from previous item for positions 2,3,4
 document.addEventListener("DOMContentLoaded", function () {
   const headers = document.querySelectorAll(".custom-accordion-header");

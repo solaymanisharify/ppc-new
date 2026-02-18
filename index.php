@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Ecomclips Landing Page</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
     <!-- ===== Preload ONLY critical animation libs ===== -->
     <!-- <link rel="preload" href="./assets/js/cdn/gsap.min.js" as="script"> -->
     <!-- <link rel="preload" href="./assets/js/cdn/scroll-trigger.min.js" as="script"> -->
@@ -55,7 +56,7 @@
 <body>
 
     <main>
-        <section class="gradient-bg box-1" id="back">
+        <section class="first-bg" id="back">
             <!-- Hero section -->
             <section class="hero-container">
                 <div class="hero-body container">
@@ -118,9 +119,77 @@
             <!-- Reveneue section end -->
         </section>
 
+        <section class="first-bg" id="tergeting-section">
+            <div class="container common-spacing">
+                <div class="timeline-section-header">
+                    <h2>The Secret Sauce Is In Targeting</h2>
+                </div>
+                <div class="timeline-section">
+                    <div class="new-timeline" id="timeline-pin">
+                        <div class="timeline-image-wrapper">
+                            <div class="timeline-images">
+                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Ranking-Targeting.webp" class="timeline-image" />
+                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Discovery-Targeting.webp" class="timeline-image" />
+                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Intent-Targeting.webp" class="timeline-image" />
+                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Defensive-Targeting.webp" class="timeline-image" />
+                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Scale-Retargeting.webp" class="timeline-image" />
+                            </div>
+                        </div>
+                        <div class="timeline-content-wrapper">
+                            <div class="timeline-content">
+                                <div class="timeline-content-item">
+                                    <h4 class="timeline-label timeline-label-active">Ranking Targeting</h2>
+                                    <p class="timeline-text timeline-text-visible">
+                                        This is where efficiency, profitability, and organic growth align.
+                                        By focusing on exact match precision, conversion-proven search terms, and sales-velocity-driven targeting, we strengthen keyword dominance and accelerate organic rank.
+                                    </p>
+                                </div>
+                                <div class="timeline-content-item">
+                                    <h4 class="timeline-label timeline-label-active">Discovery Targeting</h2>
+                                    <p class="timeline-text timeline-text-visible">
+                                        We uncover how shoppers search, compare, and discover products in your category. Using broad match, automatic campaigns, category, and theme-based targeting, we identify new demand and unlock untapped shopper segments.
+                                    </p>
+                                </div>
+                                <div class="timeline-content-item">
+                                    <h4 class="timeline-label timeline-label-active">Intent Targeting</h2>
+                                    <p class="timeline-text timeline-text-visible">
+                                        We focus spend only where purchase intent is proven — not guessed. Through phrase match precision, competitor ASIN conquesting, buyer-intent keyword targeting, and feature-driven searches, we capture high-converting traffic ready to buy.
+                                    </p>
+                                </div>
+                                <div class="timeline-content-item">
+                                    <h4 class="timeline-label timeline-label-active">Defensive Targeting</h2>
+                                    <p class="timeline-text timeline-text-visible">
+                                        We protect your traffic, your listings, and your brand equity from competitive erosion.
+                                        Through own ASIN targeting, brand-name keyword protection, and cross-ASIN defense, we secure your customer journey and reinforce brand authority.
+                                    </p>
+                                </div>
+                                <div class="timeline-content-item">
+                                    <h4 class="timeline-label timeline-label-active">Scale & Retargeting</h2>
+                                    <p class="timeline-text timeline-text-visible">
+                                        We scale what’s already profitable and re-engage shoppers who showed intent but didn’t convert.
+                                        Through high-intent audience targeting, product view retargeting, purchase-based retargeting, and cart abandonment recovery, we expand revenue without sacrificing efficiency.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-line">
+                            <div class="timeline-line-progress"></div>
+                            <div class="dot active"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Card Stack Section horizontal scroll -->
         <section class="horizontal-scroll-bg">
-            <div class="container common-spacing-top common-spacing-bottom">
+            <!-- common-spacing-top maybe this class added. -->
+            <div class="container common-spacing-bottom">
                 <div class="optimization-container">
                     <h2 class="optimization-container-title">Reignite Your Business With Our</h2>
                     <div class="panel__stack">
@@ -359,7 +428,6 @@
                                         <button class="toggle-modal">
                                             Out Impact
                                             <span>
-                                                <!-- <img width="640" height="360"loading="lazy" src="assets/images/Desktop/Arrow-right2.png" alt=""> -->
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </span>
                                         </button>
@@ -447,7 +515,6 @@
                                         <button class="toggle-modal">
                                             Out Impact
                                             <span>
-                                                <!-- <img width="640" height="360"loading="lazy" src="assets/images/Desktop/Arrow-right2.png" alt=""> -->
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </span>
                                         </button>
@@ -535,7 +602,6 @@
                                         <button class="toggle-modal">
                                             Out Impact
                                             <span>
-                                                <!-- <img width="640" height="360"loading="lazy" src="assets/images/Desktop/Arrow-right2.png" alt=""> -->
                                                 <i class="fa-solid fa-arrow-right"></i>
                                             </span>
                                         </button>
@@ -732,12 +798,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="amazon-ppc-card-bg"></div>
+                <div class="amazon-ppc-card-bg" id="amazon-ppc-card-bg-id"></div>
             </div>
             <!-- Amazon PCC Section Top End -->
 
             <!-- Amazon PCC Section Middle -->
-            <div class="amazon-section">
+            <div class="amazon-section" id="amazon-id-section">
                 <div class="container common-spacing common-spacing-extra">
                     <div class="amazon-container" id="amazon-ppc">
                         <div class="amazon-ppc-section">
@@ -748,7 +814,7 @@
                                 </div>
                                 <div class="amazon-content-img">
                                     <div class="amazon-ppc-wrapper">
-                                        <div class="fade-top"></div>
+                                        <div class="fade-top bg-will-changed-by-scroll"></div>
                                         <div class="amazon-ppc-content">
                                             <div class="amazon-ppc-content-text" data-image="Launch.webp">
                                                 <h2>Launch</h2>
@@ -767,7 +833,7 @@
 
                                             <div class="amazon-ppc-content-text"></div>
                                         </div>
-                                        <div class="fade-bottom"></div>
+                                        <div class="fade-bottom bg-will-changed-by-scroll"></div>
                                     </div>
                                     <div class="amazon-ppc-img">
                                         <div class="radial"></div>
@@ -1000,163 +1066,158 @@
             <!-- Amazon PCC Section Middle end -->
 
             <!-- Amazon PCC Section Bottom -->
-            <div class="amazon-ppc-strategy-container common-spacing">
+            <div class="amazon-ppc-strategy-container common-spacing" id="amazon-ppc-strategy-container-id">
                 <div class="container">
                     <div class="amazon-ppc-strategy-img">
                         <div class="img-wrapper">
                             <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Right-Strategy.webp" alt="">
                         </div>
                     </div>
-                    <!-- <div class="amazon-ppc-strategy">
-                        <div class="amazon-ppc-card-header">
-                            <h2>The right strategy. The right data.
-                                <br><span>The right growth.</span>
-                            </h2>
-                        </div>
-                    </div> -->
                 </div>
             </div>
             <!-- Amazon PCC Section Bottom end -->
         </section>
         <!-- Amazon PCC Section end -->
 
-        <!-- Question section -->
-        <section class="amazon-ppc-question container common-spacing">
-            <div class="ppc-question-header">
-                <h2>Frequently Asked Questions</h2>
-            </div>
-            <div class="custom-accordion faq-items">
-                <div class="custom-accordion-item">
-                    <div class="custom-accordion-header">
-                        <h2>How long does it take for PPC to work?</h2>
-                        <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                        <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
-                    </div>
-                    <div class="custom-accordion-content">
-                        <p>Amazon PPC performance generally starts showing early indicators within the first 7 to 14 days, as campaigns gather data and Amazon learns where your ads fit best. However, true optimization usually happens over 4 to 8 weeks, once enough search-term, impression, and conversion data accumulates. The results improve over time as we refine bids, remove waste, and scale profitable terms. PPC is not instant - it’s a learning and optimization cycle-but with the right structure, you begin seeing steady, predictable improvements.</p>
-                    </div>
+        <div class="question-pricing-section" id="question-pricing-section-id">
+            <!-- Question section -->
+            <section class="amazon-ppc-question container common-spacing">
+                <div class="ppc-question-header">
+                    <h2>Frequently Asked Questions</h2>
                 </div>
-                <div class="custom-accordion-item">
-                    <div class="custom-accordion-header">
-                        <h2>What sales uplift can we expect if we increase ACOS/TACoS goals?</h2>
-                        <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                        <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                <div class="custom-accordion faq-items">
+                    <div class="custom-accordion-item">
+                        <div class="custom-accordion-header">
+                            <h2>How long does it take for PPC to work?</h2>
+                            <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                        </div>
+                        <div class="custom-accordion-content">
+                            <p>Amazon PPC performance generally starts showing early indicators within the first 7 to 14 days, as campaigns gather data and Amazon learns where your ads fit best. However, true optimization usually happens over 4 to 8 weeks, once enough search-term, impression, and conversion data accumulates. The results improve over time as we refine bids, remove waste, and scale profitable terms. PPC is not instant - it’s a learning and optimization cycle-but with the right structure, you begin seeing steady, predictable improvements.</p>
+                        </div>
                     </div>
-                    <div class="custom-accordion-content">
-                        <p>A “good” ACoS depends entirely on your profit margin and goals. If the goal is profitability, ACoS should be below your breakeven percentage. If the goal is ranking and growth, a higher ACoS may be acceptable temporarily. TACoS (Total Advertising Cost of Sale) gives a deeper picture of real business impact; a healthy TACoS typically falls between 5% and 15% depending on your category. Instead of chasing a random ACoS number, we calculate your exact breakeven point and build a strategy that aligns with your long-term profitability and ranking goals.</p>
+                    <div class="custom-accordion-item">
+                        <div class="custom-accordion-header">
+                            <h2>What sales uplift can we expect if we increase ACOS/TACoS goals?</h2>
+                            <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                        </div>
+                        <div class="custom-accordion-content">
+                            <p>A “good” ACoS depends entirely on your profit margin and goals. If the goal is profitability, ACoS should be below your breakeven percentage. If the goal is ranking and growth, a higher ACoS may be acceptable temporarily. TACoS (Total Advertising Cost of Sale) gives a deeper picture of real business impact; a healthy TACoS typically falls between 5% and 15% depending on your category. Instead of chasing a random ACoS number, we calculate your exact breakeven point and build a strategy that aligns with your long-term profitability and ranking goals.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="custom-accordion-item">
-                    <div class="custom-accordion-header">
-                        <h2>Can ad spend be reduced while increasing PPC sales?</h2>
-                        <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                        <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                    <div class="custom-accordion-item">
+                        <div class="custom-accordion-header">
+                            <h2>Can ad spend be reduced while increasing PPC sales?</h2>
+                            <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                        </div>
+                        <div class="custom-accordion-content">
+                            <p>It is possible, but it depends on the current state of your campaigns. If your account is overspending on irrelevant or expensive keywords, optimization can reduce spend while maintaining or slightly increasing sales. However, in most cases, reducing spend decreases impressions, which may reduce total sales. The best long-term approach is sequencing: first improve efficiency, then scale. Once the wasted spend is minimized and your campaigns are profitable, we gradually increase investment into the keywords and placements that generate the strongest return.</p>
+                        </div>
                     </div>
-                    <div class="custom-accordion-content">
-                        <p>It is possible, but it depends on the current state of your campaigns. If your account is overspending on irrelevant or expensive keywords, optimization can reduce spend while maintaining or slightly increasing sales. However, in most cases, reducing spend decreases impressions, which may reduce total sales. The best long-term approach is sequencing: first improve efficiency, then scale. Once the wasted spend is minimized and your campaigns are profitable, we gradually increase investment into the keywords and placements that generate the strongest return.</p>
+                    <div class="custom-accordion-item">
+                        <div class="custom-accordion-header">
+                            <h2>Which Amazon ad type is the most effective for driving sales?</h2>
+                            <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                        </div>
+                        <div class="custom-accordion-content">
+                            <p>Sponsored Products are the most effective and commonly used ad type because they appear directly in search results and on product detail pages, where purchase intent is highest. They capture the majority of PPC sales for nearly every category. Sponsored Brands and Sponsored Display also play important roles, particularly for brand visibility, retargeting, and defensive advertising. The most effective PPC strategy uses all three ad types in a structured funnel, but Sponsored Products remain the core engine of consistent sales.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="custom-accordion-item">
-                    <div class="custom-accordion-header">
-                        <h2>Which Amazon ad type is the most effective for driving sales?</h2>
-                        <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                        <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                    <div class="custom-accordion-item">
+                        <div class="custom-accordion-header">
+                            <h2>How much budget is needed for a successful PPC strategy?</h2>
+                            <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                        </div>
+                        <div class="custom-accordion-content">
+                            <p>Your required budget depends on your niche, competition level, product price, and the number of SKUs being advertised. Highly competitive categories - such as supplements, pet products, or beauty - often require higher CPCs and therefore larger budgets. Lower-competition niches may spend significantly less. Instead of suggesting a fixed amount, we analyze your market, average CPCs, and your goals to recommend a realistic starting budget. The key is bringing a budget strong enough to gather meaningful data and allow campaigns to stabilize.</p>
+                        </div>
                     </div>
-                    <div class="custom-accordion-content">
-                        <p>Sponsored Products are the most effective and commonly used ad type because they appear directly in search results and on product detail pages, where purchase intent is highest. They capture the majority of PPC sales for nearly every category. Sponsored Brands and Sponsored Display also play important roles, particularly for brand visibility, retargeting, and defensive advertising. The most effective PPC strategy uses all three ad types in a structured funnel, but Sponsored Products remain the core engine of consistent sales.</p>
-                    </div>
-                </div>
-                <div class="custom-accordion-item">
-                    <div class="custom-accordion-header">
-                        <h2>How much budget is needed for a successful PPC strategy?</h2>
-                        <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                        <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
-                    </div>
-                    <div class="custom-accordion-content">
-                        <p>Your required budget depends on your niche, competition level, product price, and the number of SKUs being advertised. Highly competitive categories - such as supplements, pet products, or beauty - often require higher CPCs and therefore larger budgets. Lower-competition niches may spend significantly less. Instead of suggesting a fixed amount, we analyze your market, average CPCs, and your goals to recommend a realistic starting budget. The key is bringing a budget strong enough to gather meaningful data and allow campaigns to stabilize.</p>
-                    </div>
-                </div>
 
-                <div class="custom-accordion-item">
-                    <div class="custom-accordion-header">
-                        <h2>What results can I expect from your PPC management?</h2>
-                        <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                        <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                    <div class="custom-accordion-item">
+                        <div class="custom-accordion-header">
+                            <h2>What results can I expect from your PPC management?</h2>
+                            <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                        </div>
+                        <div class="custom-accordion-content">
+                            <p>Our PPC management focuses on building long-term, sustainable performance. You can expect clearer keyword structure, smarter bidding, reduced wasted ad spend, improved ranking on important search terms, and more consistent sales growth. Results depend on your product quality, reviews, price competitiveness, and listing optimization, but our approach ensures campaigns move toward greater profitability and scale over time. We combine manual strategy with advanced tools to optimize your account continuously-not just once a month.</p>
+                        </div>
                     </div>
-                    <div class="custom-accordion-content">
-                        <p>Our PPC management focuses on building long-term, sustainable performance. You can expect clearer keyword structure, smarter bidding, reduced wasted ad spend, improved ranking on important search terms, and more consistent sales growth. Results depend on your product quality, reviews, price competitiveness, and listing optimization, but our approach ensures campaigns move toward greater profitability and scale over time. We combine manual strategy with advanced tools to optimize your account continuously-not just once a month.</p>
+                    <div class="custom-accordion-item">
+                        <div class="custom-accordion-header">
+                            <h2>I’m new to Amazon PPC. Can you still help?</h2>
+                            <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                        </div>
+                        <div class="custom-accordion-content">
+                            <p>Absolutely. Many of our clients start with little or no PPC experience. We handle everything from keyword research and campaign setup to daily optimization, reporting, and long-term strategy. We also audit your listings to ensure they are ready for ads, because strong PPC performance relies heavily on strong conversion rates. Whether you’re launching your first product or managing a growing brand, our team guides you through the entire advertising journey with complete transparency and ongoing support.</p>
+                        </div>
+                    </div>
+                    <div class="custom-accordion-item">
+                        <div class="custom-accordion-header">
+                            <h2>How often do you optimize campaigns?</h2>
+                            <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                        </div>
+                        <div class="custom-accordion-content">
+                            <p>We monitor campaigns daily to track spend, performance trends, and any sudden changes, and then perform structured weekly optimizations such as bid adjustments, keyword updates, negative pruning, and budget redistribution. Every month, we conduct a strategic review of overall performance, seasonality, and long-term goals to ensure campaigns stay efficient, competitive, and aligned with your growth targets.</p>
+                        </div>
+                    </div>
+                    <div class="custom-accordion-item">
+                        <div class="custom-accordion-header">
+                            <h2>Do you manage PPC for both Seller Central and Vendor Central?</h2>
+                            <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                        </div>
+                        <div class="custom-accordion-content">
+                            <p>Yes, we manage PPC for both Seller Central (3P sellers) and Vendor Central (1P brands), adapting strategies to the unique tools, reporting systems, and customer behaviors of each platform. Whether you operate as SC, VC, or a hybrid model, we optimize Sponsored Products, Brands, Display, and DSP to deliver consistent performance and profitable growth across all Amazon ecosystems.</p>
+                        </div>
+                    </div>
+                    <div class="custom-accordion-item">
+                        <div class="custom-accordion-header">
+                            <h2>Will I have a dedicated account manager?</h2>
+                            <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                        </div>
+                        <div class="custom-accordion-content">
+                            <p>Yes, you will have a dedicated account manager who acts as your single point of contact, overseeing daily performance, executing strategy, coordinating with the PPC team, and providing clear weekly updates and insights. This ensures fast communication, smooth operations, and a fully managed PPC experience tailored to your goals.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="custom-accordion-item">
-                    <div class="custom-accordion-header">
-                        <h2>I’m new to Amazon PPC. Can you still help?</h2>
-                        <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                        <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
-                    </div>
-                    <div class="custom-accordion-content">
-                        <p>Absolutely. Many of our clients start with little or no PPC experience. We handle everything from keyword research and campaign setup to daily optimization, reporting, and long-term strategy. We also audit your listings to ensure they are ready for ads, because strong PPC performance relies heavily on strong conversion rates. Whether you’re launching your first product or managing a growing brand, our team guides you through the entire advertising journey with complete transparency and ongoing support.</p>
-                    </div>
-                </div>
-                <div class="custom-accordion-item">
-                    <div class="custom-accordion-header">
-                        <h2>How often do you optimize campaigns?</h2>
-                        <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                        <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
-                    </div>
-                    <div class="custom-accordion-content">
-                        <p>We monitor campaigns daily to track spend, performance trends, and any sudden changes, and then perform structured weekly optimizations such as bid adjustments, keyword updates, negative pruning, and budget redistribution. Every month, we conduct a strategic review of overall performance, seasonality, and long-term goals to ensure campaigns stay efficient, competitive, and aligned with your growth targets.</p>
-                    </div>
-                </div>
-                <div class="custom-accordion-item">
-                    <div class="custom-accordion-header">
-                        <h2>Do you manage PPC for both Seller Central and Vendor Central?</h2>
-                        <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                        <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
-                    </div>
-                    <div class="custom-accordion-content">
-                        <p>Yes, we manage PPC for both Seller Central (3P sellers) and Vendor Central (1P brands), adapting strategies to the unique tools, reporting systems, and customer behaviors of each platform. Whether you operate as SC, VC, or a hybrid model, we optimize Sponsored Products, Brands, Display, and DSP to deliver consistent performance and profitable growth across all Amazon ecosystems.</p>
-                    </div>
-                </div>
-                <div class="custom-accordion-item">
-                    <div class="custom-accordion-header">
-                        <h2>Will I have a dedicated account manager?</h2>
-                        <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                        <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
-                    </div>
-                    <div class="custom-accordion-content">
-                        <p>Yes, you will have a dedicated account manager who acts as your single point of contact, overseeing daily performance, executing strategy, coordinating with the PPC team, and providing clear weekly updates and insights. This ensures fast communication, smooth operations, and a fully managed PPC experience tailored to your goals.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Question section end -->
+            </section>
+            <!-- Question section end -->
 
-        <!-- Amazon Advertising Pricing start -->
+            <!-- Amazon Advertising Pricing start -->
 
-        <section class="amazon-advertising-pricing-section common-spacing">
-            <div class="amazon-advertising-pricing container">
-                <div class="amazon-advertising-pricing-text">
-                    <div class="amazon-advertising-pricing-header">
-                        <h2>Amazon Advertising</h2>
-                        <p>Serious Result Small Pricing!</p>
+            <section class="amazon-advertising-pricing-section common-spacing" id="amazon-advertising-pricing-section-id">
+                <div class="amazon-advertising-pricing container">
+                    <div class="amazon-advertising-pricing-text">
+                        <div class="amazon-advertising-pricing-header">
+                            <h2>Amazon Advertising</h2>
+                            <p>Serious Result Small Pricing!</p>
+                        </div>
+                        <div class="amazon-advertising-pricing-content">
+                            <h3>Start from just</h3>
+                            <h2>$100/month</h2>
+                            <p>We dont just manage ads- we grow business.</p>
+                            <p>When your brand wins, so do we.</p>
+                            <button class="toggle-modal">GET A QUOTE</button>
+                        </div>
                     </div>
-                    <div class="amazon-advertising-pricing-content">
-                        <h3>Start from just</h3>
-                        <h2>$100/month</h2>
-                        <p>We dont just manage ads- we grow business.</p>
-                        <p>When your brand wins, so do we.</p>
-                        <button class="toggle-modal">GET A QUOTE</button>
+                    <div class="amazon-advertising-pricing-img">
+                        <img width="640" height="360" loading="lazy" src="/assets/images/Desktop/Amazon-advertising-new.webp" alt="">
                     </div>
                 </div>
-                <div class="amazon-advertising-pricing-img">
-                    <img width="640" height="360" loading="lazy" src="/assets/images/Desktop/Amazon-advertising-new.webp" alt="">
-                </div>
-            </div>
-        </section>
-        <!-- Amazon Advertising Pricing end-->
+            </section>
+            <!-- Amazon Advertising Pricing end-->
+        </div>
 
         <!-- Blog and Footer start -->
-        <div class="bg-white">
+        <div class="bg-white-for-extra" id="bg-white-for-extra-id">
             <section class="home-tablet-hide home-mobile-hide" id="blog-custom">
                 <div class="blog-container-two" id="blog-custom-container">
 
@@ -2260,9 +2321,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <!-- <script src="./assets/js/cdn/scroll-trigger.min.js" defer></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
 
     <!-- <script src="./assets/js/cdn/lenis.min.js" defer></script> -->
-    <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js" defer></script> 
+    <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js" defer></script>
     <!-- <script src="./assets/js/cdn/jquery.min.js" defer></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- <script src="./assets/js/cdn/popper.min.js" defer></script>
