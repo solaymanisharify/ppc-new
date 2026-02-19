@@ -24,8 +24,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
-    <link rel="stylesheet" href="./assets/css/styles.min.css" as="style" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="./assets/css/styles.min.css" as="style" /> -->
 
     <!-- <link rel="stylesheet" href="./assets/css/extra/style.css" /> -->
     <link rel="stylesheet" href="./assets/css/extra/style.min.css" as="style" />
@@ -55,7 +55,7 @@
 
 <body>
 
-    <main>
+    <main id="main-section">
         <section class="first-bg" id="back">
             <!-- Hero section -->
             <section class="hero-container">
@@ -115,6 +115,7 @@
                         <p>YEARS OF EXPERIENCE</p>
                     </div>
                 </div>
+                <div id="bg-color-change-tigger"></div>
             </section>
             <!-- Reveneue section end -->
         </section>
@@ -128,9 +129,9 @@
                     <div class="new-timeline" id="timeline-pin">
                         <div class="timeline-image-wrapper">
                             <div class="timeline-images">
-                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Ranking-Targeting.webp" class="timeline-image" />
                                 <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Discovery-Targeting.webp" class="timeline-image" />
                                 <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Intent-Targeting.webp" class="timeline-image" />
+                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Ranking-Targeting.webp" class="timeline-image" />
                                 <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Defensive-Targeting.webp" class="timeline-image" />
                                 <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Scale-Retargeting.webp" class="timeline-image" />
                             </div>
@@ -138,29 +139,34 @@
                         <div class="timeline-content-wrapper">
                             <div class="timeline-content">
                                 <div class="timeline-content-item">
-                                    <h4 class="timeline-label timeline-label-active">Ranking Targeting</h2>
-                                    <p class="timeline-text timeline-text-visible">
-                                        This is where efficiency, profitability, and organic growth align.
-                                        By focusing on exact match precision, conversion-proven search terms, and sales-velocity-driven targeting, we strengthen keyword dominance and accelerate organic rank.
-                                    </p>
-                                </div>
-                                <div class="timeline-content-item">
                                     <h4 class="timeline-label timeline-label-active">Discovery Targeting</h2>
                                     <p class="timeline-text timeline-text-visible">
-                                        We uncover how shoppers search, compare, and discover products in your category. Using broad match, automatic campaigns, category, and theme-based targeting, we identify new demand and unlock untapped shopper segments.
+                                        Every profitable growth journey begins with discovery.
+                                        Using AI-powered analysis, broad match, automatic campaigns, and category targeting, we uncover how shoppers search, compare, and explore your category. This reveals hidden demand, untapped traffic, and new growth opportunities your competitors haven’t captured yet.
                                     </p>
                                 </div>
+
                                 <div class="timeline-content-item">
                                     <h4 class="timeline-label timeline-label-active">Intent Targeting</h2>
                                     <p class="timeline-text timeline-text-visible">
-                                        We focus spend only where purchase intent is proven — not guessed. Through phrase match precision, competitor ASIN conquesting, buyer-intent keyword targeting, and feature-driven searches, we capture high-converting traffic ready to buy.
+                                        Once new opportunities are identified, we focus on shoppers with proven buying intent.
+                                        Through phrase match targeting, competitor ASIN conquesting, and high-intent keyword targeting, we capture shoppers actively comparing and ready to purchase — turning interest into conversions.
                                     </p>
                                 </div>
+
+                                <div class="timeline-content-item">
+                                    <h4 class="timeline-label timeline-label-active">Ranking Targeting</h2>
+                                    <p class="timeline-text timeline-text-visible">
+                                        With consistent conversion data, the next step is strengthening your market position.
+                                        Using exact match targeting and proven converting search terms, we increase sales velocity, improve keyword dominance, and accelerate your organic ranking on Amazon.
+                                    </p>
+                                </div>
+                                
                                 <div class="timeline-content-item">
                                     <h4 class="timeline-label timeline-label-active">Defensive Targeting</h2>
                                     <p class="timeline-text timeline-text-visible">
-                                        We protect your traffic, your listings, and your brand equity from competitive erosion.
-                                        Through own ASIN targeting, brand-name keyword protection, and cross-ASIN defense, we secure your customer journey and reinforce brand authority.
+                                        As your visibility and rank grow, protecting your position becomes essential.
+                                        Our data-driven defensive targeting secures your brand by targeting your own ASINs, protecting branded keywords, and preventing competitors from stealing your traffic and customers.
                                     </p>
                                 </div>
                                 <div class="timeline-content-item">
@@ -193,6 +199,38 @@
                 <div class="optimization-container">
                     <h2 class="optimization-container-title">Reignite Your Business With Our</h2>
                     <div class="panel__stack">
+                        <div class="panel__card panel__card--four">
+                            <div class="listing-optimization-desc">
+                                <div class="listing-title-div">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/star.svg" alt="">
+                                    <h2>AI-Driven Keyword Research</h2>
+                                </div>
+                                <div class="listing-optimization-desc-content">
+                                    <h3>Every growth journey begins with understanding
+                                        <br/>How shoppers search
+                                    </h3>
+                                    <p>To find profitable keywords, driving traffic and conversions through ranking,<br class="mobile-only-br"> More visibility, relevance, and return on ad spend.</p>
+                                </div>
+                                <div class="lets-talk-btn-desktop">
+                                    <button class="lets-talk-btn animation-btn toggle-modal">
+                                        <span class="btn-text">Let's Talk</span>
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="keyword-research-img panel__card-image">
+                                <div class="panel__card-image_container">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Keyword-research.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="lets-talk-btn-mobile">
+                                <button class="lets-talk-btn animation-btn toggle-modal">
+                                    <span class="btn-text">Let's Talk</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+
                         <div class="panel__card panel__card--one  ">
                             <div class="listing-optimization-desc">
                                 <div class="listing-title-div">
@@ -200,8 +238,10 @@
                                     <h2>Listing Optimization</h2>
                                 </div>
                                 <div class="listing-optimization-desc-content">
-                                    <h3>An Enhanced Amazon <br> Listing Boosts Discoverability And Sales 4x</h3>
-                                    <p>Optimized with powerful copy, keyword<br class="mobile-only-br"> integration, and backend enhancements.</p>
+                                    <h3>With the right keywords,
+                                        <br/>We optimize your listing into a high-converting sales asset
+                                    </h3>
+                                    <p>Our AI-assisted copy, structure, and keyword integration improve discoverability, increase buyer trust, and position your product to convert more.</p>
                                 </div>
                                 <div class="lets-talk-btn-desktop">
                                     <button class="lets-talk-btn animation-btn toggle-modal">
@@ -229,11 +269,13 @@
                             <div class="listing-optimization-desc">
                                 <div class="listing-title-div">
                                     <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/star.svg" alt="">
-                                    <h2>Campaign Optimization</h2>
+                                    <h2>Campaign Launch & Optimization</h2>
                                 </div>
                                 <div class="listing-optimization-desc-content">
-                                    <h3>We monitor and <br>Fine-tune bidding strategies</h3>
-                                    <p>Match types, and placements to optimize<br class="mobile-only-br"> every dollar spent on Amazon ads.</p>
+                                    <h3>Once your listing is ready,
+                                        <br/>We launch campaigns with custom strategies.
+                                    </h3>
+                                    <p>This ensures your ads reach the right shoppers at the right moment maximizing efficiency and accelerating sales momentum.</p>
                                 </div>
                                 <div class="lets-talk-btn-desktop">
                                     <button class="lets-talk-btn animation-btn toggle-modal">
@@ -262,8 +304,8 @@
                                     <h2>Increase Sales</h2>
                                 </div>
                                 <div class="listing-optimization-desc-content">
-                                    <h3>Scale your business with tailored campaign</h3>
-                                    <p>Strategies that target the right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth.</p>
+                                    <h3>With continuous optimization, your product gains more visibility and conversions.</h3>
+                                    <p>This creates consistent sales growth while strengthening your organic ranking and brand authority.</p>
                                 </div>
                                 <div class="lets-talk-btn-desktop">
                                     <button class="lets-talk-btn animation-btn toggle-modal">
@@ -285,36 +327,6 @@
                             </div>
                         </div>
 
-                        <div class="panel__card panel__card--four ">
-                            <div class="listing-optimization-desc">
-                                <div class="listing-title-div">
-                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/star.svg" alt="">
-                                    <h2>Keyword Research</h2>
-                                </div>
-                                <div class="listing-optimization-desc-content">
-                                    <h3>We uncover<br> Amazon search trends</h3>
-                                    <p>To find profitable keywords, driving traffic and conversions through ranking,<br class="mobile-only-br"> More visibility, relevance, and return on ad spend.</p>
-                                </div>
-                                <div class="lets-talk-btn-desktop">
-                                    <button class="lets-talk-btn animation-btn toggle-modal">
-                                        <span class="btn-text">Let's Talk</span>
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="keyword-research-img panel__card-image">
-                                <div class="panel__card-image_container">
-                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Keyword-research.webp" alt="">
-                                </div>
-                            </div>
-                            <div class="lets-talk-btn-mobile">
-                                <button class="lets-talk-btn animation-btn toggle-modal">
-                                    <span class="btn-text">Let's Talk</span>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                            </div>
-                        </div>
-
                         <div class="panel__card panel__card--five ">
                             <div class="listing-optimization-desc ">
                                 <div class="listing-title-div">
@@ -322,8 +334,8 @@
                                     <h2>Reduce ACOS</h2>
                                 </div>
                                 <div class="listing-optimization-desc-content">
-                                    <h3>Scale your business<br> with tailored campaign strategies that target</h3>
-                                    <p>The right audience at the right time.<br class="mobile-only-br"> More visibility, more conversions, more growth..</p>
+                                    <h3>Growth is only valuable when it’s profitable.</h3>
+                                    <p>Our AI-driven optimization identifies wasted spend, reallocates budget, and improves efficiency to reduce ACoS while increasing revenue and long-term profitability.</p>
                                 </div>
                                 <div class="lets-talk-btn-desktop">
                                     <button class="lets-talk-btn animation-btn toggle-modal">
@@ -350,11 +362,11 @@
                             <div class="listing-optimization-desc">
                                 <div class="listing-title-div">
                                     <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/star.svg" alt="">
-                                    <h2>Weekly Reporting</h2>
+                                    <h2>AI Weekly Reporting</h2>
                                 </div>
                                 <div class="listing-optimization-desc-content">
-                                    <h3>We provide detailed<br> weekly PPC reports with actionable insights and clear metrics.</h3>
-                                    <p>Know exactly how your ads are<br class="mobile-only-br"> performing</p>
+                                    <h3>You stay fully informed every step of the journey.</h3>
+                                    <p>Our weekly reports combine clear performance metrics with AI-powered insights, showing exactly what’s working, what’s improving, and how your brand continues to scale.</p>
                                 </div>
                                 <div class="lets-talk-btn-desktop">
                                     <button class="lets-talk-btn animation-btn toggle-modal">
@@ -382,275 +394,280 @@
         <!-- Card Stack Section horizontal scroll end -->
 
         <!-- Case Studies left Scroll -->
-        <section class="sticky-parent container common-spacing">
-            <div class="sticky-body">
-                <div class="case-study-titles case-study-title">
-                    <h2>Case Study</h2>
-                    <p>The Revenue Growth Story of Ecomclips</p>
+        <section>
+            <div class="sticky-parent container common-spacing-top">
+                <div class="sticky-body">
+                    <div class="case-study-titles case-study-title">
+                        <h2>Case Study</h2>
+                        <p>The Revenue Growth Story of Ecomclips</p>
+                    </div>
+                    <div class="horizontal">
+                        <div class="case-study-container case-study-container-1">
+                            <div class="case-study-container-text">
+                                <div class="case-study-header">
+                                    <h2>From Growth to Succcess</h2>
+                                    <div class="golden-fox">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Mobile-version/goldenfox-logo.webp" alt="Hero Image" class="">
+                                    </div>
+                                </div>
+                                <div class="case-study-growth-image-container">
+                                    <div class="case-study-growth-left-side">
+                                        <div class="case-study-desc">
+                                            <h2>&ldquo;Ecomclips Doubled Our Revenue!&rdquo;</h2>
+                                            <div class="case-study-line"></div>
+                                        </div>
+                                        <div class="growth-percentage">
+                                            <div>
+                                                <h3>237<span>%</span></h3>
+                                                <p>Increase in sales</p>
+                                            </div>
+                                            <div>
+                                                <h3>63<span>%</span></h3>
+                                                <p>ACOS Reduction</p>
+                                            </div>
+                                            <div>
+                                                <h3>19<span>%</span></h3>
+                                                <p>Increase in CVR</p>
+                                            </div>
+                                            <div>
+                                                <h3>26<span>%</span></h3>
+                                                <p>YOY Growth</p>
+                                            </div>
+                                        </div>
+                                        <div class="growth-desc">
+                                            <p>An enhanced Amazon listing boosts discoverability and sales 4x, optimized with powerful copy, keyword integration, and backend enhancements.</p>
+                                        </div>
+                                        <div class="our-impact-btn">
+                                            <button class="toggle-modal">
+                                                Out Impact
+                                                <span>
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="case-study-container-img-body">
+                                        <div class="case-study-container-img">
+                                            <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Review-copy.webp" alt="Hero Image" class="case-study-img">
+                                            <div class="fake-review">
+                                                <div class="fake-review-inner">
+                                                    <div class="review-card-top">
+                                                        <div class="fake-review-img">
+                                                            <img width="640" height="360" loading="lazy" src="assets/images/Desktop/fake-critics.webp" alt="Hero Image" class="">
+                                                        </div>
+                                                        <div>
+                                                            <h2>Mr Christopher Adey</h2>
+                                                            <div class="review-card-rating">
+                                                                <p>Golden Fox, USA</p>
+                                                                <div class="review-card-rating-stars">
+                                                                    <div class="review-card-rating-img">
+                                                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    </div>
+                                                                    <div class="review-card-rating-img">
+                                                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    </div>
+                                                                    <div class="review-card-rating-img">
+                                                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    </div>
+                                                                    <div class="review-card-rating-img">
+                                                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    </div>
+                                                                    <div class="review-card-rating-img">
+                                                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review-card-content">
+                                                        <p>Ecomclips are fantastic! Proffessional, effiecient, and always deliver high-quality work on time. They've helped streamline my e-commerce business and exceeded my expectations. Higly recommended!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case-study-container case-study-container-2">
+                            <div class="case-study-container-text">
+                                <div class="case-study-header">
+                                    <h2>From Growth to Succcess</h2>
+                                    <div class="golden-fox">
+                                        <img width="640" height="360" loading="lazy" id="woodland-logo" src="assets/images/Desktop/woodland-logo.png" alt="Hero Image" class="">
+                                    </div>
+                                </div>
+                                <div class="case-study-growth-image-container">
+                                    <div class="case-study-growth-left-side">
+                                        <div class="case-study-desc">
+                                            <h2>&ldquo;Ecomclips Has Been a God Sent To Us&rdquo;</h2>
+                                            <div class="case-study-line"></div>
+                                        </div>
+                                        <div class="growth-percentage">
+                                            <div>
+                                                <h3>254<span>%</span></h3>
+                                                <p>Increase in sales</p>
+                                            </div>
+                                            <div>
+                                                <h3>68<span>%</span></h3>
+                                                <p>ACOS Reduction</p>
+                                            </div>
+                                            <div>
+                                                <h3>13<span>%</span></h3>
+                                                <p>Increase in CVR</p>
+                                            </div>
+                                            <div>
+                                                <h3>36<span>%</span></h3>
+                                                <p>YOY Growth</p>
+                                            </div>
+                                        </div>
+                                        <div class="growth-desc">
+                                            <p>Full-funnel Amazon optimization - including listing CRO, keyword architecture, and backend SEO — resulted in 254% sales growth and 68% ACOS reduction.</p>
+                                        </div>
+                                        <div class="our-impact-btn">
+                                            <button class="toggle-modal">
+                                                Out Impact
+                                                <span>
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="case-study-container-img-body">
+                                        <div class="case-study-container-img">
+                                            <img width="640" height="360" loading="lazy" id="" src="assets/images/Desktop/woodland-cover.webp" alt="Hero Image" class="case-study-img">
+                                            <div class="fake-review">
+                                                <div class="fake-review-inner">
+                                                    <div class="review-card-top">
+                                                        <div class="fake-review-img">
+                                                            <img width="640" height="360" loading="lazy" src="assets/images/Desktop/woodland-critic.webp" alt="Hero Image" class="">
+                                                        </div>
+                                                        <div>
+                                                            <h2>Jose Vazquez</h2>
+                                                            <div class="review-card-rating">
+                                                                <p>Woodland, USA</p>
+                                                                <div class="review-card-rating-stars">
+                                                                    <div class="review-card-rating-img">
+                                                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    </div>
+                                                                    <div class="review-card-rating-img">
+                                                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    </div>
+                                                                    <div class="review-card-rating-img">
+                                                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    </div>
+                                                                    <div class="review-card-rating-img">
+                                                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    </div>
+                                                                    <div class="review-card-rating-img">
+                                                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review-card-content">
+                                                        <p>Ecom has been a god sent to us, we were just giving money away to google and they came and got us profitable with our ads quickly most of all they have been patience with us when we have made mistakes and having serious issues with our old site. They are good people enjoyed growing with them.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="case-study-container case-study-container-3">
+                            <div class="case-study-container-text">
+                                <div class="case-study-header">
+                                    <h2>From Growth to Succcess</h2>
+                                    <div class="golden-fox">
+                                        <img width="640" height="360" loading="lazy" id="umbra-logo" src="assets/images/Desktop/umbra-logo.png" alt="Hero Image" class="">
+                                    </div>
+                                </div>
+                                <div class="case-study-growth-image-container">
+                                    <div class="case-study-growth-left-side">
+                                        <div class="case-study-desc">
+                                            <h2>&ldquo;150<span class="percentage">%</span> revenue increase over the 18 months&rdquo;</h2>
+                                            <div class="case-study-line"></div>
+                                        </div>
+                                        <div class="growth-percentage">
+                                            <div>
+                                                <h3>337<span>%</span></h3>
+                                                <p>Increase in sales</p>
+                                            </div>
+                                            <div>
+                                                <h3>73<span>%</span></h3>
+                                                <p>ACOS Reduction</p>
+                                            </div>
+                                            <div>
+                                                <h3>16<span>%</span></h3>
+                                                <p>Increase in CVR</p>
+                                            </div>
+                                            <div>
+                                                <h3>25<span>%</span></h3>
+                                                <p>YOY Growth</p>
+                                            </div>
+                                        </div>
+                                        <div class="growth-desc">
+                                            <p>What started as basic optimization turned into a full-scale growth engine - delivering 150% revenue growth, 337% sales increase, and 73% lower ACOS in 18 months.</p>
+                                        </div>
+                                        <div class="our-impact-btn">
+                                            <button class="toggle-modal">
+                                                Out Impact
+                                                <span>
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="case-study-container-img-body">
+                                        <div class="case-study-container-img">
+                                            <img width="640" height="360" loading="lazy" src="assets/images/Desktop/umbra.webp" alt="Hero Image" class="case-study-img">
+                                            <div class="fake-review">
+                                                <div class="fake-review-inner">
+                                                    <div class="review-card-top">
+                                                        <div class="fake-review-img">
+                                                            <img width="640" height="360" loading="lazy" src="assets/images/Desktop/umbra-critic.webp" alt="Hero Image" class="">
+                                                        </div>
+                                                        <div>
+                                                            <h2>Ronald Davis</h2>
+                                                            <div class="review-card-rating">
+                                                                <p>Umbra, USA</p>
+                                                                <div class="review-card-rating-stars">
+                                                                    <div class="review-card-rating-img">
+                                                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    </div>
+                                                                    <div class="review-card-rating-img">
+                                                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    </div>
+                                                                    <div class="review-card-rating-img">
+                                                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    </div>
+                                                                    <div class="review-card-rating-img">
+                                                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    </div>
+                                                                    <div class="review-card-rating-img">
+                                                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="review-card-content">
+                                                        <p>We had the pleasure of working with Ecomclips for approximately 18 months. The Ecomclips team provided great guidance and continuously worked on their on their own for improved SKU opti-mization. We utilized their services for product listing, optimiza-tion, and advertising. We realized 150% revenue increase over the 18 months were worked with them.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="horizontal">
-                    <div class="case-study-container case-study-container-1">
-                        <div class="case-study-container-text">
-                            <div class="case-study-header">
-                                <h2>From Growth to Succcess</h2>
-                                <div class="golden-fox">
-                                    <img width="640" height="360" loading="lazy" src="assets/images/Mobile-version/goldenfox-logo.webp" alt="Hero Image" class="">
-                                </div>
-                            </div>
-                            <div class="case-study-growth-image-container">
-                                <div class="case-study-growth-left-side">
-                                    <div class="case-study-desc">
-                                        <h2>&ldquo;Ecomclips Doubled Our Revenue!&rdquo;</h2>
-                                        <div class="case-study-line"></div>
-                                    </div>
-                                    <div class="growth-percentage">
-                                        <div>
-                                            <h3>237<span>%</span></h3>
-                                            <p>Increase in sales</p>
-                                        </div>
-                                        <div>
-                                            <h3>63<span>%</span></h3>
-                                            <p>ACOS Reduction</p>
-                                        </div>
-                                        <div>
-                                            <h3>19<span>%</span></h3>
-                                            <p>Increase in CVR</p>
-                                        </div>
-                                        <div>
-                                            <h3>26<span>%</span></h3>
-                                            <p>YOY Growth</p>
-                                        </div>
-                                    </div>
-                                    <div class="growth-desc">
-                                        <p>An enhanced Amazon listing boosts discoverability and sales 4x, optimized with powerful copy, keyword integration, and backend enhancements.</p>
-                                    </div>
-                                    <div class="our-impact-btn">
-                                        <button class="toggle-modal">
-                                            Out Impact
-                                            <span>
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="case-study-container-img-body">
-                                    <div class="case-study-container-img">
-                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Review-copy.webp" alt="Hero Image" class="case-study-img">
-                                        <div class="fake-review">
-                                            <div class="fake-review-inner">
-                                                <div class="review-card-top">
-                                                    <div class="fake-review-img">
-                                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/fake-critics.webp" alt="Hero Image" class="">
-                                                    </div>
-                                                    <div>
-                                                        <h2>James Hawken</h2>
-                                                        <div class="review-card-rating">
-                                                            <p>Golden Fox, USA</p>
-                                                            <div class="review-card-rating-stars">
-                                                                <div class="review-card-rating-img">
-                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                                </div>
-                                                                <div class="review-card-rating-img">
-                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                                </div>
-                                                                <div class="review-card-rating-img">
-                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                                </div>
-                                                                <div class="review-card-rating-img">
-                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                                </div>
-                                                                <div class="review-card-rating-img">
-                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="review-card-content">
-                                                    <p>Ecomclips are fantastic! Proffessional, effiecient, and always deliver high-quality work on time. They've helped streamline my e-commerce business and exceeded my expectations. Higly recommended!</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="case-study-container case-study-container-2">
-                        <div class="case-study-container-text">
-                            <div class="case-study-header">
-                                <h2>From Growth to Succcess</h2>
-                                <div class="golden-fox">
-                                    <img width="640" height="360" loading="lazy" id="woodland-logo" src="assets/images/Desktop/woodland-logo.png" alt="Hero Image" class="">
-                                </div>
-                            </div>
-                            <div class="case-study-growth-image-container">
-                                <div class="case-study-growth-left-side">
-                                    <div class="case-study-desc">
-                                        <h2>&ldquo;Ecomclips Has Been a God Sent To Us&rdquo;</h2>
-                                        <div class="case-study-line"></div>
-                                    </div>
-                                    <div class="growth-percentage">
-                                        <div>
-                                            <h3>254<span>%</span></h3>
-                                            <p>Increase in sales</p>
-                                        </div>
-                                        <div>
-                                            <h3>68<span>%</span></h3>
-                                            <p>ACOS Reduction</p>
-                                        </div>
-                                        <div>
-                                            <h3>13<span>%</span></h3>
-                                            <p>Increase in CVR</p>
-                                        </div>
-                                        <div>
-                                            <h3>36<span>%</span></h3>
-                                            <p>YOY Growth</p>
-                                        </div>
-                                    </div>
-                                    <div class="growth-desc">
-                                        <p>Full-funnel Amazon optimization - including listing CRO, keyword architecture, and backend SEO — resulted in 254% sales growth and 68% ACOS reduction.</p>
-                                    </div>
-                                    <div class="our-impact-btn">
-                                        <button class="toggle-modal">
-                                            Out Impact
-                                            <span>
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="case-study-container-img-body">
-                                    <div class="case-study-container-img">
-                                        <img width="640" height="360" loading="lazy" id="" src="assets/images/Desktop/woodland-cover.webp" alt="Hero Image" class="case-study-img">
-                                        <div class="fake-review">
-                                            <div class="fake-review-inner">
-                                                <div class="review-card-top">
-                                                    <div class="fake-review-img">
-                                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/woodland-critic.webp" alt="Hero Image" class="">
-                                                    </div>
-                                                    <div>
-                                                        <h2>Max Davidson</h2>
-                                                        <div class="review-card-rating">
-                                                            <p>Woodland, USA</p>
-                                                            <div class="review-card-rating-stars">
-                                                                <div class="review-card-rating-img">
-                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                                </div>
-                                                                <div class="review-card-rating-img">
-                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                                </div>
-                                                                <div class="review-card-rating-img">
-                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                                </div>
-                                                                <div class="review-card-rating-img">
-                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                                </div>
-                                                                <div class="review-card-rating-img">
-                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="review-card-content">
-                                                    <p>Ecom has been a god sent to us, we were just giving money away to google and they came and got us profitable with our ads quickly most of all they have been patience with us when we have made mistakes and having serious issues with our old site. They are good people enjoyed growing with them.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="case-study-container case-study-container-3">
-                        <div class="case-study-container-text">
-                            <div class="case-study-header">
-                                <h2>From Growth to Succcess</h2>
-                                <div class="golden-fox">
-                                    <img width="640" height="360" loading="lazy" id="umbra-logo" src="assets/images/Desktop/umbra-logo.png" alt="Hero Image" class="">
-                                </div>
-                            </div>
-                            <div class="case-study-growth-image-container">
-                                <div class="case-study-growth-left-side">
-                                    <div class="case-study-desc">
-                                        <h2>&ldquo;150<span class="percentage">%</span> revenue increase over the 18 months&rdquo;</h2>
-                                        <div class="case-study-line"></div>
-                                    </div>
-                                    <div class="growth-percentage">
-                                        <div>
-                                            <h3>337<span>%</span></h3>
-                                            <p>Increase in sales</p>
-                                        </div>
-                                        <div>
-                                            <h3>73<span>%</span></h3>
-                                            <p>ACOS Reduction</p>
-                                        </div>
-                                        <div>
-                                            <h3>16<span>%</span></h3>
-                                            <p>Increase in CVR</p>
-                                        </div>
-                                        <div>
-                                            <h3>25<span>%</span></h3>
-                                            <p>YOY Growth</p>
-                                        </div>
-                                    </div>
-                                    <div class="growth-desc">
-                                        <p>What started as basic optimization turned into a full-scale growth engine - delivering 150% revenue growth, 337% sales increase, and 73% lower ACOS in 18 months.</p>
-                                    </div>
-                                    <div class="our-impact-btn">
-                                        <button class="toggle-modal">
-                                            Out Impact
-                                            <span>
-                                                <i class="fa-solid fa-arrow-right"></i>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="case-study-container-img-body">
-                                    <div class="case-study-container-img">
-                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/umbra.webp" alt="Hero Image" class="case-study-img">
-                                        <div class="fake-review">
-                                            <div class="fake-review-inner">
-                                                <div class="review-card-top">
-                                                    <div class="fake-review-img">
-                                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/umbra-critic.webp" alt="Hero Image" class="">
-                                                    </div>
-                                                    <div>
-                                                        <h2>Marlyn Costello</h2>
-                                                        <div class="review-card-rating">
-                                                            <p>Umbra, USA</p>
-                                                            <div class="review-card-rating-stars">
-                                                                <div class="review-card-rating-img">
-                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                                </div>
-                                                                <div class="review-card-rating-img">
-                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                                </div>
-                                                                <div class="review-card-rating-img">
-                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                                </div>
-                                                                <div class="review-card-rating-img">
-                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                                </div>
-                                                                <div class="review-card-rating-img">
-                                                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="review-card-content">
-                                                    <p>We had the pleasure of working with Ecomclips for approximately 18 months. The Ecomclips team provided great guidance and continuously worked on their on their own for improved SKU opti-mization. We utilized their services for product listing, optimiza-tion, and advertising. We realized 150% revenue increase over the 18 months were worked with them.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <div class="common-spacing-bottom2">
+                <div id="bg-color-change-tigger2"></div>
             </div>
         </section>
         <!-- Case Studies left Scroll end -->
@@ -686,7 +703,7 @@
                             </div>
                         </div>
                         <div class="amazon-ppc-card-ratings">
-                            <div class="amazon-ppc-card-ratings-card">
+                            <a href="https://www.trustpilot.com/review/ecomclips.com" target="_blank" class="amazon-ppc-card-ratings-card">
                                 <div class="amazon-ppc-card-ratings-img">
                                     <img width="640" height="360" loading="lazy" src="assets/images/Desktop/trustpilot-logo.png" alt="">
                                 </div>
@@ -708,11 +725,14 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <p>4.9 Stars | 141 Ratings</p>
+                                    <p>
+                                        4.9 Stars 
+                                        <!-- | 141 Ratings -->
+                                    </p>
                                 </div>
-                            </div>
+                            </a>
 
-                            <div class="amazon-ppc-card-ratings-card">
+                            <a href="https://clutch.co/profile/ecomclips" target="_blank" class="amazon-ppc-card-ratings-card">
                                 <div class="amazon-ppc-card-ratings-img">
                                     <img width="640" height="360" loading="lazy" src="assets/images/Desktop/clutch-logo.png" alt="">
                                 </div>
@@ -734,10 +754,13 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <p>4.9 Stars | 24 Ratings</p>
+                                    <p>
+                                        4.9 Stars 
+                                        <!-- | 24 Ratings -->
+                                    </p>
                                 </div>
-                            </div>
-                            <div class="amazon-ppc-card-ratings-card">
+                            </a>
+                            <!-- <a href="#" target="_blank" class="amazon-ppc-card-ratings-card">
                                 <div class="amazon-ppc-card-ratings-img">
                                     <img width="640" height="360" loading="lazy" src="assets/images/Desktop/google-logo.png" alt="">
                                 </div>
@@ -761,8 +784,8 @@
                                 <div>
                                     <p>4.7 Stars | 116 Ratings</p>
                                 </div>
-                            </div>
-                            <div class="amazon-ppc-card-ratings-card">
+                            </a> -->
+                            <a href="https://www.upwork.com/agencies/ecomclips/" target="_blank" class="amazon-ppc-card-ratings-card">
                                 <div class="amazon-ppc-card-ratings-img">
                                     <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Upwork-logo.png" alt="">
                                 </div>
@@ -787,24 +810,24 @@
                                     <div>
                                         <p>100% Job Success</p>
                                     </div>
-                                    <div>
+                                    <!-- <div>
                                         <p>|</p>
                                     </div>
                                     <div>
                                         <p>Top Rated</p>
-                                    </div>
+                                    </div> -->
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="amazon-ppc-card-bg" id="amazon-ppc-card-bg-id"></div>
+                <!-- <div class="amazon-ppc-card-bg" id="amazon-ppc-card-bg-id"></div> -->
             </div>
             <!-- Amazon PCC Section Top End -->
 
             <!-- Amazon PCC Section Middle -->
-            <div class="amazon-section" id="amazon-id-section">
-                <div class="container common-spacing common-spacing-extra">
+            <div class="amazon-section">
+                <div class="container common-spacing-top common-spacing-extra">
                     <div class="amazon-container" id="amazon-ppc">
                         <div class="amazon-ppc-section">
                             <div class="amazon-ppc">
@@ -1062,11 +1085,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="common-spacing-bottom2">
+                    <div id="bg-color-change-tigger3"></div>
+                </div>
             </div>
             <!-- Amazon PCC Section Middle end -->
 
             <!-- Amazon PCC Section Bottom -->
-            <div class="amazon-ppc-strategy-container common-spacing" id="amazon-ppc-strategy-container-id">
+            <div class="amazon-ppc-strategy-container common-spacing">
                 <div class="container">
                     <div class="amazon-ppc-strategy-img">
                         <div class="img-wrapper">
@@ -1079,9 +1105,9 @@
         </section>
         <!-- Amazon PCC Section end -->
 
-        <div class="question-pricing-section" id="question-pricing-section-id">
+        <div class="question-pricing-section">
             <!-- Question section -->
-            <section class="amazon-ppc-question container common-spacing">
+            <section class="amazon-ppc-question container common-spacing-top">
                 <div class="ppc-question-header">
                     <h2>Frequently Asked Questions</h2>
                 </div>
@@ -1188,7 +1214,11 @@
                         </div>
                     </div>
                 </div>
+
             </section>
+            <div class="common-spacing-bottom2">
+                <div id="bg-color-change-tigger4"></div>
+            </div>
             <!-- Question section end -->
 
             <!-- Amazon Advertising Pricing start -->
@@ -2345,10 +2375,10 @@
     <!-- <script src="./assets/js/extra/custom-blog.js" defer></script> -->
     <script src="./assets/js/extra/custom-blog.min.js" defer></script>
 
-    <!-- <script src="/assets/js/scroll.js" defer></script> -->
-    <script src="/assets/js/scroll.min.js" defer></script>
-    <!-- <script src="/assets/js/main.js" defer></script> -->
-    <script src="/assets/js/main.min.js" defer></script>
+    <script src="/assets/js/scroll.js" defer></script>
+    <!-- <script src="/assets/js/scroll.min.js" defer></script> -->
+    <script src="/assets/js/main.js" defer></script>
+    <!-- <script src="/assets/js/main.min.js" defer></script> -->
     <!-- <script src="/assets/js/modal.js" defer></script> -->
     <script src="/assets/js/modal.min.js" defer></script>
 

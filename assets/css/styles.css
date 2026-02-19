@@ -8,7 +8,7 @@
   --timeline-gap: 1.6rem;
   --common-spacing: 4rem;
   --get-bg-color: #8100d1;
-  --bg-transition-value: background-color 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+  --bg-transition-value: background-color 0.4s cubic-bezier(0.25, 1, 0.5, 1);
   font-size: 16px;
 }
 
@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  background: #121921;
+  /* background: #121921; */
   font-family: Arial, sans-serif;
   overflow-x: hidden;
 }
@@ -123,6 +123,10 @@ h6 {
   padding-bottom: calc(var(--common-spacing) / 2.5);
 }
 
+.common-spacing-bottom2 {
+  padding-bottom: var(--common-spacing);
+}
+
 .common-spacing-extra,
 .common-spacing-min-extra {
   padding-top: calc(var(--common-spacing) + 4rem);
@@ -138,6 +142,12 @@ h6 {
 
 main {
   /* margin-top: 5rem; */
+  background: #121921;
+  transition: var(--bg-transition-value);
+}
+
+main.bg-color-active {
+  background: #ffffff;
 }
 
 .container {
@@ -158,7 +168,7 @@ main {
 #back {
   position: relative;
   height: 100dvh;
-  z-index: 0;
+  z-index: 1;
 }
 
 #back::before {
@@ -173,6 +183,10 @@ main {
   height: 300px;
   border-radius: 50%;
   pointer-events: none;
+}
+
+#back.bg-color-active::before {
+  background: transparent;
 }
 
 .hero-container {
@@ -432,16 +446,12 @@ main {
   font-family: Poppins, sans-serif;
   color: white;
   opacity: 0.9;
+  margin-bottom: 0;
 }
 
 /* New Timeline Section  */
-/* .timeline-section {
-  height: 100dvh;
-  overflow: hidden;
-} */
 #tergeting-section {
   height: 100dvh;
-  overflow: hidden;
 }
 
 .timeline-section-header{
@@ -456,6 +466,13 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
+  transition: var(--bg-transition-value);
+}
+
+#tergeting-section.bg-color-active .timeline-section-header h2 {
+  background: linear-gradient(to bottom, #a0b6fd 0%, #7aa9fd 40%, #559dfd 60%, #1f8afd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .timeline-section .new-timeline {
@@ -532,9 +549,15 @@ main {
   }
 
   /* The special red active dot */
-  .dot.active {
+  /* .dot.active {
     background-color: #ff5f5f;
     box-shadow: 0 0 0 10px rgba(255, 95, 95, 0.2);
+  } */
+
+  .dot.active {
+    background: linear-gradient(180deg, #61ffe6 14.94%, #038c75 85.06%);
+    box-shadow: 0 0 0 10px rgba(97, 255, 230, 0.2);
+    border: none; 
   }
 
   .timeline-section .new-timeline .dot.isFinished {
@@ -559,20 +582,26 @@ main {
 }
 
 .timeline-section .new-timeline .timeline-content-wrapper .timeline-content {
-    position: relative;
-    height: 400px;
-    display: flex;
-    align-items: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .timeline-section .new-timeline .timeline-content-wrapper .timeline-content .timeline-content-item {
-    position: absolute !important;
-    width: 100%;
+  /* position: absolute !important; */
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: center; */
+  margin-bottom: 0;
 }
 
 .timeline-section .new-timeline .timeline-content-wrapper .timeline-content .timeline-content-item h4 {
   font-family: "Recoleta", serif;
-  font-size: clamp(1.1rem, 2.4vw, 2.8rem);
+  font-size: clamp(22px, 3.4vw, 2.3dvw);
   font-weight: 400;
   background: linear-gradient(180deg, #61ffe6 14.94%, #038c75 85.06%);
   -webkit-background-clip: text;
@@ -580,8 +609,15 @@ main {
   margin-bottom: 10px;
 }
 
+#tergeting-section.bg-color-active .timeline-section .new-timeline .timeline-content-wrapper .timeline-content .timeline-content-item h4 {
+  background: linear-gradient(to bottom, #a0b6fd 0%, #7aa9fd 40%, #559dfd 60%, #1f8afd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .timeline-section .new-timeline .timeline-content-wrapper .timeline-content .timeline-content-item p {
   color: #ffffff;
+  font-size: clamp(0.875rem, 2vw, 1.07dvw);
 }
 
 .timeline-section .new-timeline .timeline-content-wrapper .timeline-content .timeline-content-item h4::before {
@@ -1394,6 +1430,8 @@ main {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(80px);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .amazon-ppc-card-ratings-img {
@@ -1431,7 +1469,9 @@ main {
   gap: 2px;
 }
 
-.amazon-ppc-card-bg {
+/* will remove later */
+
+/* .amazon-ppc-card-bg {
   width: 100%;
   height: 50%;
   background: #121921;
@@ -1443,7 +1483,9 @@ main {
 
 .amazon-ppc-card-bg.bg-color-active {
   background: white;
-}
+} */
+
+/* will remove later end */
 
 /* common css for accordian */
 
@@ -1556,13 +1598,13 @@ main {
 /* Amazon PPC Section Middle */
 
 .amazon-section {
-  background: #121921;
-  transition: var(--bg-transition-value);
+  /* background: #121921; */
+  /* transition: var(--bg-transition-value); */
 }
 
-.amazon-section.bg-color-active {
+/* .amazon-section.bg-color-active {
   background: white;
-}
+} */
 
 .amazon-container {
 }
@@ -1924,24 +1966,24 @@ main {
 /* Amazon PCC Section Bottom */
 .amazon-ppc-strategy-container {
   position: relative;
-  z-index: -2;
-  background: #ffffff;
-  transition: var(--bg-transition-value);
+  /* z-index: -2; */
+  /* background: #ffffff; */
+  /* transition: var(--bg-transition-value); */
 }
 
 .amazon-ppc-strategy-container.bg-color-active {
-  background: #121921;
+  /* background: #121921; */
 }
 
 .question-pricing-section{
-  background: #ffffff;
-  transition: var(--bg-transition-value);
+  /* background: #ffffff; */
+  /* transition: var(--bg-transition-value); */
 }
 .question-pricing-section.bg-color-active{
-  background: #121921;
+  /* background: #121921; */
 }
 
-.amazon-ppc-strategy-container::before {
+/* .amazon-ppc-strategy-container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1949,11 +1991,11 @@ main {
   width: 100%;
   z-index: -1;
   background: #ffffff;
-}
+} */
 
-.amazon-ppc-strategy-container.bg-color-active {
+/* .amazon-ppc-strategy-container.bg-color-active {
   background: #121921;
-}
+} */
 
 .amazon-ppc-strategy {
   background: linear-gradient(to right, #05214b 0%, #133c9f 40%, #194cc4 70%, #36abdb 100%);
@@ -2015,7 +2057,7 @@ main {
   position: relative;
 }
 
-.amazon-advertising-pricing-section::before {
+/* .amazon-advertising-pricing-section::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -2023,11 +2065,11 @@ main {
   width: 100%;
   background: #121921;
   transition: var(--bg-transition-value);
-}
+} */
 
-.amazon-advertising-pricing-section.bg-color-active::before {
+/* .amazon-advertising-pricing-section.bg-color-active::before {
   background: #ffffff;
-}
+} */
 
 .amazon-advertising-pricing {
   position: relative;
@@ -2107,13 +2149,13 @@ main {
   border-radius: 40px;
 }
 
-.bg-white-for-extra {
+/* .bg-white-for-extra {
   background-color: #121921;
   transition: var(--bg-transition-value);
 }
 .bg-white-for-extra.bg-color-active {
   background-color: #ffffff;
-}
+} */
 
 @media (min-width: 480px) {
   /* .panel__stack .panel__card {
