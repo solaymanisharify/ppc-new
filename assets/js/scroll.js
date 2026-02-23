@@ -37,381 +37,162 @@ window.addEventListener("load", () => {
   // Card Section Scroll animation
   // ------------------------------
 
-  // const details = gsap.utils.toArray(".timeline-content-item:not(:first-child)")
-  // const photos = gsap.utils.toArray(".timeline-image:not(:first-child)")
+  let mm = gsap.matchMedia();
+
+  mm.add("(min-width: 768px)", () => {
+    const contentItems = document.querySelectorAll('.timeline-content-item');
+    const contentContainer = document.querySelector('.timeline-content');
+    const images = document.querySelectorAll('.timeline-image');
+    const dots = document.querySelectorAll('.dot');
   
-  // gsap.set(photos, {yPercent:101});
-  // gsap.set(details, {opacity:0});
+    // Initial setup: Show the first item and image
+    gsap.set(contentItems, { opacity: 0 });
+    gsap.set(contentItems[0], { opacity: 1, y: 0 });
+    gsap.set(images, { opacity: 0 });
+    gsap.set(images[0], { opacity: 1 });
   
-  // const allPhotos = gsap.utils.toArray(".timeline-image")
-  // const allDetails = gsap.utils.toArray(".timeline-content-item")
-
-  // ScrollTrigger.create({
-  //   trigger:"#timeline-pin",
-  //   start:"top top",
-  //   end:"bottom bottom",
-  //   pin:".timeline-image-wrapper",
-  //   pinSpacing: false,
-  // })
-
-  // details.forEach((detail, index)=> {
-
-  //   let headline = detail.querySelector("h4")
-  //   let animation = gsap.timeline()
-  //                   .to(photos[index], {yPercent:0})
-  //                   .set(allPhotos[index], {autoAlpha:0})
-  //                   .to(allDetails[index], { opacity: 0, y: -100, duration: 0.3 }, 0)
-  //                   .to(detail, { opacity: 1, y: 0, duration: 0.3 }, 0);
-    
-  //   ScrollTrigger.create({
-  //     trigger:headline,
-  //     start:"top 80%",
-  //     end:"top 50%",
-  //     animation:animation,
-  //     scrub:true,
-  //     markers:true
-  //   })
-  // })
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#tergeting-section", // Ensure this ID matches your HTML section
+        start: "top top",
+        end: () => "+=" + (contentItems.length / 2 * 100) + "%",
+        pin: true,
+        scrub: 1,
   
-  // const details = gsap.utils.toArray(".timeline-content-item");
-  // const images  = gsap.utils.toArray(".timeline-image");
+        onUpdate: (self) => {
+          // Find the closest index based on scroll progress
+          const activeIndex = Math.round(self.progress * (contentItems.length - 1));
+          updateDots(activeIndex);
+        }
+      }
+    });
   
-  // gsap.set(details, { opacity: 0, y: 50 });
-  // gsap.set(images, { yPercent: 100 });
+    contentItems.forEach((item, i) => {
+      // We skip the logic for the very first item since it's already visible
+      if (i === 0) {
+        tl.addLabel("step0", 0);
+        return;
+      }
   
-  // gsap.set(details[0], { opacity: 1, y: 0 });
-  // gsap.set(images[0], { yPercent: 0 });
+      // startTime creates an overlap so the scroll and fade happen together
+      const startTime = i - 0.5; 
+      const endTime = i;
   
-  // ScrollTrigger.create({
-  //   trigger: "#timeline-pin",
-  //   start: "top top",
-  //   end: "bottom bottom",
-  //   pin: ".timeline-image-wrapper",
-  //   pinSpacing: false,
-  // });
+      // 1. SCROLL THE CONTENT: Move the whole container up by 100% * index
+      tl.to(contentContainer, { 
+        yPercent: -100 * i, 
+        ease: "power2.inOut",
+        duration: 1 
+      }, startTime)
+      
+      // 2. IMAGE TRANSITION: Fade out old, fade in new
+      .to(images[i - 1], { opacity: 0, duration: 0.1 }, startTime)
+      .to(images[i], { opacity: 1, duration: 0.3 }, startTime)
+      
+      // 3. TEXT TRANSITION: Fade the text items for extra polish
+      .to(contentItems[i - 1], { opacity: 0, duration: 0.1 }, startTime)
+      .to(item, { opacity: 1, duration: 0.3 }, startTime);
   
-  // details.forEach((detail, index) => {
+      tl.addLabel("step" + i, endTime);
+    });
   
-  //   let headline = detail.querySelector("h4");
+    // Click logic for dots
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        const targetScroll = tl.scrollTrigger.labelToScroll("step" + i);
+        
+        gsap.to(window, {
+          duration: 0.8,
+          scrollTo: { y: targetScroll },
+          ease: "power2.inOut"
+        });
+      });
+    });
   
-  //   let tl = gsap.timeline({
-  //     scrollTrigger: {
-  //       trigger: headline,
-  //       start: "top 85%",
-  //       end: "bottom 25%",
-  //       scrub: true,
-  //       // markers: true
-  //     }
-  //   });
+    function updateDots(activeIndex) {
+      const progressLine = document.querySelector('.timeline-line-progress');
+      
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === activeIndex);
+        dot.classList.toggle('isFinished', i < activeIndex);
+      });
   
-  //   tl.to(images[index], {yPercent: 0,duration: 0.3}, 0)
-  //     .to(detail, {opacity: 1,y: 0,duration: 0.1}, 0)
-  
-  //   if (index !== details.length - 1) {
-  //     tl.to(detail, {opacity: 0,duration: 0.1});
-  //   }
-  
-  // });
-
-
-
-
-  // const contentItems = document.querySelectorAll('.timeline-content-item');
-  // const images = document.querySelectorAll('.timeline-image');
-  // const dots = document.querySelectorAll('.dot');
-
-  // // 1. Setup initial states
-  // gsap.set(contentItems, { opacity: 0, y: 30 });
-  // gsap.set(contentItems[0], { opacity: 1, y: 0 });
-  // gsap.set(images, { opacity: 0 });
-  // gsap.set(images[0], { opacity: 1 });
-
-  // // 2. Create the Master Timeline
-  // const tl = gsap.timeline({
-  //   scrollTrigger: {
-  //     trigger: "#tergeting-section",
-  //     start: "top top",
-  //     end: () => "+=" + (contentItems.length * 100) + "%",
-  //     pin: true,
-  //     scrub: 1,
-  //     markers: false,
-  //     onLeaveBack: () => updateDots(0)
-  //   }
-  // });
-
-  // // 3. Loop through items to build the sequence
-  // contentItems.forEach((item, i) => {
-  //   if (i === 0) {
-  //       tl.addLabel("step0", 0);
-  //       return;
-  //   }
-
-  //   const position = i; // The "time" in the timeline for this step
-
-  //   tl.to(images[i - 1], { opacity: 0, duration: 0.5 }, position)
-  //     .to(images[i], { opacity: 1, duration: 0.5 }, position)
-  //     .to(contentItems[i - 1], { opacity: 0, y: -100, duration: 0.5 }, position)
-  //     .to(item, { opacity: 1, y: 0, duration: 0.5 }, position);
-
-  //   // Use a dummy tween to trigger dot updates reliably in both directions
-  //   tl.to({}, {
-  //       duration: 0.1,
-  //       onStart: () => updateDots(i),
-  //       onReverseComplete: () => updateDots(i - 1)
-  //   }, position);
-  // });
-
-  // function updateDots(activeIndex) {
-  //   dots.forEach((dot, i) => {
-  //     // Logic: 
-  //     // 1. Add 'active' only to current index
-  //     // 2. Add 'isFinished' to everything before current index
-  //     dot.classList.toggle('active', i === activeIndex);
-  //     dot.classList.toggle('isFinished', i < activeIndex);
-  //   });
-  // }
-
-
-
-
-// const contentItems = document.querySelectorAll('.timeline-content-item');
-// const images = document.querySelectorAll('.timeline-image');
-// const dots = document.querySelectorAll('.dot');
-
-// // Initial setup
-// gsap.set(contentItems, { opacity: 0, y: 30 });
-// gsap.set(contentItems[0], { opacity: 1, y: 0 });
-// gsap.set(images, { opacity: 0 });
-// gsap.set(images[0], { opacity: 1 });
-
-// const tl = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: "#tergeting-section",
-//     start: "top top",
-//     end: () => "+=" + (contentItems.length * 100) + "%",
-//     pin: true,
-//     scrub: 1,
-//     // snap: 1 / (contentItems.length - 1),
-//     onUpdate: (self) => {
-//       // Use progress to find the closest index
-//       const activeIndex = Math.round(self.progress * (contentItems.length - 1));
-//       updateDots(activeIndex);
-//     }
-//   }
-// });
-
-// contentItems.forEach((item, i) => {
-//   if (i === 0) {
-//     tl.addLabel("step0", 0);
-//     return;
-//   }
-
-//   // Position the animations so they finish exactly at the integer 'i'
-//   const startTime = i - 0.8; // Start early
-//   const endTime = i;         // Finish at the label point
-
-//   tl.to(images[i - 1], { opacity: 0, duration: 0.2 }, startTime)
-//     .to(images[i], { opacity: 1, duration: 0.5 }, startTime)
-//     .to(contentItems[i - 1], { opacity: 0, y: -50, duration: 0.2 }, startTime)
-//     .to(item, { opacity: 1, y: 0, duration: 0.5 }, startTime);
-
-//   // Add label at the point where the animation is COMPLETE
-//   tl.addLabel("step" + i, endTime);
-// });
-
-// dots.forEach((dot, i) => {
-//   dot.addEventListener('click', () => {
-//     const targetScroll = tl.scrollTrigger.labelToScroll("step" + i);
-    
-//     gsap.to(window, {
-//       duration: 0.2,
-//       scrollTo: { y: targetScroll },
-//       ease: "power2.inOut"
-//     });
-//   });
-// });
-
-// function updateDots(activeIndex) {
-//   const progressLine = document.querySelector('.timeline-line-progress');
-//   dots.forEach((dot, i) => {
-//     dot.classList.toggle('active', i === activeIndex);
-//     dot.classList.toggle('isFinished', i < activeIndex);
-//   });
-
-//   // Calculate percentage: 
-//   // If we have 4 dots, and we are at index 2 (the 3rd dot):
-//   // (2 / (4 - 1)) * 100 = 66.6%
-//   const totalDots = dots.length;
-//   const percentage = (activeIndex / (totalDots - 1)) * 100;
-
-//   // Apply the height to the white progress bar
-//   if (progressLine) {
-//     progressLine.style.height = `${percentage}%`;
-//   }
-// }
-  
-
-
-// const contentItems = document.querySelectorAll('.timeline-content-item');
-// const contentContainer = document.querySelector('.timeline-content'); // The parent to move
-// const images = document.querySelectorAll('.timeline-image');
-// const dots = document.querySelectorAll('.dot');
-
-// // Initial setup
-// gsap.set(contentItems, { opacity: 0.3 }); // Keep inactive items slightly visible or 0
-// gsap.set(contentItems[0], { opacity: 1 });
-// gsap.set(images, { opacity: 0 });
-// gsap.set(images[0], { opacity: 1 });
-
-// const tl = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: "#tergeting-section",
-//     start: "top top",
-//     end: () => "+=" + (contentItems.length * 100) + "%",
-//     pin: true,
-//     scrub: 1,
-//     onUpdate: (self) => {
-//       const activeIndex = Math.round(self.progress * (contentItems.length - 1));
-//       updateDots(activeIndex);
-//     }
-//   }
-// });
-
-// contentItems.forEach((item, i) => {
-//   if (i === 0) {
-//     tl.addLabel("step0", 0);
-//     return;
-//   }
-
-//   // Calculate timing: animations start before the "scroll" reaches the next section
-//   const startTime = i - 0.7; 
-//   const endTime = i;
-
-//   tl.to(contentContainer, { 
-//     yPercent: -100 * i, 
-//     ease: "power2.inOut",
-//     duration: 1 
-//   }, startTime)
-//   .to(images[i - 1], { opacity: 0, duration: 0.3 }, startTime)
-//   .to(images[i], { opacity: 1, duration: 0.5 }, startTime)
-//   .to(contentItems[i - 1], { opacity: 0.3, duration: 0.3 }, startTime)
-//   .to(item, { opacity: 1, duration: 0.5 }, startTime);
-
-//   tl.addLabel("step" + i, endTime);
-// });
-
-// // Click to navigate
-// dots.forEach((dot, i) => {
-//   dot.addEventListener('click', () => {
-//     const targetScroll = tl.scrollTrigger.labelToScroll("step" + i);
-//     gsap.to(window, {
-//       duration: 0.8,
-//       scrollTo: { y: targetScroll },
-//       ease: "power2.inOut"
-//     });
-//   });
-// });
-
-// function updateDots(activeIndex) {
-//   const progressLine = document.querySelector('.timeline-line-progress');
-//   dots.forEach((dot, i) => {
-//     dot.classList.toggle('active', i === activeIndex);
-//     dot.classList.toggle('isFinished', i < activeIndex);
-//   });
-
-//   if (progressLine) {
-//     const percentage = (activeIndex / (dots.length - 1)) * 100;
-//     progressLine.style.height = `${percentage}%`;
-//   }
-// }
-
-
-
-const contentItems = document.querySelectorAll('.timeline-content-item');
-const contentContainer = document.querySelector('.timeline-content');
-const images = document.querySelectorAll('.timeline-image');
-const dots = document.querySelectorAll('.dot');
-
-// Initial setup: Show the first item and image
-gsap.set(contentItems, { opacity: 0 });
-gsap.set(contentItems[0], { opacity: 1, y: 0 });
-gsap.set(images, { opacity: 0 });
-gsap.set(images[0], { opacity: 1 });
-
-const tl = gsap.timeline({
-  scrollTrigger: {
-    trigger: "#tergeting-section", // Ensure this ID matches your HTML section
-    start: "top top",
-    end: () => "+=" + (contentItems.length / 2 * 100) + "%",
-    pin: true,
-    scrub: 1,
-
-    onUpdate: (self) => {
-      // Find the closest index based on scroll progress
-      const activeIndex = Math.round(self.progress * (contentItems.length - 1));
-      updateDots(activeIndex);
+      if (progressLine) {
+        const totalDots = dots.length;
+        const percentage = (activeIndex / (totalDots - 1)) * 100;
+        progressLine.style.height = `${percentage}%`;
+      }
     }
-  }
-});
+  });
 
-contentItems.forEach((item, i) => {
-  // We skip the logic for the very first item since it's already visible
-  if (i === 0) {
-    tl.addLabel("step0", 0);
-    return;
-  }
 
-  // startTime creates an overlap so the scroll and fade happen together
-  const startTime = i - 0.5; 
-  const endTime = i;
+  mm.add("(max-width: 767px)", () => {
 
-  // 1. SCROLL THE CONTENT: Move the whole container up by 100% * index
-  tl.to(contentContainer, { 
-    yPercent: -100 * i, 
-    ease: "power2.inOut",
-    duration: 1 
-  }, startTime)
-  
-  // 2. IMAGE TRANSITION: Fade out old, fade in new
-  .to(images[i - 1], { opacity: 0, duration: 0.1 }, startTime)
-  .to(images[i], { opacity: 1, duration: 0.3 }, startTime)
-  
-  // 3. TEXT TRANSITION: Fade the text items for extra polish
-  .to(contentItems[i - 1], { opacity: 0, duration: 0.1 }, startTime)
-  .to(item, { opacity: 1, duration: 0.3 }, startTime);
+  console.log("Mobile Slider Mode");
 
-  tl.addLabel("step" + i, endTime);
-});
+  const contentItems = document.querySelectorAll('.timeline-content-item');
+  const images = document.querySelectorAll('.timeline-image');
+  const dots = document.querySelectorAll('.dot');
 
-// Click logic for dots
-dots.forEach((dot, i) => {
-  dot.addEventListener('click', () => {
-    const targetScroll = tl.scrollTrigger.labelToScroll("step" + i);
-    
-    gsap.to(window, {
-      duration: 0.8,
-      scrollTo: { y: targetScroll },
+  let activeIndex = 0;
+
+  // Initial state
+  gsap.set(contentItems, { xPercent: 100, opacity: 0 });
+  gsap.set(images, { xPercent: 100, opacity: 0 });
+
+  gsap.set(contentItems[0], { xPercent: 0, opacity: 1 });
+  gsap.set(images[0], { xPercent: 0, opacity: 1 });
+
+  function goToSlide(index) {
+    if (index === activeIndex) return;
+
+    let direction = index > activeIndex ? 1 : -1;
+
+    let tl = gsap.timeline();
+
+    // Slide out current
+    tl.to([contentItems[activeIndex], images[activeIndex]], {
+      xPercent: -100 * direction,
+      opacity: 0,
+      duration: 0.4,
+      ease: "power2.inOut"
+    })
+
+    // Prepare next slide
+    .set([contentItems[index], images[index]], {
+      xPercent: 100 * direction,
+      opacity: 0
+    })
+
+    // Slide in next
+    .to([contentItems[index], images[index]], {
+      xPercent: 0,
+      opacity: 1,
+      duration: 0.4,
       ease: "power2.inOut"
     });
+
+    updateDots(index);
+    activeIndex = index;
+  }
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+      goToSlide(i);
+    });
   });
+
+  function updateDots(index) {
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
+  }
+
 });
 
-function updateDots(activeIndex) {
-  const progressLine = document.querySelector('.timeline-line-progress');
-  
-  dots.forEach((dot, i) => {
-    dot.classList.toggle('active', i === activeIndex);
-    dot.classList.toggle('isFinished', i < activeIndex);
-  });
-
-  if (progressLine) {
-    const totalDots = dots.length;
-    const percentage = (activeIndex / (totalDots - 1)) * 100;
-    progressLine.style.height = `${percentage}%`;
-  }
-}
-
-
+  // ---------------------------------
+  // Card Section Scroll animation end
+  // ---------------------------------
 
   // ------------------------------
   // Vertical Cards Scroll

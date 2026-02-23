@@ -167,7 +167,7 @@ main.bg-color-active {
 
 #back {
   position: relative;
-  height: 100dvh;
+  height: auto;
   z-index: 1;
 }
 
@@ -460,7 +460,7 @@ main.bg-color-active {
 
 .timeline-section-header h2 {
   font-family: "Recoleta", serif;
-  font-size: clamp(1.1rem, 4vw, 4rem);
+  font-size: clamp(1.25rem, 4vw, 4rem);
   font-weight: 400;
   background: linear-gradient(180deg, #61ffe6 14.94%, #038c75 85.06%);
   -webkit-background-clip: text;
@@ -476,31 +476,22 @@ main.bg-color-active {
 }
 
 .timeline-section .new-timeline {
-  /* display: flex;
-  gap: 5.5rem; */
-  /* height: 100dvh; */
   display: flex;
-  /* align-items: center; */
+  flex-direction: column;
   justify-content: space-between;
+  gap: 10dvw;
+  align-items: center;
 }
 
 .timeline-section .new-timeline .timeline-image-wrapper {
-    /* height: 100dvh; */
-    width: 44%;
+    height: 35dvh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .timeline-section .new-timeline .timeline-image-wrapper .timeline-images {
-    /* width: 100%;
-    height: 50%;
-    border-radius: 20px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; */
     position: relative;
     width: 100%;
     height: 100% !important;
@@ -509,99 +500,39 @@ main.bg-color-active {
 .timeline-section .new-timeline .timeline-image-wrapper .timeline-images img {
   position: absolute !important;
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: contain;
 }
 
-.timeline-section .new-timeline .timeline-line {
-  position: relative;
-  width: 2px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 60px;
-  /* background-color: #555555; */
-  background: rgba(255, 255, 255, 0.2);
-  height: max-content;
-  margin: auto 0;
-}
-
-.timeline-line-progress {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0%; /* Start at 0 */
-  background: #ffffff; /* The white progress color */
-  transition: height 0.3s ease; /* Smooth transition when clicking dots */
-}
-
-/* Common style for all dots */
-  .dot {
-    width: 12px;
-    height: 12px;
-    background-color: #555555;
-    border-radius: 50%;
-    position: relative;
-    z-index: 1;
-    transition: all 0.4s ease;
-    cursor: pointer;
-  }
-
-  /* The special red active dot */
-  /* .dot.active {
-    background-color: #ff5f5f;
-    box-shadow: 0 0 0 10px rgba(255, 95, 95, 0.2);
-  } */
-
-  .dot.active {
-    background: linear-gradient(180deg, #61ffe6 14.94%, #038c75 85.06%);
-    box-shadow: 0 0 0 10px rgba(97, 255, 230, 0.2);
-    border: none; 
-  }
-
-  .timeline-section .new-timeline .dot.isFinished {
-    background-color: #ffffff;
-  }
-
-  .timeline-line::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 2px;
-    height: 80px;
-    z-index: 0;
-  }
-
-.timeline-section .new-timeline .timeline-line::before {
-  content: none;
-}
-
 .timeline-section .new-timeline .timeline-content-wrapper {
-  width: 44%;
+  width: 85%;
+  height: 50%;
 }
 
 .timeline-section .new-timeline .timeline-content-wrapper .timeline-content {
-  height: 400px;
+  height: 15dvh;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .timeline-section .new-timeline .timeline-content-wrapper .timeline-content .timeline-content-item {
-  /* position: absolute !important; */
-  flex: 0 0 100%;
+  position: absolute;
   width: 100%;
-  height: 100%;
-  /* display: flex;
-  flex-direction: column; */
-  /* justify-content: center; */
+  top: 0;
+  left: 0;
   margin-bottom: 0;
+}
+
+
+.timeline-section .new-timeline .timeline-content-wrapper .timeline-content .timeline-content-item:nth-child(1) {
+  margin-top: 0;
 }
 
 .timeline-section .new-timeline .timeline-content-wrapper .timeline-content .timeline-content-item h4 {
   font-family: "Recoleta", serif;
-  font-size: clamp(22px, 3.4vw, 2.3dvw);
+  font-size: clamp(18px, 3.4vw, 2.3dvw);
   font-weight: 400;
   background: linear-gradient(180deg, #61ffe6 14.94%, #038c75 85.06%);
   -webkit-background-clip: text;
@@ -621,6 +552,61 @@ main.bg-color-active {
 }
 
 .timeline-section .new-timeline .timeline-content-wrapper .timeline-content .timeline-content-item h4::before {
+  content: none;
+}
+
+.timeline-section .new-timeline .timeline-line {
+  position: relative;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.2);
+  height: 2px;
+  margin: auto 0;
+}
+
+.timeline-section .new-timeline .timeline-line .timeline-line-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #ffffff;
+  transition: height 0.3s ease;
+}
+
+.timeline-section .new-timeline .timeline-line .dot {
+  width: 12px;
+  height: 12px;
+  background-color: #555555;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.timeline-section .new-timeline .timeline-line .dot.active {
+  background: linear-gradient(180deg, #61ffe6 14.94%, #038c75 85.06%);
+  box-shadow: 0 0 0 10px rgba(97, 255, 230, 0.2);
+  border: none; 
+}
+
+.timeline-section .new-timeline .timeline-line .dot.isFinished {
+  background-color: #ffffff;
+}
+
+.timeline-section .new-timeline .timeline-line::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 2px;
+  height: 80px;
+  z-index: 0;
+}
+
+.timeline-section .new-timeline .timeline-line::before {
   content: none;
 }
 
@@ -666,45 +652,21 @@ main.bg-color-active {
 
 .panel__card--one {
   background: #f3ffde;
-  /* background: url("../images/Desktop/new/panel_card_bg1_mobile.webp");
-  background-size: content;
-  background-size: 100% 100%;
-  background-repeat: no-repeat; */
 }
 .panel__card--two {
   background: #ffb8b0;
-  /* background: url("../images/Desktop/new/panel_card_bg2_mobile.webp");
-  background-size: content;
-  background-size: 100% 100%;
-  background-repeat: no-repeat; */
 }
 .panel__card--three {
   background: #ffedac;
-  /* background: url("../images/Desktop/new/panel_card_bg3_mobile.webp");
-  background-size: content;
-  background-size: 100% 100%;
-  background-repeat: no-repeat; */
 }
 .panel__card--four {
   background: #bdf7ff;
-  /* background: url("../images/Desktop/new/panel_card_bg4_mobile.webp");
-  background-size: content;
-  background-size: 100% 100%;
-  background-repeat: no-repeat; */
 }
 .panel__card--five {
   background: #c9fff7;
-  /* background: url("../images/Desktop/new/panel_card_bg5_mobile.webp");
-  background-size: content;
-  background-size: 100% 100%;
-  background-repeat: no-repeat; */
 }
 .panel__card--six {
   background: #d6dcfd;
-  /* background: url("../images/Desktop/new/panel_card_bg6_mobile.webp");
-  background-size: content;
-  background-size: 100% 100%;
-  background-repeat: no-repeat; */
 }
 
 .panel__stack .panel__card {
@@ -851,45 +813,21 @@ main.bg-color-active {
 
 .panel__card--one .panel__card-image .panel__card-image_container {
   background: linear-gradient(128.13deg, #8fc235 0%, #c8eb8a 50.48%, #8fc235 100%);
-  /* background: url("../images/Desktop/new/panel_card_img_bg1.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
 }
 .panel__card--two .panel__card-image .panel__card-image_container {
   background: linear-gradient(127.98deg, #eb6040 1.28%, #f0a286 50.64%, #e26636 100%);
-  /* background: url("../images/Desktop/new/panel_card_img_bg2.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
 }
 .panel__card--three .panel__card-image .panel__card-image_container {
   background: linear-gradient(128.35deg, #ecb910 0%, #f9e766 48.38%, #ecb910 97.69%);
-  /* background: url("../images/Desktop/new/panel_card_img_bg3.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
 }
 .panel__card--four .panel__card-image .panel__card-image_container {
   background: linear-gradient(127.73deg, #25bfd5 0.62%, #98d4dd 50.31%, rgba(37, 191, 213, 0.858824) 100%);
-  /* background: url("../images/Desktop/new/panel_card_img_bg4.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
 }
 .panel__card--five .panel__card-image .panel__card-image_container {
   background: linear-gradient(128.13deg, #19c7ab 0%, #7deedd 50%, #19c7ab 100%);
-  /* background: url("../images/Desktop/new/panel_card_img_bg5.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
 }
 .panel__card--six .panel__card-image .panel__card-image_container {
   background: linear-gradient(127.94deg, #6982de 3.52%, #a5b9e6 50.05%, #6982de 98.57%);
-  /* background: url("../images/Desktop/new/panel_card_img_bg6.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
 }
 
 .panel__card-image .panel__card-image_container img {
@@ -2158,10 +2096,6 @@ main.bg-color-active {
 } */
 
 @media (min-width: 480px) {
-  /* .panel__stack .panel__card {
-    padding: 13% 5% 6%;
-  } */
-
   .lets-talk-btn {
     width: 50%;
     padding: 3.1% 4.3%;
@@ -2179,9 +2113,9 @@ main.bg-color-active {
     width: 30px;
   }
 
-  /* .panel__stack .panel__card {
-    padding: 10% 5% 6%;
-  } */
+  .timeline-section .new-timeline .timeline-line {
+    width: 70%;
+  }
 
   .timeline {
     flex-direction: row;
@@ -2260,9 +2194,6 @@ main.bg-color-active {
     height: 92%;
   }
 
-  /* .panel__stack .panel__card {
-    padding: 9% 5% 5%;
-  } */
   .amazon-ppc-strategy-container::before {
     height: calc(4rem + 36%);
   }
@@ -2270,6 +2201,10 @@ main.bg-color-active {
 
 /* Tablets */
 @media (min-width: 768px) {
+  #back{
+    height: 100dvh;
+  }
+
   .common-spacing-extra-for-amazon-ppc {
     padding-top: calc(var(--common-spacing) + 4rem);
   }
@@ -2305,9 +2240,46 @@ main.bg-color-active {
     width: 30px;
   }
 
-  /* .panel__stack .panel__card {
-    padding: 8% 5% 4%;
-  } */
+  .timeline-section .new-timeline {
+    flex-direction: row;
+    gap: 0;
+    align-items: unset;
+  }
+
+  .timeline-section .new-timeline .timeline-image-wrapper {
+    height: auto;
+    width: 44%;
+  }
+
+  .timeline-section .new-timeline .timeline-content-wrapper {
+    width: 44%;
+    height: max-content;
+  }
+
+  .timeline-section .new-timeline .timeline-image-wrapper .timeline-images img {
+    height: auto;
+  }
+
+  .timeline-section .new-timeline .timeline-content-wrapper .timeline-content {
+    height: 250px;
+    flex-direction: column;
+    overflow: unset;
+  }
+
+  .timeline-section .new-timeline .timeline-content-wrapper .timeline-content .timeline-content-item {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    position: unset;
+  }
+
+  .timeline-section .new-timeline .timeline-line {
+    width: 2px;
+    flex-direction: column;
+    gap: 4dvw;
+    height: max-content;
+  }
 
   .case-study-titles {
     padding: 0px 0 1% 0;
@@ -2411,42 +2383,6 @@ main.bg-color-active {
   .common-spacing-min-extra {
     padding-top: 0;
   }
-  /* .panel__card--one {
-    background: url("../images/Desktop/new/panel_card_bg1.webp");
-    background-size: cover;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-  .panel__card--two {
-    background: url("../images/Desktop/new/panel_card_bg2.webp");
-    background-size: cover;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-  .panel__card--three {
-    background: url("../images/Desktop/new/panel_card_bg3.webp");
-    background-size: cover;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-  .panel__card--four {
-    background: url("../images/Desktop/new/panel_card_bg4.webp");
-    background-size: cover;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-  .panel__card--five {
-    background: url("../images/Desktop/new/panel_card_bg5.webp");
-    background-size: cover;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
-  .panel__card--six {
-    background: url("../images/Desktop/new/panel_card_bg6.webp");
-    background-size: cover;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  } */
 
   .panel__stack {
     height: 88%;
@@ -2477,9 +2413,6 @@ main.bg-color-active {
   .lets-talk-btn-mobile {
     display: none;
   }
-  /* .panel__card-image .panel__card-image_container img {
-    width: 100%;
-  } */
 
   .amazon-ppc-section {
     height: 91.5dvh;
@@ -2605,6 +2538,14 @@ main.bg-color-active {
   .revenue-icon img {
     width: 40px;
     height: 40px;
+  }
+
+  .timeline-section .new-timeline .timeline-content-wrapper {
+    height: 400px;
+  }
+
+  .timeline-section .new-timeline .timeline-content-wrapper .timeline-content .timeline-content-item:nth-child(1) {
+    margin-top: 16%;
   }
 
   .amazon-ppc-strategy-container::before {

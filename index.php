@@ -136,6 +136,7 @@
                                 <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Scale-Retargeting.webp" class="timeline-image" />
                             </div>
                         </div>
+
                         <div class="timeline-content-wrapper">
                             <div class="timeline-content">
                                 <div class="timeline-content-item">
