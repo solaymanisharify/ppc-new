@@ -451,7 +451,7 @@ main.bg-color-active {
 
 /* New Timeline Section  */
 #tergeting-section {
-  height: 100dvh;
+  height: auto;
 }
 
 .timeline-section-header{
@@ -505,12 +505,12 @@ main.bg-color-active {
 }
 
 .timeline-section .new-timeline .timeline-content-wrapper {
-  width: 85%;
+  width: 100%;
   height: 50%;
 }
 
 .timeline-section .new-timeline .timeline-content-wrapper .timeline-content {
-  height: 20dvh;
+  height: 30dvh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -890,15 +890,18 @@ main.bg-color-active {
 }
 
 .case-study-container-1 {
-  background: linear-gradient(104.41deg, #cba57d 0%, #e4d5c0 27.26%, #ae875b 74.48%, #b79a72 98.68%);
+  /* background: linear-gradient(104.41deg, #cba57d 0%, #e4d5c0 27.26%, #ae875b 74.48%, #b79a72 98.68%); */
+  background: linear-gradient(104.41deg, #7FB0B8 0%, #D4E3E5 33%, #3F7F89 69.38%, #6599A1 98.68%);
 }
 
 .case-study-container-2 {
-  background: linear-gradient(103.64deg, #88a382 0%, #b1d177 28.18%, #8da981 76.53%, #8ba681 96.06%);
+  /* background: linear-gradient(103.64deg, #88a382 0%, #b1d177 28.18%, #8da981 76.53%, #8ba681 96.06%); */
+  background: linear-gradient(103.64deg, #715691 0%, #C6B8E0 30.99%, #6B4991 75.27%, #6C4E8E 96.06%);
 }
 
 .case-study-container-3 {
-  background: linear-gradient(104.41deg, #9b8a76 2.59%, #d3cbc4 28.24%, #d3cbc4 60.05%, #9b8a76 86.67%);
+  /* background: linear-gradient(104.41deg, #9b8a76 2.59%, #d3cbc4 28.24%, #d3cbc4 60.05%, #9b8a76 86.67%); */
+  background: linear-gradient(104.41deg, #999383 2.59%, #D2CBB7 28.24%, #867E73 51.91%, #554A3C 92.84%);
 }
 
 /* .case-study-container::before {
@@ -946,15 +949,15 @@ main.bg-color-active {
 }
 
 .case-study-container-1 h2 {
-  color: #73543a !important;
+  color:#0D6370 !important;
 }
 
 .case-study-container-2 h2 {
-  color: #063d13 !important;
+  color: #1B0832 !important;
 }
 
 .case-study-container-3 h2 {
-  color: #5e4b36 !important;
+  color: #5E4B36 !important;
 }
 
 .case-study-header div img {
@@ -1035,13 +1038,13 @@ main.bg-color-active {
 }
 
 .case-study-container-1 .growth-percentage h3 {
-  background: linear-gradient(180deg, #af8d70 0%, #73543a 100%);
+  background: linear-gradient(180deg, #49D4E9 0%, #0D6270 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .case-study-container-2 .growth-percentage h3 {
-  background: linear-gradient(180deg, #2f8443 0%, #063d13 100%);
+  background: linear-gradient(180deg, #884DF8 0%, #1B0832 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -1066,15 +1069,15 @@ main.bg-color-active {
 }
 
 .case-study-container-1 .growth-percentage p {
-  color: #73543a;
+  color: #0D6370;
 }
 
 .case-study-container-2 .growth-percentage p {
-  color: #063d13;
+  color: #1B0832;
 }
 
 .case-study-container-3 .growth-percentage p {
-  color: #5e4b36;
+  color: #433321;
 }
 
 .growth-desc p {
@@ -1086,15 +1089,15 @@ main.bg-color-active {
 }
 
 .case-study-container-1 .growth-desc p {
-  color: #4c2d16;
+  color: #06444D;
 }
 
 .case-study-container-2 .growth-desc p {
-  color: #04280c;
+  color: #04280C;
 }
 
 .case-study-container-3 .growth-desc p {
-  color: #3d3327;
+  color: #3D3327;
 }
 
 .our-impact-btn button {
@@ -1114,17 +1117,18 @@ main.bg-color-active {
 
 .case-study-container-1 .our-impact-btn button,
 .case-study-container-1 .fake-review-inner {
-  background: #73543a;
+  /* background: #73543a; */
+  background: #288D9C;
 }
 
 .case-study-container-2 .our-impact-btn button,
 .case-study-container-2 .fake-review-inner {
-  background: #063d13;
+  background: #522089;
 }
 
 .case-study-container-3 .our-impact-btn button,
 .case-study-container-3 .fake-review-inner {
-  background: #ae9b81;
+  background: #5E4938;
 }
 
 .our-impact-btn button span {
@@ -1164,13 +1168,14 @@ main.bg-color-active {
 }
 
 .case-study-container-1 .fake-review {
-  background: linear-gradient(95.78deg, #e1d0ba 0%, #6c4b32 50.08%, #e1d1bb 100%);
+  /* background: linear-gradient(95.78deg, #e1d0ba 0%, #6c4b32 50.08%, #e1d1bb 100%); */
+  background: linear-gradient(95.78deg, #A8ECF7 0%, #098294 50.08%, #B4EFF7 100%);
 }
 .case-study-container-2 .fake-review {
-  background: linear-gradient(95.78deg, #bbda74 0%, #a4c27d 50.08%, #d1ff67 100%);
+  background: linear-gradient(95.78deg, #6908D8 0%, #1B0832 50.08%, #884DF8 100%);
 }
 .case-study-container-3 .fake-review {
-  background: linear-gradient(95.78deg, #e1d0ba 0%, #6c4b32 50.08%, #e1d1bb 100%);
+  background: linear-gradient(95.78deg, #E1D0BA 0%, #6C4B32 50.08%, #E1D1BB 100%);
 }
 
 .fake-review-inner {
@@ -2110,6 +2115,10 @@ main.bg-color-active {
   .amazon-ppc-strategy-container::before {
     height: calc(4rem + 32%);
   }
+
+  .timeline-section .new-timeline .timeline-content-wrapper .timeline-content {
+    height: 25dvh;
+  }
 }
 
 /* Small devices (large phones) */
@@ -2119,8 +2128,16 @@ main.bg-color-active {
     width: 30px;
   }
 
+  .timeline-section .new-timeline .timeline-content-wrapper {
+    width: 84%;
+  }
+
   .timeline-section .new-timeline .timeline-line {
     width: 70%;
+  }
+
+  .timeline-section .new-timeline .timeline-content-wrapper .timeline-content {
+    height: 20dvh;
   }
 
   .timeline {
@@ -2244,6 +2261,10 @@ main.bg-color-active {
   .revenue-icon img {
     height: 30px;
     width: 30px;
+  }
+
+  #tergeting-section {
+    height: 100dvh;
   }
 
   .timeline-section .new-timeline {

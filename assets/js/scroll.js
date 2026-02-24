@@ -37,9 +37,8 @@ window.addEventListener("load", () => {
   // Card Section Scroll animation
   // ------------------------------
 
-  let mm = gsap.matchMedia();
-
-  mm.add("(min-width: 768px)", () => {
+  ScrollTrigger.matchMedia({
+    "(min-width: 768px)": function() {
     // const contentItems = document.querySelectorAll('.timeline-content-item');
     // const contentContainer = document.querySelector('.timeline-content');
     // const images = document.querySelectorAll('.timeline-image');
@@ -184,7 +183,6 @@ window.addEventListener("load", () => {
     // --------------------
     // Vertical Movement
     // --------------------
-    let mayHeight = 100; // Adjust if needed
 
     blocks2.forEach((block, index) => {
       gsap.to(block, {
@@ -257,29 +255,28 @@ window.addEventListener("load", () => {
         });
       });
     });
-  });
-
-  mm.add("(max-width: 767px)", () => {
+  },
+  "(max-width: 767px)": function() {
     const contentItems = document.querySelectorAll(".timeline-content-item");
     const images = document.querySelectorAll(".timeline-image");
     const dots = document.querySelectorAll(".dot");
-
+  
     let activeIndex = 0;
-
+  
     // Initial state
     gsap.set(contentItems, { xPercent: 100, opacity: 0 });
     gsap.set(images, { xPercent: 100, opacity: 0 });
-
+  
     gsap.set(contentItems[0], { xPercent: 0, opacity: 1 });
     gsap.set(images[0], { xPercent: 0, opacity: 1 });
-
+  
     function goToSlide(index) {
       if (index === activeIndex) return;
-
+  
       let direction = index > activeIndex ? 1 : -1;
-
+  
       let tl = gsap.timeline();
-
+  
       // Slide out current
       tl.to([contentItems[activeIndex], images[activeIndex]], {
         xPercent: -100 * direction,
@@ -287,13 +284,13 @@ window.addEventListener("load", () => {
         duration: 0.4,
         ease: "power2.inOut",
       })
-
+  
         // Prepare next slide
         .set([contentItems[index], images[index]], {
           xPercent: 100 * direction,
           opacity: 0,
         })
-
+  
         // Slide in next
         .to([contentItems[index], images[index]], {
           xPercent: 0,
@@ -301,32 +298,34 @@ window.addEventListener("load", () => {
           duration: 0.4,
           ease: "power2.inOut",
         });
-
+  
       updateDots(index);
       activeIndex = index;
     }
-
+  
     dots.forEach((dot, i) => {
       dot.addEventListener("click", () => {
         goToSlide(i);
       });
     });
-
+  
     function updateDots(index) {
       dots.forEach((dot, i) => {
         dot.classList.toggle("active", i === index);
         dot.classList.toggle("isFinished", i < index);
       });
-
+  
       const progressLine = document.querySelector(".timeline-line-progress");
-
+  
       if (progressLine) {
         const totalDots = dots.length;
         const percentage = (index / (totalDots - 1)) * 100;
         progressLine.style.width = `${percentage}%`;
       }
     }
-  });
+  }
+});
+
 
   // ---------------------------------
   // Card Section Scroll animation end

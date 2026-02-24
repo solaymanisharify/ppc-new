@@ -24,8 +24,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
-    <link rel="stylesheet" href="./assets/css/styles.min.css" as="style" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="./assets/css/styles.min.css" as="style" /> -->
 
     <!-- <link rel="stylesheet" href="./assets/css/extra/style.css" /> -->
     <link rel="stylesheet" href="./assets/css/extra/style.min.css" as="style" />
@@ -141,41 +141,41 @@
                             <div class="timeline-content">
                                 <div class="timeline-content-item">
                                     <h4 class="timeline-label timeline-label-active">Discovery Targeting</h2>
-                                    <p class="timeline-text timeline-text-visible">
-                                        Every profitable growth journey begins with discovery.
-                                        Using AI-powered analysis, broad match, automatic campaigns, and category targeting, we uncover how shoppers search, compare, and explore your category. This reveals hidden demand, untapped traffic, and new growth opportunities your competitors haven’t captured yet.
-                                    </p>
+                                        <p class="timeline-text timeline-text-visible">
+                                            Every profitable growth journey begins with discovery.
+                                            Using AI-powered analysis, broad match, automatic campaigns, and category targeting, we uncover how shoppers search, compare, and explore your category. This reveals hidden demand, untapped traffic, and new growth opportunities your competitors haven’t captured yet.
+                                        </p>
                                 </div>
 
                                 <div class="timeline-content-item">
                                     <h4 class="timeline-label timeline-label-active">Intent Targeting</h2>
-                                    <p class="timeline-text timeline-text-visible">
-                                        Once new opportunities are identified, we focus on shoppers with proven buying intent.
-                                        Through phrase match targeting, competitor ASIN conquesting, and high-intent keyword targeting, we capture shoppers actively comparing and ready to purchase — turning interest into conversions.
-                                    </p>
+                                        <p class="timeline-text timeline-text-visible">
+                                            Once new opportunities are identified, we focus on shoppers with proven buying intent.
+                                            Through phrase match targeting, competitor ASIN conquesting, and high-intent keyword targeting, we capture shoppers actively comparing and ready to purchase — turning interest into conversions.
+                                        </p>
                                 </div>
 
                                 <div class="timeline-content-item">
                                     <h4 class="timeline-label timeline-label-active">Ranking Targeting</h2>
-                                    <p class="timeline-text timeline-text-visible">
-                                        With consistent conversion data, the next step is strengthening your market position.
-                                        Using exact match targeting and proven converting search terms, we increase sales velocity, improve keyword dominance, and accelerate your organic ranking on Amazon.
-                                    </p>
+                                        <p class="timeline-text timeline-text-visible">
+                                            With consistent conversion data, the next step is strengthening your market position.
+                                            Using exact match targeting and proven converting search terms, we increase sales velocity, improve keyword dominance, and accelerate your organic ranking on Amazon.
+                                        </p>
                                 </div>
-                                
+
                                 <div class="timeline-content-item">
                                     <h4 class="timeline-label timeline-label-active">Defensive Targeting</h2>
-                                    <p class="timeline-text timeline-text-visible">
-                                        As your visibility and rank grow, protecting your position becomes essential.
-                                        Our data-driven defensive targeting secures your brand by targeting your own ASINs, protecting branded keywords, and preventing competitors from stealing your traffic and customers.
-                                    </p>
+                                        <p class="timeline-text timeline-text-visible">
+                                            As your visibility and rank grow, protecting your position becomes essential.
+                                            Our data-driven defensive targeting secures your brand by targeting your own ASINs, protecting branded keywords, and preventing competitors from stealing your traffic and customers.
+                                        </p>
                                 </div>
                                 <div class="timeline-content-item">
                                     <h4 class="timeline-label timeline-label-active">Scale & Retargeting</h2>
-                                    <p class="timeline-text timeline-text-visible">
-                                        We scale what’s already profitable and re-engage shoppers who showed intent but didn’t convert.
-                                        Through high-intent audience targeting, product view retargeting, purchase-based retargeting, and cart abandonment recovery, we expand revenue without sacrificing efficiency.
-                                    </p>
+                                        <p class="timeline-text timeline-text-visible">
+                                            We scale what’s already profitable and re-engage shoppers who showed intent but didn’t convert.
+                                            Through high-intent audience targeting, product view retargeting, purchase-based retargeting, and cart abandonment recovery, we expand revenue without sacrificing efficiency.
+                                        </p>
                                 </div>
                                 <div class="timeline-content-item"></div>
                             </div>
@@ -209,9 +209,7 @@
                                     <h2>AI-Driven Keyword Research</h2>
                                 </div>
                                 <div class="listing-optimization-desc-content">
-                                    <h3>Every growth journey begins with understanding
-                                        <br/>How shoppers search
-                                    </h3>
+                                    <h3>Every growth journey begins with understanding How shoppers search</h3>
                                     <p>To find profitable keywords, driving traffic and conversions through ranking,<br class="mobile-only-br"> More visibility, relevance, and return on ad spend.</p>
                                 </div>
                                 <div class="lets-talk-btn-desktop">
@@ -241,8 +239,7 @@
                                     <h2>Listing Optimization</h2>
                                 </div>
                                 <div class="listing-optimization-desc-content">
-                                    <h3>With the right keywords,
-                                        <br/>We optimize your listing into a high-converting sales asset
+                                    <h3>With the right keywords, We optimize your listing into a high-converting sales asset
                                     </h3>
                                     <p>Our AI-assisted copy, structure, and keyword integration improve discoverability, increase buyer trust, and position your product to convert more.</p>
                                 </div>
@@ -275,9 +272,7 @@
                                     <h2>Campaign Launch & Optimization</h2>
                                 </div>
                                 <div class="listing-optimization-desc-content">
-                                    <h3>Once your listing is ready,
-                                        <br/>We launch campaigns with custom strategies.
-                                    </h3>
+                                    <h3>Once your listing is ready, We launch campaigns with custom strategies.</h3>
                                     <p>This ensures your ads reach the right shoppers at the right moment maximizing efficiency and accelerating sales momentum.</p>
                                 </div>
                                 <div class="lets-talk-btn-desktop">
@@ -410,7 +405,7 @@
                                 <div class="case-study-header">
                                     <h2>From Growth to Succcess</h2>
                                     <div class="golden-fox">
-                                        <img width="640" height="360" loading="lazy" src="assets/images/Mobile-version/goldenfox-logo.webp" alt="Hero Image" class="">
+                                        <img width="640" height="360" loading="lazy" src="assets\images\Desktop\new\case-study-logo-1.png" alt="Hero Image" class="">
                                     </div>
                                 </div>
                                 <div class="case-study-growth-image-container">
@@ -451,17 +446,17 @@
                                     </div>
                                     <div class="case-study-container-img-body">
                                         <div class="case-study-container-img">
-                                            <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Review-copy.webp" alt="Hero Image" class="case-study-img">
+                                            <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/case-study-review-1.webp" alt="Hero Image" class="case-study-img">
                                             <div class="fake-review">
                                                 <div class="fake-review-inner">
                                                     <div class="review-card-top">
                                                         <div class="fake-review-img">
-                                                            <img width="640" height="360" loading="lazy" src="assets/images/Desktop/fake-critics.webp" alt="Hero Image" class="">
+                                                            <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/case-study-review-person-1.png" alt="Hero Image" class="">
                                                         </div>
                                                         <div>
                                                             <h2>Mr Christopher Adey</h2>
                                                             <div class="review-card-rating">
-                                                                <p>Golden Fox, USA</p>
+                                                                <p>Nutroliq, USA</p>
                                                                 <div class="review-card-rating-stars">
                                                                     <div class="review-card-rating-img">
                                                                         <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
@@ -497,13 +492,13 @@
                                 <div class="case-study-header">
                                     <h2>From Growth to Succcess</h2>
                                     <div class="golden-fox">
-                                        <img width="640" height="360" loading="lazy" id="woodland-logo" src="assets/images/Desktop/woodland-logo.png" alt="Hero Image" class="">
+                                        <img width="640" height="360" loading="lazy" id="woodland-logo" src="assets/images/Desktop/new/case-study-logo-2.png" alt="Hero Image" class="">
                                     </div>
                                 </div>
                                 <div class="case-study-growth-image-container">
                                     <div class="case-study-growth-left-side">
                                         <div class="case-study-desc">
-                                            <h2>&ldquo;Ecomclips Has Been a God Sent To Us&rdquo;</h2>
+                                            <h2>&ldquo;We have seen a 40<span class="percentage">%</span> sales uplift&rdquo;</h2>
                                             <div class="case-study-line"></div>
                                         </div>
                                         <div class="growth-percentage">
@@ -538,17 +533,17 @@
                                     </div>
                                     <div class="case-study-container-img-body">
                                         <div class="case-study-container-img">
-                                            <img width="640" height="360" loading="lazy" id="" src="assets/images/Desktop/woodland-cover.webp" alt="Hero Image" class="case-study-img">
+                                            <img width="640" height="360" loading="lazy" id="" src="assets/images/Desktop/new/case-study-review-2.webp" alt="Hero Image" class="case-study-img">
                                             <div class="fake-review">
                                                 <div class="fake-review-inner">
                                                     <div class="review-card-top">
                                                         <div class="fake-review-img">
-                                                            <img width="640" height="360" loading="lazy" src="assets/images/Desktop/woodland-critic.webp" alt="Hero Image" class="">
+                                                            <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/case-study-review-person-2.png" alt="Hero Image" class="">
                                                         </div>
                                                         <div>
-                                                            <h2>Jose Vazquez</h2>
+                                                            <h2>Justin Pywell</h2>
                                                             <div class="review-card-rating">
-                                                                <p>Woodland, USA</p>
+                                                                <p>We Can Source It, UK</p>
                                                                 <div class="review-card-rating-stars">
                                                                     <div class="review-card-rating-img">
                                                                         <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
@@ -570,7 +565,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="review-card-content">
-                                                        <p>Ecom has been a god sent to us, we were just giving money away to google and they came and got us profitable with our ads quickly most of all they have been patience with us when we have made mistakes and having serious issues with our old site. They are good people enjoyed growing with them.</p>
+                                                        <p>We have increased the teams workload over the six months and they are now helping with design, Amazon and eBay PPC and management, and most recently they have stepped up and taken on our website marketing too. Since using Ecomclips we have seen a 40% uplift
+                                                            in sales and we know they have plans in place to grow these numbers even further.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -584,7 +580,7 @@
                                 <div class="case-study-header">
                                     <h2>From Growth to Succcess</h2>
                                     <div class="golden-fox">
-                                        <img width="640" height="360" loading="lazy" id="umbra-logo" src="assets/images/Desktop/umbra-logo.png" alt="Hero Image" class="">
+                                        <img width="640" height="360" loading="lazy" id="umbra-logo" src="assets/images/Desktop/new/case-stady-logo-3.png" alt="Hero Image" class="">
                                     </div>
                                 </div>
                                 <div class="case-study-growth-image-container">
@@ -625,17 +621,17 @@
                                     </div>
                                     <div class="case-study-container-img-body">
                                         <div class="case-study-container-img">
-                                            <img width="640" height="360" loading="lazy" src="assets/images/Desktop/umbra.webp" alt="Hero Image" class="case-study-img">
+                                            <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/case-study-review-3.webp" alt="Hero Image" class="case-study-img">
                                             <div class="fake-review">
                                                 <div class="fake-review-inner">
                                                     <div class="review-card-top">
                                                         <div class="fake-review-img">
-                                                            <img width="640" height="360" loading="lazy" src="assets/images/Desktop/umbra-critic.webp" alt="Hero Image" class="">
+                                                            <img width="640" height="360" loading="lazy" src="assets/images/Desktop/woodland-critic.webp" alt="Hero Image" class="">
                                                         </div>
                                                         <div>
                                                             <h2>Ronald Davis</h2>
                                                             <div class="review-card-rating">
-                                                                <p>Umbra, USA</p>
+                                                                <p>Indiana Metal Craft, USA</p>
                                                                 <div class="review-card-rating-stars">
                                                                     <div class="review-card-rating-img">
                                                                         <img width="640" height="360" loading="lazy" src="assets/images/Desktop/star-without-bg.png" alt="">
@@ -729,7 +725,7 @@
                                 </div>
                                 <div>
                                     <p>
-                                        4.9 Stars 
+                                        4.9 Stars
                                         <!-- | 141 Ratings -->
                                     </p>
                                 </div>
@@ -758,7 +754,7 @@
                                 </div>
                                 <div>
                                     <p>
-                                        4.9 Stars 
+                                        4.9 Stars
                                         <!-- | 24 Ratings -->
                                     </p>
                                 </div>
@@ -2378,8 +2374,8 @@
     <!-- <script src="./assets/js/extra/custom-blog.js" defer></script> -->
     <script src="./assets/js/extra/custom-blog.min.js" defer></script>
 
-    <!-- <script src="/assets/js/scroll.js" defer></script> -->
-    <script src="/assets/js/scroll.min.js" defer></script>
+    <script src="/assets/js/scroll.js" defer></script>
+    <!-- <script src="/assets/js/scroll.min.js" defer></script> -->
     <!-- <script src="/assets/js/main.js" defer></script> -->
     <script src="/assets/js/main.min.js" defer></script>
     <!-- <script src="/assets/js/modal.js" defer></script> -->
