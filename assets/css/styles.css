@@ -479,7 +479,7 @@ main.bg-color-active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 10dvw;
+  gap: 7dvw;
   align-items: center;
 }
 
@@ -510,7 +510,7 @@ main.bg-color-active {
 }
 
 .timeline-section .new-timeline .timeline-content-wrapper .timeline-content {
-  height: 15dvh;
+  height: 20dvh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -540,15 +540,16 @@ main.bg-color-active {
   margin-bottom: 10px;
 }
 
-#tergeting-section.bg-color-active .timeline-section .new-timeline .timeline-content-wrapper .timeline-content .timeline-content-item h4 {
+/* #tergeting-section.bg-color-active .timeline-section .new-timeline .timeline-content-wrapper .timeline-content .timeline-content-item h4 {
   background: linear-gradient(to bottom, #a0b6fd 0%, #7aa9fd 40%, #559dfd 60%, #1f8afd 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
 .timeline-section .new-timeline .timeline-content-wrapper .timeline-content .timeline-content-item p {
   color: #ffffff;
-  font-size: clamp(0.875rem, 2vw, 1.07dvw);
+  /* font-size: clamp(0.875rem, 2vw, 1.07dvw); */
+  font-size: clamp(0.875rem, 2vw, 1.46dvw);
 }
 
 .timeline-section .new-timeline .timeline-content-wrapper .timeline-content .timeline-content-item h4::before {
@@ -570,10 +571,10 @@ main.bg-color-active {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 0%;
   background: #ffffff;
-  transition: height 0.3s ease;
+  width: 0%;
+  height: 100%;
+  transition: width 0.3s ease;
 }
 
 .timeline-section .new-timeline .timeline-line .dot {
@@ -727,6 +728,11 @@ main.bg-color-active {
   font-weight: 700;
   color: #000000;
   text-transform: capitalize;
+}
+
+.spacial_fi_letters_space{
+  margin-left: -7px;
+  text-transform: lowercase;
 }
 
 .listing-optimization-desc-content p {
@@ -2261,7 +2267,7 @@ main.bg-color-active {
   }
 
   .timeline-section .new-timeline .timeline-content-wrapper .timeline-content {
-    height: 250px;
+    height: 350px;
     flex-direction: column;
     overflow: unset;
   }
@@ -2279,6 +2285,12 @@ main.bg-color-active {
     flex-direction: column;
     gap: 4dvw;
     height: max-content;
+  }
+
+  .timeline-section .new-timeline .timeline-line .timeline-line-progress {
+    width: 100%;
+    height: 0%;
+    transition: height 0.3s ease;
   }
 
   .case-study-titles {
@@ -2545,7 +2557,7 @@ main.bg-color-active {
   }
 
   .timeline-section .new-timeline .timeline-content-wrapper .timeline-content .timeline-content-item:nth-child(1) {
-    margin-top: 16%;
+    margin-top: 4%;
   }
 
   .amazon-ppc-strategy-container::before {

@@ -24,8 +24,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <!-- <link rel="stylesheet" href="./assets/css/styles.min.css" as="style" /> -->
+    <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
+    <link rel="stylesheet" href="./assets/css/styles.min.css" as="style" />
 
     <!-- <link rel="stylesheet" href="./assets/css/extra/style.css" /> -->
     <link rel="stylesheet" href="./assets/css/extra/style.min.css" as="style" />
@@ -119,7 +119,7 @@
             </section>
             <!-- Reveneue section end -->
         </section>
-
+        <!-- Targeting Section Timeline -->
         <section class="first-bg" id="tergeting-section">
             <div class="container common-spacing">
                 <div class="timeline-section-header">
@@ -177,6 +177,7 @@
                                         Through high-intent audience targeting, product view retargeting, purchase-based retargeting, and cart abandonment recovery, we expand revenue without sacrificing efficiency.
                                     </p>
                                 </div>
+                                <div class="timeline-content-item"></div>
                             </div>
                         </div>
 
@@ -192,6 +193,7 @@
                 </div>
             </div>
         </section>
+        <!-- Targeting Section Timeline end -->
 
         <!-- Card Stack Section horizontal scroll -->
         <section class="horizontal-scroll-bg">
@@ -335,7 +337,7 @@
                                     <h2>Reduce ACOS</h2>
                                 </div>
                                 <div class="listing-optimization-desc-content">
-                                    <h3>Growth is only valuable when it’s profitable.</h3>
+                                    <h3>Growth is only valuable when it’s prof <span class="spacial_fi_letters_space">i</span>table.</h3>
                                     <p>Our AI-driven optimization identifies wasted spend, reallocates budget, and improves efficiency to reduce ACoS while increasing revenue and long-term profitability.</p>
                                 </div>
                                 <div class="lets-talk-btn-desktop">
@@ -2376,10 +2378,10 @@
     <!-- <script src="./assets/js/extra/custom-blog.js" defer></script> -->
     <script src="./assets/js/extra/custom-blog.min.js" defer></script>
 
-    <script src="/assets/js/scroll.js" defer></script>
-    <!-- <script src="/assets/js/scroll.min.js" defer></script> -->
-    <script src="/assets/js/main.js" defer></script>
-    <!-- <script src="/assets/js/main.min.js" defer></script> -->
+    <!-- <script src="/assets/js/scroll.js" defer></script> -->
+    <script src="/assets/js/scroll.min.js" defer></script>
+    <!-- <script src="/assets/js/main.js" defer></script> -->
+    <script src="/assets/js/main.min.js" defer></script>
     <!-- <script src="/assets/js/modal.js" defer></script> -->
     <script src="/assets/js/modal.min.js" defer></script>
 
