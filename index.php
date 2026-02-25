@@ -1356,7 +1356,7 @@
                                 <p>We Are The Best In Ecommerce Because</p>
                                 <h3> We Always Stay Ahead <br> with Cutting-Edge Tech </h3>
                             </div>
-                            <img src="./assets/images/gif-image/tab-datamanagement-mt.webp" alt="">
+                            <img src="./assets/images/gif-image/tab-datamanagement-mt1.png" alt="">
                             <div class="why-left-body">
                                 <p>
                                     We harness the latest technology to provide you with unparalleled services. Our team stays ahead of the curve, leveraging <span id="textwwwww">up-to-date tools and software to ensure your success. From advanced SEO tools to communication and time tracking software, we embrace the newest tech trends. By embracing Artificial Intelligence (AI), we empower your business with intelligent automation, data-driven insights, and enhanced decision-making capabilities. With us, you'll experience the transformative impact of technology, propelling your business to new heights.
