@@ -1446,8 +1446,12 @@ main.bg-color-active {
   width: 100%;
 }
 
-.custom-accordion-item {
+main .custom-accordion-item {
   border-bottom: 4px solid #0f3940;
+}
+
+main.bg-color-active .custom-accordion-item {
+  border-bottom: 4px solid rgba(128, 128, 128, 0.733);
 }
 
 .custom-accordion-header {
