@@ -24,13 +24,13 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <!-- <link rel="stylesheet" href="./assets/css/styles.min.css" as="style" /> -->
+    <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
+    <link rel="stylesheet" href="./assets/css/styles.min.css" as="style" />
 
     <!-- <link rel="stylesheet" href="./assets/css/extra/style.css" /> -->
     <link rel="stylesheet" href="./assets/css/extra/style.min.css" as="style" />
-    <link rel="stylesheet" href="./assets/css/extra/homeStyle.css" />
-    <!-- <link rel="stylesheet" href="./assets/css/extra/homeStyle.min.css" as="style" /> -->
+    <!-- <link rel="stylesheet" href="./assets/css/extra/homeStyle.css" /> -->
+    <link rel="stylesheet" href="./assets/css/extra/homeStyle.min.css" as="style" />
     <!-- <link rel="stylesheet" href="./assets/css/extra/fix_style.css" /> -->
     <link rel="stylesheet" href="./assets/css/extra/fix_style.min.css" as="style" />
 
@@ -1233,7 +1233,6 @@
                         </div>
                     </div>
                 </div>
-
             </section>
             <div class="common-spacing-bottom2">
                 <div id="bg-color-change-tigger4"></div>
@@ -1267,6 +1266,111 @@
 
         <!-- Blog and Footer start -->
         <div class="bg-white-for-extra" id="bg-white-for-extra-id">
+
+            <div class="working-part-for-mobile">
+                <section class="hide-on-desktop">
+                    <div class="why-container">
+                        <div class="row">
+                            <div class="why-left-header">
+                                <p>All-in-One Ecommerce Solution</p>
+                                <h3>Why we are best in <br> ecommerce world? </h3>
+                            </div>
+                            <img src="./assets/images/five-img/why-right.webp" alt="">
+                            <div class="why-left-body">
+                                <p>The hardest and most important challenge for any small business owner is that you can’t do everything yourself. <span id="textw">You’ve got to do all the admin, accounting, design, development, marketing, and sales – as well as focus on the bigger picture. Some of these tasks aren’t even in your area of expertise. As a business owner, juggling everything can be a struggle. Hence, partnering with the right ecommerce solution company is vital for your business seeking sustainable growth and success. At Ecomclips, with our 15+ years of expertise, we understand this and we are dedicated to accepting this challenge of empowering your business to unlock your full online potential, driving revenue growth, and delivering exceptional customer experiences in the ever-expanding digital marketplace. With Ecomclips, you can transfer all these tasks to our expert managers and save the time you need so you can focus on the things that matter to grow your business.
+                                    </span>
+                                    <span id="togglew" class="see-m">See more</span>
+                                </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="hide-on-desktop">
+                    <div class="work-container">
+                        <div class="row">
+                            <div class="why-left-header">
+                                <p>We Are The Best In Ecommerce Because</p>
+                                <h3>Our Experienced and <br> Skilled Team Sets Us Apart
+                                </h3>
+                            </div>
+                            <img src="./assets/images/gif-image/team_work.gif" alt="">
+                            <div class="why-left-body">
+                                <p>We pride ourselves on having a team of highly skilled professionals. Our years of experience have allowed us to refine our strategies <span id="textww">and stay ahead of the rapidly evolving ecommerce landscape. We believe that every business is unique and deserves a tailored ecommerce solution to meet its specific requirements. Our approach focuses on understanding our client's objectives, target audience, and industry landscape. That's how we have successfully served numerous clients from diverse industries, equipping us with valuable insights and understanding of the unique challenges faced by businesses.
+
+                                    </span>
+                                    <span id="toggleww" class="see-m">See more</span>
+                                </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="hide-on-desktop">
+                    <div class="work-container">
+                        <div class="row">
+                            <div class="why-left-header">
+                                <p>We Are The Best In Ecommerce Because</p>
+                                <h3>We Make Sure Hassle-free Onboarding and Rapid Launch
+                                </h3>
+                            </div>
+                            <img src="./assets/images/gif-image/product_iteration.gif" alt="">
+                            <div class="why-left-body">
+                                <p>We prioritize hassle-free onboarding and rapid start for all our clients. We believe that getting started should be a smooth and <span id="textwww">efficient process, allowing you to focus on your project's goals and objectives without unnecessary delays or complications. From initial consultations to setting up project timelines and milestones, we take care of all the necessary details, so you can hit the ground running. Our expertise and experience enable us to navigate any complexities efficiently, ensuring a rapid launch that brings your vision to life in no time.
+                                    </span>
+                                    <span id="togglewww" class="see-m">See more</span>
+                                </p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="hide-on-desktop">
+                    <div class="work-container">
+                        <div class="row">
+                            <div class="why-left-header">
+                                <p>We Are The Best In Ecommerce Because</p>
+                                <h3>Our Impenetrable QA Filtering Process Sets the Standard
+                                </h3>
+                            </div>
+                            <img src="./assets/images/gif-image/content_team_old_compressed.gif" alt="">
+                            <div class="why-left-body">
+                                <p>We are committed to delivering the highest quality and error-free work. To ensure this, we follow a meticulous working filter <span id="textwwww">process for every project we undertake. Our team of professionals is led by a project manager who oversees every aspect of the project and ensures its successful execution. Each project manager is supported by a senior manager for guidance and supervision. With this process, you can trust that your project is in capable hands, and you'll experience a successful and timely project execution.
+                                    </span>
+                                    <span id="togglewwww" class="see-m">See more</span>
+                                </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="hide-on-desktop">
+                    <div class="technology-container">
+                        <div class="row">
+                            <div class="why-left-header">
+                                <p>We Are The Best In Ecommerce Because</p>
+                                <h3> We Always Stay Ahead <br> with Cutting-Edge Tech </h3>
+                            </div>
+                            <img src="./assets/images/gif-image/tab-datamanagement-mt.webp" alt="">
+                            <div class="why-left-body">
+                                <p>
+                                    We harness the latest technology to provide you with unparalleled services. Our team stays ahead of the curve, leveraging <span id="textwwwww">up-to-date tools and software to ensure your success. From advanced SEO tools to communication and time tracking software, we embrace the newest tech trends. By embracing Artificial Intelligence (AI), we empower your business with intelligent automation, data-driven insights, and enhanced decision-making capabilities. With us, you'll experience the transformative impact of technology, propelling your business to new heights.
+                                    </span>
+                                    <span id="togglewwwww" class="see-m">See more</span>
+                                </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
             <section class="home-tablet-hide home-mobile-hide" id="blog-custom">
                 <div class="blog-container-two" id="blog-custom-container">
 
@@ -1563,7 +1667,7 @@
                                 <img width="640" height="360" loading="lazy" src="./assets/images/img-1/google-meet.png" alt="">
                             </div>
                             <div class="technology-logo-4 technology-logo-container" id="technology-logo-4">
-                                <img width="640" height="360" loading="lazy" src="./assets/images/img-1/skype.png" alt="">
+                                <img width="640" height="360" loading="lazy" class="teams-logo-img" src="./assets/images/img-1/teams-logo.webp" alt="">
                             </div>
                             <div class="technology-logo-5 technology-logo-container" id="technology-logo-5">
                                 <img width="640" height="360" loading="lazy" src="./assets/images/img-1/asana.png" alt="">
@@ -2394,8 +2498,8 @@
     <!-- <script src="./assets/js/extra/custom-blog.js" defer></script> -->
     <script src="./assets/js/extra/custom-blog.min.js" defer></script>
 
-    <script src="/assets/js/scroll.js" defer></script>
-    <!-- <script src="/assets/js/scroll.min.js" defer></script> -->
+    <!-- <script src="/assets/js/scroll.js" defer></script> -->
+    <script src="/assets/js/scroll.min.js" defer></script>
     <!-- <script src="/assets/js/main.js" defer></script> -->
     <script src="/assets/js/main.min.js" defer></script>
     <!-- <script src="/assets/js/modal.js" defer></script> -->

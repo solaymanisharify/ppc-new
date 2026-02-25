@@ -1630,15 +1630,26 @@ a.post-link {
   font-weight: 300;
   font-size: 26px;
   line-height: 40px;
-  color: #707070;
   margin: 0;
+}
+
+main.bg-color-active .why-left-header p {
+  color: #707070;
 }
 
 .why-left-header h3 {
   font-size: 42px;
   font-family: "Recoleta", serif;
   line-height: 44px;
+}
+
+main.bg-color-active .why-left-header h3 {
   color: #393939;
+}
+
+main .why-left-header h3,
+main .why-left-header p {
+  color: #ffffff;
 }
 
 .why-left-header span {
@@ -3006,7 +3017,7 @@ li label a img {
 
 @media screen and (max-width: 1024px) {
   .why-container {
-    margin-top: 5vh;
+    margin-top: 0;
   }
 
   .technology-container {
@@ -3024,13 +3035,7 @@ li label a img {
   }
 
   .why-container .row {
-    background: #fff;
-    border-radius: 30px;
-    padding: 20px;
-  }
-
-  .work-container .row {
-    background: #fff;
+    /* background: #fff; */
     border-radius: 30px;
     padding: 20px;
   }
@@ -3055,8 +3060,8 @@ li label a img {
   }
 
   .working-part-for-mobile {
-    background: #F5F5F5;
-    padding-top: 20px;
+    /* background: #F5F5F5; */
+    /* padding-top: 20px; */
     padding-bottom: 20px;
   }
 
