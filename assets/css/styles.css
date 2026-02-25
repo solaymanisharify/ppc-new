@@ -256,7 +256,7 @@ main.bg-color-active {
 .hero-1 p {
   color: #ffffff;
   opacity: 0.9;
-  font-size: clamp(13px, 3vw, 1rem);
+  font-size: clamp(15px, 3vw, 1rem);
   font-weight: 400;
   font-family: "Poppins";
   line-height: 1.5;
@@ -1085,7 +1085,7 @@ main.bg-color-active {
   color: #fff;
   opacity: 0.9;
   font-family: Poppins;
-  font-size: clamp(0.8125rem, 1.5vw, 1rem);
+  font-size: clamp(0.90rem, 1.5vw, 1rem);
   font-weight: 300;
 }
 
@@ -1645,7 +1645,7 @@ main.bg-color-active .custom-accordion-header i{
 .amazon-keyword2 .custom-accordion .custom-accordion-item .custom-accordion-content div p {
   color: black;
   padding: 0px;
-  font-size: clamp(0.85rem, 3vw, 1rem);
+  font-size: clamp(0.90rem, 3vw, 1rem);
 }
 
 .amazon-ppc .custom-accordion .custom-accordion-item .custom-accordion-content div img,
@@ -1703,7 +1703,7 @@ main.bg-color-active .custom-accordion-header i{
 .amazon-keyword header p,
 .amazon-keyword2 header p {
   font-family: "Poppins";
-  font-size: clamp(0.85rem, 2vw, 1rem);
+  font-size: clamp(0.90rem, 2vw, 1rem);
   line-height: 1.5;
   margin-top: 10px;
   color: #131921;

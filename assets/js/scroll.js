@@ -8,7 +8,7 @@ window.addEventListener("load", () => {
   // Add Lenis's requestAnimationFrame (raf) method to GSAP's ticker
   // This ensures Lenis's smooth scroll animation updates on each GSAP tick
   gsap.ticker.add((time) => {
-    lenis.raf(time * 1000); // Convert time from seconds to milliseconds
+    lenis.raf(time * 500); // Convert time from seconds to milliseconds
   });
 
   // Disable lag smoothing in GSAP to prevent any delay in scroll animations
@@ -319,7 +319,7 @@ window.addEventListener("load", () => {
     scrollTrigger: {
       trigger: ".sticky-body",
       start: "top 3%",
-      end: () => `+=${horizontalCardContainer.scrollWidth / 2}`, // here added /2 to make it scroll faster
+      end: () => `+=${horizontalCardContainer.scrollWidth}`,
       scrub: 0.1,
       pin: true,
       invalidateOnRefresh: true,
@@ -460,7 +460,7 @@ window.addEventListener("load", () => {
   // ------------------------------
 
   // horizontalTimeline.add(BackgroundColorChangeTimeline);
-  // mainTimeline.add(horizontalTimeline);
+  mainTimeline.add(horizontalTimeline);
 
   // ------------------------------
   // Background color change on scroll

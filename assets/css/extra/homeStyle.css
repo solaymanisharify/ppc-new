@@ -1,5 +1,12 @@
 /* -------------------------- */
 
+.dropdown-left-footer .left-info{
+  margin-bottom: 2vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 .home-navber {
   position: sticky;
   z-index: 2;
@@ -7,7 +14,7 @@
   top: 0px;
   padding: 38px 0;
   transition: background 0.5s ease-in-out;
-  background-color: transparent;
+  background-color: #121921;
 }
 
 .home-navber:hover {
@@ -83,11 +90,18 @@
   font-family: 'montserrat';
 }
 
+.menu-list li a img {
+  width: auto;
+  display: unset;
+}
+
 a.nav-icon-r {
   position: relative;
   top: 12px;
   left: -14px;
 }
+
+
 
 .nav-circle {
   position: relative;
@@ -120,6 +134,11 @@ a.nav-icon-r {
 
 .spin:hover {
   color: white;
+}
+
+.spin:hover a.nav-icon-r {
+  top: 15px;
+  left: -12px;
 }
 
 .spin:before,
@@ -457,14 +476,14 @@ a.nav-icon-r {
 
 .dropdown-left-nav {
   margin-left: 8vw;
-  padding-top: 19vh;
-  height: 70vh;
+  padding-top: 16vh;
+  height: 60vh;
 }
 
 .dropdown-left-nav ul li {
   list-style: none;
   margin-bottom: 24px;
-  height: 50px;
+  height: 48px;
   overflow: hidden;
 }
 
@@ -495,7 +514,7 @@ a.nav-icon-r {
 
 .dropdown-left-nav li a {
   text-decoration: none;
-  font-size: 40px;
+  font-size: 38px;
   font-family: 'Poppins';
   line-height: 47px;
   color: white;
@@ -572,6 +591,10 @@ a.nav-icon-r {
   gap: 20px;
 }
 
+.dropdown-nav_cross img{
+  width: auto;
+}
+
 .dropdown-right-body p {
   font-size: 22px;
   font-family: 'Poppins';
@@ -627,6 +650,8 @@ a.nav-icon-r {
 
 .dropdown-right-body-logo img {
   margin-right: 10px;
+  width: auto;
+  display: unset;
 }
 
 .dropdown-right-body-logo a {
@@ -646,6 +671,7 @@ a.nav-icon-r {
   line-height: 46px;
   font-family: 'Poppins';
   color: black;
+  margin-bottom: 0px;
 }
 
 .dropdown-right-footer {
