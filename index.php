@@ -29,8 +29,8 @@
 
     <!-- <link rel="stylesheet" href="./assets/css/extra/style.css" /> -->
     <link rel="stylesheet" href="./assets/css/extra/style.min.css" as="style" />
-    <!-- <link rel="stylesheet" href="./assets/css/extra/homeStyle.css" /> -->
-    <link rel="stylesheet" href="./assets/css/extra/homeStyle.min.css" as="style" />
+    <link rel="stylesheet" href="./assets/css/extra/homeStyle.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/extra/homeStyle.min.css" as="style" /> -->
     <!-- <link rel="stylesheet" href="./assets/css/extra/fix_style.css" /> -->
     <link rel="stylesheet" href="./assets/css/extra/fix_style.min.css" as="style" />
 
@@ -1114,8 +1114,10 @@
                     <div class="custom-accordion-item">
                         <div class="custom-accordion-header">
                             <h2>How long does it take for PPC to work?</h2>
-                            <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                            <i class="fa-solid fa-angle-down down"></i>
+                            <i class="fa-solid fa-angle-up up"></i>
+                            <!-- <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow"> -->
                         </div>
                         <div class="custom-accordion-content">
                             <p>Amazon PPC performance generally starts showing early indicators within the first 7 to 14 days, as campaigns gather data and Amazon learns where your ads fit best. However, true optimization usually happens over 4 to 8 weeks, once enough search-term, impression, and conversion data accumulates. The results improve over time as we refine bids, remove waste, and scale profitable terms. PPC is not instant - it’s a learning and optimization cycle-but with the right structure, you begin seeing steady, predictable improvements.</p>
@@ -1124,8 +1126,10 @@
                     <div class="custom-accordion-item">
                         <div class="custom-accordion-header">
                             <h2>What sales uplift can we expect if we increase ACOS/TACoS goals?</h2>
-                            <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                            <i class="fa-solid fa-angle-down down"></i>
+                            <i class="fa-solid fa-angle-up up"></i>
+                            <!-- <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow"> -->
                         </div>
                         <div class="custom-accordion-content">
                             <p>A “good” ACoS depends entirely on your profit margin and goals. If the goal is profitability, ACoS should be below your breakeven percentage. If the goal is ranking and growth, a higher ACoS may be acceptable temporarily. TACoS (Total Advertising Cost of Sale) gives a deeper picture of real business impact; a healthy TACoS typically falls between 5% and 15% depending on your category. Instead of chasing a random ACoS number, we calculate your exact breakeven point and build a strategy that aligns with your long-term profitability and ranking goals.</p>
@@ -1134,8 +1138,10 @@
                     <div class="custom-accordion-item">
                         <div class="custom-accordion-header">
                             <h2>Can ad spend be reduced while increasing PPC sales?</h2>
-                            <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                            <i class="fa-solid fa-angle-down down"></i>
+                            <i class="fa-solid fa-angle-up up"></i>
+                            <!-- <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow"> -->
                         </div>
                         <div class="custom-accordion-content">
                             <p>It is possible, but it depends on the current state of your campaigns. If your account is overspending on irrelevant or expensive keywords, optimization can reduce spend while maintaining or slightly increasing sales. However, in most cases, reducing spend decreases impressions, which may reduce total sales. The best long-term approach is sequencing: first improve efficiency, then scale. Once the wasted spend is minimized and your campaigns are profitable, we gradually increase investment into the keywords and placements that generate the strongest return.</p>
@@ -1144,8 +1150,10 @@
                     <div class="custom-accordion-item">
                         <div class="custom-accordion-header">
                             <h2>Which Amazon ad type is the most effective for driving sales?</h2>
-                            <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                            <i class="fa-solid fa-angle-down down"></i>
+                            <i class="fa-solid fa-angle-up up"></i>
+                            <!-- <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow"> -->
                         </div>
                         <div class="custom-accordion-content">
                             <p>Sponsored Products are the most effective and commonly used ad type because they appear directly in search results and on product detail pages, where purchase intent is highest. They capture the majority of PPC sales for nearly every category. Sponsored Brands and Sponsored Display also play important roles, particularly for brand visibility, retargeting, and defensive advertising. The most effective PPC strategy uses all three ad types in a structured funnel, but Sponsored Products remain the core engine of consistent sales.</p>
@@ -1154,8 +1162,10 @@
                     <div class="custom-accordion-item">
                         <div class="custom-accordion-header">
                             <h2>How much budget is needed for a successful PPC strategy?</h2>
-                            <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                            <i class="fa-solid fa-angle-down down"></i>
+                            <i class="fa-solid fa-angle-up up"></i>
+                            <!-- <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow"> -->
                         </div>
                         <div class="custom-accordion-content">
                             <p>Your required budget depends on your niche, competition level, product price, and the number of SKUs being advertised. Highly competitive categories - such as supplements, pet products, or beauty - often require higher CPCs and therefore larger budgets. Lower-competition niches may spend significantly less. Instead of suggesting a fixed amount, we analyze your market, average CPCs, and your goals to recommend a realistic starting budget. The key is bringing a budget strong enough to gather meaningful data and allow campaigns to stabilize.</p>
@@ -1165,8 +1175,10 @@
                     <div class="custom-accordion-item">
                         <div class="custom-accordion-header">
                             <h2>What results can I expect from your PPC management?</h2>
-                            <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                            <i class="fa-solid fa-angle-down down"></i>
+                            <i class="fa-solid fa-angle-up up"></i>
+                            <!-- <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow"> -->
                         </div>
                         <div class="custom-accordion-content">
                             <p>Our PPC management focuses on building long-term, sustainable performance. You can expect clearer keyword structure, smarter bidding, reduced wasted ad spend, improved ranking on important search terms, and more consistent sales growth. Results depend on your product quality, reviews, price competitiveness, and listing optimization, but our approach ensures campaigns move toward greater profitability and scale over time. We combine manual strategy with advanced tools to optimize your account continuously-not just once a month.</p>
@@ -1175,8 +1187,10 @@
                     <div class="custom-accordion-item">
                         <div class="custom-accordion-header">
                             <h2>I’m new to Amazon PPC. Can you still help?</h2>
-                            <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                            <i class="fa-solid fa-angle-down down"></i>
+                            <i class="fa-solid fa-angle-up up"></i>
+                            <!-- <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow"> -->
                         </div>
                         <div class="custom-accordion-content">
                             <p>Absolutely. Many of our clients start with little or no PPC experience. We handle everything from keyword research and campaign setup to daily optimization, reporting, and long-term strategy. We also audit your listings to ensure they are ready for ads, because strong PPC performance relies heavily on strong conversion rates. Whether you’re launching your first product or managing a growing brand, our team guides you through the entire advertising journey with complete transparency and ongoing support.</p>
@@ -1185,8 +1199,10 @@
                     <div class="custom-accordion-item">
                         <div class="custom-accordion-header">
                             <h2>How often do you optimize campaigns?</h2>
-                            <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                            <i class="fa-solid fa-angle-down down"></i>
+                            <i class="fa-solid fa-angle-up up"></i>
+                            <!-- <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow"> -->
                         </div>
                         <div class="custom-accordion-content">
                             <p>We monitor campaigns daily to track spend, performance trends, and any sudden changes, and then perform structured weekly optimizations such as bid adjustments, keyword updates, negative pruning, and budget redistribution. Every month, we conduct a strategic review of overall performance, seasonality, and long-term goals to ensure campaigns stay efficient, competitive, and aligned with your growth targets.</p>
@@ -1195,8 +1211,10 @@
                     <div class="custom-accordion-item">
                         <div class="custom-accordion-header">
                             <h2>Do you manage PPC for both Seller Central and Vendor Central?</h2>
-                            <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                            <i class="fa-solid fa-angle-down down"></i>
+                            <i class="fa-solid fa-angle-up up"></i>
+                            <!-- <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow"> -->
                         </div>
                         <div class="custom-accordion-content">
                             <p>Yes, we manage PPC for both Seller Central (3P sellers) and Vendor Central (1P brands), adapting strategies to the unique tools, reporting systems, and customer behaviors of each platform. Whether you operate as SC, VC, or a hybrid model, we optimize Sponsored Products, Brands, Display, and DSP to deliver consistent performance and profitable growth across all Amazon ecosystems.</p>
@@ -1205,8 +1223,10 @@
                     <div class="custom-accordion-item">
                         <div class="custom-accordion-header">
                             <h2>Will I have a dedicated account manager?</h2>
-                            <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
-                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow">
+                            <i class="fa-solid fa-angle-down down"></i>
+                            <i class="fa-solid fa-angle-up up"></i>
+                            <!-- <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
+                            <img width="640" height="360" loading="lazy" class="up" src="assets/images/Desktop/up-arrow.png" alt="Up Arrow"> -->
                         </div>
                         <div class="custom-accordion-content">
                             <p>Yes, you will have a dedicated account manager who acts as your single point of contact, overseeing daily performance, executing strategy, coordinating with the PPC team, and providing clear weekly updates and insights. This ensures fast communication, smooth operations, and a fully managed PPC experience tailored to your goals.</p>

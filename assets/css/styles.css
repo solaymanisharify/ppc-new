@@ -223,7 +223,7 @@ main.bg-color-active {
   border-radius: 8px;
   cursor: pointer;
   font-family: "Recoleta";
-  font-size: clamp(12px, 2.5vw, 23px);
+  font-size: clamp(15px, 2.5vw, 23px);
   font-weight: 300;
   margin-bottom: 7px;
   width: max-content;
@@ -236,13 +236,13 @@ main.bg-color-active {
 .scalable-amazon {
   color: #fefeff;
   opacity: 0.9;
-  font-size: clamp(1rem, 3vw, 34px);
+  font-size: clamp(1.3rem, 3vw, 34px);
   font-weight: 400;
   font-family: "Recoleta";
 }
 
 .scalable-amazon span {
-  font-size: clamp(2.6rem, 5vw, 5.8125rem);
+  font-size: clamp(2.9rem, 5vw, 5.8125rem);
   font-weight: normal;
   /* background: linear-gradient(to bottom, white 0%, white 25%, #61FFE6 50%, #008871 100%); */
   background: linear-gradient(180deg, #61ffe6 24.94%, #008871 86.73%);
@@ -255,7 +255,7 @@ main.bg-color-active {
 .hero-1 p {
   color: #ffffff;
   opacity: 0.9;
-  font-size: clamp(10px, 3vw, 1rem);
+  font-size: clamp(13px, 3vw, 1rem);
   font-weight: 400;
   font-family: "Poppins";
   line-height: 1.5;
@@ -407,9 +407,10 @@ main.bg-color-active {
 }
 
 .item-list {
-  display: flex;
+  display: grid;
   justify-content: space-between;
-  gap: 2px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
 }
 
 .item-list-content {
@@ -427,13 +428,13 @@ main.bg-color-active {
 }
 
 .revenue-icon img {
-  width: 17px;
-  height: 17px;
+  width: 34px;
+  height: 34px;
   object-fit: contain;
 }
 
 .item-list-content .revenue-icon h2 {
-  font-size: clamp(18px, 4vw, 70px);
+  font-size: clamp(1.9rem, 4vw, 70px);
   font-weight: 700;
   font-family: "Recoleta", serif;
   background: linear-gradient(180deg, #60ffe6 0%, #048d76 100%);
@@ -441,7 +442,7 @@ main.bg-color-active {
   -webkit-text-fill-color: transparent;
 }
 .item-list-content p {
-  font-size: clamp(5px, 1vw, 1rem);
+  font-size: clamp(12px, 1vw, 1rem);
   font-weight: 500;
   font-family: Poppins, sans-serif;
   color: white;
@@ -451,7 +452,7 @@ main.bg-color-active {
 
 /* New Timeline Section  */
 #tergeting-section {
-  height: auto;
+  height: 100dvh;
 }
 
 .timeline-section-header{
@@ -1470,9 +1471,23 @@ main.bg-color-active {
   margin: 0;
   font-family: "Recoleta", serif;
   font-size: clamp(1rem, 2.5vw, 2.25rem);
-  color: #00fffc;
   font-weight: normal;
   padding: 0 15px 0 0;
+}
+
+.custom-accordion-header i {
+  font-size: 1.4rem;
+  transition: transform 0.3s ease;
+}
+
+main .custom-accordion-header h2,
+main .custom-accordion-header i {
+  color: #00fffc;
+}
+
+main.bg-color-active .custom-accordion-header h2,
+main.bg-color-active .custom-accordion-header i{
+  color: #000;
 }
 
 .custom-accordion-header img {
@@ -1481,7 +1496,8 @@ main.bg-color-active {
   transition: transform 0.3s ease;
 }
 
-.custom-accordion-header.active img.down {
+.custom-accordion-header.active img.down,
+.custom-accordion-header.active i.down {
   display: none;
 }
 
@@ -1495,7 +1511,8 @@ main.bg-color-active {
   border-bottom: none !important; /* Force no border for previous item */
 }
 
-.custom-accordion-header img.up {
+.custom-accordion-header img.up,
+.custom-accordion-header i.up {
   display: none;
 }
 
@@ -1503,11 +1520,13 @@ main.bg-color-active {
   border-bottom: none;
 }
 
-.custom-accordion-header.active img.up {
+.custom-accordion-header.active img.up,
+.custom-accordion-header.active i.up {
   display: block;
 }
 
-.custom-accordion-header.active img.down {
+.custom-accordion-header.active img.down,
+.custom-accordion-header.active i.down {
   transform: rotate(180deg);
 }
 
@@ -2123,6 +2142,10 @@ main.bg-color-active {
 
 /* Small devices (large phones) */
 @media (min-width: 580px) {
+  .item-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
   .revenue-icon img {
     height: 30px;
     width: 30px;
@@ -2263,9 +2286,9 @@ main.bg-color-active {
     width: 30px;
   }
 
-  #tergeting-section {
+  /* #tergeting-section {
     height: 100dvh;
-  }
+  } */
 
   .timeline-section .new-timeline {
     flex-direction: row;

@@ -1185,6 +1185,15 @@ div.circle-data {
   font-size: 42px;
   line-height: 44px;
   font-family: "Recoleta", serif;
+}
+
+.blog-left h3,
+.blog-custom-text p {
+  color: #ffffff;
+}
+
+main.bg-color-active .blog-left h3,
+main.bg-color-active .blog-custom-text p {
   color: #393939;
 }
 
