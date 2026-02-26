@@ -1286,7 +1286,7 @@ main.bg-color-active {
 
 .review-card-rating {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   margin-top: 2px;
 }
