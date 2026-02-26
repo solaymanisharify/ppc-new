@@ -24,8 +24,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <!-- <link rel="stylesheet" href="./assets/css/styles.min.css" as="style" /> -->
+    <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
+    <link rel="stylesheet" href="./assets/css/styles.min.css" as="style" />
 
     <!-- <link rel="stylesheet" href="./assets/css/extra/style.css" /> -->
     <link rel="stylesheet" href="./assets/css/extra/style.min.css" as="style" />
@@ -53,7 +53,12 @@
     </noscript>
 </head>
 
-<body>
+<body style="overflow: hidden; height: 100dvh">
+
+    <!-- Page Loader -->
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
 
     <main id="main-section">
         <section class="first-bg" id="back">
@@ -2363,7 +2368,6 @@
             <!-- end trust us -->
         </div>
     </main>
-
 
     <!-- modal for form -->
     <div class="modal fade" id="checkpriority" tabindex="-1" aria-hidden="true">

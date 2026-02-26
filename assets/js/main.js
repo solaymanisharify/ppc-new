@@ -219,7 +219,15 @@ timeline();
 document.body.style.overflow = "hidden";
 document.body.style.height = "100dvh";
 
-  // Restore scrolling when the page fully loads
+window.addEventListener("load", function() {
+  const loader = document.getElementById("loader");
+  loader.classList.add("fade-out"); 
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 500);
+});
+
+// Restore scrolling when the page fully loads
 window.addEventListener("load", function() {
     document.body.style.overflow = "hidden";
     document.body.style.height = "auto";
