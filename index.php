@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="canonical" href="https://ecomclips.com/" />
+
     <title>Ecomclips Landing Page</title>
     <link rel="icon" type="image/x-icon" href="./assets/images/faveicon-logo.png">
+
+    <meta name="title" content="#1 Amazon Advertising Management for Startup | Ecomclips">
+    <meta name="description" content="Maximize your sales with expert amazon ppc management starting at just $100/mo. Ecomclips offers #1 Amazon Advertising Management for Startups to lower ACoS and scale ROI. Book your free audit today!">
+
     <!-- ===== Preload ONLY critical animation libs ===== -->
     <!-- <link rel="preload" href="./assets/js/cdn/gsap.min.js" as="script"> -->
     <!-- <link rel="preload" href="./assets/js/cdn/scroll-trigger.min.js" as="script"> -->
@@ -24,8 +30,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <!-- <link rel="stylesheet" href="./assets/css/styles.min.css" as="style" /> -->
+    <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
+    <link rel="stylesheet" href="./assets/css/styles.min.css" as="style" />
 
     <!-- <link rel="stylesheet" href="./assets/css/extra/style.css" /> -->
     <link rel="stylesheet" href="./assets/css/extra/style.min.css" as="style" />
@@ -57,8 +63,10 @@
 
     <!-- Page Loader -->
     <div id="loader">
-        <div class="spinner"></div>
-        <img src="./assets/images/faveicon-logo.png" alt="Logo" width="60" height="60" class="loader-image">
+        <div class="spinner">
+            <div class="spinner-inner"></div>
+        </div>
+        <img src="./assets/images/logo.png" alt="Ecomclips Logo" width="60" height="60" class="loader-image">
     </div>
 
     <main id="main-section">
@@ -82,8 +90,8 @@
                         </button>
                     </div>
                     <div class="hero-2">
-                        <img width="640" height="360" fetchpriority="high" src="assets/images/Mobile-version/product-presentation.png" alt="Hero Image" class="img-cover-mobile">
-                        <img width="640" height="360" fetchpriority="high" src="assets/images/Desktop/Cover.webp" alt="Hero Image" class="img-cover">
+                        <img width="640" height="360" fetchpriority="high" src="assets/images/Mobile-version/product-presentation.png" alt="Amazon advertising management visual showing sponsored product placement and Amazon PPC campaign performance" class="img-cover-mobile">
+                        <img width="640" height="360" fetchpriority="high" src="assets/images/Desktop/Cover.webp" alt="Amazon advertising management visual showing sponsored product placement and Amazon PPC campaign performance" class="img-cover">
                     </div>
                 </div>
             </section>
@@ -227,7 +235,7 @@
                             </div>
                             <div class="keyword-research-img panel__card-image">
                                 <div class="panel__card-image_container">
-                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Keyword-research.webp" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Keyword-research.webp" alt="Amazon advertising management visual showing keyword research, search volume analysis, and profitable Amazon PPC keyword discovery.">
                                 </div>
                             </div>
                             <div class="lets-talk-btn-mobile">
@@ -259,7 +267,7 @@
                             </div>
                             <div class="listing-optimization-img panel__card-image">
                                 <div class="panel__card-image_container">
-                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/card1.webp" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/card1.webp" alt="Amazon listing optimization visual showing keyword analysis, improved product listings, and increased discoverability in Amazon search results.">
                                 </div>
                             </div>
 
@@ -290,7 +298,7 @@
                             </div>
                             <div class="campaign-optimization-img panel__card-image">
                                 <div class="panel__card-image_container">
-                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Campaign-optimization.webp" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Campaign-optimization.webp" alt="Amazon PPC campaign optimization visual showing bid adjustments, keyword rankings, and improved Amazon advertising performance.">
                                 </div>
                             </div>
                             <div class="lets-talk-btn-mobile">
@@ -320,7 +328,7 @@
                             </div>
                             <div class="increase-sales-img panel__card-image">
                                 <div class="panel__card-image_container">
-                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Increase-Sales.webp" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Increase-Sales.webp" alt="Amazon advertising management visual showing increased sales, improved conversion performance, and optimized Amazon PPC campaign results.">
                                 </div>
                             </div>
                             <div class="lets-talk-btn-mobile">
@@ -350,7 +358,7 @@
                             </div>
                             <div class="reduce-acos-img panel__card-image">
                                 <div class="panel__card-image_container">
-                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Reduce-ACOS.webp" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Reduce-ACOS.webp" alt="Amazon advertising management dashboard showing reduced ACoS, optimized ad spend, and improved Amazon PPC performance.">
                                 </div>
                             </div>
 
@@ -381,7 +389,7 @@
                             </div>
                             <div class="weekly-reporting-img panel__card-image">
                                 <div class="panel__card-image_container">
-                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/weekly-reporting.webp" alt="">
+                                    <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/weekly-reporting.webp" alt="Amazon advertising management report visual showing weekly PPC performance metrics, ad spend analysis, and actionable campaign insights.">
                                 </div>
                             </div>
                             <div class="lets-talk-btn-mobile">
@@ -460,7 +468,7 @@
                                                             <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/case-study-review-person-1.png" alt="Hero Image" class="">
                                                         </div>
                                                         <div>
-                                                            <h2>Mr Christopher Adey</h2>
+                                                            <h3>Mr Christopher Adey</h3>
                                                             <div class="review-card-rating">
                                                                 <p>Nutroliq, USA</p>
                                                                 <div class="review-card-rating-stars">
@@ -496,7 +504,7 @@
                         <div class="case-study-container case-study-container-2">
                             <div class="case-study-container-text">
                                 <div class="case-study-header">
-                                    <h2>From Growth to Succcess</h2>
+                                    <h3>From Growth to Succcess</h3>
                                     <div class="golden-fox">
                                         <img width="640" height="360" loading="lazy" id="woodland-logo" src="assets/images/Desktop/new/case-study-logo-2.png" alt="Hero Image" class="">
                                     </div>
@@ -504,7 +512,7 @@
                                 <div class="case-study-growth-image-container">
                                     <div class="case-study-growth-left-side">
                                         <div class="case-study-desc">
-                                            <h2>&ldquo;We have seen a 40<span class="percentage">%</span> sales uplift&rdquo;</h2>
+                                            <h3>&ldquo;We have seen a 40<span class="percentage">%</span> sales uplift&rdquo;</h3>
                                             <div class="case-study-line"></div>
                                         </div>
                                         <div class="growth-percentage">
@@ -547,7 +555,7 @@
                                                             <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/case-study-review-person-2.png" alt="Hero Image" class="">
                                                         </div>
                                                         <div>
-                                                            <h2>Justin Pywell</h2>
+                                                            <h3>Justin Pywell</h3>
                                                             <div class="review-card-rating">
                                                                 <p>We Can Source It, UK</p>
                                                                 <div class="review-card-rating-stars">
@@ -584,7 +592,7 @@
                         <div class="case-study-container case-study-container-3">
                             <div class="case-study-container-text">
                                 <div class="case-study-header">
-                                    <h2>From Growth to Succcess</h2>
+                                    <h3>From Growth to Succcess</h3>
                                     <div class="golden-fox">
                                         <img width="640" height="360" loading="lazy" id="umbra-logo" src="assets/images/Desktop/new/case-stady-logo-3.png" alt="Hero Image" class="">
                                     </div>
@@ -592,7 +600,7 @@
                                 <div class="case-study-growth-image-container">
                                     <div class="case-study-growth-left-side">
                                         <div class="case-study-desc">
-                                            <h2>&ldquo;150<span class="percentage">%</span> revenue increase over the 18 months&rdquo;</h2>
+                                            <h3>&ldquo;150<span class="percentage">%</span> revenue increase over the 18 months&rdquo;</h3>
                                             <div class="case-study-line"></div>
                                         </div>
                                         <div class="growth-percentage">
@@ -635,7 +643,7 @@
                                                             <img width="640" height="360" loading="lazy" src="assets/images/Desktop/woodland-critic.webp" alt="Hero Image" class="">
                                                         </div>
                                                         <div>
-                                                            <h2>Ronald Davis</h2>
+                                                            <h3>Ronald Davis</h3>
                                                             <div class="review-card-rating">
                                                                 <p>Indiana Metal Craft, USA</p>
                                                                 <div class="review-card-rating-stars">
@@ -684,7 +692,7 @@
                 <div class="amazon-ppc-card-container container">
                     <div class="amazon-ppc-card">
                         <div class="amazon-ppc-card-header">
-                            <h2>Helping ambitious sellers <span>grow <br> smarter</span>, since 2010.</h2>
+                            <h3>Helping ambitious sellers <span>grow <br> smarter</span>, since 2010.</h3>
                         </div>
                         <div class="amazon-ppc-card-stat">
                             <div>
@@ -845,17 +853,17 @@
                                         <div class="fade-top bg-will-changed-by-scroll"></div>
                                         <div class="amazon-ppc-content">
                                             <div class="amazon-ppc-content-text" data-image="Launch.webp">
-                                                <h2>Launch</h2>
+                                                <h3>Launch</h3>
                                                 <p>Every brand is unique - that’s why we tailor your PPC launch plan to your specific goals, audience, and product positioning. - Listing Optimization - Initial Keyword Research - Auto & Manual Campaign Setup - Maximize Impression - Harvesting & Data Collection</p>
                                             </div>
                                             <div class="amazon-ppc-content-text" data-image="Optimize.webp">
-                                                <h2>Optimize</h2>
+                                                <h3>Optimize</h3>
                                                 <p>We don’t “set and forget.” We engineer performance - optimizing keywords, bids, budgets, and campaign architecture daily to turn ad spend into a predictable growth engine.
                                                     <br />
                                                 </p>
                                             </div>
                                             <div class="amazon-ppc-content-text" data-image="dominate.webp">
-                                                <h2>Dominate</h2>
+                                                <h3>Dominate</h3>
                                                 <p>Winning on Amazon isn’t about spending more—it’s about spending smarter. We help brands take control of their category on Amazon through precision-built PPC strategies. From keyword ownership to placement dominance, our approach is designed to maximize visibility, sales velocity, and long-term profitability.</p>
                                             </div>
 
@@ -865,43 +873,43 @@
                                     </div>
                                     <div class="amazon-ppc-img">
                                         <div class="radial"></div>
-                                        <img width="640" height="360" loading="lazy" id="ppcImage0" src="assets/images/Desktop/Launch.webp" alt="">
-                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Optimize.webp" alt="">
-                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/dominate.webp" alt="">
+                                        <img width="640" height="360" loading="lazy" id="ppcImage0" src="assets/images/Desktop/Launch.webp" alt="Amazon advertising management visual showing PPC launch strategy, product promotion, and sales growth performance on Amazon.">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Optimize.webp" alt="Amazon advertising management visual showing PPC optimization phase with keyword targeting, bid optimization, and improved campaign performance on Amazon.">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/dominate.webp" alt="Amazon advertising management visual showing PPC domination phase with category leadership, rising sales performance, and long-term growth on Amazon.">
                                     </div>
                                 </div>
                                 <div class="custom-accordion amazon-ppc-items">
                                     <div class="radial2"></div>
                                     <div class="custom-accordion-item">
                                         <div class="custom-accordion-header active">
-                                            <h2>Launch</h2>
+                                            <h3>Launch</h3>
                                         </div>
                                         <div class="custom-accordion-content active">
                                             <div>
                                                 <p>Every brand is unique - that’s why we tailor your PPC launch plan to your specific goals, audience, and product positioning. - Listing Optimization - Initial Keyword Research - Auto & Manual Campaign Setup - Maximize Impression - Harvesting & Data Collection</p>
-                                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Launch.webp" alt="">
+                                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Launch.webp" alt="Amazon advertising management visual showing PPC launch strategy, product promotion, and sales growth performance on Amazon.">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="custom-accordion-item">
                                         <div class="custom-accordion-header">
-                                            <h2>Optimize</h2>
+                                            <h3>Optimize</h3>
                                         </div>
                                         <div class="custom-accordion-content">
                                             <div>
                                                 <p>Every Amazon business performs differently — and so should your ad strategy. You need tailored adjustments of - Review & Refine Keywords - Adjust Bids & Budgets - Campaign Segmentation - Brand Awareness - Monitor & Report Performance</p>
-                                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Optimize.webp" alt="">
+                                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/Optimize.webp" alt="Amazon advertising management visual showing PPC optimization phase with keyword targeting, bid optimization, and improved campaign performance on Amazon.">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="custom-accordion-item">
                                         <div class="amazon-ppc-item custom-accordion-header">
-                                            <h2>Dominate</h2>
+                                            <h3>Dominate</h3>
                                         </div>
                                         <div class="custom-accordion-content">
                                             <div>
                                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, dolorum porro! Libero sint, assumenda fuga, voluptatem tempore laborum recusandae distinctio quia voluptate aliquid placeat soluta! Nihil exercitationem id cum</p>
-                                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/dominate.webp" alt="">
+                                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/dominate.webp" alt="Amazon advertising management visual showing PPC domination phase with category leadership, rising sales performance, and long-term growth on Amazon.">
                                             </div>
                                         </div>
                                     </div>
@@ -911,31 +919,32 @@
                         <div class="amazon-keyword2-section common-spacing-min-extra">
                             <div class="amazon-keyword2">
                                 <header>
-                                    <h2>Amazon Keyword Strategy</h2>
+                                    <h3>Amazon Keyword Strategy</h3>
                                     <p>Our keyword strategy combines Broad, Phrase, and Exact match types to maximize visibility and drive conversions. This approach helps us discover valuableterms, improve ad targeting, and convert more high-intent traffic with better ROI. A complete keyword mix designed to grow your Amazon sales efficiently.</p>
                                 </header>
                                 <div class="amazon-content-img">
                                     <div class="amazon-keyword2-img">
-                                        <img width="640" height="360" loading="lazy" id="keyImage0" src="assets/images/Desktop/new/Broad.webp" alt="">
-                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Phrase.webp" alt="">
-                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Exact.webp" alt="">
+                                        <img width="640" height="360" loading="lazy" id="keyImage0" src="assets/images/Desktop/new/Broad.webp" alt="Amazon advertising management visual showing a broad match keyword strategy with PPC performance metrics, impressions, sales, and ACoS trends.">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Phrase.webp" alt="
+                                        Amazon advertising management visual showing phrase match keyword strategy with Amazon PPC performance metrics, sales growth, and ACoS tracking.">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Exact.webp" alt="Amazon advertising management visual showing exact match keyword strategy with precise PPC targeting, high-intent traffic, and improved Amazon sales performance.">
                                     </div>
                                     <div class="amazon-keyword2-wrapper">
                                         <div class="fade-top"></div>
                                         <div class="amazon-keyword2-content">
                                             <div class="amazon-keyword2-content-text" data-image="Broad.webp">
-                                                <h2>Broad</h2>
+                                                <h3>Broad</h3>
                                                 <p>Use Broad match to cast a wide net and uncover high-potential search terms across your niche. Capture wide traffic and discover new keyword opportunities with Broad match targeting.
                                                     View Details.</p>
                                             </div>
                                             <div class="amazon-keyword2-content-text" data-image="Phrase.png">
-                                                <h2>Phrase</h2>
+                                                <h3>Phrase</h3>
                                                 <p>Phrase match helps to connect with shoppers using relevant keyword sequences
                                                     for better performance. Great for intent-driven traffic and increasing ad
                                                     relevance.</p>
                                             </div>
                                             <div class="amazon-keyword2-content-text" data-image="Exact.webp">
-                                                <h2>Exact</h2>
+                                                <h3>Exact</h3>
                                                 <p>Exact Match keyword targeting gives you maximum control and precision. By attracting highly relevant shoppers with fewer wasted clicks, it boosts conversions, improves efficiency, and supports faster organic ranking growth.</p>
                                             </div>
                                             <div class="amazon-keyword2-content-text"></div>
@@ -946,37 +955,37 @@
                                 <div class="custom-accordion amazon-keyword2-items">
                                     <div class="custom-accordion-item">
                                         <div class="custom-accordion-header active">
-                                            <h2>Broad</h2>
+                                            <h3>Broad</h3>
                                         </div>
                                         <div class="custom-accordion-content active">
                                             <div>
                                                 <p>Use Broad match to cast a wide net and uncover high-potential search terms across your niche. Capture wide traffic and discover new keyword opportunities with Broad match targeting.
                                                     View Details.</p>
-                                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Broad.webp" alt="">
+                                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Broad.webp" alt="Amazon advertising management visual showing a broad match keyword strategy with PPC performance metrics, impressions, sales, and ACoS trends.">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="custom-accordion-item">
                                         <div class="custom-accordion-header">
-                                            <h2>Phrase</h2>
+                                            <h3>Phrase</h3>
                                         </div>
                                         <div class="custom-accordion-content">
                                             <div>
                                                 <p>Phrase match helps to connect with shoppers using relevant keyword sequences
                                                     for better performance. Great for intent-driven traffic and increasing ad
                                                     relevance.</p>
-                                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Phrase.webp" alt="">
+                                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Phrase.webp" alt="Amazon advertising management visual showing phrase match keyword strategy with Amazon PPC performance metrics, sales growth, and ACoS tracking.">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="custom-accordion-item">
                                         <div class="custom-accordion-header">
-                                            <h2>Exact</h2>
+                                            <h3>Exact</h3>
                                         </div>
                                         <div class="custom-accordion-content">
                                             <div>
                                                 <p>Get the highest precision in your ads with Exact match keyword targeting. Maximize efficiency with Exact match as it get fewer clicks, more qualified buyers.</p>
-                                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Exact.webp" alt="">
+                                                <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Exact.webp" alt="Amazon advertising management visual showing exact match keyword strategy with precise PPC targeting, high-intent traffic, and improved Amazon sales performance.">
                                             </div>
                                         </div>
                                     </div>
@@ -986,7 +995,7 @@
                         <!-- Timeline Part if needed then uncomment below div -->
                         <!-- <div class="amazon-keyword common-spacing-extra">
                             <header>
-                                <h2>Amazon Keyword Strategy</h2>
+                                <h3>Amazon Keyword Strategy</h3>
                                 <p>Our keyword strategy combines Broad, Phrase, and Exact match types to maximize visibility and drive conversions. This approach helps us discover valuableterms, improve ad targeting, and convert more high-intent traffic with better ROI. A complete keyword mix designed to grow your Amazon sales efficiently.</p>
                             </header>
                             <div class="timeline">
@@ -1052,7 +1061,7 @@
                                         <p>For Sponsored Brands, we design captivating creatives to boost your Amazon store's visibility and brand awarness. Our campaigns are tailored to attract new-to-brand customers, expanding your audience while strengthening recognition and engagement in competitive marketplaces.</p>
                                     </div>
                                     <div class="advertising-card-image">
-                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/AmazonBrandAds.webp" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/AmazonBrandAds.webp" alt="Amazon advertising management visual showing Sponsored Brands ads with branded product creatives and increased Amazon store visibility.">
                                     </div>
                                 </div>
                                 <div class="advertising-card">
@@ -1063,12 +1072,12 @@
                                         </p>
                                     </div>
                                     <div class="advertising-card-image">
-                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/SponsoredProductsAds.webp" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/SponsoredProductsAds.webp" alt="Amazon advertising management visual showing Sponsored Products ads with keyword targeting and product placement in Amazon search results.">
                                     </div>
                                 </div>
                                 <div class="advertising-card advertising-card-right">
                                     <div class="advertising-card-image">
-                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/SponsoredVideo.webp" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/SponsoredVideo.webp" alt="Amazon advertising management visual showing Sponsored Video ads that increase click-through rates and drive conversions in Amazon search results.">
                                     </div>
                                     <div class="advertising-card-text advertising-card-text-right">
                                         <h2>Amazon Video Ads</h2>
@@ -1077,7 +1086,7 @@
                                 </div>
                                 <div class="advertising-card advertising-card-right">
                                     <div class="advertising-card-image">
-                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/AmazonDisplayAds.webp" alt="">
+                                        <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/AmazonDisplayAds.webp" alt="Amazon advertising management visual showing Sponsored Display ads for brand retargeting and increased visibility on and off Amazon.">
 
                                     </div>
                                     <div class="advertising-card-text advertising-card-text-right">
@@ -1101,7 +1110,7 @@
                 <div class="container">
                     <div class="amazon-ppc-strategy-img">
                         <div class="img-wrapper">
-                            <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Right-Strategy.webp" alt="">
+                            <img width="640" height="360" loading="lazy" src="assets/images/Desktop/new/Right-Strategy.webp" alt="Amazon advertising management visual showing data-driven PPC strategy with sales growth, optimized spend, lower ACoS, and increased impressions.">
                         </div>
                     </div>
                 </div>
@@ -1114,12 +1123,12 @@
             <!-- Question section -->
             <section class="amazon-ppc-question container common-spacing-top">
                 <div class="ppc-question-header">
-                    <h2>Frequently Asked Questions</h2>
+                    <h3>Frequently Asked Questions</h3>
                 </div>
                 <div class="custom-accordion faq-items">
                     <div class="custom-accordion-item">
                         <div class="custom-accordion-header">
-                            <h2>How long does it take for PPC to work?</h2>
+                            <h3>How long does it take for PPC to work?</h3>
                             <i class="fa-solid fa-angle-down down"></i>
                             <i class="fa-solid fa-angle-up up"></i>
                             <!-- <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
@@ -1131,7 +1140,7 @@
                     </div>
                     <div class="custom-accordion-item">
                         <div class="custom-accordion-header">
-                            <h2>What sales uplift can we expect if we increase ACOS/TACoS goals?</h2>
+                            <h3>What sales uplift can we expect if we increase ACOS/TACoS goals?</h3>
                             <i class="fa-solid fa-angle-down down"></i>
                             <i class="fa-solid fa-angle-up up"></i>
                             <!-- <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
@@ -1143,7 +1152,7 @@
                     </div>
                     <div class="custom-accordion-item">
                         <div class="custom-accordion-header">
-                            <h2>Can ad spend be reduced while increasing PPC sales?</h2>
+                            <h3>Can ad spend be reduced while increasing PPC sales?</h3>
                             <i class="fa-solid fa-angle-down down"></i>
                             <i class="fa-solid fa-angle-up up"></i>
                             <!-- <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
@@ -1155,7 +1164,7 @@
                     </div>
                     <div class="custom-accordion-item">
                         <div class="custom-accordion-header">
-                            <h2>Which Amazon ad type is the most effective for driving sales?</h2>
+                            <h3>Which Amazon ad type is the most effective for driving sales?</h3>
                             <i class="fa-solid fa-angle-down down"></i>
                             <i class="fa-solid fa-angle-up up"></i>
                             <!-- <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
@@ -1167,7 +1176,7 @@
                     </div>
                     <div class="custom-accordion-item">
                         <div class="custom-accordion-header">
-                            <h2>How much budget is needed for a successful PPC strategy?</h2>
+                            <h3>How much budget is needed for a successful PPC strategy?</h3>
                             <i class="fa-solid fa-angle-down down"></i>
                             <i class="fa-solid fa-angle-up up"></i>
                             <!-- <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
@@ -1180,7 +1189,7 @@
 
                     <div class="custom-accordion-item">
                         <div class="custom-accordion-header">
-                            <h2>What results can I expect from your PPC management?</h2>
+                            <h3>What results can I expect from your PPC management?</h3>
                             <i class="fa-solid fa-angle-down down"></i>
                             <i class="fa-solid fa-angle-up up"></i>
                             <!-- <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
@@ -1192,7 +1201,7 @@
                     </div>
                     <div class="custom-accordion-item">
                         <div class="custom-accordion-header">
-                            <h2>I’m new to Amazon PPC. Can you still help?</h2>
+                            <h3>I’m new to Amazon PPC. Can you still help?</h3>
                             <i class="fa-solid fa-angle-down down"></i>
                             <i class="fa-solid fa-angle-up up"></i>
                             <!-- <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
@@ -1204,7 +1213,7 @@
                     </div>
                     <div class="custom-accordion-item">
                         <div class="custom-accordion-header">
-                            <h2>How often do you optimize campaigns?</h2>
+                            <h3>How often do you optimize campaigns?</h3>
                             <i class="fa-solid fa-angle-down down"></i>
                             <i class="fa-solid fa-angle-up up"></i>
                             <!-- <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
@@ -1216,7 +1225,7 @@
                     </div>
                     <div class="custom-accordion-item">
                         <div class="custom-accordion-header">
-                            <h2>Do you manage PPC for both Seller Central and Vendor Central?</h2>
+                            <h3>Do you manage PPC for both Seller Central and Vendor Central?</h3>
                             <i class="fa-solid fa-angle-down down"></i>
                             <i class="fa-solid fa-angle-up up"></i>
                             <!-- <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
@@ -1228,7 +1237,7 @@
                     </div>
                     <div class="custom-accordion-item">
                         <div class="custom-accordion-header">
-                            <h2>Will I have a dedicated account manager?</h2>
+                            <h3>Will I have a dedicated account manager?</h3>
                             <i class="fa-solid fa-angle-down down"></i>
                             <i class="fa-solid fa-angle-up up"></i>
                             <!-- <img width="640" height="360" loading="lazy" class="down" src="assets/images/Desktop/down-arrow.png" alt="Down Arrow">
@@ -1256,7 +1265,7 @@
                         </div>
                         <div class="amazon-advertising-pricing-content">
                             <h3>Start from just</h3>
-                            <h2>$100/month</h2>
+                            <h4>$100/month</h4>
                             <p>We dont just manage ads- we grow business.</p>
                             <p>When your brand wins, so do we.</p>
                             <button class="toggle-modal">GET A QUOTE</button>
@@ -2505,8 +2514,8 @@
 
     <!-- <script src="/assets/js/scroll.js" defer></script> -->
     <script src="/assets/js/scroll.min.js" defer></script>
-    <script src="/assets/js/main.js" defer></script>
-    <!-- <script src="/assets/js/main.min.js" defer></script> -->
+    <!-- <script src="/assets/js/main.js" defer></script> -->
+    <script src="/assets/js/main.min.js" defer></script>
     <!-- <script src="/assets/js/modal.js" defer></script> -->
     <script src="/assets/js/modal.min.js" defer></script>
 
@@ -2526,6 +2535,7 @@
         }
     </script> -->
 
+    <!-- <script type="application/ld+json" src="./assets/js/schema.js"></script> -->
 
 </body>
 
