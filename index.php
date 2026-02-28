@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Ecomclips Landing Page</title>
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./assets/images/faveicon-logo.png">
     <!-- ===== Preload ONLY critical animation libs ===== -->
     <!-- <link rel="preload" href="./assets/js/cdn/gsap.min.js" as="script"> -->
     <!-- <link rel="preload" href="./assets/js/cdn/scroll-trigger.min.js" as="script"> -->
@@ -24,8 +24,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
-    <link rel="stylesheet" href="./assets/css/styles.min.css" as="style" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- <link rel="stylesheet" href="./assets/css/styles.min.css" as="style" /> -->
 
     <!-- <link rel="stylesheet" href="./assets/css/extra/style.css" /> -->
     <link rel="stylesheet" href="./assets/css/extra/style.min.css" as="style" />
@@ -58,6 +58,7 @@
     <!-- Page Loader -->
     <div id="loader">
         <div class="spinner"></div>
+        <img src="./assets/images/faveicon-logo.png" alt="Logo" width="60" height="60" class="loader-image">
     </div>
 
     <main id="main-section">
@@ -442,7 +443,7 @@
                                         </div>
                                         <div class="our-impact-btn">
                                             <button class="toggle-modal">
-                                                Out Impact
+                                                Our Impact
                                                 <span>
                                                     <i class="fa-solid fa-arrow-right"></i>
                                                 </span>
@@ -529,7 +530,7 @@
                                         </div>
                                         <div class="our-impact-btn">
                                             <button class="toggle-modal">
-                                                Out Impact
+                                                Our Impact
                                                 <span>
                                                     <i class="fa-solid fa-arrow-right"></i>
                                                 </span>
@@ -617,7 +618,7 @@
                                         </div>
                                         <div class="our-impact-btn">
                                             <button class="toggle-modal">
-                                                Out Impact
+                                                Our Impact
                                                 <span>
                                                     <i class="fa-solid fa-arrow-right"></i>
                                                 </span>
@@ -2504,8 +2505,8 @@
 
     <!-- <script src="/assets/js/scroll.js" defer></script> -->
     <script src="/assets/js/scroll.min.js" defer></script>
-    <!-- <script src="/assets/js/main.js" defer></script> -->
-    <script src="/assets/js/main.min.js" defer></script>
+    <script src="/assets/js/main.js" defer></script>
+    <!-- <script src="/assets/js/main.min.js" defer></script> -->
     <!-- <script src="/assets/js/modal.js" defer></script> -->
     <script src="/assets/js/modal.min.js" defer></script>
 
