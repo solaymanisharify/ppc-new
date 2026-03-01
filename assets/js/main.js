@@ -219,36 +219,17 @@ timeline();
 document.body.style.overflow = "hidden";
 document.body.style.height = "100dvh";
 
-// window.addEventListener("load", function() {
-//   const loader = document.getElementById("loader");
-//   loader.classList.add("fade-out"); 
-//   setTimeout(() => {
-//     loader.style.display = "none";
-//   }, 500);
-// });
-
-const resources = performance.getEntriesByType("resource");
-let loaded = 0;
-const total = resources.length;
-
-resources.forEach(resource => {
-  fetch(resource.name).then(() => {
-    loaded++;
-    if (loaded >= total / 2) {
-      removeLoader();
-    }
-  });
+window.addEventListener("load", function() {
+  const loader = document.getElementById("loader");
+  loader.classList.add("fade-out"); 
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 500);
 });
 
-function removeLoader() {
-  const loader = document.getElementById("loader");
-  loader.classList.add("fade-out");
-  setTimeout(() => loader.style.display = "none", 500);
-}
 
 // Restore scrolling when the page fully loads
 window.addEventListener("load", function() {
     document.body.style.overflow = "hidden";
     document.body.style.height = "auto";
 });
-

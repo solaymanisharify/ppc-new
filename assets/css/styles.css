@@ -1,7 +1,8 @@
 @font-face {
   font-family: "Recoleta";
-  src: url("../fonts/Recoleta-RegularDEMO.otf") format("opentype");
+  src: url("../fonts/Recoleta-RegularDEMO.woff2") format("woff2");
   font-weight: 400;
+  font-display: swap;
 }
 
 :root {
